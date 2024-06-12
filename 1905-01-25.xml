@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Egyptian Gazette</title>
+                <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Matthew Cooper</editor>
+                <editor role="primary">Matthew Cooper</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -17,11 +18,12 @@
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1905-01-25/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date when="1905-01-25">January 25, 1905</date>
+                    <date when="1905-01-25">Wednesday, January 25, 1905</date>
                     <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
@@ -29,56 +31,380 @@
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
-                <head>THE EGYPTIAN GAZETTE</head>
-                <head type="sub">No. 7106 ALEXANDRIA, WEDNESDAY, JANUARY 25, 1905. SIX PAGES P.T. 1. </head>
-                <div type="section" scope="advertisement"> </div>
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-25/mode/1up">
+                <div type="nameplate">
+                    <table cols="6">
+                        <row>
+                            <cell rows="2"/>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2"/>
+                        </row>
+                        <row>
+                            <cell> No. <measure quantity="7106">7,106</measure>]</cell>
+                            <cell> ALEXANDRIA, WEDNESDAY, JANUARY 25, 1905.</cell>
+                            <cell> [SIX PAGES</cell>
+                            <cell> P.T. 1</cell>
+                        </row>
+                    </table>
+                </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2"> </div>
-            <pb n="3"/>
-            <div type="page" n="3">
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-25/page/n1/mode/1up"
+                status="incomplete">
                 <cb n="1"/>
-                <div type="section" feature="wire">
-                    <!-- missing material -->
-                    <head>DEATH OF BISHOP OF LLANDAFF.</head>
-                    <dateline>London, January 24.</dateline>
-                    <p>The Bishop of Llandaff is dead. (Reuter.)</p>
-                    <p>The Right Rev. Richard Lewis, D.D., Bishop of Llandatf, born in 1821, was
-                        educated at Worcester College, Oxford (B.A., 1843; M.A., 1846). He was
-                        instituted to the rectory of Lampeter-Velfry, Narberth, Pembrokeshire, in
-                        1851, and was appointed Archdeacon of St. David’s in 1875. In 1883 he was
-                        appointed Bishop of Llandaff in succession to Dr. Ollivant, and was
-                        consecrated to that Bee by the Archbishop of Canterbury in St. Paul’s
-                        Cathedral, on April 25 of that year.</p>
+                <div type="advert" colSpan="2" xml:id="deg-ad-ric01">
+                    <head>Royal Insurance Coy</head>
+                    <p>FIRE AND LIFE.</p>
+                    <p>Largest Fire Office in the World.</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p>R. VITERBO &amp; CO., Agents, Cairo.</p>
+                    <p>PHOENIX ASSURANCE COMPANY, LIMITED.</p>
+                    <p>(ESTABLISHED 1782);</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p><measure type="indexNo">31-3-905</measure> FRED. OTT &amp; CO., Sub-Agents,
+                        Cairo.</p>
                 </div>
-                <!-- missing material -->
+                <div type="item"/>
                 <cb n="2"/>
-                <!-- missing material -->
-                <div type="item">
-                    <head>Suez Canal.</head>
-                    <p>—On the 21st and 22nd inst. 31 vessels passed through the Canal, the amount
-                        received in dues being frs. 817,481.46. 18 were British ships, 5 German, 3
-                        Austrian, 2 French, 1 Norwegian, 1 Egyptian, 1 Italian. The receipts from
-                        the 1st to 22nd inst totalled frs. 8,137,811.66.</p>
-                    <p>The Telephone Company of Egypt has now completed telephonic communication in
-                        thirty markazes between the police officers of the districts and the
-                        moudiriehs, as well as between the former and the omdehs of the different
-                        localities in each district or markaz. It is intended to extend the system
-                        gradually in the remaining moudiriehs of the country.</p>
-                    <p>An Exile in Egypt.—In pursuance of a decision of the Central Criminal Court,
-                        Constantinople, a further term of ten days has been granted to Iskender
-                        Shehkub, a fugitive, to appear before it. He is in Egypt, where he publishes
-                        seditious matter against the Imperial Government. If he fails to return to
-                        Turkey within the prescribed term, he will be tried in absentia, and his
-                        property will be confiscated.</p>
+                <div type="item"/>
+                <cb n="3"/>
+                <div type="item"/>
+                <cb n="4"/>
+                <div type="item"/>
+                <cb n="5"/>
+                <div type="item"/>
+                <!-- weather -->
+                <div type="template" xml:id="deg-el-egsa03">
+                    <head>THE EGYPTIAN GAZETTE.</head>
+                    <p>SUBSCRIPTIONS.– Alexandria, Cairo, and the Interior of Egypt (including
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
+                        annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
+                        in the Postal Union P.T. 273 (£2.16s.) per annum.</p>
+                    <p>ADVERTISEMENTS.– P.T. 4 per line. Minimum charge P.T. 20. Births, Marriages,
+                        or Deaths, not exceeding three lines, P.T. 20, every additional line P.T.
+                        10. Notices in news columns P.T. 20 per line. Contracts entered into for
+                        standing advertisements.</p>
+                    <p>N.B.– Subscriptions commence from the 1st or 16th of any month.</p>
+                    <p>SUBSCRIPTIONS and ADVERTISEMENTS are due in advance. P.O. Orders and Cheques
+                        to be made payable to the Editor and Manager, Rowland Snelling,
+                        Alexandria.</p>
+                    <p>London Offices: 86, New Broad-street, E.C.</p>
+                    <p>THE "EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
+                        LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.)
+                            <measure type="indexNo">36-4</measure></p>
                 </div>
-                <!-- missing material -->
+                <div type="item" feature="imprint" xml:id="deg-el-egpi01">
+                    <head>The Egyptian Gazette</head>
+                    <p>An English Daily Newspaper, Established in 1880.</p>
+                    <p>Editor &amp; Manager: R. Snelling.</p>
+                    <p>Price: One Piastre Tariff.</p>
+                    <p><date when="1905-01-25">WEDNESDAY, JANUARY 25, 1905</date>.</p>
+                </div>
+                <div type="item" feature="leader">
+                    <head>THE SITUATION IN RUSSIA.</head>
+                    <p> This morning's telegrams are not by any means of a reassuring nature, but,
+                        on the contrary, tend to show that the revolutionary movement is spreading
+                        far and wide throughout the country. The evidences of insurrections in the
+                        provinces have been suppressed by the<cb n="6"/> non-publication of the
+                        newspapers, but it is known that serious disturbances have broken out at
+                        Korno and Vilna. The revolutionary movement has spread among the 9,000
+                        sailors of the Black Sea Fleet, to whom the fire at Sebastopol arsenal is
+                        due. Meanwhile the populace of Moscow are determined to emulate the example
+                        of St. Petersburg, and the workmen in the great factories are striking out
+                        of sympathy with their comrades.</p>
+                    <p>The disaffection of the educated classes, as is seen by the action of the St.
+                        Petersburg Bar, is as dangerous a symptom as the conduct of the troops, who
+                        flatly refused to fire on the sailors at Sebastopol. But the most serious
+                        political symptom is the conduct of the Tsar. The one political institution
+                        in Russia is the Emperor or Autocrat. Only the Emperor can make laws; he
+                        alone has the executive and judicial power. Take away autocracy and Russian
+                        society falls into primeval chaos. To the masses of the people it is like
+                        taking the sun out of the sky. Autocracy is the necessary source of any
+                        legal change in Russian society. The attempt to start reform from any other
+                        source must inevitably produce a revolutionary condition, consisting of a
+                        prolonged warfare of each against all, and bringing in its train
+                        impoverishment and misery beyond even Russian precedent. But the Emperor has
+                        shown the world that he is utterly unable even in the present terrible
+                        crisis to rise superior to the inherent weakness of his naturally feeble
+                        character, and so he delegated the massacre of his subjects to the most
+                        reactionary of his kinsmen, while he took refuge in the recesses of his
+                        palace. Autocracy, as represented by the Tsar, has consequently now ceased
+                        to have any meaning to the people, and thus the fundamental basis of
+                        Russia's political life has been undermined.</p>
+                    <p>On the other hand, the outlook is equally deplorable from the point of view
+                        of the people themselves, for the forces of reform in Russia possess neither
+                        the strength rela tively to the nation at large, nor the cohesion amongst
+                        themselves necessary for carrying out a general scheme of revolution. Poles,
+                        Finns, Jews, Dissenters, citizens, proprietors, peasants, are too hopelessly
+                        divided by racial and religious discord, by sheer distance, by interests, by
+                        their various fears of what the future may ultimately bring forth. They
+                        possess no means for executing concerted</p>
+                    <p>measures.</p>
+                    <p>An equally unknown factor is the attitude of the mighty host on the Sha-ho.
+                        It has been generally believed that the long period of inac tion which has
+                        elapsed since the last great battle has been more favorable to the Rus sians
+                        than to the Japanese, and that Kuropatkin is now far stronger in every way
+                        than he was when he fell back on his present position. But, if we may
+                        believe M. Dru, of the "Echo of Paris," that is not the fact. A month ago,
+                        as M. Dru is informed, Kuropatkin had only 175,000 infantry, and was short
+                        of mountain guns, his losses through sickness have been much higher than the
+                        public are aware, and his army is "literally melting away." To these facts
+                        must now be added the knowledge of the fall of Port Arthur, and the de
+                        pression which that knowledge must produce. Moreover it will be impossible
+                        to keep Kuropat kin's army in ignorance of the internal struggle going on at
+                        home. Strange rumours of massacres in St. Petersburg, of regiments refusing
+                        to fire on their own kith and kin, of the incendiary outbreak of the men of
+                        the Black Sea Fleet at Sebastopol, these and similar rumours, rendered still
+                        more alarming by exaggeration, must have a sinister effect on the morale of
+                        the army. The continuance of an unpopular war if the Government collapses is
+                        quite out of the question.</p>
+                </div>
+                <div type="advert">
+                    <p>GRAND HOTEL BONNARD,</p>
+                    <p>ALEXANDRIA.</p>
+                    <p>8. PER DAY, WINE INCLUDED.</p>
+                    <p>82888-16.7.808</p>
+                </div>
+            </div>
+            <pb n="3"/>
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-25/page/n2/mode/1up">
+                <cb n="1"/>
+                <div type="section" feature="wire" status="uncorrectedOCR">
+                    <div type="item">
+                        <head>SPERFICIAL CALM AT ST. PETERSBURG.</head>
+                        <p>STRIKE MOVEMENT SPREADING.</p>
+                        <p>NESS AT A STANDSTILL</p>
+                        <p>BEGINNING OF DISTRESS</p>
+                        <p>ST PRIESSBTW, January 24</p>
+                        <p>Jestenay eveni</p>
+                        <p>was coined</p>
+                        <p>with the strikers it.</p>
+                        <p>the Newsky</p>
+                        <p>which were su Tarted by troje</p>
+                        <p>WEIN</p>
+                        <p>Conderwa</p>
+                        <p>The</p>
+                        <p>The fight evrept for the babode of hoogans, but wany and pillaged</p>
+                        <p>THAN ATM</p>
+                        <p>Lieuter,</p>
+                        <p>Moscow, January 24</p>
+                        <p>The Wolks here SUVOR WORK -ympathy with Their St aley patates. the
+                            city</p>
+                        <p>Un</p>
+                        <p>establishments</p>
+                        <p>Artis</p>
+                        <p>estate.A</p>
+                        <p>The</p>
+                        <p>As the</p>
+                        <p>...</p>
+                        <p>necessary.</p>
+                        <p>abe etployed as</p>
+                        <p>1712171</p>
+                        <p>Bahasalan, January 24</p>
+                        <p>4</p>
+                        <p>་་་་་་་་</p>
+                        <p>lacis.</p>
+                        <p>M</p>
+                        <p>, January 21. The</p>
+                        <p>this shops | K.,</p>
+                        <p>ST PETERSBURG, January 24</p>
+                        <p>the shy, but it</p>
+                        <p>Istomers are how</p>
+                        <p>JT</p>
+                        <p>THIN</p>
+                        <p>dicvidrating</p>
+                        <p>the Law</p>
+                        <p>decuring thell</p>
+                        <p>L dreille to plead</p>
+                        <p>1. inter</p>
+                        <p>Casunities</p>
+                        <p>X1</p>
+                        <p>shuti at 35 wierd.</p>
+                        <p>U.</p>
+                        <p>at Kovu</p>
+                        <p>is regarded</p>
+                        <p>Journalist, M. Hessen, ther leaders</p>
+                        <p>- te alle te lere Sevetal</p>
+                        <p>movement, together with professors. ater, and litterateurs, were arrested
+                            ast A striker have hitherto been arrested. The Workin tub has been led
+                            The Wh Unions are let ment In deuted distress in Leglubing to be test.
+                            non publication of</p>
+                        <p>senice</p>
+                        <p>the new papers.</p>
+                        <p>T</p>
+                        <p>11:</p>
+                        <p>the punue in the city are</p>
+                        <p>...WAT: the extension of the movement to The provinces, which is,
+                            apparently, the restit Cereal and elaborate plan.</p>
+                        <p>1</p>
+                        <p>New Prospect today</p>
+                        <p>7 Wils</p>
+                        <p>WTM</p>
+                        <p>filled with</p>
+                        <p>Spectators despite warnings</p>
+                        <p>to</p>
+                        <p>Temain indoors. business In at 11 standstill The houses and slope are
+                            barricaded. Owing the stroke to the electric the Capital 15 Again partly
+                            in (Reuter,</p>
+                        <p>Wachs</p>
+                    </div>
+                    <div type="item">
+                        <p>GEN. MISTCHENKO'S LOSSES.</p>
+                        <p>ST PETERSBURG, January 24. Treter. Kingatkin reports that Mistchenko's
+                            (Reuter</p>
+                        <p>4421</p>
+                        <p>were 39</p>
+                    </div>
+                    <div type="item">
+                        <p>THE SYVETON CASE.</p>
+                        <p>The spe</p>
+                        <p>PARIS, January 24.</p>
+                        <p>case has been dismissed. (H.)</p>
+                    </div>
+                    <div type="item">
+                        <p>DEATH OF MONSIGNOR L. PIAVI</p>
+                        <p>JERUSALEM, January 24. Monsignor L. Tavi, Latu Patriarch of der salem,
+                            lus died at the age of 74, from</p>
+                        <p>(Reuter.)</p>
+                    </div>
+                    <div type="item">
+                        <head>DEATH OF BISHOP OF LLANDAFF.</head>
+                        <div type="cable">
+                            <dateline>London, January 24.</dateline>
+                            <p>The Bishop of Llandaff is dead. (Reuter.)</p>
+                            <p>The Right Rev. Richard Lewis, D.D., Bishop of Llandatf, born in 1821,
+                                was educated at Worcester College, Oxford (B.A., 1843; M.A., 1846).
+                                He was instituted to the rectory of Lampeter-Velfry, Narberth,
+                                Pembrokeshire, in 1851, and was appointed Archdeacon of St. David's
+                                in 1875. In 1883 he was appointed Bishop of Llandaff in succession
+                                to Dr. Ollivant, and was consecrated to that Bee by the Archbishop
+                                of Canterbury in St. Paul's Cathedral, on April 25 of that year.</p>
+                        </div>
+                    </div>
+                </div>
+                <cb n="2"/>
+                <div type="item">
+                    <p>THE SEVASTOPOL FIRE</p>
+                    <p>WHOLE ARSENAL INVOLVED.</p>
+                    <p>LOOPS REFUSE TO FIRE.</p>
+                    <p>SEVASTOPOL, January 24.</p>
+                    <p>The fire broke out simultaneously in dif ferent parts directly after the
+                        signal was given to commence Work. The whole buildings were raparity
+                        involved. The tire was controlled by 1:30 pm The docks were saved.
+                        (Keuter.)</p>
+                    <p>LONDON, January 24.</p>
+                    <p>The "Standard learns from Kieff that the Are at Sevastopol was the outcome of
+                        a revolu tionary outbreak. Eight thousand sailors from the Black Sea Fleet
+                        and the troops were caned out. They retused, however, to hire.</p>
+                    <p>(Kouter,</p>
+                    <p>SEVASTOPOL, January 24.</p>
+                    <p>The troops refused to tire on the sanors who</p>
+                    <p>ha mutimed.</p>
+                    <p>[Havus,</p>
+                </div>
+                <div type="section" feature="local">
+                    <head>LOCAL AND GENERAL.</head>
+                    <div type="item">
+                        <p>THE BRINDISI MAIL will arrive at Alex- antra at 3 pm to-day and will be
+                            distributed at 7 pm.</p>
+                        <p>at the 10</p>
+                    </div>
+                    <div type="item">
+                        <p>KSC</p>
+                        <p>The extraordinary general meet-</p>
+                        <p>ing of this club will be held at the Turt Club yn Saturday, 28th inst, at
+                            6 pm.</p>
+                    </div>
+                    <div type="item">
+                        <p>NATIONAL BANK. At a meeting of the board of directors of the National
+                            Bank, held yesterday, at was decided to create 8 new branches in the
+                            provincial towns.</p>
+                    </div>
+                    <div type="item">
+                        <p>KAISERS BIRTHDAY Dr. Rucker-Jenisch will hold a reception at the Imperial
+                            German Agency, air, to morrow, on the occasion of the birthday of HIM.
+                            Emperor William II.</p>
+                        <p>L</p>
+                    </div>
+                    <div type="item">
+                        <p>NEW De TORS. The Ministry of the Interior has authorised Dr. Nigoghos
+                            Simon Kludjean and Dr Artin Mardiros hernian to practise physicians in
+                            Egypt, and Ahmed Mehreya Pharmanst</p>
+                        <p>1LS</p>
+                        <p>24</p>
+                    </div>
+                    <div type="item">
+                        <p>A NEW NEWSPAPER has appeared at Cairo entitled "La Justice" and the
+                            editor is the notorions Armenian Leon Fehmy. This news- paper consists
+                            chiefly of personal attacks on various well known persons at Cairo.</p>
+                    </div>
+                    <div type="item">
+                        <p>RAIDON GAMBLING HELL. Another gambling house, situated in Kamel street,
+                            Cairo, and owned by a Greek, has been entered by the ponce. Baccarat was
+                            being played at the time. The material was, as usual, coutiscated.</p>
+                    </div>
+                    <div type="item">
+                        <p>TENANTS COMMISSION. The meeting of tenants summoned by the Alexandria
+                            Tenants' Commission for the 29th inst., has been indefinately postponed,
+                            owing to the preli minary labours of the commission not having been
+                            completed.</p>
+                    </div>
+                    <div type="item">
+                        <p>THE WHITE STAR LINER Canopic" arrived at Alexandria at 6.30 pm. yesterday
+                            from Boston with 175 tourists 173 board. This steamer was formerly know
+                            as the "Common wealth," of the Dominion Lane. She had a fiue run of 72
+                            hours from Naples, her last port of call</p>
+                    </div>
+                    <div type="item">
+                        <p>SUEZ CANAL-On the 21st and 22nd inst. 31 vessels passed through the
+                            Canal, the amount received in dues being frs. 817,481.46. Is were
+                            British ships, 5 German, 3 Austrian, 2 French, 1 Norwegian, 1 Egyptian,
+                            1 Italiau. The receipts from the 1st to 22nd inst. to- talled frs.
+                            8,137,811.66.</p>
+                    </div>
+                    <div type="item">
+                        <p>THE TELEPHONE COMPANY OF EGYPT has now completed telephonic communication
+                            in thirty markazes between the police officers of the districts and the
+                            moudiriehs, as well as between the former and the omdehs of the
+                            different localities in each district or markaz. It is intended to
+                            extend the system gradually in the remaining moudiriehs of the
+                            country.</p>
+                    </div>
+                    <div type="item">
+                        <p>AN EXILE IN EGYPT.-In pursuance of a decision of the Central Criminal
+                            Court, Constan tinople, a further term of ten days has been granted to
+                            Iskender Shehkub, a fugitive, to appear before it. He is in Egypt, where
+                            he publishes seditious matter against the Imperial Government. If he
+                            fails to return to Turkey within the prescribed term, he will be tried
+                            in absentia, and his property will be confiscated.</p>
+                    </div>
+                </div>
+                <div type="advert">
+                    <p>CARLTON HOTEL.</p>
+                    <p>Bulkeley, Ramleh.</p>
+                    <p>Ten minutes from Alexandria. First-Class in every respect</p>
+                    <p>Very moderate charges. Hulkeley is the fashionable English uarter. Visitors
+                        from Cairo alight at sidi Gaber station. a. AQUILINA, Proprietor.</p>
+                    <p>34440-34-6-005</p>
+                </div>
+                <div type="advert">
+                    <p>CAIRO GRAND HAMMAM.</p>
+                    <p>Near Shepheard's &amp; Continental Hotels.</p>
+                    <p>TURKISH BATHS,</p>
+                    <p>XRAYS.</p>
+                    <p>PLAIN BATHS,</p>
+                    <p>ELECTRIC LIGHT BATHS.</p>
+                    <p>MANNAGY &amp; LECTRO-HYDROP THIC BATH. Medical Directors, Dr. Professor
+                        Fornario &amp; Dr. M. Ros!</p>
+                    <p>24910-20-1-004</p>
+                </div>
                 <cb n="3"/>
                 <div type="item">
-                    <head>THE MAHMAL THEFT.</head>
-                    <p>OFFICIAL VERSION.</p>
-                    <p>I regard to the theft from the Mahmal's escort, we may state that the
+                    <head>THE MAHMAL THEFT.<lb/>OFFICIAL VERSION.</head>
+                    <p>In regard to the theft from the Mahmal's escort, we may state that the
                         allegation in to-day's issue of a Cairo morning newspaper, that the case
                         containing L.E. 8,000 in gold had after all been left in the Finance
                         Ministry at Cairo, is quite untrue.</p>
@@ -86,7 +412,7 @@
                         facts:</p>
                     <p>The money sent with the Mahmal was packed in twenty-two cases, three of which
                         contained gold, the remainder silver coin. The packets were duly numbered
-                        and sealed at the Finance Ministry, and handed to over the “saraaf’ of the
+                        and sealed at the Finance Ministry, and handed to over the "saraaf' of the
                         Mahmal caravan, who counted them, found them correct, and gave the receipt
                         for them. They were then taken down to Abbassieh under guard, and put in a
                         waggon belonging to the baggage train of the Mahmal, which started overnight
@@ -109,7 +435,8 @@
                         presents very extraordinary features, and the theft appears to bo the work
                         of at least two very ingenious criminals.</p>
                 </div>
-                <div type="section" feature="khedive"><head>THE KHEDIVE.</head>
+                <div type="item" feature="khedive">
+                    <head>THE KHEDIVE.</head>
                     <p>H. H the Khedive returned from his Ismailia estates to Koubbeh yesterday. His
                         Highness will be at Abdeen to-morrow.</p>
                     <p>His Highness has been pleased to bestow the following grades on the
@@ -117,7 +444,7 @@
                     <p>Mirmiran . Ibrahim Klhattab Pasha, notable of Cairo.</p>
                     <p>Abdel-Al Abd Errazek Bey, Cairo . Ahmed Eddai Bey, Cairo ; Mohamed Abounnasr
                         Bey, Alexandria ; Ismail Hafez: Bey, Alexandria ; Hassan Bakry Bey. Sanieh
-                        Mohamed Tewfik Ettourgonman Bey. director of the “l’Ecole de la Mère T Abbas
+                        Mohamed Tewfik Ettourgonman Bey. director of the "l'Ecole de la Mère T Abbas
                         1 ", Mohamed Hanafy El-Hennawi Bey, Cairo , Mahmoud Roustom Aids Boy,
                         landowner . lieirgiiis Abd Echéhid Boy, Bebah; Mahmoud Yoasin Bey, Abonsir
                         El-Mal.ik, Hassan Mohamed Essawi Bey, Mi'-ieh . Mourad Ecbéréi Bey, Minieh ;
@@ -149,11 +476,11 @@
                         direct to Mr. F. Murrell Wright, hon. secretary and treasurer, English
                         Church Fund, Tantah.</p>
                 </div>
-                <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                <div type="item" feature="steamerMovements">
+                    <head>STEAMER MOVEMENTS.</head>
                     <p>The S.S. "Heathfield," of the Prince line, from London, left Falmouth on
-                        Saturday last, with general cargo, &amp;c , for Malta and Alex</p>
-                    <p>andria.</p>
-                    <p>The S.S. "Grecian Prince,” from Manchester, left Malta on Monday last and is
+                        Saturday last, with general cargo, &amp;c , for Malta and Alex andria.</p>
+                    <p>The S.S. "Grecian Prince," from Manchester, left Malta on Monday last and is
                         due here on Friday, with passengers and general cargo.</p>
                     <p>The Khédivial S.S. "Mariout" will leave Alexandria on Saturday and Port-Said
                         on Sunday for Jaffa, Caiffa, Beyrouth, Tripoli, Mersina and
@@ -161,8 +488,7 @@
                 </div>
                 <cb n="4"/>
                 <div type="item">
-                    <head>THE EMPRESS EUGENIE</head>
-                    <p>ARRIVAL IN CAIRO.</p>
+                    <head>THE EMPRESS EUGENIE<lb/>ARRIVAL IN CAIRO.</head>
                     <p>The ex Empress Eugenie, travelling incognita as the Comtesse do Pierrefonds,
                         arrived at Cairo last night, viA Port Said, and is staying at the Savoy
                         Hotel.</p>
@@ -179,7 +505,7 @@
                 </div>
                 <div type="item">
                     <head>THE CAIRO SEASON.</head>
-                    <p>The latest “Pall Mall Gazette" to hand remarks :—</p>
+                    <p>The latest "Pall Mall Gazette" to hand remarks :—</p>
                     <p>The Cairo season this year will present some exceptional features. Next week
                         the Duke of Connaught will put in an appearance, on his way up to Khartoum,
                         and will, doubtless, be reminded of the first time he was there — the day
@@ -198,7 +524,7 @@
                         Pharaoh, tempered with a constitutional wonder that any fellow should have
                         taken such a lot of trouble</p>
                 </div>
-                <div type="section" feature="army">
+                <div type="item" feature="army">
                     <head>ARMY OF OCCUPATION.</head>
                     <p>We are authorised to contradict the statement made by a Cairo contemporary on
                         Monday that the Royal Berkshire Regiment rod the 2nd Battalion of the Rifle
@@ -215,7 +541,7 @@
                     <p>A well-known member of the German oolony at Alexandria sends us the following
                         communication:—</p>
                     <p>There are a good many people, and I belong to them, who think that Port Said
-                        means a danger to the future of Alexandria. The new ’ full gauge railway to
+                        means a danger to the future of Alexandria. The new ' full gauge railway to
                         Port Said and the various * harbour improvements planned there are so many
                         blows dealt at the further development ' of our city. Alexandrians ought to
                         bestir themselves and devise means bow to meet and possibly obviate the
@@ -225,9 +551,9 @@
                         across the Rosetta and Damietta branches of the Nile, and making it join the
                         Suez Canal somewhere near Ismailia or at the Bitter Lakes, a second waterway
                         for the shipping trade to and from the East could bo created, by which
-                        Alexandria ' would bo bene-fitted in the same way as Port Said now is by the
+                        Alexandria ' would bo benefitted in the same way as Port Said now is by the
                         Lesseps canal.</p>
-                    <p>There ought to be no more technical diffi-mlties concerning the execution of
+                    <p>There ought to be no more technical difficulties concerning the execution of
                         such an undertaking across cultivated country, than there were in the case
                         of the Manchester ship canal or the canal that unites the Baltio and North
                         seas. </p>
@@ -239,7 +565,7 @@
                     <head>SLAVE DEALER SENTENCED.</head>
                     <p>A court-martial sitting at Abdeen barracks J has condemned the Bishareen
                         Mohamed Hussein, found guilty of slave-dealing near the Red Sea coast, to
-                        seven years’ hard labour.</p>
+                        seven years' hard labour.</p>
                     <p>It will be remembered that the accused and his brother wore recently captured
                         by a patrol from Etbai, acting on information received, while taking a
                         Sudanese girl called Hawn, whom Mohamed had bought, to sell to Hedjazi
@@ -252,78 +578,82 @@
                         Management. Moderate charges. Patronised by officer of Army of Occupation.
                         Concerts twice daily.</p>
                 </div>
-                <div type="section" feature="social"><head>PERSONAL AND SOCIAL.</head>
+                <cb n="5"/>
+                <div type="item" feature="social">
+                    <head>PERSONAL AND SOCIAL.</head>
                     <p>H. R. H the Archduke Otto of Austria Alexandria for Marseilles to-day by the
                         , North German Lloyd S.S. "Schleswig."</p>
-                    <p>Prinoe Mirza Arfat Ed-Dawlah Khan has had to give up his proposed Nile trip
+                    <p>Prince Mirza Arfat Ed-Dawlah Khan has had to give up his proposed Nile trip
                         and leaves Alexandria by the "Tchitchagoff for</p>
                     <p>Constantinople on Friday.</p>
-                    <p>General de Negrier arrived at Alexandria by the Messageries Maritimes steamer
-                        this morning, and after paying a visit to Cairo will go on to Abyssinia.</p>
-                    <p>Dr. Thaddeus Count Bolesta Kozsiedrodzki, the new Austro-Hungarian Diplomatie
-                        Agent, arrived by the 7.20 p.m. express at Cairo on Monday night,
-                        accompanied by Coant Stadnicky. He will visit Alexandria next Saturday for
-                        the Austro-Hungarian charity ball.</p>
-                    <p>The P &amp; 0. S.S. "Macedonia” (Capt C. D. Bennett, R.N.R.), which arrived
+                    <p><persName>General de Negrier</persName> arrived at Alexandria by the
+                        Messageries Maritimes steamer this morning, and after paying a visit to
+                        Cairo will go on to Abyssinia.</p>
+                    <p><persName>Dr. Thaddeus Count Bolesta Kozsiedrodzki</persName>, the new
+                        Austro-Hungarian Diplomatie Agent, arrived by the 7.20 p.m. express at Cairo
+                        on Monday night, accompanied by Coant Stadnicky. He will visit Alexandria
+                        next Saturday for the Austro-Hungarian charity ball.</p>
+                    <p>The P &amp; O. S.S. "Macedonia" (Capt C. D. Bennett, R.N.R.), which arrived
                         at Port Said yesterday afternoon, brought one hundred and fifty-three
                         passengers for Egypt, among the moat distinguished being the Duke and
                         Duchess of Devonshire, Earl and Countess Dalbousie, Marchiness of Donegal,
                         Lady and Miss G. Goret, Major the Hon. and Mrs. Bourke, General Sir J.
                         Maxwell, the ex-Empress Eugenie, (Comtesse de Pierrelonds), Comte Primoli,
                         and Comte Clary.</p>
-                    <p>A large number of visitors who arrived by the "Macedonia” proceeded to the
+                    <p>A large number of visitors who arrived by the "Macedonia" proceeded to the
                         Savoy yesterday evening, amongst them the Duke and Duchess of Devonshire,
-                        General Maxwell, Mr. George Faber, M.P., Lord and Lady Dal-housie, Mr. and
-                        Mrs. Maguire, etc. All these parties had reservod their suites beforehand
-                        and the Savoy was quite fall yesterday evening.</p>
-                    <p>Sir Thomas Lipton is expected at the Savoy Hotel, Cairo, to-day.</p>
+                        General Maxwell, <persName>Mr. George Faber</persName>, M.P., Lord and Lady
+                        Dal-housie, Mr. and Mrs. Maguire, etc. All these parties had reservod their
+                        suites beforehand and the Savoy was quite fall yesterday evening.</p>
+                    <p><persName>Sir Thomas Lipton</persName> is expected at the Savoy Hotel, Cairo,
+                        to-day.</p>
                     <p>The Savoy Restaurant is fall up every evening, many residents being usually
                         to be seen among the Savoy's visitors. Yesterday evening wo noticed the
                         Archduke Otto and a party of 4, Mr. Birkenruth and a party of 8, Mr. Phillip
                         and Baroness Reinlein and a party of 6, the Earl and Countess of
                         Londesborough and party, including Mr. Vincent Corbett and Lord George
                         Cholmondeley, Capt. the Hon. Stanley and party, including Col. and Mrs. J.
-                        K. Watson, Mr. Mac hell aud Mr. Guest, the Master of Ellibank, etc.</p>
-                    <p>Mr. Lawford, who has been representing the Egyptian Government at the St.
-                        Louis Exhibition, has returned to Cairo.</p>
+                        K. Watson, Mr. Mac hell and Mr. Guest, the Master of Ellibank, etc.</p>
+                    <p><persName>Mr. Lawford</persName>, who has been representing the Egyptian
+                        Government at the St. Louis Exhibition, has returned to Cairo.</p>
                     <p>The following passengers left Shellal by the "Memnon" to-day -Mr. Brand, Mr.
                         Alfred John, Mrs. Camisky, Miss Chance, Miss Dudgeon, Mrs. E. Cochrane, Miss
-                        Cochrane, Miss Booth, Mr. Tunbridge, Mrs. Stevens, Mr. and Mrs. L. S.
-                        Montague, Mme. Chanliagent.</p>
+                        Cochrane, Miss Booth, <persName>Mr. Tunbridge</persName>, Mrs. Stevens, Mr.
+                        and Mrs. L. S. Montague, Mme. Chanliagent.</p>
                 </div>
-                <div type="item">
+                <div type="item" feature="municipality">
                     <head>MUNICIPAL DELEGATION.</head>
                     <p>(Communication officielle)</p>
-                    <p>La Délégation Municipale s’est réunie le 24 janvier 1905 à 4 h. p.m. sous la
+                    <p>La Délégation Municipale s'est réunie le 24 janvier 1905 à 4 h. p.m. sous la
                         présidence de M. Amb. A. Ralli.</p>
                     <p>Préseuts : MM. Fcnderl, Mansour Bey Youssef, K Strosa, Dr. G. Vole nain,
                         membres, W. P. Chat away, administrateur, I. Sedky, secrétaire.</p>
                     <p>La Délégation prend note et décide de soumettre &amp; la Commission, deux
                         lettres de S. E. lo Ministre de l'Intérieur informant 1* qu'il approuve le
-                        budget de 1905, 3* qu’il se voit obligé de suspendre le règlement sur le*
+                        budget de 1905, 3* qu'il se voit obligé de suspendre le règlement sur le*
                         chiens et la rage, le Ministère ayant mis à l'étude un règlementqui devra
-                        s’appliquer i tout^l'Egyptc.</p>
+                        s'appliquer i tout^l'Egyptc.</p>
                     <p>La Délégation fiait remarquer à oet égard qu'étant donné le* circonstanciés,
-                        U y aurait lieu d’insister pour permettre à la Municipalité d'appliquer à
+                        U y aurait lieu d'insister pour permettre à la Municipalité d'appliquer à
                         title provisoire son règlement jusqu'à oe que d'aatroa mesures générales
                         interviennent.</p>
                     <p>Va la lettre de 8 JS. le Ministre des Finances relative à la question de
                         l'agrandissement du pont route du Gabbari et demandant à la Municipalité de
-                        contribuer à cette dépense à raison de LE. 6,000 en y oomprenant l’appoint
+                        contribuer à cette dépense à raison de LE. 6,000 en y comprenant l'appoint
                         des corporations intéressées telles que le Commerce d'exportation, les
                         tramways, etc., la Délégation se référant à la oorrespuudanoe échangée dans
                         le temps à oe sujet avec l'administration des chemins de for et de laquelle
-                        il résulte que la oontribation demandée était de L.B. 4,000 au minimum, mais
+                        il résulte que la contribation demandée était de L.B. 4,000 au minimum, mais
                         désirant participer dans la pins large mesure possiblo à ce travail
                         d'ntilité publique, décide de proposer à la Corn, de fixer la contribution
                         municipale à L.E. 2,500, oe qui ajouté aux LE. 1,500 promises par le
-                        oommeroe d'exportation, et L.E. 1,000 promises par la Sté des tramways
+                        commeroe d'exportation, et L.E. 1,000 promises par la Sté des tramways
                         portera à LE. 5,000 la contribution de la ville à oe travail dont le ooût
                         est évalué par loi chemins de fer à L.E. 17.000.</p>
                     <p>Va la lettre do la Cie de Ramleh tendant à oe qu'elle .oit autorisée à
                         établir un butoir et une guérite au terminus de sa ligne, la Délégation
                         estime que n'ayant reçu aucune réponse de la Cie en oe qui concerne 1a
-                        question du droit de oontrôie que la ville désire appliquer dans l'intérêt
+                        question du droit de contrôie que la ville désire appliquer dans l'intérêt
                         du public, elle se voit obligée de ne donner aucune suite à la nouvelle
                         demande de la Société.</p>
                     <p>la Délégation prend note et décide de soumettre à la Commission une lettre de
@@ -333,26 +663,27 @@
                     <p>La Délégation déoide de mettre en eradication les travaux de pavage en
                         vieilles dalles de 8 rue* et ruéOee des quartiers d'Anfouohjr.</p>
                 </div>
-                <div type="item">
+                <cb n="6"/>
+                <div type="item" feature="municipality">
                     <head>QUESTIONS MUNICIPALES</head>
                     <p>Un placement de 30,000 L.S.</p>
                     <p>Si le Gouvernement et les contribuables, excédés par le gaspillage qui se
                         fait à la Municipalité, se décidaient enfin à remplacer le système actuel
                         par on système pins pratique, d'où le fonctionnarisme serait exclu, il
-                        resterait pour le senrioe de la ville un excédent de recettes d'au moins
+                        resterait pour le senrice de la ville un excédent de recettes d'au moins
                         50,000 lrvreo, actaellemmt consacrées à payer an innombrable p—onnel qui ne
                         fait rien, ou qui fait des riens, ce qd «et la même chose. Supposons eooote
                         que cette heureuse modification ait lieu demain, usa que la nouvelle
-                        administration garde en ses mains l’excédent ainsi obtenu sans jamais an
+                        administration garde en ses mains l'excédent ainsi obtenu sans jamais an
                         tandis compte. Partout ailleurs il en ifsnltisail une explosion
-                        d’indignation publique. loi efadà peine si l’on daigne en parier.
-                        L’iaditttenoo pour tout oe qui touche à l'intérêt public est telle que les
+                        d'indignation publique. loi efadà peine si l'on daigne en parier.
+                        L'iaditttenoo pour tout oe qui touche à l'intérêt public est telle que les
                         pires scandales n'arrivent pas à émouvoir la population.</p>
-                    <p>Qu’on an juge. En 1890, la commission d’é-dilité oédait la plaça à la
+                    <p>Qu'on an juge. En 1890, la commission d'é-dilité oédait la plaça à la
                         Municipalité en laissant à œlleci un reliquat da 80,000 livrée. Dette somme,
-                        au lieu de rentrer dans la eaiats oommuna, fut aooaparée par le comité daa
+                        au lieu de rentrer dans la eaiats communa, fut aooaparée par le comité daa
                         exportateur», soi-disant pour être placée à intérêt ou profit da la ville. H
-                        y a quinze ans du cela et avec l’intérêt que rapporte l'argent en Egypte
+                        y a quinze ans du cela et avec l'intérêt que rapporte l'argent en Egypte
                         cette somme a pu être plus que doublée dans oe laps de tempe. Ce n'est dono
                         plus 80.000 mais 60,000 livra* sa moins dont le comité des exportateurs a
                         désormais à rendre compte.</p>
@@ -366,59 +697,217 @@
                         de nouveau la question des 30.000 livres, se heurta à un mauvais vouloir si
                         manifeste qu'il crut de sa dignité de donner sa démission de conseiller.</p>
                     <p>Le 26 décembre 1908, M. Zouro fait remarquer que l'allocation de LE 600
-                        ordinairement payée par le oommeroe d'exportation ne figure pas au budget de
+                        ordinairement payée par le commeroe d'exportation ne figure pas au budget de
                         1904. Il en demande le motif. Cette allocation devrait, ajoute-t-il, être
                         plus importante, car elle représente lee intérêts de la somme de L.B. 30,000
                         qui restait en caisse lors do la création de la Municipalité. La
                         Municipalité dépense bien plus que le montant de cette allocation pour
-                        l'entretien da quartier de Minet-el-Bassal et il est jnate qu’elle profite
+                        l'entretien da quartier de Minet-el-Bassal et il est jnate qu'elle profite
                         du produit intégral dee fonds payés par les contribuables pour les travaux
                         d'édilité.</p>
-                    <p>On lui répond que, cette année, le oommeroe d’exportation a fiait face à die
-                        grosses dépenses pour l’achat d'nne pompe automobile et de tuyaux ainsi qne
+                    <p>On lui répond que, cette année, le commeroe d'exportation a fiait face à die
+                        grosses dépenses pour l'achat d'nne pompe automobile et de tuyaux ainsi que
                         poor dss réparations A la pompe flottante. Les intérêts et pins ont été
                         consacrés à ces frais ; s'il y a des intérêts disponibles ils seront à la
                         disposition de la Municipalité.</p>
-                    <p>N’est-ce pas exquis t On fait remarquer an détenteur illicite d'une somme que
+                    <p>N'est-ce pas exquis t On fait remarquer an détenteur illicite d'une somme que
                         s'il ne veut pas la restituer il ait du moins à en servir lee intérêts au
                         créancier et il répond que s'il lui reste quelque chose après avoir fiait
                         ses petites fredaines, U y songera et l'affaire en est restée là.</p>
-                    <p>Cette année, le oomité des exportateur* s'est inscrit pour 800 livres, alors
+                    <p>Cette année, le comité des exportateur* s'est inscrit pour 800 livres, alors
                         que la somme qu'il détient, capitalisée depuis 15 ans, doit représenter un
                         intérêt supérieur à 3,000 livres.</p>
-                    <p>Il serait temps, croyons-nous, de s'expliquer. Que le oomité rende oompte de
-                        sa gestion et fasse oonnaltre le montant actuel du capital qu’il s'est
-                        chargé lui-même d'exploiter. La situation actuelle peut d’autant moins
-                        s’éterniser que l’entretien des rues de Minet-el-Bsssal, auquel la dite
+                    <p>Il serait temps, croyons-nous, de s'expliquer. Que le comité rende compte de
+                        sa gestion et fasse connaltre le montant actuel du capital qu'il s'est
+                        chargé lui-même d'exploiter. La situation actuelle peut d'autant moins
+                        s'éterniser que l'entretien des rues de Minet-el-Bsssal, auquel la dite
                         somme était destinée, est tombée entièrement à la charge de la Municipalité,
                         du jour où MM. les exportateurs s'en sont emparés, ne voulant ni entretenir
                         les rues en question ni affecter à oet entretien les intérêt* du oapital
-                        qu’ils détiennent St que les producteurs de ooton avaient destinés à oet
+                        qu'ils détiennent St que les producteurs de ooton avaient destinés à oet
                         ussge.</p>
                     <p>Si oe Messieurs s'obstinent à garder le secret sur leurs bénéfices, fl y a
                         .un moyen bien simple pour la Municipalité de le* contraindre à parler,
                         c'est de cesser d'entretenir les ruos de Minehel-BassoL Comme elles servent
-                        à peu près exclusivement au commerce et principalement au oommeroe
+                        à peu près exclusivement au commerce et principalement au commeroe
                         d'exportetioo, celui-ci devra bien y pourvoir dans son propre intérêt. Et
                         lorsque le comité réolamera à la Municipalité, oe sera au tour de oelle-ci
-                        do faire la sourde oreille. Malheureusement les membres du oomité étant
+                        do faire la sourde oreille. Malheureusement les membres du comité étant
                         aussi membres de la Commission on se trouve en face de deux têtes sous un
                         même bonnet C'est pour ce motif que oela a pu durer quinze ans et que dans
                         15 autres années la solution ne sera pas plus avancée.</p>
-                    <p>Le oomité des exportateurs ne s’est pas contenté de garder pour lai le magot,
+                    <p>Le comité des exportateurs ne s'est pas contenté de garder pour lai le magot,
                         il s'est débarrassé du même coup de son lot de vieux employés et de vieux
                         matériaux, dotant ainsi là Municipalité naissante du germe du
                         fonctionnarisme qui l'étouffera.</p>
                 </div>
             </div>
             <pb n="4"/>
-            <div type="page" n="4">
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-25/page/n3/mode/1up"
+                status="incomplete">
+                <cb n="1"/>
+                <cb n="2"/>
+                <div type="item">
+                    <head>Societe Khediviale de Geographie </head>
+                    <p>L seance de lundi a été une deception pour ceux qui avaient r pundu &amp;
+                        l'invita con lava l'espoir d'entendre la rout du voyage to M. Jueger dans
+                        l'Afrique Urioukule Alle mande, de la bouche ingine de l'explorateur. Appelé
+                        par w Wlogrammg d'urgence 4 Port</p>
+                    <p>J. Jaeger di partir dans la matinee pour cette ville, laissait ses excuses et
+                        le manuscrit de la conférence entre les mains de la Suclele.</p>
+                    <p>Lauditoire Tilito yui remplissait la sallo &amp; on se contenter de la sinple
+                        lecture faite par M. Bircher, qui s'était donné la peine de trav duire on
+                        français la relation originale alleman. de une grande carte murale et des
+                        dessins, dresses par M. Bonola, servaient a illustrer les cummunications,
+                        que l'assemblée a ucout Avec We plus vat wteret. Eo etlot, M. Jaeger,
+                        quoiqu'il agisse de localités solumairement conus, &amp; su donner laut de
+                        details et con venirur AUS a communication tant, diutérêt uouveau, que
+                        laudituire y a trouvé une compensation de la deception éprouvee et a salué
+                        La lecture de ses applaudissements. </p>
+                    <p>Abbato Pachs présidait la réuniou, comme d'habitude.</p>
+                </div>
+                <div type="item" feature="bulletinBourse">
+                    <head>BULLETIN DE LA BOURBE. </head>
+                    <p>(Allourd'hui à midi et demie) </p>
+                    <p>Le marché est terme et présente de l'anima tion.</p>
+                    <p>la reprise s'accentue pour certaines valeurs: c'est ainsi que la Banyue
+                        Nationale atteint 25 15,16, la Beberu 50 34, la Daira 22 1/4, La Salt and
+                        Soda 11.9, la Sunigovich 9 15, 16 et A Dolta Light 143 8.</p>
+                    <p>Par contre la baisse continue pour l'Agricole à 10 7 16, pour les Colton
+                        Mills À 7 et pour la Ramleb kuulway &amp; 8 1 1.</p>
+                    <p>Les Eaux du Caire réactionnent à 1115.</p>
+                </div>
+                <div type="item" feature="passList">
+                    <head>PASSENGER LISTS. </head>
+                    <p>ARRIVALS. Supplementary list per S.S. "Schleswig," arve from Sapies on Monday
+                        :</p>
+                    <p>Mr Huawn Armstrong, Mr. T. Whitskur, Mr do Pappard, Mr. G. Medawar, the Hot.
+                        E Bren, Mr. R. Mackiutosh. Mr. Robertson, the Hon. Alex. Murray, Mr.
+                        Hobhouse, Mr. and Mrs Eruest R. Aokermann, Mr. and Mr. M. W. Butler, Mr. and
+                        Mrs. Edw. Winslow, Lieutenant de Vaisseau Brosch, Mr. and Mrs. Th. Watah,
+                        Miss Evelgen, Mr. ito Bohine, Mr. Starila, Mr. and Mrs. G. C. Hixon, Mr. and
+                        Mrs. John Dupes, Mr. J. B. Wbicehurst, Mr. G. Hauer, </p>
+                    <p>Le paquebut "Congo" des Messageries Maritimes arrive ve matin e Marseilles
+                        avait a burd. </p>
+                    <p>M. Cleve, M. Choisy, M. et Mme Bizet, M. Cruzel, M. Roche, M. Vermorol, M.
+                        Andressed, M. Chud Estrange, General de Negrier, M. B.B. Gleminen, M.
+                        Ehrmann, Mme Ehrmann, Dr Charles Boyce, M. Point, M. et Mme Oblou, M.J. R.
+                        Herbert M. et Mmo James, M. E. Karatn, M. Robert Sill, Mme Eideruer, Mwe ut
+                        Mie Valeke, M. ot Mme J. Uwekett, M. Crepy, M. et Mme Schwegel, enfants, et
+                        buite, M. et Mme Bidault, M. et Mme Gay Lussac, enfant et buite, M. A.
+                        Agnelia, Mlle Hottet, M. et Mme Vaudier et entanto, M. Verard Vardon, M. de
+                        Causans, M. Dafont, M Amre, M. et Mille Burnsbu, Vmo Guerrand. M. et Mme
+                        Gauthier, M. Puintet, M. C. B. impt, | .1. Wbel, M. et Mme l'rankin, M.
+                        Fraukia, Mme Lution, . Muner, M. et Mme Boucbaya,</p>
+                    <p>I et Me Reynaud, M. Crusnier, M. et Made Hoisti, Mlle West, M. l'errin, M. i
+                        Hudd. G. Wainwrighs, M. Horard, M. Gendilli, Mme Hersler, M C. Buda, Mme et
+                        Me Barozzi bey; M. et Mine l'psun et bebe, M. A. Parker, M. Dimitri Chebule,
+                        Mme Bert, M. Just, Mlle Foizelle, M. Bronks, M. C. Leroy, M. de la Villegle,
+                        Ywe Wolti et temine de chacubre e 20 pasagers de 3me et me classe.</p>
+                    <p>DEPARTURES. Per Norddeustcher Lloyd S.S. "Schleswig" | left to day, for
+                        Naples and Marseilles : </p>
+                    <p>Mr. and Mrs. Degranse, Mr. and Mrs. Key. worth, Sir Robert Bullar, Mn W.
+                        Ellery, Graf. Bourg, Mr. Adamovitch, Dr. Haue, Mr. and Mrs. Marshall S.
+                        Wilder, Mr. Sandell, Mr. Chas. I. Carow, Mr. I. A. Anderson, Mr. 1. H.
+                        Curle, Mr. A. D. Willis, Capt. Edward son, Mr. Hugo Nathan. </p>
+                </div>
+                <div type="item" feature="shippingMovements" status="verified">
+                    <head>MOUVEMENT MARITIM DU PORT D'ALEXANDRIE </head>
+                    <p>ARRIVRES </p>
+                    <p>24 janvier </p>
+                    <p>Batoum et Cavak ; j, vap. bell. Abatiellos, cap. Cokịnos, ton. 997, .
+                        Cofoudakis. </p>
+                    <p>Bstoum et Port-Said ; 19 j., vap. hell. Mina, cap. Georgiannis, ton. 150,-
+                        Ismiridi. </p>
+                    <p>Batoum et Cavak : 3 j. 3'4, vap. holl. August, Kessler, cap. Biseen, ton.
+                        3197, &amp; Worms&amp;Co.</p>
+                    <p>25 janvier </p>
+                    <p>Marseille ; 5 ; 12, vap. franc. Congo, cap. Galetti, ton. 2330, aux
+                        Messagerios Matitimes. </p>
+                    <p>Boston et Naples ; 31. 3'4, yacht angl. Canopie, cap. Maddox, ton. 7717, À
+                        Rose.</p>
+                    <p>DEPARTS </p>
+                    <p>24 janvier </p>
+                    <p>Port Said et Syrie , vap. russe Cesarevich, cap. Kichensko. </p>
+                    <p>Port-Said et Chypre; vap. ang. Esperanza, cap Barry. </p>
+                    <p>Liverpool ; vap. ang. City of Vienna, cap. Wilkie.</p>
+                </div>
+                <div type="item">
+                    <head>ESTATE OF A C. RETTIE, </head>
+                    <p>DECEASED. </p>
+                    <p>THOSE having claims against the above are requested to present them to the
+                        undersigned, on or before 31st January, 1905. </p>
+                    <p>JAMES WEBSTER, Administrator, Cataract Hotel, Assogan, </p>
+                    <p>26820-8-2 </p>
+                </div>
+                <cb n="3"/>
             </div>
             <pb n="5"/>
-            <div type="page" n="5">
-            </div>
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-25/page/n4/mode/1up"
+                status="empty"> </div>
             <pb n="6"/>
-            <div type="page" n="6">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-25/page/n5/mode/1up">
+                <cb n="1"/>
+                <div type="item" feature="exportManifests" status="verified">
+                    <head>EXPORT MANIFESTS. </head>
+                    <p>Pour Marseilles, par le bateau fr "Niger" parti le 13 janvier :</p>
+                    <p>PUCE MALSEILLE</p>
+                    <p>'h. Cook &amp; Son, 10 sacs riz.</p>
+                    <p>G. Brach Co., 25 cais. gomme</p>
+                    <p>M. L. Carasso, 10 fard gomme, 8 balles senne</p>
+                    <p>Buhagiar, 30 cafas tomates</p>
+                    <p>Delia, 150 pan tomate,</p>
+                    <p>Bonded Stores, 84 ….</p>
+                    <p>R. Mordo, 12 „ „</p>
+                    <p>A. Delia, 50 pans tomtes</p>
+                    <p>Huileries &amp; Sav., 50 barils huile coton</p>
+                    <p>H. Nadouari, 233 sacs riz</p>
+                    <p>L. Onofrio, 10 cais ...</p>
+                    <p>Ades, .. „ „</p>
+                    <p>Behrend &amp; Co. 1,239 sacs riz, 3,777 sacs graines de coton</p>
+                    <p>M. Scrive, 8 sacs graines de coton</p>
+                    <p>Divers, 36 colis divers</p>
+                    <p>W. Getty &amp; Co, 30 balles cotton</p>
+                    <p>Peel &amp; Co., 260 „ „</p>
+                    <p>Schmid &amp; Co., 125 „ „</p>
+                    <p>G. Frauger &amp; Co., 256 „ „</p>
+                    <p>J. Planta &amp; Co, 165 „ „</p>
+                    <p>Choremi, Benachi &amp; Co., 149 „ „</p>
+                    <p>Mohr &amp; Fenderl, 98 „ „</p>
+                    <p>E. Mallison &amp; Co., 62 „ „</p>
+                    <p>1,139 balles coton</p>
+                    <p>PUR LE HAVRE</p>
+                    <p>G. Frauger Co, 130 balles coton</p>
+                    <p>Carver Bros. &amp; lov. Ltd, 50.</p>
+                    <p>Mohr Fenderl, 25</p>
+                    <p>205 bailes ton</p>
+                    <p>PVOK UISTINATIONS DIVERSE</p>
+                    <p>G. Bolounchi, 211 cais. cognac (Landres)</p>
+                    <p>Divers, 8 colis divers</p>
+                    <p>Pour BARCELOXB at MARSEILLE, par le bateau frans Foria parti le 13
+                        janvier</p>
+                    <p>NTR Barcelone</p>
+                    <p>Mohr renderi, 460 balles coton</p>
+                    <p>R. &amp; O Lindematın, 75</p>
+                    <p>Carver Brix Coy. Ltd., 165</p>
+                    <p>Mours. Bros, 65</p>
+                    <p>Burki, 59</p>
+                    <p>6 Frauger &amp; Co., 150</p>
+                    <p>Peel &amp; Co., 96</p>
+                    <p>Plania &amp; Co., 100</p>
+                    <p>1,170 bailes outon</p>
+                    <p>B. Nathan &amp; Co., 17 fardes gomme</p>
+                    <p>PUUR MASKULIE</p>
+                    <p>Holz a Co., 13 halles gomune</p>
+                    <p>N. Diab. 20 ballots sacs vides</p>
+                    <p>H.Ohmini, 26 „ „</p>
+                    <p>D. Moslet, 100 „ „</p>
+                    <p>L. Agent de la Cie, 22 futs extrait de chatarguer, 12 futs extrait sumac</p>
+                    <p>Behtend &amp; Co., 247 tonnes feves</p>
+                </div>
             </div>
         </body>
     </text>

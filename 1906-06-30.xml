@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -7,7 +7,7 @@
             <titleStmt>
                 <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Will Pearce</editor>
+                <editor role="primary">Will Pearce</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -19,11 +19,12 @@
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1906-06-30/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1906-06-30"><name>Saturday</name>, June 30, 1906</date>
+                    <date when="1906-06-30">Saturday, June 30, 1906</date>
                     <extent><measure unit="pages" quantity="8">8</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
@@ -31,37 +32,42 @@
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/mode/1up">
                 <div type="nameplate">
-                    <head>THE EGYPTIAN GAZETTE</head>
-                    <head type="sub">No. <measure quantity="7533">7,533</measure>] ALEXANDRIA,
-                        SATURDAY, JUNE 30, 1906. [EIGHT PAGES P.T. 1. </head>
+                    <table cols="6">
+                        <row>
+                            <cell rows="2" xml:id="deg-ad-etc01"><p>The Eastern Telegraph Company,
+                                    Limited.</p><p>This Company's system of submarine telegraph
+                                    <lb/>cables is the most direct and quickest means of
+                                    <lb/>communication from Egypt to Europe, North and <lb/>South
+                                    America, East, South and West Africa, <lb/>India, Australia, New
+                                    Zealand, China and Japan.</p><p>To secure quick transmission,
+                                    telegrams should <lb/>be marked <hi rend="italic">Via
+                                        Eastern</hi>.</p><p>For latest average time to London, see
+                                    daily <lb/>bulletin in this paper.</p><p>STATIONS IN EGYPT:
+                                    Alexandria, Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd, Suakin.
+                                    Head <lb/>Office. London.</p></cell>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2" xml:id="deg-ad-nll01"><p>NORDDEUTSCHER
+                                    LLOYD</p><p>BREMEN.</p><p>EXPRESS MAIL
+                                    STEAMERS<lb/>FROM<lb/>ALEXANDRIA, PORT SAID, AND
+                                    SUEZ,<lb/>TO<lb/>NAPLES, MARSEILLES,<lb/>GENOA, SOUTHAMPTON,
+                                    ANTWERP,<lb/>BREMEN, HAMBURG, AMERICA,<lb/>EASTERN ASIA,
+                                    AUSTRALIA Etc.</p><p>For Particulars see Advertisement
+                                    below.</p></cell>
+                        </row>
+                        <row>
+                            <cell> No. <measure quantity="7533">7,533</measure>]</cell>
+                            <cell> ALEXANDRIA, SATURDAY, JUNE 30, 1906.</cell>
+                            <cell> [EIGHT PAGES</cell>
+                            <cell> P.T. 1</cell>
+                        </row>
+                    </table>
                 </div>
-                <div type="section" scope="advertisement">
-                    <cols n="3"/>
-                    <cb n="1"/>
-                </div>
-                <div type="advert" xml:id="deg-ad-etc01">
-                    <head>The Eastern Telegraph Company, Limited.</head>
-                    <p>This Company's system of submarine telegraph <lb/>cables is the most direct
-                        and quickest means of <lb/>communication from Egypt to Europe, North and
-                        <lb/>South America, East, South and West Africa, <lb/>India, Australia, New
-                        Zealand, China and Japan.</p>
-                    <p>To secure quick transmission, telegrams should <lb/>be marked <hi>Via
-                            Eastern.</hi></p>
-                    <p>For latest average time to London, see daily <lb/>bulletin in this paper.</p>
-                    <p>STATIONS IN EGYPT: Alexandria, Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd,
-                        Suakin. Head <lb/>Office. London.</p>
-                </div>
-                <div type="advert" xml:id="deg-ad-nll01">
-                    <head>NORDDEUTSCHER LLOYD</head>
-                    <p>BREMEN.</p>
-                    <p>EXPRESS MAIL STEAMERS<lb/> FROM<lb/> ALEXANDRIA, PORT SAID, AND SUEZ,<lb/>
-                        TO<lb/> NAPLES, MARSEILLES,<lb/> GENOA, SOUTHAMPTON, ANTWERP,<lb/> BREMEN,
-                        HAMBURG, AMERICA,<lb/> EASTERN ASIA, AUSTRALIA Etc.</p>
-                    <p>For Particulars see Advertisement below.</p>
-                </div>
-                <div type="advert" xml:id="deg-ad-pos01">
+                <cb n="1"/>
+
+                <div type="advert" colSpan="2" xml:id="deg-ad-pos01">
                     <head>Peninsular and Oriental S. N. Company.</head>
                     <p>Summer Rates will be charged from 1 May to 31 October.</p>
                     <table>
@@ -133,17 +139,17 @@
                     <p>Messrs. HABELDEN &amp; Co. ALEXANDRIA.</p>
                     <p>F. G. DAVIDSON, Superintendent P. &amp; O. S. N. Company in Egypt SUEZ.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-orm01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-orm01">
                     <head>Orient-Royal Mail Line.</head>
                     <p>OUTWARD to AUSTRALIA.</p>
-                    <p><name>R.M.S. “Omrah"</name> will leave Suez about <date when="1906-06-29"
+                    <p><name>R.M.S. "Omrah"</name> will leave Suez about <date when="1906-06-29"
                             >July 13</date></p>
                     <p><name>R.M.S "Oroya"</name> will leave Suez about <date when="1906-07-13">July
                             27</date>.</p>
                     <p>HOMEWARD to NAPLES, MARSEILLES, GIBRALTAR, PLYMOUTH, LONDON, TILBURY.</p>
                     <p><name>R.M.S. "Ortona"</name> will leave Port Said <date when="1906-07-03"
                             >July 3</date></p>
-                    <p><name>R.M.S. “Ormuz"</name> will leave Port Said <date when="1906-07-17">July
+                    <p><name>R.M.S. "Ormuz"</name> will leave Port Said <date when="1906-07-17">July
                             17</date></p>
                     <table>
                         <row>
@@ -181,7 +187,7 @@
                         all particulars apply</p>
                     <p>Wm. STAPLEDON &amp; Sons, PORT SAID and PORT-TEWFIK (Suez). 30-6-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-blm02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-blm02">
                     <head>BIBBY LINE MAIL TWIN-SCREW STEAMERS.</head>
                     <p>REDUCED SUMMER FARES MAY TO OCTOBER.</p>
                     <p>Port Said to Tilbury £ 12.15.0. and Port Said to Marseilles £ 9.0.0.</p>
@@ -200,19 +206,19 @@
                         SONS,</p>
                     <p>31-12-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-kml01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-kml01">
                     <head>KHEDIVIAL MAIL LINE.</head>
-                    <p><hi rend="bold">FAST BRITISH PASSENGER STEAMERS</hi></p>
-                    <p><hi rend="bold">GREECE - TURKEY LINE.</hi></p>
+                    <p>FAST BRITISH PASSENGER STEAMERS</p>
+                    <p>GREECE - TURKEY LINE.</p>
                     <p>Express Steamers leave Alexandria every Wednesday at 4 p.m. for PIRAEUS,
                         SMYRNA, MITYLENE, and CONSTANTINOPLE, in connection with Orient Express
                         train-de-luxe for Vienna, Paris, and London.</p>
-                    <p><hi rend="bold">PALESTINE - SYRIA LINE.</hi></p>
+                    <p>PALESTINE - SYRIA LINE.</p>
                     <p>Fast steamers leave Alexandria every Saturday at 4 p.m., and Port Said every
                         Sunday at 6 p.m., for JAFFA (for Jerusalem), CAIFFA (for Nazareth), BEYROUT
                         (for Damascus), TRIPOLI, ALEXANDRETTA, MESSINA, continuing in alternate
                         weeks to LARNACA and LIMASSOL (Cyprus).</p>
-                    <p><hi rend="bold">RED SEA LINE.</hi></p>
+                    <p>RED SEA LINE.</p>
                     <p>Steamers leave Suez weekly on Wednesday at 6 p.m. for Port Sudan and Suakin
                         direct returning from Suakin every Wednesday noon. Every Monday at 6 p.m. a
                         steamer leaves for Jeddah continuing every other week for Suakin, Massowah,
@@ -220,12 +226,12 @@
                         Tor (for Sinai) El Wedj and Yambo as required. </p>
                     <p>N.B.—Deck chairs provided for the use of passengers, excellent cuisine and
                         table wine free.</p>
-                    <p>Steamer plans may be seen and passages booked at the Company’s Agencies at
+                    <p>Steamer plans may be seen and passages booked at the Company's Agencies at
                         Alexandria, Cairo, Port Said, and Suez, or at THOS. COOK &amp; SON or other
                         Tourist Agency. </p>
                     <p>31-12-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mss01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mss01">
                     <head>The Moss S.S. Company, Ltd.</head>
                     <p>For LIVERPOOL calling at MALTA (Messrs. JAMES MOSS &amp; Co. 31, James St,
                         Liverpool, Managers.)</p>
@@ -274,8 +280,8 @@
                     <p>R. J. MOSS &amp; Co., Alexandria, Agents.</p>
                     <p><measure type="indexNo">26-5-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-phc01">
-                    <head>P. HENDERSON &amp; CO’s LINE.</head>
+                <div type="advert" colSpan="2" xml:id="deg-ad-phc01">
+                    <head>P. HENDERSON &amp; CO's LINE.</head>
                     <p>Steamers leave SUEZ and PORT SAID fortnightly for LONDON or LIVERPOOL
                         direct.</p>
                     <p>Fare (home.) £10. Passengers returning by end October allowed 20% off outward
@@ -296,7 +302,7 @@
                     <p><measure type="indexNo">31-12-906</measure></p>
                 </div>
                 <!-- Insurance -->
-                <div type="advert" xml:id="deg-ad-nkh01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nkh01">
                     <head>NEW KHEDIVIAL HOTEL, ALEXANDRIA.</head>
                     <p>First-class Hotel. Situated in Rosetta Avenue, the finest quarter in the
                         Town. Two mintes from Railway Station. Close to Conservatory and the Opera
@@ -308,14 +314,14 @@
                     <p>FINE TERRACE ON THE AVENUE. - SPLENDID GARDEN. - OMNIBUS MEET ALL TRAINS AND
                         STEAMERS. <measure type="indexNo">31-8-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-pss01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pss01">
                     <head>PORT SAID-SAVOY HOTEL.</head>
                     <p>NEW FIRST-CLASS HOTEL, OVERLOOKING THE HARBOUR &amp; OPPOSITE CUSTOM
                         HOUSE</p>
                     <p>Open all the year round. — Well-appointed Bar.</p>
                     <p>MODERATE CHARGES. SPECIAL TERMS FOR RESIDENTS 1190A2-5</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-tcs03">
+                <div type="advert" colSpan="2" xml:id="deg-ad-tcs03">
                     <head>Thos. Cook &amp; Son, (EGYPT), LTD</head>
                     <p>HEAD OFFICE: LUDGATE CIRCUS—LONDON.</p>
                     <p>CHIEF EGYPTIAN OFFICE: — CAIRO, near SHEPHEARD'S HOTEL.</p>
@@ -336,7 +342,7 @@
                         rates.</p>
                     <p>Best camp equipment in the country.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-bis01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-bis01">
                     <head>British India S. N. Company, Limited.</head>
                     <p>MAIL AND PASSENGER STEAM SHIPS.</p>
                     <p>SAILINGS FROM SUEZ, LONDON and CALCUTTA LINE.</p>
@@ -386,7 +392,7 @@
                     <p>For further particulars. Freight and Passage apply to G. BEYTS &amp; Co.
                         Agents, Suez. <measure type="indexNo">31-12-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-all01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-all01">
                     <head>ANCHOR LINE, LIMITED.</head>
                     <p>(HENDERSON BROTHERS,) LONDON, LIVERPOOL AND GLASGOW.</p>
                     <p>Booking Passengers and Cargo through to Ports in India, Europe &amp;
@@ -395,7 +401,7 @@
                     <table rows="2" cols="6">
                         <row>
                             <cell>For MARSEILLES &amp; LIVERPOOL</cell>
-                            <cell><name>S.S. “Maseilla”</name></cell>
+                            <cell><name>S.S. "Maseilla"</name></cell>
                             <cell><date when="1906-07-05">July 5</date></cell>
                             <cell>For CALCUTTA</cell>
                             <cell><name>S.S. "Bavaria"</name></cell>
@@ -403,7 +409,7 @@
                         </row>
                         <row>
                             <cell>For LONDON</cell>
-                            <cell><name>S.S. “Assyria"</name></cell>
+                            <cell><name>S.S. "Assyria"</name></cell>
                             <cell><date when="1906-07-03">July 3</date></cell>
                             <cell>For BOMBAY</cell>
                             <cell><name>S.S. "Australia"</name></cell>
@@ -420,7 +426,7 @@
                     <p>For further particulars of Freight or Passage apply to G. BEYTS &amp; Co.,
                         Suez. <measure type="indexNo">31-12-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-dll01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-dll01">
                     <head>Deutsche Levante-Linie.</head>
                     <p>Mail and Passenger Steamships. Regular three-weekly Service from HAMBURG, via
                         ANTWERP &amp; MALTA, to ALEXANDRIA and vice-versa, admitting goods from all
@@ -442,7 +448,7 @@
                         the <date when="1906-07-01">1st July</date>.</p>
                     <p>For tariff and particulars apply to ADOLPHE STROSS, Alexandria, Agent.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-deb01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-deb01">
                     <head>DEUTSCHE BANK,</head>
                     <p>BERLIN, W.</p>
                     <p>CAPITAL...... . M200,000,000 — RESERVE..M97,000,000</p>
@@ -453,7 +459,7 @@
                     <p>Deutsche Bank (Berlin) London Agency : 4 George Yard, Lombard Street, London,
                         E.C.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-iob01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-iob01">
                     <head>IMPERIAL OTTOMAN BANK.</head>
                     <p>Established 1863.</p>
                     <p>CONSTANTINOPLE LONDON, PARIS, ALEXANDRIA CAIRO, PORT SAID CYPRUS and in all
@@ -463,7 +469,7 @@
                     <p>The Bank undertakes every description of Banking business on favourable
                         terms.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-bal02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-bal02">
                     <head>BANK OF ATHENS, LIMITED.</head>
                     <p>Head Office : Athens — Capital 20,000.000 (Fully paid up). — Reserve
                         1,000,000.</p>
@@ -476,7 +482,7 @@
                         P.T. 80 to P.T. 20,000. <measure type="indexNo">19-1-907</measure>
                     </p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nbe02" xml:lang="fr">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nbe02" xml:lang="fr">
                     <head>NATIONAL BANK OF EGYPT.</head>
                     <p>Capital: £3,000,000. RESERVE (Environ) : £1,340,000. MR. F. T. ROWLATT,
                         Governor</p>
@@ -485,11 +491,11 @@
                         Mansourah, Minieh, Port-Said, Suakin, Sohag, Tantah, Zagazig, Mouski (Caire)
                         et Londres (4 et 5, King William Street). La National Bank of Egypt reçoit
                         des dépots à termes fixes, fait des avances et ouvre des comptes courants
-                        sur titres, valeurs et marchandises. Elle s’occupe de l’achat et de la vente
-                        d'effets sur l’Etranger, de l'escompte, ainsi que de toutes opérations de
+                        sur titres, valeurs et marchandises. Elle s'occupe de l'achat et de la vente
+                        d'effets sur l'Etranger, de l'escompte, ainsi que de toutes opérations de
                         Banque. <measure type="indexNo">31-12-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-gac01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-gac01">
                     <head>GUARDIAN ASSURANCE COMPANY, LIMITED,</head>
                     <p>OF LONDON</p>
                     <p>Established 1821.</p>
@@ -499,24 +505,24 @@
                     <p>Agents far Egypt and the Sudan - HEWAT &amp; Co., Alexandria.</p>
                     <p>24336--17-6-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-sio01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-sio01">
                     <head>Sun Insurance Office,</head>
                     <p>LONDON. Founded 1710.-Total sum insured in 1902 £487,600,000.</p>
                     <p>Agents : LEON HELLER, Cairo, and BEHREND &amp; Co., Alexandria. 16-1-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-lac01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-lac01">
                     <head>LONDON ASSURANCE CORPORATION.</head>
                     <p>072 Established 1720. - Agents: BANK OF EGYPT, Limited <measure
                             type="indexNo">189103</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nfl01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nfl01">
                     <head>NORTHERN FIRE AND LIFE ASSURANCE Coy.</head>
                     <p>The undersigned agents are authorised to issue policies on behalf of the
                         above Company at moderate rates.</p>
                     <p>IMPERIAL OTTOMAN BANK, Alexandria. OTTO STERZING, Cairo. GEORG. MEINECKE,
                         Suez. <measure type="indexNo">3112905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mic01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mic01">
                     <head>MARINE INSURANCE COMPANY, LIMITED.</head>
                     <p>Established 1836. Capital £1,000,000. Reserve Fund £650,000.</p>
                     <p>THE IMPERIAL FIRE OFFICE united with THE ALLIANCE ASSURANCE, Co., Ltd.</p>
@@ -524,7 +530,7 @@
                         £10,000,000.</p>
                     <p>31-12-905. Policies issued at SUEZ by G. BEYTS &amp; Co., Agents.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-rea01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-rea01">
                     <head>ROYAL EXCHANGE ASSURANCE.</head>
                     <p>Incorporated A. D. 1720.</p>
                     <p>Chief Office: ROYAL EXCHANGE, LONDON, E.C.</p>
@@ -546,7 +552,7 @@
                     <p><measure type="indexNo">21281-216905</measure></p>
                 </div>
                 <!-- NATIONAL MUTUAL LIFE ASSOCIATION OF AUSTRALASIA, LTD., EST 1869 -> template doesnt match -->
-                <div type="advert" xml:id="deg-ad-ghc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ghc01">
                     <head>GELLATLY, HANKEY &amp; CO.</head>
                     <p>SHIPOWNERS OF LONDON.</p>
                     <p>Branches at Port Sudan, Suakin &amp; Jeddah</p>
@@ -554,7 +560,7 @@
                         insurances effected to all parts of the world.</p>
                     <p><measure type="indexNo">27376-28-2-907</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-aan03">
+                <div type="advert" colSpan="2" xml:id="deg-ad-aan03">
                     <head>Hamburg &amp; Anglo-American Nile Co.</head>
                     <p>Weekly departure during Winter Season by the<lb/> Luxurious First Class
                         Tourist Steamers VICTORIA, PURITAN &amp; MAYFLOWER.<lb/> Regular weekly
@@ -562,11 +568,11 @@
                         TO KHARTOUM, GONDOKORO AND THE WHITE NILE.<lb/> Steamers and Dahabeahs for
                         private charter. Steam Tugs and Steam Launches for hire.<lb/> FREIGHT
                         SERVICE BY STEAM BARGES BETWEEN CAIRO AND ALEXANDRIA.<lb/> Working in
-                        conjunction and under special arrangement with the<lb/> “Upper Egypt Hotels
+                        conjunction and under special arrangement with the<lb/> "Upper Egypt Hotels
                         Company."</p>
                     <p>For details and illustrated programmes apply to "THE HAMBURG and
                         ANGLO-AMERICAN<lb/> NILE COMPANY."</p>
-                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings.”
+                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings."
                             <measure type="indexNo">31-3-07</measure></p>
                     <p>Hamburg-Amerika Linie.</p>
                     <p>Return to Egypt<lb/> by the new S.S. Oceana of 9000 Tons, 350 berths
@@ -610,7 +616,7 @@
                         Street. Berlin, Unter den Linden <lb/>Cairo, Continental Hotel. Alexandria,
                         G. J. Grace &amp; Co. Chief Office: Hamburg ( Alsterdamm</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nll02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nll02">
                     <head>NORDDEUTSCHER LLOYD.</head>
                     <p>Regular Service from ALEXANDRIA (Passenger and Freight) to
                         NAPLES-MARSEILLES.</p>
@@ -678,8 +684,8 @@
                     <p>Messrs. THOS. COOK &amp; SON (Egypt) LTD. are anthorised to sell tickets in
                         CAIRO and ALEXANDRIA, <measure type="indexNo">31-8-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-als02">
-                    <head>Austrian Lloyd’s Steam Navigation</head>
+                <div type="advert" colSpan="2" xml:id="deg-ad-als02">
+                    <head>Austrian Lloyd's Steam Navigation</head>
                     <p>Alexandria-Brindisi-Trieste (Venice).</p>
                     <p>Weekly Express Mail Service. Steamers leave Alexandria every Saturday at 4
                         p.m. arrive at Brindisi, Tuesday 5 a.m. in time for express to Milan,
@@ -765,7 +771,7 @@
                         families.</p>
                     <p><measure type="indexNo">31-12-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-isr01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-isr01">
                     <head>INTERNATIONAL SLEEPING AND RESTAURANT CARS COMPANY.</head>
                     <table rows="2" cols="4">
                         <row role="label">
@@ -837,7 +843,7 @@
                         the office of the International Sleeping Car Company in Cairo Station. 1st
                         class Cairo-Luxor P.T. 200. Sleeping Car supplement P.T. 75.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-sde01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-sde01">
                     <head>SUDAN DEVELOPMENT &amp; EXPLORATION COMPANY, LIMITED</head>
                     <p>KHARTOUM: CAIRO Office, Sharia Kasr-el-Nil.</p>
                     <p>TRANSPORT DEPARTMENT. Six days White Nile Tourist Trip dep. Khartoum
@@ -852,7 +858,7 @@
                         Sudan Government Seamless Steel Boat Co., Ltd., etc., etc. <measure
                             type="indexNo">31-10-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-esr01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-esr01">
                     <head>Egyptian State Railways.</head>
                     <table rows="4" cols="9">
                         <head>THROUGH PASSENGER SERVICES. (Daily).--JUNE TIME-TABLE.</head>
@@ -1021,21 +1027,22 @@
                     <p><measure type="indexNo">27455</measure></p>
                     <p>J. H. l'E. JOHNSTONE, General Manager.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-tce01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-tce01">
                     <head>Telephone Company of Egypt, Limited.</head>
                     <p>CAIRO-ALEXANDRIA TELEPHONE.--Rates as follows P.T. 5 for each 3 minutes, or
                         fraction of 3 minutes; P.T. 10 for over 3 up to 8 minutes communication.</p>
                     <p>PUBLIC CALL-OFFICES : Cairo, Central Office, Opera Square, and New Bar;
-                        Helouan, Central Office, Maison Purvis ; Alexandria, St Mark’s Buildings,
+                        Helouan, Central Office, Maison Purvis ; Alexandria, St Mark's Buildings,
                         Egyptian Bar, I. Castelli &amp; Co.; Ramleh, Central Office. San Stefano
                         Casino 30.4.906</p>
                 </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2">
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n1/mode/1up">
                 <head>THE EGYPTIAN GAZETTE, SATURDAY, JUNE 30, 1906.</head>
                 <head>2</head>
-                <div type="advert" xml:id="deg-ad-ric01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ric01">
                     <head>Royal Insurance Coy</head>
                     <p>FIRE AND LIFE.</p>
                     <p>Largest Fire Office in the World.</p>
@@ -1048,7 +1055,7 @@
                         Cairo.</p>
                 </div>
                 <!--N. Spathis  -->
-                <div type="advert" xml:id="ggd01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ggd01">
                     <head>G. G. DROSSOS &amp; CO.</head>
                     <p>Established 1869.</p>
                     <p>MERCHANTS &amp; GENERAL AGENTS.</p>
@@ -1075,7 +1082,7 @@
                                 Towns of the Interior.</cell>
                         </row>
                         <row>
-                            <cell>D. C. L. Scotch Whisky, “King George IV" Whisky and Gin.</cell>
+                            <cell>D. C. L. Scotch Whisky, "King George IV" Whisky and Gin.</cell>
                         </row>
                         <row>
                             <cell>CARR &amp; Co., Ltd. Carlisle. Biscuits and Cakes.</cell>
@@ -1107,12 +1114,12 @@
                         </row>
                     </table>
                 </div>
-                <div type="advert" xml:id="rbi01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-rbi01">
                     <head>Photographers. REISER &amp; BINDER Photographers.</head>
                     <p><measure type="indexNo">26848</measure> Alexandria &amp; Cairo. <measure
                             type="indexNo">4-12 906</measure></p>
                 </div>
-                <div type="advert" xml:id="say01">
+                <div type="advert" xml:id="deg-ad-say01">
                     <head>SAYERS'</head>
                     <p>Celbrated Cognac Brandies</p>
                     <p>all guaranteed "Pure Grape"</p>
@@ -1149,7 +1156,7 @@
                     <p><measure type="indexNo">26348-18-12-906</measure></p>
                 </div>
                 <div type="advert" xml:id="deg-ad-hob01">
-                    <p>“A good article recommends itself.”</p>
+                    <p>"A good article recommends itself."</p>
                     <p>HOWIES Butter is no exception</p>
                     <p>Awarded Twelve 1st Prize Medals at the Khedivial Agricultural Show 1902, 1903
                         and 1905. </p>
@@ -1181,7 +1188,7 @@
                         Cairo. </p>
                     <p><measure type="indexNo">26839—30-11-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-hbc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-hbc01">
                     <head>HOTEL BRISTOL. CAIRO.</head>
                     <p>Full South, Electric Light, opposite Esbekieh Gardens, Large Verandahs,
                         Moderate Charges,</p>
@@ -1192,7 +1199,7 @@
                             >24,882-31-10-5</measure></p>
                 </div>
                 <!-- New Victoria Hotel -->
-                <div type="advert" xml:id="lip01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-lip01">
                     <head>LIPTON , Limited.</head>
                     <p>NAVAL &amp; MILITARY CONTRACTORS.</p>
                     <p>Office and Stores : 31 Boulevard de Ramleh.</p>
@@ -1220,7 +1227,7 @@
                     <p>By Royal Warrant to His Majesty the King.</p>
                     <p>The original and genuine Worchestershire.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-jbc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-caf01">
                     <head>John B. Caffari's "Economical Stores"</head>
                     <p>Cairo and Alexandria</p>
                     <p>The Perfection of Quality and Value.</p>
@@ -1229,7 +1236,7 @@
                     <p>Price List on Application.</p>
                     <p><measure type="indexNo">16-11-904</measure></p>
                 </div>
-                <div type="advert" xml:id="cps01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-cps01">
                     <head>Cairo Photographic Stores</head>
                     <head>O. DIRADOUR</head>
                     <p>PLACE DEL'OPERA</p>
@@ -1252,12 +1259,12 @@
                     <p>ASSOCIATION OF DIAMOND MERCHANTS, LIMITED.</p>
                     <p>Trafalgar Square, London, W.C.</p>
                     <p>Established over 50 years</p>
-                    <p>Cable Address: “Ruspoli, London."</p>
+                    <p>Cable Address: "Ruspoli, London."</p>
                 </div>
                 <div type="section" feature="weather">
                     <head>DAILY WEATHER REPORT</head>
                     <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
-                    <div type="subsection">
+                    <div type="item">
                         <table rend="frame" xml:id="deg-ta-dawr01">
                             <head>ALEXANDRIA</head>
                             <head type="sub">Kom-el-Nadoura Observatory.</head>
@@ -1306,17 +1313,17 @@
                         <p>Moon rises 12.53 a.m.</p>
                         <p>Moon sets 12.18 p.m.</p>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>REMARKS.</head>
                         <p>The wearther now is much the same daily, sultry and trying. Today a light
                             N.W. breeze is blowing and the barometer falling. Some wind may be
                             expected towards the close of the day.</p>
                     </div>
                 </div>
-                <div type="item" xml:id="deg-el-egsa01">
+                <div type="template" xml:id="deg-el-egsa01">
                     <head>THE EGYPTIAN GAZETTE.</head>
                     <p>SUBSCRIPTIONS. Alexandria, Cairo, and the Interior of Egypt (including
-                        delivery in Alexandria or postage to subscriber’s address) P.T. 231½ per
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
                         annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
                         in the Postal Union P.T. 273 (£2.16s.) per annum. Six months P.T. 136½
                         (£1.8s.), three months P.T. 92 (£0.19s.) N.B.—Subscriptions commence from
@@ -1335,14 +1342,14 @@
                         London Paper Mills Co., Limited.</p>
                     <p>(Sales Office: 27, Cannon Street, E.C.)</p>
                 </div>
-                <div type="item" feature="masthead">
+                <div type="item" feature="imprint">
                     <p>The Egyptian Gazette</p>
                     <p>An English Daily Newspaper, Established in 1880.</p>
                     <p>Editor &amp; Manager: R. Snelling.</p>
                     <p>Price: One Piastre Tariff.</p>
                     <p><date when="1906-06-30">SATURDAY, JUNE 30, 1906</date>.</p>
                 </div>
-                <div type="item">
+                <div type="item" feature="leader">
                     <head>TALODI.</head>
                     <p>Now that the close of the Denishwai tragedy enables the public to turn with
                         relief to other topics of interest, we hope that the prasie due to the
@@ -1418,15 +1425,17 @@
                 </div>
             </div>
             <pb n="3"/>
-            <div type="page" n="3">
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n2/mode/1up">
                 <head>THE EGYPTIAN GAZETTE. SATURDAY, JUNE 30, 1906.</head>
                 <head>3</head>
                 <div type="section" feature="local">
                     <head>LOCAL AND GENERAL.</head>
-                    <head>THE BRINDISI MAIL.</head>
-                    <p>The mail for Europe, via Port Said and Brindisi, will close at the G.P.O.,
-                        Alexandria, at 3.10 p.m. on Monday.</p>
-
+                    <div type="item">
+                        <head>THE BRINDISI MAIL.</head>
+                        <p>The mail for Europe, via Port Said and Brindisi, will close at the
+                            G.P.O., Alexandria, at 3.10 p.m. on Monday.</p>
+                    </div>
                     <div type="item">
                         <head>Hackmeyer Orchestra.</head>
                         <p>The Hackmeyer Orchestra will play in the inner room of Messrs. Walker and
@@ -1500,160 +1509,167 @@
                             next in aid of the Maltese Benevolent Society of Alexandria.</p>
                     </div>
                 </div>
-                <div type="section" feature="social">
+                <div type="item" feature="social">
                     <head>PERSONAL AND SOCIAL.</head>
-
-                    <div type="item">
-                        <p><persName>H.E. Ibrahim Facha Naghib</persName>, Second Secretary to the
-                            Ministry of the Interior, left yesterday for Cairo.</p>
-                    </div>
-                    <div type="item">
-                        <p>Blattner Bey, chief interpreter to the British Headquarters at
-                            Alexandria, has been granted three months leave of absence.</p>
-                    </div>
-                    <div type="item">
-                        <p>Among the many visitors staying at the Beau-Rivage we notice. Capt. and
-                            Mrs. S.S. Flowers and family <persName> Mr. R.
-                                Rolo</persName>,<persName> Mr. and Mrs. Zeberi</persName>,<persName>
-                                Miss Nassif</persName>,<persName> Mr. Ph.
-                                Nassif</persName>,<persName> Mr. and Mrs.
-                                Baladi</persName>,<persName> Ermin Bey Ghali and
-                                family</persName>,<persName> Mr. and Mrs. S.
-                                Reich</persName>,<persName> Mrs. Goldenberg and
-                                child</persName>,<persName> Mr. Delancy</persName>,<persName> Mr.
-                                and Mr.s Rietti</persName>, Cairo; <persName> Miss L.
-                                Salomon</persName>,<persName> Mr. F. Watson</persName>,<persName>
-                                Mr. and Mrs. Hefés</persName>,<persName> Mr. L.
-                                Limpritis</persName>,<persName> Mr. and Mrs. Angelidis</persName>,
-                            Alexandria; <persName> Shaheen Bey Makarius</persName>,<persName> Mr.
-                                and Mrs. R. Springer</persName>,<persName> Mr. F. Todeski
-                            </persName>, Helouan; <persName> Mr. P. Dimitroff </persName>,
-                            Bulgaria.</p>
-                    </div>
-                    <div type="item">
-                        <p>Among the latest arrivals at the Eastern Exchange Hotel, Port Said, are
-                                <persName>Capt. D. Davies</persName>,<persName> Mr. E
-                                Wace</persName>,<persName> Mrs. F. Clark and
-                                child</persName>,<persName> Mrs. C. Marshall</persName>,<persName>
-                                Miss S.P. Tuck</persName>,<persName> Dr. H.T.
-                                Marshall</persName>,<persName> Mr. H.M.
-                                Greaves</persName>,<persName> Mr. A. Rotach</persName>,<persName>
-                                Mr. and Mrs. C. Zouro</persName>,<persName> Mr. and Mrs. G.W.
-                                MacDonald</persName>,<persName> Mr. W.J.
-                                Williamson</persName>,<persName> Miss M. E.
-                                Carter</persName>,<persName> Miss F. Hamel</persName>,<persName> Mr.
-                                S. Bagnars</persName>,<persName> Miss
-                                Macfarlane</persName>,<persName> Miss Morrison</persName>,<persName>
-                                Miss Strachan</persName>,<persName> Mr. Curner</persName>,<persName>
-                                Mr. Sollar</persName>,<persName> Mr. Caliendo</persName>,<persName>
-                                Mr. and Mrs. Gomenchi</persName>,<persName> Miss G.N.
-                                Hill</persName>,<persName> Mr. and Mrs. Page</persName>,<persName>
-                                Mr. W.J.B. Carlisle</persName>,<persName> Mr. R.
-                                Kelham</persName>,<persName> Mr. J. MacDonall</persName>,<persName>
-                                Mr. J.E. Marshall</persName>,<persName> Capt.
-                                Marten</persName>,<persName> Mr. S. Gore</persName>,<persName> Mr.
-                                and Mrs Howil</persName>,<persName> Mr.
-                                Albanakis</persName>,<persName> Mr. B.
-                                Mansfield</persName>,<persName> Mr. O.J. Bell</persName>,<persName>
-                                Dr. Nolan</persName>,<persName> Mr. H.W. Tite</persName>,<persName>
-                                Mr. and Mrs. A. S. Ingram</persName>,<persName> Mr. A.R.
-                                Callendro</persName>,<persName> Mr. A.T. Shand</persName>,<persName>
-                                Capt. Palmer</persName>,<persName> Mr. and Mrs.
-                            Tennant</persName>..</p>
-                    </div>
+                    <p><persName>H.E. Ibrahim Facha Naghib</persName>, Second Secretary to the
+                        Ministry of the Interior, left yesterday for Cairo.</p>
+                    <p><persName>Blattner Bey</persName>, chief interpreter to the British
+                        Headquarters at Alexandria, has been granted three months leave of
+                        absence.</p>
+                    <p>Among the many visitors staying at the Beau-Rivage we notice. Capt. and Mrs.
+                        S.S. Flowers and family <persName> Mr. R. Rolo</persName>,<persName> Mr. and
+                            Mrs. Zeberi</persName>,<persName> Miss Nassif</persName>,<persName> Mr.
+                            Ph. Nassif</persName>,<persName> Mr. and Mrs.
+                            Baladi</persName>,<persName> Ermin Bey Ghali and
+                            family</persName>,<persName> Mr. and Mrs. S. Reich</persName>,<persName>
+                            Mrs. Goldenberg and child</persName>,<persName> Mr.
+                            Delancy</persName>,<persName> Mr. and Mr.s Rietti</persName>, Cairo;
+                            <persName> Miss L. Salomon</persName>,<persName> Mr. F.
+                            Watson</persName>,<persName> Mr. and Mrs. Hefés</persName>,<persName>
+                            Mr. L. Limpritis</persName>,<persName> Mr. and Mrs.
+                        Angelidis</persName>, Alexandria; <persName> Shaheen Bey
+                            Makarius</persName>,<persName> Mr. and Mrs. R.
+                            Springer</persName>,<persName> Mr. F. Todeski </persName>, Helouan;
+                            <persName> Mr. P. Dimitroff </persName>, Bulgaria.</p>
+                    <p>Among the latest arrivals at the Eastern Exchange Hotel, Port Said, are
+                            <persName>Capt. D. Davies</persName>,<persName> Mr. E
+                            Wace</persName>,<persName> Mrs. F. Clark and child</persName>,<persName>
+                            Mrs. C. Marshall</persName>,<persName> Miss S.P.
+                            Tuck</persName>,<persName> Dr. H.T. Marshall</persName>,<persName> Mr.
+                            H.M. Greaves</persName>,<persName> Mr. A. Rotach</persName>,<persName>
+                            Mr. and Mrs. C. Zouro</persName>,<persName> Mr. and Mrs. G.W.
+                            MacDonald</persName>,<persName> Mr. W.J.
+                            Williamson</persName>,<persName> Miss M. E. Carter</persName>,<persName>
+                            Miss F. Hamel</persName>,<persName> Mr. S. Bagnars</persName>,<persName>
+                            Miss Macfarlane</persName>,<persName> Miss
+                            Morrison</persName>,<persName> Miss Strachan</persName>,<persName> Mr.
+                            Curner</persName>,<persName> Mr. Sollar</persName>,<persName> Mr.
+                            Caliendo</persName>,<persName> Mr. and Mrs.
+                            Gomenchi</persName>,<persName> Miss G.N. Hill</persName>,<persName> Mr.
+                            and Mrs. Page</persName>,<persName> Mr. W.J.B.
+                            Carlisle</persName>,<persName> Mr. R. Kelham</persName>,<persName> Mr.
+                            J. MacDonall</persName>,<persName> Mr. J.E.
+                            Marshall</persName>,<persName> Capt. Marten</persName>,<persName> Mr. S.
+                            Gore</persName>,<persName> Mr. and Mrs Howil</persName>,<persName> Mr.
+                            Albanakis</persName>,<persName> Mr. B. Mansfield</persName>,<persName>
+                            Mr. O.J. Bell</persName>,<persName> Dr. Nolan</persName>,<persName> Mr.
+                            H.W. Tite</persName>,<persName> Mr. and Mrs. A. S.
+                            Ingram</persName>,<persName> Mr. A.R. Callendro</persName>,<persName>
+                            Mr. A.T. Shand</persName>,<persName> Capt. Palmer</persName>,<persName>
+                            Mr. and Mrs. Tennant</persName>..</p>
                 </div>
                 <div type="section" feature="wire">
                     <div type="item">
-                        <head>LONDON RAILWAYS FLOODED.</head>
-                        <head>PHENOMENAL RAINFALL.</head>
-                        <head>MORE EARTHQUAKE SHOCKS</head>
-                        <dateline>London, June 29.</dateline>
-                        <p>A phenomenal rainfall took place in the South East of England, this
-                            morning, of over two inches. The London railways are flooded and traffic
-                            blocked. The basements of theatres and shops are inundated and fire
-                            brigades are busy pumping them out.</p>
-                        <p>Slight earthquake shocks have been felt in Wales and at Croydon.
-                            (Reuter)</p>
+                        <head>LONDON RAILWAYS FLOODED.<lb/>PHENOMENAL RAINFALL.<lb/>MORE EARTHQUAKE
+                            SHOCKS</head>
+                        <div type="cable">
+                            <dateline>London, June 29.</dateline>
+                            <p>A phenomenal rainfall took place in the South East of England, this
+                                morning, of over two inches. The London railways are flooded and
+                                traffic blocked. The basements of theatres and shops are inundated
+                                and fire brigades are busy pumping them out.</p>
+                            <p>Slight earthquake shocks have been felt in Wales and at Croydon.
+                                (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>FREQUENT FIGHTING IN SOUTHERN NIGERIA.</head>
-                        <dateline>Lagos, June 29.</dateline>
-                        <p>Frequent fighting is taking place in Southern Nigeria. Captain Wayling's
-                            force lost 34 killed or wounded, he himself being slightly wounded; his
-                            force halted at Utah. Captain Rudkin, while moving to Captain Wayling's
-                            assistance, lost 13 killed or wounded and was compelled to return to
-                            Agbor. (Reuter)</p>
+                        <div type="cable">
+                            <dateline>Lagos, June 29.</dateline>
+                            <p>Frequent fighting is taking place in Southern Nigeria. Captain
+                                Wayling's force lost 34 killed or wounded, he himself being slightly
+                                wounded; his force halted at Utah. Captain Rudkin, while moving to
+                                Captain Wayling's assistance, lost 13 killed or wounded and was
+                                compelled to return to Agbor. (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
-                        <head>THE BIELOSTOK MASSACRES.</head>
-                        <byline>ENGINEERED BY POLICE.</byline>
-                        <dateline>St. Petersburg, June 29.</dateline>
-                        <p>Military outbreaks are reported at Vladikavkaz and Samara, where the
-                            regiments have drafted demands for a better position similar to the
-                            Preobrajensky Regiment. All the officers of the latter regiment will be
-                            court martialled. (Reuter)</p>
-                        <p>The 1st Battalion of the Preobrajensky Regiment has been transferred to
-                            the Line and deprived of the priviliges of the Guards.</p>
-                        <p>The Guard at Peterhof has been augmented. Four sotnias of Cossacks have
-                            arrived here in order to guard the military and naval work shops.
-                            (Reuter)</p>
-                        <p>All the officers of Preobrahjensky's regiment will be court martialled.
-                            (Havas)</p>
+                        <head>THE BIELOSTOK MASSACRES.<lb/>ENGINEERED BY POLICE.</head>
+                        <div type="cable">
+                            <dateline>St. Petersburg, June 29.</dateline>
+                            <p>Military outbreaks are reported at Vladikavkaz and Samara, where the
+                                regiments have drafted demands for a better position similar to the
+                                Preobrajensky Regiment. All the officers of the latter regiment will
+                                be court martialled. (Reuter)</p>
+                            <p>The 1st Battalion of the Preobrajensky Regiment has been transferred
+                                to the Line and deprived of the priviliges of the Guards.</p>
+                            <p>The Guard at Peterhof has been augmented. Four sotnias of Cossacks
+                                have arrived here in order to guard the military and naval work
+                                shops. (Reuter)</p>
+                            <p>All the officers of Preobrahjensky's regiment will be court
+                                martialled. (Havas)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>REPATRIATION OF RUSSIAN TROOPS.</head>
-                        <dateline>St. Petersburg, June 29.</dateline>
-                        <p>The last detachment of the Russian troops in Manchuria have left and are
-                            on their way to Russia, with the exception of a small number who are
-                            returning in 1907. (Reuter)</p>
+                        <div type="cable">
+                            <dateline>St. Petersburg, June 29.</dateline>
+                            <p>The last detachment of the Russian troops in Manchuria have left and
+                                are on their way to Russia, with the exception of a small number who
+                                are returning in 1907. (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
-                        <head>EXPLOSION ON H.M.S. ESSEX.</head>
-                        <head>One Killed, Four Injured.</head>
-                        <dateline>London, June 29.</dateline>
-                        <p>One seaman has been killed and lieutenant and three seaman injured, by a
-                            gun explosion on the cruiser Essex during the maneuvers, whilst firing a
-                            six inch blank charge.</p>
+                        <head>EXPLOSION ON H.M.S. ESSEX.<lb/>One Killed, Four Injured.</head>
+                        <div type="cable">
+                            <dateline>London, June 29.</dateline>
+                            <p>One seaman has been killed and lieutenant and three seaman injured,
+                                by a gun explosion on the cruiser Essex during the maneuvers, whilst
+                                firing a six inch blank charge.</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>KAISER INTERESTED IN COTTON CULTIVATION.</head>
-                        <dateline>BERLIN, JUNE 29.</dateline>
-                        <p>The Emperor William has received the Cotton Congress Committee at Kiel,
-                            and stated that he is deeply interested in the extension of cotton
-                            cultivation.</p>
+                        <div type="cable">
+                            <dateline>BERLIN, JUNE 29.</dateline>
+                            <p>The Emperor William has received the Cotton Congress Committee at
+                                Kiel, and stated that he is deeply interested in the extension of
+                                cotton cultivation.</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>MILLIONAIRE CHARGED WITH WILFUL MURDER.</head>
-                        <dateline>New York, June 29.</dateline>
-                        <p>Mr. Thaw has been indicted with wilful murder. Public opinion sides with
-                            Mr. Thaw owing to the questionable character of Mr. White. (Reuter)</p>
+                        <div type="cable">
+                            <dateline>New York, June 29.</dateline>
+                            <p>Mr. Thaw has been indicted with wilful murder. Public opinion sides
+                                with Mr. Thaw owing to the questionable character of Mr. White.
+                                (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>SAMOS PRINCIPALITY.</head>
-                        <dateline>SAMOS, JUNE 29.</dateline>
-                        <p>The Chamber has decided to depose Bithynos. (Havas)</p>
+                        <div type="cable">
+                            <dateline>SAMOS, JUNE 29.</dateline>
+                            <p>The Chamber has decided to depose Bithynos. (Havas)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>CONVERSION OF ITALIAN RENTE.</head>
-                        <dateline>Rome, June 29.</dateline>
-                        <p>Parliament has voted the conversion of the Rente at 3.75%. (Havas)</p>
+                        <div type="cable">
+                            <dateline>Rome, June 29.</dateline>
+                            <p>Parliament has voted the conversion of the Rente at 3.75%.
+                                (Havas)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>DEATH OF FRENCH ACADEMICIAN.</head>
-                        <dateline>PARIS, JUNE 29.</dateline>
-                        <p>The Academician Sorel is dead. (Havas)</p>
+                        <div type="cable">
+                            <dateline>PARIS, JUNE 29.</dateline>
+                            <p>The Academician Sorel is dead. (Havas)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>HOME CRICKET.</head>
-                        <dateline>LONDON, JUNE 29.</dateline>
-                        <p>Cricket. Somerset beat Hampshire by an innings and 151 runs. Sussex beat
-                            Middlesex by an innings and 101 runs. (Reuter)</p>
+                        <div type="cable">
+                            <dateline>LONDON, JUNE 29.</dateline>
+                            <p>Cricket. Somerset beat Hampshire by an innings and 151 runs. Sussex
+                                beat Middlesex by an innings and 101 runs. (Reuter)</p>
+                        </div>
                     </div>
                 </div>
                 <div type="item">
-                    <head>DENISHWAI AFFAIR.</head>
-                    <head>WORLD'S PRESS &amp; VERDICT.</head>
-                    <head>BRITISH GOVERNMENT'S ATTITUDE.</head>
+                    <head>DENISHWAI AFFAIR.<lb/>WORLD'S PRESS &amp; VERDICT.<lb/>BRITISH
+                        GOVERNMENT'S ATTITUDE.</head>
                     <byline>(Gazette's Special Service).</byline>
                     <dateline>London, Friday, June 29.</dateline>
                     <p>The world's press is almost unanimous in approving the sentences on and the
@@ -1710,8 +1726,7 @@
                         probably having weakened him. </p>
                 </div>
                 <div type="item">
-                    <head>QUESTIONS OF EMPIRE.</head>
-                    <head>"CHEAP MISSIONARIES" v. CHEAP POSTAGE.</head>
+                    <head>QUESTIONS OF EMPIRE.<lb/>"CHEAP MISSIONARIES" v. CHEAP POSTAGE.</head>
                     <p>The annual meeting of the Victoria League, the object of which is to promote
                         more intimate understanding between the Mother Country and the Colonies, was
                         held last week at the Imperial Institute. The Countess of Jersey
@@ -1738,8 +1753,7 @@
                         Zanzibar.</p>
                 </div>
                 <div type="item">
-                    <head>MR. SCHILIZZI'S DEATH.</head>
-                    <head>TRAGEDY OF BLINDNESS.</head>
+                    <head>MR. SCHILIZZI'S DEATH.<lb/>TRAGEDY OF BLINDNESS.</head>
                     <p>Some tragic facts were recalled at the inquest yesterady week on Mr.
                         Demetrius George Schilizzi, 59, a partner in the firm of Messrs. Mayhew and
                         Schilizzi, stock brokers, who shot himself at the London Stock Exchange on
@@ -1767,8 +1781,7 @@
                     <p>The jury returned a verdict of "Suicide while of unsound mind."</p>
                 </div>
                 <div type="item">
-                    <head>ISLAM AND JAPAN.</head>
-                    <head>MISSIONARY DEPARTS.</head>
+                    <head>ISLAM AND JAPAN.<lb/>MISSIONARY DEPARTS.</head>
                     <p>Sheikh Ali Ahmed El-girgawi, propietor of the native weekly "Al Irshad," left
                         yesterday for Japan. The sheikh, who intends to preach Islam to the
                         Japanese, will first visit Tunis, where he will meet a sheikh who is
@@ -1794,10 +1807,10 @@
                         El-Orwa El-Woska Society; and P.T. 22,100 to the Moslem Benevolent Society's
                         schools.</p>
                 </div>
-                <div type="section" feature="passList">
+                <div type="item" feature="passList">
                     <head>PASSENGER LISTS.</head>
-                    <p>Le paquebot Niger des Messageries Maritimes parti pour Marseille le 29 Juin
-                        avait à bord:</p>
+                    <p>Le paquebot <name>Niger</name> des Messageries Maritimes parti pour Marseille
+                        le 29 Juin avait à bord:</p>
                     <p><persName>Mme Moreau</persName>,<persName> Mr. Comanos Pacha et trois
                             enfants</persName>,<persName> Mr. Lartié</persName>,<persName> M.
                             Legrand</persName>,<persName> Mr. Hieki</persName>,<persName> Mr.
@@ -1817,12 +1830,13 @@
                             Antoine Muracciuli</persName>,<persName> Mr. et Mme
                             Millou</persName>,<persName> Mlle Charoy</persName>,<persName> Rév Pères
                             Adalbert</persName>,<persName> Fabién</persName>,<persName>
-                            Laurent</persName>,<persName> et Roumaire</persName>,<persName> Mme
+                            Laurent</persName>, et<persName>Roumaire</persName>,<persName> Mme
                             Hebert et bébé</persName>,<persName> Mme Decostas</persName>,<persName>
                             M. Mussawar</persName>,<persName> M. Adbel Neuru M.
                             Brookeband</persName>,<persName> M. Gausten</persName>,<persName> M. I.
-                            Jacob </persName>, famille de la Pourmeraye,<persName> M, Mlle et Mme
-                            Poley Bey et fils</persName>,<persName> famille Granduillot et Mlle
+                            Jacob </persName>, <persName>famille de la
+                            Pourmeraye</persName>,<persName> M, Mlle et Mme Poley Bey et
+                            fils</persName>,<persName> famille Granduillot et Mlle
                             Gallo</persName>,<persName> Mme Dilberogler</persName>,<persName> M.
                             Rene Ismalum</persName>,<persName> M. Gordon</persName>,<persName> M.
                             Moh. Bey Hassan</persName>,<persName> M. Mezloum</persName>,<persName>
@@ -1852,8 +1866,7 @@
                         passagers de 3 me et 4 me classe.</p>
                 </div>
                 <div type="item">
-                    <head>SOUTHERN KORDOFAN.</head>
-                    <head>THE COUNTRY AND ITS PEOPLE.</head>
+                    <head>SOUTHERN KORDOFAN.<lb/>THE COUNTRY AND ITS PEOPLE.</head>
                     <p>Southern Kordofan, the scene of the recent expedition against the rebels of
                         Talodi, is in its natural configuration one of the strangest countries in
                         the world. An immense plain, burnt to a desert in the dry season, except
@@ -1902,7 +1915,7 @@
                         danger if repulsed by the blacks, who dared not follow the aggressors far
                         from the heights.</p>
                     <p>It was not surprising that the blacks soon lost wahtever civilisation they
-                        had once possessed. The ancestors- according to some authors - of the
+                        had once possessed. The ancestorsaccording to some authors - of the
                         Berberin, who declare that they originally came from Kordofan, they were
                         partly Christianised by refugees from the Christian kingdom of Dongls, and
                         traces of Christian influence survive among these pagans. The medicine man
@@ -2015,12 +2028,11 @@
                 </div>
             </div>
             <pb n="4"/>
-            <div type="page" n="4">
-
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n3/mode/1up">
                 <head>4</head>
                 <head>THE EGYPTIAN GAZETTE, SATURDAY, JUNE 30, 1906.</head>
-
-                <div type="section" feature="army">
+                <div type="item" feature="army">
                     <head>ARMY AND NAVY.</head>
                     <byline>(FROM OUR CORRESPONDENT.)</byline>
                     <dateline>London, June 19.</dateline>
@@ -2130,7 +2142,7 @@
                         (Queen's medal with three clasps). Lieutenant and similarly. He served in
                         the transvall opeatings.</p>
                 </div>
-                <div type="item">
+                <div type="advert">
                     <head>HELPLESS WITH RHEUMATISM.</head>
                     <p>The case of Mr. George West, of 161 Evenelyn Street, Deptford, London,
                         England, is exceptionally interesting. Mr. West says "I used to think I
@@ -2204,7 +2216,7 @@
                     <p><measure type="indexNo">28162-3-1</measure></p>
                 </div>
                 <!-- Alexandria Central Bldg co. -->
-                <div type="item">
+                <div type="item" feature="notice">
                     <head>AVIS</head>
                     <p>Diordre et pour compte de la Banque Nationale de Grece nous faisons des
                         avances en sonnom, sur les actions de notre Etablissement sur la base de 100
@@ -2221,7 +2233,7 @@
                         sourtiers a la Bourse d'Athenes.</p>
                     <dateline>Alexandrie, le 25 Juin 1906.</dateline>
                 </div>
-                <div type="item">
+                <div type="item" feature="notice">
                     <head>Administration des Chemins de Fer de l'Etat Egyptien</head>
                     <head>AVIS</head>
                     <p>L'administration des Telegraphes de l'Etat a l'honneur de porter a la
@@ -2448,7 +2460,7 @@
                         BEDDING, CUTLERY, CHINA, GLASS, SILVER WARE, CARPETS, CURTAINS, BLINDS,
                         &amp;c., always ready for immediate shipment. A house furnished throughout
                         in three days.</p>
-                    <p>The “Cathcart ” Dining-Room Suite in Mahogany, Walnut or Fumed Oak, with
+                    <p>The "Cathcart " Dining-Room Suite in Mahogany, Walnut or Fumed Oak, with
                         brass mountings, consists of 6 ft Sideboard with handsomely carved pediment
                         and panels, bevelled mirrors in back, lower portion usefully fitted with
                         drawers, cupboards and cellarette; 3 ft 6 in Silver Cabinet, extreme height
@@ -2458,7 +2470,7 @@
                         Chairs with carved backs, upholstered in best marone morocco: Price includes
                         packing and delivery F.O.B. London .. £70 0 0</p>
                     <p>Separate prices on application</p>
-                    <p>“ONE of the SIGHTS of LONDON”</p>
+                    <p>"ONE of the SIGHTS of LONDON"</p>
                     <p>Maple &amp; Co invite residents of Cairo, Alexandria, Damanhour, Tantah,
                         Mansourah, Damietta, Samahud, Rosetta, Miniah, Ismailla, Port Said, and
                         districts, when visiting London to walk through these spacious showrooms and
@@ -2470,120 +2482,127 @@
                 </div>
             </div>
             <pb n="5"/>
-            <div type="page" n="5">
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n4/mode/1up">
                 <head>THE EGYPTIAN GAZETTE. SATURDAY, JUNE 30, 1906.</head>
                 <head>5</head>
                 <div type="section" feature="homePapers">
                     <head>PITH OF THE PRESS.</head>
-                    <head>EXTRACTS FROM HOME PAPERS.</head><div type="item">
-                    <head>Disarmament not Practicable.</head>
-                    <p>It will be a long time yet, if we may judge from such signs as are visible,
-                        before the ations of Euroope embark on disarmament, as a practical policy.
-                        In the meantime, however, there are influences at work which make more
-                        gradually, but not less surely, for peace. Highest among them we must rankt
-                        hose understandings between nations which, supplementing the older
-                        alliances, draw symptahies closer and provide fresh and weighty arguments
-                        against an appeal to the sword.</p>
+                    <head>EXTRACTS FROM HOME PAPERS.</head>
+                    <div type="item">
+                        <head>Disarmament not Practicable.</head>
+                        <p>It will be a long time yet, if we may judge from such signs as are
+                            visible, before the ations of Euroope embark on disarmament, as a
+                            practical policy. In the meantime, however, there are influences at work
+                            which make more gradually, but not less surely, for peace. Highest among
+                            them we must rankt hose understandings between nations which,
+                            supplementing the older alliances, draw symptahies closer and provide
+                            fresh and weighty arguments against an appeal to the sword.</p>
+                    </div>
+                    <div type="item">
+                        <head>The Attraction of Empire</head>
+                        <p>As a fact, we know beyond possibility of doubt that thousands of British
+                            citizens will emigrate from these shores each year, with or without the
+                            recognition of Government departments. The thing is like a natural force
+                            in its certainty. Certain parts of our own Imperial estate need these
+                            people, and can offter them self-respecting independence under the
+                            British Flag. Such is the nature of those tracts of the Empire that they
+                            will in any case attract settlers, whether of our race of some
+                            other.</p>
+                    </div>
+                    <div type="item">
+                        <head>The Denishwai Tragedy.</head>
+                        <p>The spread of the Pan Islamic agitation must be giving Lord Cromer no
+                            little anxiety. The old Turks covet a return of the happy times when
+                            they could plunder the public revenue, and as British control is
+                            incompatible with that restoration, the clique of sordid conspirators
+                            strain every endeavour to get rid of it by one method or another. The
+                            Pan-Islamic movement is accordingly enlisted for the purpose, as the
+                            readiest means of drawing all Mohamedans together against the Christian
+                            community. The Sultan was, no doubt, Chiefly encouraged by this got-up
+                            religious fermentation to tend troops across the Turco-Egyptian
+                            frontier, hoping no donbt, that Mukhtar Pasha, his agent at Cairo, would
+                            help the armed enterprise by covertly preaching sedition. But when
+                            strong British reinforcements arrived, the plot collapsed, and there is
+                            just a possibility that the outrage near Tantah was an after consequence
+                            of the previous unrest.</p>
+                    </div>
                 </div>
-                <div type="item">
-                    <head>The Attraction of Empire</head>
-                    <p>As a fact, we know beyond possibility of doubt that thousands of British
-                        citizens will emigrate from these shores each year, with or without the
-                        recognition of Government departments. The thing is like a natural force in
-                        its certainty. Certain parts of our own Imperial estate need these people,
-                        and can offter them self-respecting independence under the British Flag.
-                        Such is the nature of those tracts of the Empire that they will in any case
-                        attract settlers, whether of our race of some other.</p>
-                </div>
-                <div type="item">
-                    <head>The Denishwai Tragedy.</head>
-                    <p>The spread of the Pan Islamic agitation must be giving Lord Cromer no little
-                        anxiety. The old Turks covet a return of the happy times when they could
-                        plunder the public revenue, and as British control is incompatible with that
-                        restoration, the clique of sordid conspirators strain every endeavour to get
-                        rid of it by one method or another. The Pan-Islamic movement is accordingly
-                        enlisted for the purpose, as the readiest means of drawing all Mohamedans
-                        together against the Christian community. The Sultan was, no doubt, Chiefly
-                        encouraged by this got-up religious fermentation to tend troops across the
-                        Turco-Egyptian frontier, hoping no donbt, that Mukhtar Pasha, his agent at
-                        Cairo, would help the armed enterprise by covertly preaching sedition. But
-                        when strong British reinforcements arrived, the plot collapsed, and there is
-                        just a possibility that the outrage near Tantah was an after consequence of
-                        the previous unrest.</p>
-                </div>
-            </div></div>
+            </div>
             <pb n="6"/>
-            <div type="page" n="6">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n5/mode/1up">
                 <head>6</head>
                 <head>THE EGYPTIAN GAZETTE, SATURDAY, JUNE 30, 1906.</head>
-                <div type="item" xml:lang="fr" feature="circulaire"><head>Circulaire H. de Vries et Boutigny.</head>
+                <div type="item" xml:lang="fr" feature="circulaire">
+                    <head>Circulaire H. de Vries et Boutigny.</head>
                     <head>NOTES ET CRITIQUES</head>
                     <dateline>Le Caire, 30 Juin 1906.</dateline>
                     <p>Le taux de l'escompte libre à Londres reste toujours invarié à 3 1/4 pour
                         cent.</p>
                     <p>Hier, an Stock Exchange, le Consolidé anglais a baissé de non moins de 5/8 de
-                        livre à 80 1/8. L’Unifiée est restée invariée à 104 3/4, de même que la
+                        livre à 80 1/8. L'Unifiée est restée invariée à 104 3/4, de même que la
                         National Bank à 25 5/8, la Daira à 17 1/8 et la Delta Light à 12.</p>
-                    <p>A Paris, l’action Crédit Fonciér Egyptien a perdu 1 franc à 771. La Banque
-                        d’Athène est demeurée inchangée à 154.</p>
+                    <p>A Paris, l'action Crédit Fonciér Egyptien a perdu 1 franc à 771. La Banque
+                        d'Athène est demeurée inchangée à 154.</p>
                     <p>Ici, le marché des valeurs a été, aujourd'hui, moins animé, moins actif
-                        qu’hier. Toutefois, les dispositions ne sont pas mauvaises, bien que la
+                        qu'hier. Toutefois, les dispositions ne sont pas mauvaises, bien que la
                         fermeté ne se soit pas maintenue sur toute la ligne.</p>
-                    <p>Pen d’afiaireè en National Bank, qui à couturé à 25 1/2-9/16. L’Agricolé
-                        s’est tenue à son prix d’hier, soit 9 11/16. La Cassa di Sconto s’est
-                        alourdie à 213 l’action ancienne, ainsi que la Banque d’Athènes à 154 et la
-                        Banque d’Orient à 131 1/2. </p>
-                    <p>L’action Crédit Foncier a molli à 770 et là part de fondateur à 910.</p>
-                    <p>L’action Immobilière a fléchi à 366, l’Entreprise and Development à 11 15/16
-                        et l’Agricole du Nil à 259; la part de fondateur a progressé, par contre, à
+                    <p>Pen d'afiaireè en National Bank, qui à couturé à 25 1/2-9/16. L'Agricolé
+                        s'est tenue à son prix d'hier, soit 9 11/16. La Cassa di Sconto s'est
+                        alourdie à 213 l'action ancienne, ainsi que la Banque d'Athènes à 154 et la
+                        Banque d'Orient à 131 1/2. </p>
+                    <p>L'action Crédit Foncier a molli à 770 et là part de fondateur à 910.</p>
+                    <p>L'action Immobilière a fléchi à 366, l'Entreprise and Development à 11 15/16
+                        et l'Agricole du Nil à 259; la part de fondateur a progressé, par contre, à
                         7 1/16.</p>
                     <p>Bonne demande en Improvements Corporation, qui a gagné 1/8 à 4 11/16 3/4.</p>
-                    <p>L’action Entreprises Immobilière et Tra-vâux a’est raffermie à 4 1/16; la
+                    <p>L'action Entreprises Immobilière et Tra-vâux a'est raffermie à 4 1/16; la
                         part de fondateur, très recherchée, a avancé à 70.</p>
-                    <p>L’action Wardan Estate s’est inscrite à 6 et la,Nile Land à 13 1/2.</p>
+                    <p>L'action Wardan Estate s'est inscrite à 6 et la,Nile Land à 13 1/2.</p>
                     <p>La part de fondateur Land Allotment a encore faibli à 110.</p>
-                    <p>L’action de capital Eaux du Caire a fait 120-121; les Jouissances ont clôturé
+                    <p>L'action de capital Eaux du Caire a fait 120-121; les Jouissances ont clôturé
                         à 261 1/2 après avoir atteint 264.</p>
                     <p>Dans le groupe des Hôtels, les Nungovich, délaissés, sont restés à 15 7/16
-                        l’action anciene, et 15 3/8 la nouvelle. Les Baehler ont débuté à 5 23/32
+                        l'action anciene, et 15 3/8 la nouvelle. Les Baehler ont débuté à 5 23/32
                         pour finir à 5 21/32 11/16. Lee National ont progressé à 3 3/8.</p>
                     <p>Parmi les petites valeurs, les Delta Land ont été' ramenés à 3 13/16 et les
                         Glymenopoulo à 1 9/16.</p>
                     <p>***</p>
-                    <p>Nous détachons d’une lettre de Londres, en date du 19 Juin, les lignes
+                    <p>Nous détachons d'une lettre de Londres, en date du 19 Juin, les lignes
                         suivantes concernant la situation monétaire:</p>
-                    <p>"Les conditions de l’argent se sont avanta-geaiement modifiées. L’encaisse de
-                        la Banque d’Angleterre s’est considérablement accru et la proportion de la
-                        réserve s’est élevée à plus de 47%. Le taux de l’escompte libre oscille
+                    <p>"Les conditions de l'argent se sont avanta-geaiement modifiées. L'encaisse de
+                        la Banque d'Angleterre s'est considérablement accru et la proportion de la
+                        réserve s'est élevée à plus de 47%. Le taux de l'escompte libre oscille
                         entre 8 3/8 et 3 1/4 pour cent. La situation est donc, sans conteste,
                         meilleure, bien que les disponibilités du marché aient à faire face à
                         l'emprunt irlandais, annoncé pour le 7 Juillet; là tenue du cours du
-                        Consolidé anglais en est affectée. Le “Statist” ne prévoit pas une
-                        augmentation prochaine des disponibilités et s’attend même à des sorties
+                        Consolidé anglais en est affectée. Le "Statist" ne prévoit pas une
+                        augmentation prochaine des disponibilités et s'attend même à des sorties
                         considérables poor la fin du mois courant.</p>
-                    <p>Le Stock Exchange jouit en ce moment d’un repos relatif; c'est l’effet de la
+                    <p>Le Stock Exchange jouit en ce moment d'un repos relatif; c'est l'effet de la
                         morte saison. Là clientèle est devenue rare, et les mouvements des valeurs
                         quelque peu somnolentes ont beaucoup perdu de leur étendue."</p>
                     <p>***</p>
-                    <p>On annonce d’Athènes que L’assemblée générale extraordinaire des actionnaires
+                    <p>On annonce d'Athènes que L'assemblée générale extraordinaire des actionnaires
                         de la Banque du Crédit Industriel de Grèce, tenue samedi passé, a voté à
-                        l’unanimité la fusion avec la Banque d’Athènes.</p>
-                    <p>L’assemblée extraordinaire de la Banque d’Athènes, qui doit statuer sur le
+                        l'unanimité la fusion avec la Banque d'Athènes.</p>
+                    <p>L'assemblée extraordinaire de la Banque d'Athènes, qui doit statuer sur le
                         même objet; est fixée comme on sait; au samedi 7 Juillet prochain.</p>
                     <p>***</p>
-                    <p>On assure que l’arrangement négocié entre le gouvernement et la Société des
-                        Sucreries et Raffinerie d’Egyptè concernant l’achat par l’Etat des lignes de
-                        railways à voie étroite de cet té Société serait sur le point d’être conclu,
-                        au prix d’environ LE. 350,000.</p>
+                    <p>On assure que l'arrangement négocié entre le gouvernement et la Société des
+                        Sucreries et Raffinerie d'Egyptè concernant l'achat par l'Etat des lignes de
+                        railways à voie étroite de cet té Société serait sur le point d'être conclu,
+                        au prix d'environ LE. 350,000.</p>
                     <p>***</p>
-                    <p>Au dire d’un journal d’Alexandrie, un groupe financier, à la tête daquel se
-                        trouverait M. Scott, ancien directeur de la Compagnie d’assurance "The
+                    <p>Au dire d'un journal d'Alexandrie, un groupe financier, à la tête daquel se
+                        trouverait M. Scott, ancien directeur de la Compagnie d'assurance "The
                         Gresham," se propose de former une Société anonyme de constructions
                         economiques dont le siege social serait au Caire:</p>
-                    <p>"Les acheteurs-locataires deviendraient pro priétaires au bout d’un certain
-                        nombrè d’années en payant un loyer comprenant l’amortis sement du prix de
-                        l’immeuble et une prime d’assurance, de sorte qu’en cas de mort leurs
-                        héritiers deviendraient par le fait propriétaires.”</p>
+                    <p>"Les acheteurs-locataires deviendraient pro priétaires au bout d'un certain
+                        nombrè d'années en payant un loyer comprenant l'amortis sement du prix de
+                        l'immeuble et une prime d'assurance, de sorte qu'en cas de mort leurs
+                        héritiers deviendraient par le fait propriétaires."</p>
                     <p>A Londres, le Consolidé anglais a encore perdu hier 1/4 de livre à 87 7/8.
                         L'Unifée est restée invariée à 104 3/4, de même que la National Bank à 25
                         5/8, l'Agricole à 9 5/8, la Daïra à 17 1/8 et la Delta Light à 12.</p>
@@ -2617,20 +2636,22 @@
                         à 10 1/16. Les New Egyptian ont clôturé a 29 sh. 3 et les Egyptian
                         Constructions à 1 1/16-1/8. Les Khedivial Mail ont fait 32 shellings.</p>
                 </div>
-                <!-- Shipping Movements -->
-                <div type="item" xml:id="deg-el-etcl1">
+                <div type="item" feature="shippingMovements" status="empty">
+                    <head>SHIPPING MOVEMENTS. ALEXANDRIA HARBOUR</head>
+                </div>
+                <div type="template" xml:id="deg-el-etcl01">
                     <head>EASTERN TELEGRAPH CO. LTD.</head>
                     <p>AVERAGE TIME occupied in transmission of Egyptian telegrams from England to
                         Alexandria on <date when="1906-06-29">Tuesday, 29th June, 1906</date>. </p>
                     <p>OUTWARDS.</p>
                     <p>Between the hours of 10 a.m. and 6 p.m. (Cairo time)</p>
-                    <table rows="6" cols="3" xml:id="deg-ta-etcl1">
+                    <table rows="6" cols="3" xml:id="deg-ta-etcl01">
                         <row role="label">
                             <cell rows="2">FROM</cell>
                             <cell cols="2">MESSAGES HANDED IN AT</cell>
                         </row>
                         <row role="label">
-                            <cell>The Company’s Offices. H. M.</cell>
+                            <cell>The Company's Offices. H. M.</cell>
                             <cell>Postal Telegraph Offices. H. M.</cell>
                         </row>
                         <row>
@@ -2660,7 +2681,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-ctns01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-ctns01">
                     <head>COTONS</head>
                     <p>copie de la dépêche</p>
                     <p>DE L'ALEXANDRIA GENERAL PRODUCE ASSOCIATION</p>
@@ -2725,7 +2746,7 @@
                     </table>
                     <p>Marché quiet</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-bokh01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-bokh01">
                     <head>BOURSE KHEDIVIALE</head>
                     <p>CONTRATS</p>
                     <p>Fluctuations de 9h.30 à 1h. p.m.</p>
@@ -2753,7 +2774,7 @@
                     <p>Fèves.— En baisse et sans affaires, faute d'acheteurs.</p>
                     <p>Bourse Khédviale, le <date when="1906-06-26">27 juin 1906</date>.</p>
                 </div>
-                <div type="section" xml:lang="fr" xml:id="deg-el-mmeb01">
+                <div type="template" xml:lang="fr" xml:id="deg-el-mmeb01">
                     <head>MARCHE DE MINET-EL-BASSAL</head>
                     <dateline><date when="1906-06-29">29 juin 1906</date>.—(11h.55 a.m.)</dateline>
                     <p><hi rend="italic">Cotons</hi> —Clôture du marché du <date when="1906-06-28"
@@ -2786,7 +2807,7 @@
                     </table>
                     <p>Etat du marché de ce jour, cotons : Lourd.</p>
                     <p>Les arrivages de ce jour se chiffrent par cantars <measure unit="cantar"
-                            >-</measure> contre même jour l’année précédente cantars <measure
+                            >-</measure> contre même jour l'année précédente cantars <measure
                             unit="cantar">1016</measure>
                     </p>
                     <p><hi rend="italic">Grains de coton</hi>.— En baisse</p>
@@ -2911,7 +2932,7 @@
                     <div type="item">
                         <head>ARRIVAGES</head>
                         <dateline>du <date when="1906-06-29">vendredi 29 juin 1906</date></dateline>
-                        <p>Documents de l’ “Alexandria General Produce Association.”</p>
+                        <p>Documents de l' "Alexandria General Produce Association."</p>
                         <table rows="9" cols="4" xml:id="deg-ta-mmeb07">
                             <row role="label">
                                 <cell/>
@@ -2974,10 +2995,10 @@
                             </row>
                         </table>
                         <p><hi rend="italic">Cotons</hi>.-Total des arrivages depuis le <date
-                                when="1905-09-01">1er septembre 1905</date> jusqu’à ce jour, cantars
+                                when="1905-09-01">1er septembre 1905</date> jusqu'à ce jour, cantars
                                 <measure unit="cantar">5,870,823</measure>.</p>
                         <p><hi rend="italic">Grains de coton</hi>.—Total des arrivages depuis le
-                                <date when="1904-09-01">1er septembre 1905</date> jusqu’à ce jour,
+                                <date when="1904-09-01">1er septembre 1905</date> jusqu'à ce jour,
                             Ard. <measure unit="ard">3,556,081</measure></p>
                         <p>Contre même jour en 1905 :</p>
                         <table rows="3" cols="2" xml:id="deg-ta-mmeb08">
@@ -3007,14 +3028,14 @@
                             </row>
                         </table>
                         <p><hi rend="italic">Cotons</hi>.—Total des arrivages depuis le <date
-                                when="1904-09-01">ler septembre 1904</date> jusqu’à ce jour, cantars
+                                when="1904-09-01">ler septembre 1904</date> jusqu'à ce jour, cantars
                                 <measure unit="cantar">6,197,482</measure></p>
                         <p><hi rend="italic">Graines de coton</hi>.—Total des arrivages depuis le
-                                <date when="1904-09-01">ler septembre 1904</date> jusqu’à ce jour
+                                <date when="1904-09-01">ler septembre 1904</date> jusqu'à ce jour
                             Ard. <measure unit="ard">3,470,102</measure></p>
                     </div>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-extr01">
+                <div type="template" xml:lang="fr" xml:id="deg-el-extr01">
                     <head>Exterieur</head>
                     <p>Dépêches particulières du <date when="1906-06-28">28 juin 1906</date></p>
                     <p>PRODUITS EGYPTIENS</p>
@@ -3042,10 +3063,10 @@
                     <p>Futurs juil.: <measure unit="$">10.14</measure> (4 points de busse)</p>
                     <p>" oct. : <measure unit="$">10.26</measure> (9 points de baisse)</p>
                     <p>Arrivages du jour, balles <measure unit="balles">4,000</measure></p>
-                    <p>Contre même jour, l’année dernière, balles <measure unit="balles"
+                    <p>Contre même jour, l'année dernière, balles <measure unit="balles"
                             >9,000</measure></p>
                 </div>
-                <div type="item" xml:id="deg-el-reut01">
+                <div type="template" xml:id="deg-el-reut01">
                     <head>REUTER'S TELEGRAMS</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="4" xml:id="deg-ta-reut01">
@@ -3206,7 +3227,7 @@
                             <cell><measure>4.85</measure></cell>
                         </row>
                         <row>
-                            <cell>Cotton day’s receipts at all U.-S. Ports</cell>
+                            <cell>Cotton day's receipts at all U.-S. Ports</cell>
                             <cell/>
                             <cell>bales </cell>
                             <cell><measure>4,000</measure></cell>
@@ -3393,7 +3414,7 @@
                 </div>
                 <!-- Primes des Contrats -->
                 <!-- Alexandria General Produce Association -->
-                <div type="item" xml:id="deg-el-egmm01">
+                <div type="template" xml:id="deg-el-egmm01">
                     <head>EGYPTIAN MINING MARKET.</head>
                     <table cols="4" xml:id="deg-ta-egmm01">
                         <row role="label">
@@ -3489,13 +3510,14 @@
                         </row>
                     </table>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-teha01">
+                <div type="template" xml:lang="fr" feature="stocksShares" xml:id="deg-el-teha01"
+                    status="unverified">
                     <head>TELEGRAMME HAVAS</head>
                     <dateline>BOURSE du <date when="1906-06-28">29 juin 1906</date></dateline>
                     <p>COURS DES VALEURS A TERMS, CLOTURE</p>
                     <table cols="3" xml:id="deg-ta-teha01">
                         <row role="label">
-                            <cell cols="3"><placeName>PARIS</placeName></cell>
+                            <cell cols="3">PARIS</cell>
                         </row>
                         <row>
                             <cell>Rente Française 3 %</cell>
@@ -3568,7 +3590,7 @@
                             <cell><measure unit="fcs">25 15 </measure></cell>
                         </row>
                         <row role="label">
-                            <cell cols="3"><placeName>LONDRES</placeName></cell>
+                            <cell cols="3">LONDRES</cell>
                         </row>
                         <row>
                             <cell>Consolidés anglais</cell>
@@ -3580,7 +3602,7 @@
                         Berlin <measure>4 1/2%</measure>
                     </p>
                 </div>
-                <div type="section" xml:lang="fr" xml:id="deg-el-ameb01">
+                <div type="template" xml:lang="fr" xml:id="deg-el-ameb01">
                     <head>ARRIVAGES A MINET-EL-BASSAL</head>
                     <p>du mois de juillet 1905</p>
                     <table rows="29" cols="7" xml:id="deg-ta-ameb01">
@@ -3862,23 +3884,23 @@
                         </row>
                     </table>
                     <p>S/B 9,464 Ard. 60,318 Sacs 37,117</p>
-                    <p>N.B.—Cette liste est relevée des Registres de l’ “Alexandria General Produce
-                        Association”; nous la publions afin qu’on puisse la comparer avec les
+                    <p>N.B.—Cette liste est relevée des Registres de l' "Alexandria General Produce
+                        Association"; nous la publions afin qu'on puisse la comparer avec les
                         arrivages du mois de juillet 1906.</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-acms01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-acms01">
                     <head>ASSOCIATION DES COURTIERS EN MARCHANDISES</head>
                     <head type="sub">(Service spécial)</head>
                     <p>DÉPÊCHE D'OUVERTURE</p>
                     <p>LIVERPOOL, 10h. a.m.</p>
                     <p>Américain</p>
-                    <p>Futurs: juil- août. : <measure unit="$">5.74</measure></p>
+                    <p>Futurs: juilaoût. : <measure unit="$">5.74</measure></p>
                     <p>,, oct.-nov. : <measure unit="$">-</measure></p>
                     <p>Seconde Dépêche, 10h,5 a.m.</p>
                     <p>Futurs: juil.-août. : <measure unit="$">5.74</measure></p>
                     <p>,, oct.-nov. : <measure unit="$">5.54</measure></p>
                 </div>
-                <div type="item" xml:id="deg-el-wept01">
+                <div type="template" xml:id="deg-el-wept01">
                     <head>WEEKLY POSTAL TABLE.</head>
                     <head type="sub"><hi rend="italic">ALEXANDRIA OFFICE</hi>.</head>
                     <p>Table showing the days of despatch and arrival of the principal Foreign Mails
@@ -4241,10 +4263,11 @@
                 </div>
             </div>
             <pb n="7"/>
-            <div type="page" n="7">
+            <div type="page" n="7"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n6/mode/1up">
                 <head>THE EGYPTIAN GAZETTE, SATURDAY, JUNE 30, 1906.</head>
                 <head>7</head>
-                <div type="advert" xml:id="deg-ad-alf01">
+                <div type="advert" xml:id="deg-ad-alf01" colSpan="3">
                     <head>The IDEAL MILK FOODS for HOT CLIMATES. The 'Allenburys' Foods.</head>
                     <p>The "Allenburys" Foods give strength and Stamina, and supply all that is
                         required for the formation of firm flesh and bone. They promote perfect
@@ -4253,7 +4276,7 @@
                     <p>ALLEN &amp; HANBURYS Ltd., LONDON, ENGLAND. </p>
                     <p>Depot in Cairo:— E. Dell Mar, 25, Août.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-lgo01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-lgo01">
                     <head>LADIES &amp; GENTS OUTFITTING.</head>
                     <p>S. STEIN</p>
                     <p>Purveyor to H. H. the Khedive.</p>
@@ -4275,12 +4298,13 @@
                 </div>
             </div>
             <pb n="8"/>
-            <div type="page" n="8">
+            <div type="page" n="8"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-30/page/n7/mode/1up">
                 <div type="item">
                     <head>THE EGYPTIAN GAZETTE. SATURDAY, JUNE 30, 1906.</head>
                     <head>8</head>
                 </div>
-                <div type="advert" xml:id="deg-ad-gmc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-gmc01">
                     <head>G. MARCUS &amp; Co.</head>
                     <p>SOLE AGENTS FOR EGYPT FOR MILNER'S SAFE COMPANY, LIMITED.</p>
                     <p>Transatlantic Fire Insurance Company, Limited of Hamburg. (Covers also
@@ -4292,7 +4316,7 @@
                     <p>17-1190</p>
                 </div>
                 <div type="advert" xml:id="deg-ad-the01">
-                    <p>A BROKEN-DOWN SYSTEM.</p>
+                    <head>A BROKEN-DOWN SYSTEM.</head>
                     <p>This is a condition (or disease) to which doctors give many names, but which
                         few of them really understand. It it simply weakness—a break-down, as it
                         were, of the vital forces that sustain the system. No matter what may be its
@@ -4311,7 +4335,7 @@
                         restored,</p>
                     <p>THE EXPIRING LAMP OF LIFE LIGHTED UP AFRESH,</p>
                     <p>and a new existence imparted in place of what had so lately seemed worn-out,
-                        "used up,” and valueless. This wonderful medicament is purely vegetable and
+                        "used up," and valueless. This wonderful medicament is purely vegetable and
                         innocuous, is agreeable to the taste —suitable for all constitutions and
                         conditions, in either sex; and it is difficult to imagine a case of disease
                         or derangement, whose main features are those of debility, that will not be
@@ -4322,7 +4346,7 @@
                     <p>is sold by the principal Chemists throughout the world. Price in England, 2 9
                         and 4/6. Purchasers should see that the word 'THERAPION' appears on British
                         Government Stamp (in white letters on a red ground) affixed to every package
-                        by order of His Majesty’s Hon. Commissioners, and without which it is a
+                        by order of His Majesty's Hon. Commissioners, and without which it is a
                         forgery.</p>
                     <p>Sold by E. Del Mar, Alexandria, Cairo &amp; Port Said</p>
                 </div>
@@ -4345,7 +4369,7 @@
                     <p>---- gratuit, sur demande, du Guide Vétérinaire Dudiaux.</p>
                 </div>
                 <!-- Charles Evans -->
-                <div type="section" xml:lang="fr" xml:id="deg-el-agpa01">
+                <div type="template" xml:lang="fr" xml:id="alexandria-general-produce-weekly">
                     <head>ALEXANDRIA GENERAL PRODUCE ASSOCIATION</head>
                     <head>BULLETIN HEBDOMADAIRE</head>
                     <p>No. <measure>1,081</measure></p>
@@ -5124,7 +5148,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="advert" xml:id="deg-ad-aac01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-aac01">
                     <p>Allen, Alderson &amp; Co. Limited.</p>
                     <p>SOLE AND EXCLUSIVE AGENTS FOR</p>
                     <p>Messrs. RUSTON, PROCTOR &amp; CO., LIMITED, Lincoln. Fixed and Portable Steam
@@ -5140,11 +5164,11 @@
                     <p>Messrs. MERRYWEATHER &amp; SONS, London. Steam and Manual Fire Engines.</p>
                     <p>Messrs. F. REDDAWAY &amp; CO., LD., Pendleton, Manchester. The Camel Brand
                         Belting, etc., etc.</p>
-                    <p>Ratner’s Safes.</p>
+                    <p>Ratner's Safes.</p>
                     <p>THE ENGELBERG RICE HULLER. Gilkes Vortex Turbines.</p>
                     <p>Messrs. A. RANSOME &amp; Co., LIMITED, Newark-on-Trent. Wood Working
                         Machinery and Appliances.</p>
-                    <p>McCORMICK’S REAPERS &amp; MOWERS.</p>
+                    <p>McCORMICK'S REAPERS &amp; MOWERS.</p>
                     <p>PLANET JUNIOR AGRICULTURAL IMPLEMENTS. Horse Hoes, Seed, Drills, etc.,
                         etc.</p>
                     <p>OLIVER PLOUGHS.</p>
@@ -5154,7 +5178,7 @@
                     <p>Agents for Green's Economisers.</p>
                 </div>
                 <!-- Dixon Bros & Hutchinson -->
-                <div type="advert" xml:id="deg-ad-smc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-smc01">
                     <head>STEINEMANN, MABARDI &amp; C°</head>
                     <p>The Egyptian Engineering Stores.</p>
                     <p>MERCHANTS, CONTRACTORSS &amp; MACHINERY IMPORTERS, ALEXANDRIA.</p>
@@ -5188,13 +5212,13 @@
                         words Eugene Le Clore, impressed thereon to protect the public from
                         fraud.</p>
                 </div>
-                <div type="item">
+                <div type="advert">
                     <head>DR. LE CLERC'S SOAP</head>
                     <p>Medical, antiseptic, used and recommended by eminent dermatologists in the
                         treatment of eczema, lepra, psoriasis, ulcerations, skin eruptions, itching
                         and irritating skin humours, baby rashes, etc., also a prophylactic against
                         the risk of contraoting disease and infectious disorders generally. Its
-                        healing properties greatly minimise the inconvenienoes of shaving in cases
+                        healing properties greatly minimise the inconveniences of shaving in cases
                         of pimples, spots, tecacne. In Tablets, price 1s. sold by Max Fischer. Cairo
                         and Alexandria.</p>
                 </div>
@@ -5230,7 +5254,7 @@
                         poste; pour l'etranger 10 P.T. de port en sus.</p>
                 </div>
                 <!-- Ice Making Plants -->
-                <div type="advert" xml:id="deg-ad-tcs02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-tcs02">
                     <head>Thos. Cook &amp; Son, (EGYPT), LTD</head>
                     <p>HEAD OFFICE: LUDGATE CIRCUS—LONDON.</p>
                     <p>CHIEF EGYPTIAN OFFICE: — CAIRO, near SHEPHEARD'S HOTEL.</p>
@@ -5251,7 +5275,7 @@
                         rates.</p>
                     <p>Best camp equipment in the country.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-edl01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-edl01">
                     <head>Egyptian Delta Light Railways Co., Limited.</head>
                     <p>Connections made with the most important trains of the State Railway in the
                         Provinces of Behera, Gharbieh, Dakahlieh Charkieh and Galioubieh.<hi
@@ -5349,7 +5373,7 @@
                     <p>Goods delivered against cash for account of shippers. <measure type="indexNo"
                             >1-6-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-cst01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-cst01">
                     <head>Cairo Sewage Transport Cy., Ld.</head>
                     <p>Chief Office: Sharia Kasr-el-Nil, Cairo. Near the National Bank of Egypt.</p>
                     <p>Engrais Naturels Complets</p>

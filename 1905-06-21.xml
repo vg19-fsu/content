@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Egyptian Gazette</title>
+                <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Kedric Heyward</editor>
+                <editor role="primary">Kedric Heyward</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -17,11 +17,12 @@
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1905-06-21/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date when="1905-06-21">June 21, 1905</date>
+                    <date when="1905-06-21">Wednesday, June 21, 1905</date>
                     <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
@@ -29,101 +30,217 @@
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
-                <head>THE EGYPTIAN GAZETTE</head>
-                <!-- Enter issue number, date, and correct number of pages -->
-                <head type="sub">No. 7220] ALEXANDRIA, THURSDAY, WEDNESDAY, JUNE 21 1905. [SIX PAGES
-                    P.T. 1. </head>
-                <div type="section" scope="advertisement"> </div>
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1905-06-21/mode/1up"
+                status="incomplete">
+                <div type="nameplate">
+                    <table cols="6">
+                        <row>
+                            <cell rows="2" xml:id="deg-ad-etc01">The Eastern Telegraph Company,
+                                Limited.<lb/> This Company's system of submarine telegraph
+                                <lb/>cables is the most direct and quickest means of
+                                <lb/>communication from Egypt to Europe, North and <lb/>South
+                                America, East, South and West Africa, <lb/>India, Australia, New
+                                Zealand, China and Japan.<lb/> To secure quick transmission,
+                                telegrams should <lb/>be marked <hi rend="italic">Via
+                                Eastern</hi>.For latest average time to London, see daily
+                                <lb/>bulletin in this paper.<lb/> STATIONS IN EGYPT: Alexandria,
+                                Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd, Suakin. Head <lb/>Office.
+                                London.</cell>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2" xml:id="deg-ad-nll01"> NORDDEUTSCHER LLOYD<lb/>
+                                BREMEN.<lb/> EXPRESS MAIL STEAMERS<lb/> FROM<lb/> ALEXANDRIA, PORT
+                                SAID, AND SUEZ,<lb/> TO<lb/> NAPLES, MARSEILLES,<lb/> GENOA,
+                                SOUTHAMPTON, ANTWERP,<lb/> BREMEN, HAMBURG, AMERICA,<lb/> EASTERN
+                                ASIA, AUSTRALIA Etc.<lb/> For Particulars see Advertisement below.
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>No. <measure quantity="7220">7,220</measure>]</cell>
+                            <cell>ALEXANDRIA, WEDNESDAY, JUNE 21, 1905.</cell>
+                            <cell>[EIGHT PAGES</cell>
+                            <cell>P.T. 1</cell>
+                        </row>
+                    </table>
+                </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2"> </div>
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1905-06-21/page/n1/mode/1up"
+                status="templateDefault">
+                <cb n="1"/>
+                <div type="advert" colSpan="2" xml:id="deg-ad-ric01">
+                    <head>Royal Insurance Coy</head>
+                    <p>FIRE AND LIFE.</p>
+                    <p>Largest Fire Office in the World.</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p>R. VITERBO &amp; CO., Agents, Cairo.</p>
+                    <p>PHOENIX ASSURANCE COMPANY, LIMITED.</p>
+                    <p>(ESTABLISHED 1782);</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p><measure type="indexNo">31-3-906</measure> FRED. OTT &amp; CO., Sub-Agents,
+                        Cairo.</p>
+                </div>
+                <cb n="2"/>
+                <div type="item"/>
+                <cb n="3"/>
+                <div type="item"/>
+                <cb n="4"/>
+                <div type="item"/>
+                <cb n="5"/>
+                <div type="template" xml:id="deg-el-egsa02" status="templateDefault">
+                    <head>THE EGYPTIAN GAZETTE.</head>
+                    <p>SUBSCRIPTIONS.—Alexandria, Cairo, and the Interior of Egypt (including
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
+                        annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
+                        in the Postal Union P.T. 273 (£2.16s.) per annum. Six months P.T. 136½
+                        (£1.8s.), three months P.T. 92 (£0.19s.) N.B.—Subscriptions commence from
+                        the 1st or 16th of any month. </p>
+                    <p>ADVERTISEMENTS.—P.T. 4 per line. Minimum charge P.T. 20. Births, Marriages,
+                        or Deaths, not exceeding three lines, P.T. 20. Every additional line P.T.
+                        10. Notices in news column P.T. 20 per line. Contracts entered into for
+                        standing advertisements. </p>
+                    <p>ADVERTISEMENTS and SUBSCRIPTIONS are due in advance. P.O. Orders and Cheques
+                        to be made payable to the Editor and Manager, Rowland Snelling, Alexandria. </p>
+                    <p>London Offices : 36, New Broad-street. B.C. </p>
+                    <p>THE EGYPTIAN GAZETTE can be obtained in London at our office, 36, New Broad
+                        Street, E.C.</p>
+                    <p>Cairo Offices.-No. 1 Sharia Vervudachi, (opposite the Agricultural Bank.)</p>
+                    <p>THE "EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
+                        LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.) </p>
+                </div>
+                <div type="item" feature="imprint" xml:id="deg-el-egpi01" status="templateDefault">
+                    <head>The Egyptian Gazette</head>
+                    <p>An English Daily Newspaper, Established in 1880.</p>
+                    <p>Editor &amp; Manager: R. Snelling.</p>
+                    <p>Price: One Piastre Tariff.</p>
+                    <p><date when="1905-04-14">FRIDAY, APRIL 14, 1905.</date>.</p>
+                </div>
+                <div type="item"/>
+                <cb n="6"/>
+                <div type="item"/>
+            </div>
             <pb n="3"/>
-            <div type="page" n="3">
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1905-06-21/page/n2/mode/1up">
                 <head>THE EGYPTIAN GAZETTE, THURSDAY, WEDNESDAY, JUNE 21 1905. </head>
-                <cb n="1"/><div type="section" feature="wire">
-                <div type="item">
-                    <head>VICTORIOUS ADVANCE OF JAPANESE. RUSSIANS COMPLETELY OUTFLANKED. JOYFUL NEWS EXPECTED..</head>
-
-                    <p>London, June 21. The “Daily Telegraph” learns from Tokio that the Japanese
-                        are continuing their victorious advance. The Russians are com- \ pletely
-                        outflanked on both wings. Joyful news is shortly expected. (Reuter.) PEACE
-                        CONFERENCE.</p>
+                <cb n="1"/>
+                <div type="section" feature="wire">
+                    <div type="item">
+                        <head>VICTORIOUS ADVANCE OF JAPANESE. RUSSIANS COMPLETELY OUTFLANKED. JOYFUL
+                            NEWS EXPECTED..</head>
+                        <div type="cable">
+                            <dateline>London, June 21.</dateline>
+                            <p>The "Daily Telegraph" learns from Tokio that the Japanese are
+                                continuing their victorious advance. The Russians are com- \ pletely
+                                outflanked on both wings. Joyful news is shortly expected. (Reuter.)
+                            </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>PEACE CONFERENCE.<lb/>NEGOTIATIONS PROGRESSING.</head>
+                        <div type="cable">
+                            <dateline>Washington, June 20.</dateline>
+                            <p>Mr. Takahira has informed President Roose-velt that the Japanese
+                                plenipotentiaries will be able to reach Washington by the 1st
+                                August. If acceptable to Russia the conference will be convened for
+                                about that day. Count Cassini subsequently called at the White House
+                                and said that negotiations are progressing. (Reuter.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>HOPE FOR RUSSIA. TSAR'S NEW ATTITUDE.</head>
+                        <div type="cable">
+                            <dateline>St. Petersburg, June 20.</dateline>
+                            <p>The Tsar's gracious reception of the mem- t bers of the Zemstvos, and
+                                his emphatic promise of reformed institutions, is regarded as a
+                                tum-ing point in history, and has produced the best effect.
+                                (Reuter.) </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE RUSSIAN ARMY. MEETING OF OFFICERS.</head>
+                        <div type="cable">
+                            <dateline>St. Petersburg, June 20.</dateline>
+                            <p>Several hundred officers met in the mess room at Kransnoe Selo on the
+                                15th inst to discuss the situation of the-Army in view of recent
+                                events. General Rehbinder appeared on the scene and ordered the
+                                officers to disperse, the meeting being illegal. A group of officers
+                                then stepped forward and declared that they t were all faithful
+                                subjects of the Sovereign, but were unable to continue to act as
+                                military i police, which completely isolated them from anything.
+                                society, in which they were regarded as butchers. General Rehbinder
+                                promised them an opportunity of meeting legally. (Reuter.) </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE CASE OF THE "ST. KILDA." GREAT BRITAIN'S POSITION</head>
+                        <div type="cable">
+                            <dateline>LONDON June 20.</dateline>
+                            <p>House of Commons.—Mr. Balfour said that Great Britain took immediate
+                                steps with regard to the sinking of the "St. Kilda" by a Russian
+                                cruiser. Correspondence is proceeding between the British and
+                                Russian Governments, as this is a matter of which Great Britain
+                                takes a very grave view, because we had received the most specific
+                                assurance that no such action would be again taken by Russian
+                                cruisers. (Reuter.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>SWEDEN AND NORWAY. ABSENCE OF ANIMOSITY.</head>
+                        <div type="cable">
+                            <dateline>Christiania, June 20.</dateline>
+                            <p>The Storthing has addressed the King,declaring that Norway is devoid
+                                of any animosity and appeals to Sweden to recognise the new State of
+                                Norway as an independent State, which it is believed will lead to
+                                the development of good relations for the defence of mutual
+                                interests. (Reuter.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE MOROCCO QUESTION. HOPEFUL OUTLOOK.</head>
+                        <div type="cable">
+                            <dateline>Paris, June 20.</dateline>
+                            <p>It is understood that England is prepared to follow the lead of
+                                France if the latter accepts a conference. It is pointed out that
+                                Great Britain only refused the invitation of Morocco, and did not
+                                make any representation to Germany on the matter, which will
+                                simplify the solution. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Paris, June 20.</dateline>
+                            <p>M. Rouvier has acquainted the Council of Ministers with the progress
+                                of negotiations with Germany, which are proceeding through the
+                                exchange of notes. ( Havas.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>SPANISH CABINET CRISIS</head>
+                        <div type="cable">
+                            <dateline>Madrid, June 20.</dateline>
+                            <p>The Chamber has refused its confidence to the Cabinet, which has
+                                therefore resigned. (H.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>RACING.</head>
+                        <div type="cable">
+                            <dateline>London, June 20</dateline>
+                            <p>Ascot Stakes. ; Sand Boy ; 2, Karakoul; 8, Pradella.</p>
+                            <p>The Prince of Wales Stakes. 1, Plum centre; 2, Stadtholder; 3,
+                                Ritchie.</p>
+                            <p>Royal Hunt Cup. Betting: 4 to 1 against Daniel; 15 to 2 Whitechapel;
+                                10 to 1 Pharissee and Chardas 100 to 8 Donnetta and 100 to 7
+                                Challenger. (Reuter.)</p>
+                        </div>
+                    </div>
                 </div>
-                <div type="item">
-                    <head>NEGOTIATIONS PROGRESSING.</head>
-                    <p>Washington, June 20. Mr. Takahira has informed President Roose-velt that the
-                        Japanese plenipotentiaries will be able to reach Washington by the 1st
-                        August. If acceptable to Russia the conference will be convened for about
-                        that day. Count Cassini subsequently called at the White House and said that
-                        negotiations are progressing. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>HOPE FOR RUSSIA. TSAR’S NEW ATTITUDE.</head>
-                    <p>St. Petersburg, June 20. The Tsar's gracious reception of the mem- t bers of
-                        the Zemstvos, and his emphatic promise of reformed institutions, is regarded
-                        as a tum-ing point in history, and has produced the best effect. (Reuter.)
-                    </p>
-                </div>
-                <div type="item">
-                    <head>THE RUSSIAN ARMY. MEETING OF OFFICERS.</head>
-                    <p>St. Petersburg, June 20. Several hundred officers met in the mess room at
-                        Kransnoe Selo on the 15th inst to discuss the situation of the-Army in view
-                        of recent events. General Rehbinder appeared on the scene and ordered the
-                        officers to disperse, the meeting being illegal. A group of officers then
-                        stepped forward and declared that they t were all faithful subjects of the
-                        Sovereign, but were unable to continue to act as military i police, which
-                        completely isolated them from anything. society, in which they were regarded
-                        as butchers. General Rehbinder promised them an opportunity of meeting
-                        legally. (Reuter.) </p>
-                </div>
-                <div type="item">
-                    <head>THE CASE OF THE “ST. KILDA." GREAT BRITAIN’S POSITION</head>
-                    <p>LONDON June 20. House of Commons.—Mr. Balfour said that Great Britain took
-                        immediate steps with regard to the sinking of the “St. Kilda” by a Russian
-                        cruiser. Correspondence is proceeding between the British and Russian
-                        Governments, as this is a matter of which Great Britain takes a very grave
-                        view, because we had received the most specific assurance that no such
-                        action would be again taken by Russian cruisers. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>SWEDEN AND NORWAY. ABSENCE OF ANIMOSITY.</head>
-                    <p>Christiania, June 20. The Storthing has addressed the King,declaring that
-                        Norway is devoid of any animosity and appeals to Sweden to recognise the new
-                        State of Norway as an independent State, which it is believed will lead to
-                        the development of good relations for the defence of mutual interests.
-                        (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>THE MOROCCO QUESTION. HOPEFUL OUTLOOK.</head>
-                    <p>Paris, June 20. It is understood that England is prepared to follow the lead
-                        of France if the latter accepts a conference. It is pointed out that Great
-                        Britain only refused the invitation of Morocco, and did not make any
-                        representation to Germany on the matter, which will simplify the solution.
-                        (Reuter.)</p>
-                    <p>Paris, June 20. M. Rouvier has acquainted the Council of Ministers with the
-                        progress of negotiations with Germany, which are proceeding through the
-                        exchange of notes. ( Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>SPANISH CABINET CRISIS</head>
-                    <p>Madrid, June 20. The Chamber has refused its confidence to the Cabinet, which
-                        has therefore resigned. (H.)</p>
-                </div>
-                <div type="item">
-                    <head>RACING.</head>
-                    <p>London, June 20 Ascot Stakes. ; Sand Boy ; 2, Karakoul; 8, Pradella.</p>
-                    <p>The Prince of Wales Stakes. 1, Plum centre; 2, Stadtholder; 3, Ritchie.</p>
-                    <p>Royal Hunt Cup. Betting: 4 to 1 against Daniel; 15 to 2 Whitechapel; 10 to 1
-                        Pharissee and Chardas 100 to 8 Donnetta and 100 to 7 Challenger.
-                        (Reuter.)</p>
-                </div></div>
                 <cb n="2"/>
                 <div type="section" feature="local">
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
-                        <p>The Brindisi Mail will be distributed at the G.P.O., Alexandria, at 9.30
-                            p.m. today.</p>
+                        <head>The Brindisi Mail </head>
+                        <p>will be distributed at the G.P.O., Alexandria, at 9.30 p.m. today.</p>
                     </div>
                     <div type="item">
                         <head>Reduced Cable Rates</head>
@@ -146,12 +263,12 @@
                     <div type="item">
                         <head>Sudden Death</head>
                         <p>An Armenian local subject aged 70 years dropped dead from heart disease
-                            yesterday in a café near the Eastern Telegraph Company’s offices.</p>
+                            yesterday in a café near the Eastern Telegraph Company's offices.</p>
                     </div>
                     <div type="item">
-                        <p>Stray and Ownerless Dogs found in the Darb el Ahmar district of Cairo
-                            during tomorrow night and at daybreak on Friday will be poisoned by the
-                            police.</p>
+                        <head>Stray and Ownerless Dogs</head>
+                        <p>found in the Darb el Ahmar district of Cairo during tomorrow night and at
+                            daybreak on Friday will be poisoned by the police.</p>
                     </div>
                     <div type="item">
                         <head>Fatal Accident.</head>
@@ -166,7 +283,7 @@
                     </div>
                     <div type="item">
                         <head>The Plague</head>
-                        <p>Yesterday’s bulletin records a fresh case and a death in hospital at Alex
+                        <p>Yesterday's bulletin records a fresh case and a death in hospital at Alex
                             andria, and two cases at Damanhour. The case at Alexandria was that of a
                             native groom who had been employed in various stables in town.</p>
                     </div>
@@ -207,8 +324,8 @@
                     </div>
                     <div type="item">
                         <head>An ANCIENT EGYPTIAN Flea</head>
-                        <p>The American Press gives long accounts of Mr. Davies’s recent discovery
-                            at Thebes. In one of our transatlantic contemporaries’ accounts it is
+                        <p>The American Press gives long accounts of Mr. Davies's recent discovery
+                            at Thebes. In one of our transatlantic contemporaries' accounts it is
                             stated that at the bottom of one of the vases in the tomb was some
                             honey, in which floated a flea, which certainly goes to prove that it is
                             true that there is nothing new under the sun, and shows ns also that the
@@ -217,7 +334,7 @@
                     <div type="item">
                         <head>Suicide</head>
                         <p>A Syrian shoemaker, called George Hanna Akouri, committed suicide at
-                            about 9 a m. to day. After going to his shop near the Cafe d’Europe, in
+                            about 9 a m. to day. After going to his shop near the Cafe d'Europe, in
                             Frank-Street, he closed the doors and blew out his brains with a
                             revolver. The Menshieh caracol was warned, but the un fortunate man was
                             dead when the police arrived. An inquiry has been opened by Hadaya Roy
@@ -226,7 +343,7 @@
                     </div>
                     <div type="item">
                         <head>The DISTRIBUTION of Prizes</head>
-                        <p>to the pupils of the various Christian Brothers’ schools in Cairo will
+                        <p>to the pupils of the various Christian Brothers' schools in Cairo will
                             take place on the following dates : at the Ismailia College on Saturday,
                             24th inst, at the Shoubra College on Monday, 26th inst., at the Daher
                             and Bonlac Colleges on Tuesday, 27th Inst., at the Free School, Rue
@@ -257,7 +374,7 @@
                         the loss of life must have been considerable as the train was travelling at
                         a high rate of speed.</p>
                     <p>A Katr el Zayat correspondent informs ns that it is suspected that the gang
-                        which was at work “renewing” on the upline extended their operations to the
+                        which was at work "renewing" on the upline extended their operations to the
                         down line, and not being warned by signal of the approach of tire express,
                         failed to replace the bolts of the fishplates properly, with the result that
                         the rails gave way when the train passed over them.</p>
@@ -286,7 +403,7 @@
                         useless, for up to now nothing has been done to remedy matters.</p>
                 </div>
                 <div type="item">
-                    <head>CAIRO DEACONESSES’ HOSPITAL</head>
+                    <head>CAIRO DEACONESSES' HOSPITAL</head>
                     <p>The many improvements and alterations that have been going on at the above
                         hospital for several months past are now all completed and the new first and
                         second class wards for patients of European nationality on the second floor
@@ -320,19 +437,12 @@
                         year, should funds permit, to demolish it and erect larger and more suitable
                         premises.</p>
                 </div>
-
                 <div type="advert" xml:id="deg-ad-whr01">
-
                     <head>WINDSOR HOTEL Restaurant.</head>
-
-                    <p>Table d’Hote Luncheons &amp; Dinners Served on the Terrace.</p>
-
+                    <p>Table d'Hote Luncheons &amp; Dinners Served on the Terrace.</p>
                     <p>ORCHESTRA PLAYS 6 TO 11.30 P.M</p>
-
                     <p>DELIGHTFUL SITUATION - SEA BREEZES.</p>
-
                 </div>
-
                 <cb n="4"/>
                 <div type="item">
                     <head>POST OFFICE THEFT. ROBBERY OF £800.</head>
@@ -357,7 +467,7 @@
                     <head>POST OFFICE CHANGES AND TRANSFERS.</head>
                     <p>Mr. Musso, local director at Cairo, is leaving there today or tomorrow on
                         sick leave and will spend a few weeks at Ras-el-Bar to recu perate his
-                        health after his recent long illness, Daring Mr. Musso’s absence, Mr. A. O.
+                        health after his recent long illness, Daring Mr. Musso's absence, Mr. A. O.
                         Williams will officiate as Postmaster besides performing the duties of
                         acting Inspector of Cairo District.</p>
                     <p>Mr. H. Harrington, local director of Suez Post Office, has been temporarily
@@ -365,7 +475,7 @@
                         is expected that the transfer will become permanent In the mean while Mr.
                         Henry Zarb, chef de bureau, officiates as local director.</p>
                     <p>Naoum Effendi Ghirghis, formerly in charge of the Cairo, inquiry office, has
-                        been appointed secretary to the local direction, after 15 years’ service in
+                        been appointed secretary to the local direction, after 15 years' service in
                         the Pout Office and three in the Finance Ministry.</p>
                     <p>Nahla Effendi Tadrous, lately in charge of the branch post office at Mesara
                         Thos. Cook and Son's offices, near Shepheard's Hotel, will assume charge of
@@ -377,8 +487,8 @@
                     <p>The case of the theft from the Mahmal is at present receiving the full
                         attention of the Native Parquet, and there is every appearance that the
                         guilt of the four arrested men, whose names we gave in last Saturday's issue
-                        of the “Gazette," will be established. The police have arrested one of
-                        Androus’s brothers on a charge of complicity in the crime.</p>
+                        of the "Gazette," will be established. The police have arrested one of
+                        Androus's brothers on a charge of complicity in the crime.</p>
                     <p>The Parquet has decided to question the chief of the porters of the Mahmal,
                         who is said to have been intimate with Andraous Meloka. Some suspicious
                         marks have been found on the door of the van which contained the treasure.
@@ -400,51 +510,37 @@
                 </div>
                 <div type="item">
                     <head>ISLAM AND JAPAN.</head>
-                    <p>In “East and West" there is an interesting article on the Caliphate. The
+                    <p>In "East and West" there is an interesting article on the Caliphate. The
                         author, Mr. Ab dullah A. M. Sohraworthy, concludes with the following
                         significant hint: — A cultured Japanese (Mr. Okakura)has recently defined
-                        Islam as “Confucianism on horseback, sword in hand." The Land of the Rising
+                        Islam as "Confucianism on horseback, sword in hand." The Land of the Rising
                         Sun may produce the hero who, by a simple process, would weld the conquering
                         Japs and the warlike Moslems into one brotherhood, and direct the fanatical
                         forces that lie looked up in the wilds of Asia into the paths of peace and
                         progress, or perhaps of new conquests.</p>
                 </div>
-                <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                <div type="item" feature="steamerMovements">
+                    <head>STEAMER MOVEMENTS.</head>
                     <p>The S.S. "Cyprian Prince" left Antwerp yesterday with passengers and general
                         cargo for Malta and Alexandria.</p>
                 </div>
-
                 <div type="advert" xml:id="deg-ad-cah01">
-
                     <head>CARLTON HOTEL</head>
-
                     <p>Bulkeley, Ramleh.</p>
-
                     <p>Ten minutes from Alexandria. First-Class in every respect Very moderate
                         charges. Bulkeley is the fashionable English quarter. Visitors fron Cairo
                         alight at Sidi Gaber Station.</p>
-
                     <p>24480-24-5-905</p>
-
                     <p>G. AQUILINA, Proprieter.</p>
-
                 </div>
-
                 <div type="advert" xml:id="deg-ad-bcp01">
-
-                    <p>BECK &amp; CO’S PILSENER BEER</p>
-
+                    <head>BECK &amp; CO'S PILSENER BEER</head>
                     <p>BREMEN.</p>
-
                     <p>Obtainable from every Respectable Firm In Cairo, Alexandria &amp; the
                         Sudan.</p>
-
                     <p>Otherwise apply to</p>
-
                     <p>V. J. FLEURENT, Cairo</p>
-
                     <p>F. MICALLEF, Sole Agent, 11 Bab Midan, Alexandria</p>
-
                 </div>
                 <cb n="5"/>
                 <div type="item">
@@ -452,10 +548,10 @@
                     <byline>BY P.P.G.</byline>
                     <p>It is not difficult to get up at an unearthly hour of the morning when yon
                         are bound on a long and interesting journey. My packing was done : the
-                        excellent Pietro refused to hear a word of my bill till I returned from Ma’a
-                        “And when you come back,” he added, “you will please take off all your
+                        excellent Pietro refused to hear a word of my bill till I returned from Ma'a
+                        "And when you come back," he added, "you will please take off all your
                         clothes before you come into the hotel, and I will have a bath made ready
-                        for you.” “Is it as bad as that ?" quoth I, but Pietro held up his hands
+                        for you." "Is it as bad as that ?" quoth I, but Pietro held up his hands
                         with a gesture in which pity for my ignorance and abhorrence of the
                         conditions of travel in a troop train were sublimely blended. Then I got
                         into an arabiya and drove off.</p>
@@ -463,8 +559,8 @@
                         description of my drive. I passed through a variety of bazaars which Murray
                         and Baedeker have made celebrated, and saw many of the types which every
                         self-respecting traveller sees. Circassians, Druses, Kurds, Israelites,
-                        Bedawin, and the “shy Bedawin women stealing along with their tattooed faces
-                        uncovered.”—I quote somebody's guide book from memory,—who seemed to me to
+                        Bedawin, and the "shy Bedawin women stealing along with their tattooed faces
+                        uncovered."—I quote somebody's guide book from memory,—who seemed to me to
                         be no more shy than the good ladies who accompany gipsy caravans at
                         home.</p>
                     <p>Eventually I arrived at the station, and here I realised for the first time
@@ -475,9 +571,9 @@
                         we know them, are not to be found on the Hamidie-Hedjaz line, and yon get
                         instead a paper with your destination and a number of other particulars
                         scrawled on it by the booking office clerk. My turn came at last and I asked
-                        for Ma’an. An awkward panse followed, but a letter—the letter—was in my
+                        for Ma'an. An awkward panse followed, but a letter—the letter—was in my
                         pocket I drew it out, I am afraid with the same gesture with which the hero
-                        of the “Family Herald” roman ces draws his revolver and reduces the villain
+                        of the "Family Herald" roman ces draws his revolver and reduces the villain
                         to au impotent and raging silence, and in two minutes I had my ticket and
                         was preparing to board the train.</p>
                     <p>There were further difficulties to surmount. Porters do not abound on the
@@ -504,36 +600,36 @@
                         Plain, one of the most fertile and interesting districts in Palestine. (To
                         be continued)</p>
                 </div>
-                <div type="section" feature="social">
+                <div type="item" feature="social">
                     <head>PERSONAL AND SOCIAL.</head>
-                    <p>Mr. F. G. Freeman, H.B.M.'s Vice-Consnl at Alexandria, returns to Egypt via
-                        Port Said in the first week of July by the S.S. “Aston Hall.” Mr. Freeman
-                        was married on the 12th inst. and is bringing his bride out with him.</p>
+                    <p><persName>Mr. F. G. Freeman</persName>, H.B.M.'s Vice-Consnl at Alexandria,
+                        returns to Egypt via Port Said in the first week of July by the S.S. "Aston
+                        Hall." Mr. Freeman was married on the 12th inst. and is bringing his bride
+                        out with him.</p>
                     <p>The marriage of Captain C.W. Maclean, of the Lancashire Fusiliers, attached
                         to the Egyp. tian Army, and Miss Gladys Royle, daughter of Mr. and Mrs.
-                        George Royle, of Ghezireh, Cairo, will take place at St. George’s,
+                        George Royle, of Ghezireh, Cairo, will take place at St. George's,
                         Hanover-square, on the 12th Ju]y.</p>
                     <p>Captain Riach,. R.A.M.C., who has been suffering from enteric fever for some
                         time past at the Military Hospital, Ras-el-Tin, is making favorable
                         progress.</p>
-                    <p>Mr. Critchley, manager of the Imperial Ottoman Bank at Alexandria, is
-                        returning from London in the first week of July.</p>
-                    <p>Mr, Laurence Meany, manager of the Cairo branch of Caffari's stores, has left
+                    <p><persName>Mr. Critchley</persName>, manager of the Imperial Ottoman Bank at
+                        Alexandria, is returning from London in the first week of July.</p>
+                    <p>Mr. Laurence Meany, manager of the Cairo branch of Caffari's stores, has left
                         for Ireland on a holiday of about two months. Mr. Caffari himself will not
                         absent himself from Egypt this year.</p>
                     <p>The following visitors are staying at the Beau-Rivage Hotel, Ramleh : Mr. and
                         Mrs. Moore and family, Mrs. N. Berry, Mr. and Mrs. L. Davis, Mr. and Mrs.
                         McPherson Grant, Mr. and Mrs. N. Langhlin, Mr. and Mme. Jacques Press and
-                        family, Miss G. Temple, Mr. S. Burey, Mr. and Mme. Alb. Simha, Miss M. Kay,
-                        Judge Nyholm, Mr. and Mme A, David, Mrs. L. Reill.</p>
+                        family, Miss G. Temple, <persName>Mr. S. Burey</persName>, Mr. and Mme. Alb.
+                        Simha, Miss M. Kay, Judge Nyholm, Mr. and Mme A, David, Mrs. L. Reill.</p>
                 </div>
-
                 <cb n="6"/>
-                <div type="section" xml:lang="fr" feature="chroniqueFinanciere">
+                <div type="item" xml:lang="fr" feature="chroniqueFinanciere">
                     <head>CHRONIQUE FINANCIERE (8-20 Juin)</head>
                     <p>Cette dernière quinzaine n'a pas été brillante. Non seulement lés positions
                         de beaucoup se trouvaient surchargées, ainsi que nous l'avions prévu, mais
-                        une foule d’autres circonstances ont contribué à affaiblir le marché : la
+                        une foule d'autres circonstances ont contribué à affaiblir le marché : la
                         qu'on croyait imminente demeure encore problématique ; le malentendu
                         franco-allemand, qui à sa période aiguë a produit un malaise général, n'est
                         pas encore définitivement ap-plani ; les capitalistes partant en
@@ -542,23 +638,23 @@
                         pour les avances et ne prêtent pas sur les titres nouveaux. Voilà plus de
                         motifs qu'il n'en faut pour expliquer l'état actuel du marché. La petite
                         spéculation, qui avait jusqu'ici sacrifié ses gros titres pour ne pas se
-                        défaire des petits avec une perte énorme, n’a pu tenir plus long-temps et a
-                        du liquider au mieux, ce qui n’a pas été facile, car aucun capitaliste
-                        n’était là pour sauver la situation en absorbant d’un seul coup tout le
-                        flottant. C’est donc moins aux titres eux-mêmes qu’aux circonstances
-                        défavorables actuelles qu’il fout attribuer la baisse de ces derniers
+                        défaire des petits avec une perte énorme, n'a pu tenir plus long-temps et a
+                        du liquider au mieux, ce qui n'a pas été facile, car aucun capitaliste
+                        n'était là pour sauver la situation en absorbant d'un seul coup tout le
+                        flottant. C'est donc moins aux titres eux-mêmes qu'aux circonstances
+                        défavorables actuelles qu'il fout attribuer la baisse de ces derniers
                         jours.</p>
                     <p>Parmi les valeurs qui se sont maintenues le plus ferme, il fout placer en
-                        première ligne l’Agricole, dont le cours débute à 18 11/16 atteint 13 7/8
+                        première ligne l'Agricole, dont le cours débute à 18 11/16 atteint 13 7/8
                         pour clôturer à 13 21/32 ven deurs. La prochaine émission est pour beau-coup
                         dans ce soutien relatif.</p>
                     <p>De 26 3/4 la National Bank ancienne émission fléchit graduellement à 26 9/32
                         ex-droit, prix auquel elle clôture, tandis que la nouvelle émission est
-                        demandée à 26 1/2. Cet ecart que rien ne justifie, puisque l’ancienne
+                        demandée à 26 1/2. Cet ecart que rien ne justifie, puisque l'ancienne
                         émission a seule droit an coupon jette un nouveau jour sur la situation de
-                        notre place ; il suffit, en effet, qu’on ait peu d’argent à verser pour
-                        qu’une valeur y soit aussitôt recherchée et hausse contre toutes les règles
-                        du bon sens. Aussi faut-il s’attendre à un revirement dès qu’une
+                        notre place ; il suffit, en effet, qu'on ait peu d'argent à verser pour
+                        qu'une valeur y soit aussitôt recherchée et hausse contre toutes les règles
+                        du bon sens. Aussi faut-il s'attendre à un revirement dès qu'une
                         amélioration se produira.</p>
                     <p>La Land Bank fluctue entre 9 et 9 3/16, prix auquel elle clôture
                         acheteurs.</p>
@@ -566,29 +662,29 @@
                         19/32 et finir à 28 7/16. On ne sait rien encore de précis sur la
                         liquidation dont on ne connaîtra les clauses détaillées que vers la
                         mi-juillet.</p>
-                    <p>L’action Crédit Foncier fléchit de 823 à 812.</p>
-                    <p>L’Investment débute à 1 11/16 pour tomber graduellement jusqu'à 1 5/16, cours
+                    <p>L'action Crédit Foncier fléchit de 823 à 812.</p>
+                    <p>L'Investment débute à 1 11/16 pour tomber graduellement jusqu'à 1 5/16, cours
                         auquel on clôture acheteurs. Bon nombre de remisiers et de leurs clients qui
                         avaient fait des reports pour le 15 de ce mois ont été contraints de
                         liquider au mieux ; les acheteurs voyant les ventes continuer se tiennent
                         naturellement sur la réserve. Ou a fait circuler la rumeur de la démission
                         d'un administrateur de cette société, mais cette nouvelle a été de suite
                         officiellement démentie.</p>
-                    <p>De 1 1/4 le Trust a baissé un moment jusqu’à 1 1/8 pour reprendre eu clôture
-                        à 1 3/16. Nombre de détenteurs de lettres de répartition n’ayant pas encore
-                        reçu leurs certificats au porteur se trouvent dans l’impossi bilité de
-                        livrer leurs titres, tandis qu’ils sont contraints d’en recevoir des paquets
+                    <p>De 1 1/4 le Trust a baissé un moment jusqu'à 1 1/8 pour reprendre eu clôture
+                        à 1 3/16. Nombre de détenteurs de lettres de répartition n'ayant pas encore
+                        reçu leurs certificats au porteur se trouvent dans l'impossi bilité de
+                        livrer leurs titres, tandis qu'ils sont contraints d'en recevoir des paquets
                         de déten teurs plus favorisés.</p>
                     <p>D'importantes opérations ont eu lieu en Estâtes entre 7/8 et 15/16. Le prix
                         de cloture est 7/8.</p>
                     <p>La Béhéra monte de 45 1/2 à 45 3/4 pour finir à 45.</p>
-                    <p>Très soutenue d’abord à 124 1/2, la Banque d’Athènes clôture plus faible à
-                        120 par suite de la commotion politique produite par l’assassinat de M.
+                    <p>Très soutenue d'abord à 124 1/2, la Banque d'Athènes clôture plus faible à
+                        120 par suite de la commotion politique produite par l'assassinat de M.
                         Delyannis.</p>
                     <p>De 2 1/2 la Delta Dand fléchit à 2 1/4 vendeurs.</p>
-                    <p>L’Anglo-American Nile ouvre à 5 11/16, cote 5 5/16 ex-coupon et finit à 5 1/4
+                    <p>L'Anglo-American Nile ouvre à 5 11/16, cote 5 5/16 ex-coupon et finit à 5 1/4
                         vendeurs.</p>
-                    <p>La Salt and Soda retombe de 35/6 à 33. On s’attend à une sérieuse reprise sur
+                    <p>La Salt and Soda retombe de 35/6 à 33. On s'attend à une sérieuse reprise sur
                         cette valeur au retour des capitalistes.</p>
                     <p>La Delta Light monte de 12 15/16 à 13 1/16, mais ne tarde pas à retomber à 12
                         7/8 pour finir à 12 11/16. Ia Deferred baisse de 14 1/2 à 14 1/8 sans
@@ -597,22 +693,22 @@
                     <p>Les Privilégiées Tramways fluctuent entre 152 et 153 pour finir très
                         soutenues à 152 1/2.</p>
                     <p>Les Dividendes sont plus faibles à 348.</p>
-                    <p>L’Urbaine ouvre à 4 5/8, atteint 4 7/8, mais fléchit avec tout le reste à 4
+                    <p>L'Urbaine ouvre à 4 5/8, atteint 4 7/8, mais fléchit avec tout le reste à 4
                         5/8 vendeurs. Cette société serait déjà engagée, parait-il, dans plusieurs
                         affaires de premier ordre.</p>
                     <p>Les Splendid Hotels fluctuent entre 4 3/8 et 4 9/16 pour finir à 4 1/2.</p>
-                    <p>Les Eaux d’Alexandrie débutent à 15 3/4, cotent 15 1/4 ex-coupon et clôturent
+                    <p>Les Eaux d'Alexandrie débutent à 15 3/4, cotent 15 1/4 ex-coupon et clôturent
                         à 15 1/8.</p>
                     <p>De 1,130, les Baux du Caire tombent à 1,120 acheteurs.</p>
                     <p>Les Egyptian Markets se maintiennent à 22/3 acheteurs.</p>
                     <p>En Filature on ouvre à 11/16, atteint 25/32 pour retomber en clôture à 11/16,
                         avec nombreuses transactions.</p>
-                    <p>L’Obligation Crédit Foncier fléchit de 318 à 314 1/2.</p>
-                    <p>En somme, la situation n’est pas brillante, comme on vient de. le voir.
+                    <p>L'Obligation Crédit Foncier fléchit de 318 à 314 1/2.</p>
+                    <p>En somme, la situation n'est pas brillante, comme on vient de. le voir.
                         Certaines valeurs pourraient même fléchir encore davantage avec la
                         liquidation dè fin de mois, à moins qu'un événement favorable imprévu ne
                         vienne changer la face des choses.</p>
-                    <p>Le marché a été calme jusque vers midi. A ce moment d’importants rachats ont
+                    <p>Le marché a été calme jusque vers midi. A ce moment d'importants rachats ont
                         eu lieu en Investment dont le cours a haussé rapidement de 1 5/16 à 1 7/16
                         forts acheteurs. On a fait 4 à 5000 actions à ce prix. Les positions
                         surchargées étant à peu près liquidées, le mouvement ascensionnel a dos
@@ -621,18 +717,95 @@
                         changements indiquent une baisse : La National Bank fléchit de 26 5/16 à 26
                         1/4, l'Alexandria Water de 15 1/4 à 15, la Delta Light de 12 11/16 à 12 5/8
                         et la Ramleh Railway de 7 5/8 à 7 7/16.</p>
-                    <p>Seule la Salt and Soda reprend légèrement de 33 à 83/8 et l’action Crédit
+                    <p>Seule la Salt and Soda reprend légèrement de 33 à 83/8 et l'action Crédit
                         Foncier de 813 à 813.</p>
                 </div>
             </div>
             <pb n="4"/>
-            <div type="page" n="4">
-            </div>
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1905-06-21/page/n3/mode/1up"
+                status="empty"> </div>
             <pb n="5"/>
-            <div type="page" n="5">
-            </div>
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1905-06-21/page/n4/mode/1up"
+                status="empty"> </div>
             <pb n="6"/>
-            <div type="page" n="6">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1905-06-21/page/n5/mode/1up"
+                status="incomplete">
+                <cb n="1"/>
+                <!-- delegation municipale -->
+                <!-- eastern telegraph -->
+                <!-- Grand Hotel Bonnard -->
+                <cb n="2"/>
+                <div type="item" feature="shippingMovements" status="empty">
+                    <head>MOUVEMENT MARITIME DU PORT D'ALEXANDRIE</head>
+                </div>
+                <div type="item" feature="exportManifests" status="verified">
+                    <head>EXPORT MANIFESTS. </head>
+                    <p>Pour PO3T-SAID et SYRIE, par le bateau franç. "Congo," parti le 15 juin :</p>
+                    <p>G. Kanan, 45 cais. savon</p>
+                    <p>D. Lardicos, 69 balles tabac</p>
+                    <p>Bonded Stores, 9 balles henné</p>
+                    <p>G. Petsaly, 13 cais, savon, 10 barils sardines</p>
+                    <p>Anglo-Egyptian Bank Ltd, 5 cais. or</p>
+                    <p>Agent Principal, 42 colis déchets nacre</p>
+                    <p>Divers, 57 colis divers</p>
+                    <p>Pour MARSEILLE, par le bateau franç. "Sénégal,” parti le 16 jain :</p>
+                    <p>POUR MARSEILLE</p>
+                    <p>K. Naggiar, 12 balles senné</p>
+                    <p>Sté Le Khédive," 10 cais, cigarettes</p>
+                    <p>Sucreries, 409 cais. sucre</p>
+                    <p>Z. C. Zayan, 44 colis zinc, 11 colis oxyde de zinc</p>
+                    <p>Bonded Storas, 5 cais, cigarettes</p>
+                    <p>Vasdeki fr., 400 sacs oignons</p>
+                    <p>N. G. Ital., 8 balles peaux</p>
+                    <p>Divers, 51 colis divers</p>
+                    <p>F. O. Baines &amp; Co, 31 balles coton</p>
+                    <p>R. &amp; O. Lindemann, 30</p>
+                    <p>G. Frauger &amp; Co., 280</p>
+                    <p>TJ. Planta &amp; Co, 77</p>
+                    <p>Mohr &amp; Fenderl, 34</p>
+                    <p>Peel &amp; Co., 32</p>
+                    <p>W. Getty &amp; Co., 30</p>
+                    <p>514 balles coton</p>
+                    <p>POUR LE HAVRE</p>
+                    <p>K. Nagiar, 22 balles sonné</p>
+                    <p>POUR DYNXRRQUE</p>
+                    <p>Griva fr., 93 balles gomme</p>
+                    <p>POUR LONDRES</p>
+                    <p>C. G. Bolonachi, 6 barils cognac</p>
+                    <p>POUR TANGER</p>
+                    <p>Sacreries, 125 sacs sucre</p>
+                    <p>Pour BRINDISI et TRIESTB, per le bateau | autr. "Semiramis,” parti le 17 jain
+                        :</p>
+                    <p>Peel &amp; Co., 96 balles coton</p>
+                    <p>B. Mallison &amp; Co., 31</p>
+                    <p>F. C. Baines &amp; Co., 93</p>
+                    <p>B. &amp; O. Lindemann, 531</p>
+                    <p>Chorami, Benachi &amp; Co., 120</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 30</p>
+                    <p>Mohr &amp; Fenderl 128</p>
+                    <p>Schmid &amp; Co., 68</p>
+                    <p>J. Planta &amp; Co., 30</p>
+                    <p>1,127 balles coton</p>
+                    <p>Bonded Stores, 11 cais. cigarettes</p>
+                    <p>E. Almasy &amp; Co., 209 berils vides</p>
+                    <p>P. A. Bombottis, 18 belles peaux</p>
+                    <p>A. L. Carasso, 88 sacs gomme</p>
+                    <p>A. Dreher, 268 barils vides</p>
+                    <p>B. Tourchondjian, 88 balles peausserie</p>
+                    <p>Dépôt Bière de Graz, 990 barils vides</p>
+                    <p>A. Tedeschi, 164 cages tomatas</p>
+                    <p>P. M. Statird, 26 balles peaux</p>
+                    <p>L. Delacovias, 451 barils vides</p>
+                    <p>A. Seeger, 10 cais. et bazils boyaux</p>
+                    <p>A. Frick, 12 barils poisson frais</p>
+                    <p>Kyriazi fr., 7 cais, cigarettes</p>
+                    <p>Sté Le Kbédive, 10 cais. cigarettes</p>
+                    <p>Divers, 51 colis divers</p>
+                </div>
+                <!-- stocks and shares -->
             </div>
         </body>
     </text>

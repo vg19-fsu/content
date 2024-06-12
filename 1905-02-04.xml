@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
@@ -6,9 +6,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Egyptian Gazette</title>
+                <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Daisy Vazquez</editor>
+                <editor role="primary">Daisy Vazquez</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -18,30 +18,43 @@
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1905-02-04/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date when="1905-02-04">February 4, 1905</date>
-                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
+                    <date when="1905-02-04">Saturday, February 4, 1905</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
-                <head>THE EGYPTIAN GAZETTE</head>
-                <!-- Enter issue number, date, and correct number of pages -->
-                <head type="sub">No. 7239] ALEXANDRIA, THURSDAY, JULY 13, 1905. [SIX PAGES P.T. 1. </head>
-                <div type="section" scope="advertisement"> </div>
-                <div type="advert" xml:id="deg-ad-pos01">
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/mode/1up">
+                <div type="nameplate">
+                    <table cols="6">
+                        <row>
+                            <cell rows="2"/>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2"/>
+                        </row>
+                        <row>
+                            <cell> No. <measure quantity="7115">7,115</measure>]</cell>
+                            <cell> ALEXANDRIA, SATURDAY, FEBRUARY 4, 1905.</cell>
+                            <cell> [SIX PAGES</cell>
+                            <cell> P.T. 1</cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="advert" colSpan="2" xml:id="deg-ad-pos01">
                     <head>Peninsular and Oriental S. N. Company.</head>
                     <p>Summer Rates will be charged from 2 May to 31 October.</p>
-                    <p>For the convenience of families and others, a large portion of each ship’s
+                    <p>For the convenience of families and others, a large portion of each ship's
                         accommodation has been reserved for Egypt, so that Berths can be definitely
                         engaged at once, as if the voyage were commencing at Port Said. Plans can be
-                        seen at the Offices of the Company’s Agents.</p>
+                        seen at the Offices of the Company's Agents.</p>
                     <p>The through Steamers for Marseilles and London are intended to leave Port
                         Said after the arrival of the 11 a.m. train from Cairo, every Tuesday for
                         the present except the MONGOLIA, which is taking passengers to the
@@ -90,14 +103,14 @@
                     <p>Messrs. HABELDEN &amp; Co. ALEXANDRIA.</p>
                     <p>F. G. DAVIDSON, Superintendent P. &amp; O. S. N. Company in Egypt SUEZ.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-opl01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-opl01">
                     <head>Orient-Pacific Line of Royal Mail Steamers.</head>
                     <p>REDUCED SUMMER FARES FROM MAY TO OCTOBER INCLUSIVE.</p>
                     <p>OUTWARDS to AUSTRALIA.</p>
-                    <p>R.M.S. “Orotava" will leave Suez about July 28 | R.M.S "Ormuz" will leave
+                    <p>R.M.S. "Orotava" will leave Suez about July 28 | R.M.S "Ormuz" will leave
                         Suez about August 11.</p>
                     <p>HOMEWARDS to NAPLES MARSEILLES, GIBRALTAR, PLYMOUTH, LONDON, TILBURY</p>
-                    <p>R.M.S. "Oroya" will leave Port Said about July 18 | R.M.S. “Ortona" will
+                    <p>R.M.S. "Oroya" will leave Port Said about July 18 | R.M.S. "Ortona" will
                         leave Port Said about August 1</p>
                     <table>
                         <row>
@@ -148,7 +161,7 @@
                         all information apply</p>
                     <p>Wm. STAPLEDON &amp; Sons, PORT-SAID &amp; PORT-TEWFIK (Suez) 31-12-904</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-blm01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-blm01">
                     <head>BIBBY LINE MAIL STEAMERS.</head>
                     <p>Special Reduced Rates During Summer Season,</p>
                     <p>OUTWARDS to COLOMBO, TUTICORIN, etc., and RANGOON. Departures from Suez.</p>
@@ -162,30 +175,30 @@
                     <p>Agents Cairo: THOS. COOK &amp; SON. Suez &amp; Port Said : WM. STAPLEDON
                         &amp; SONS, 31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-kml01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-kml01">
                     <head>KHEDIVIAL MAIL LINE.</head>
-                    <p><hi rend="bold">FAST BRITISH PASSENGER STEAMERS</hi></p>
-                    <p><hi rend="bold">GREECE - TURKEY LINE.</hi></p>
+                    <p>FAST BRITISH PASSENGER STEAMERS</p>
+                    <p>GREECE - TURKEY LINE.</p>
                     <p>Express Steamers leave Alexandria every Wednesday at 4 p.m. for PIRAEUS,
                         SMYRNA, MITYLENE, and CONSTANTINOPLE, in connection with Orient Express
                         train-de-luxe for Vienna, Paris, and London.</p>
-                    <p><hi rend="bold">PALESTINE - SYRIA LINE.</hi></p>
+                    <p>PALESTINE - SYRIA LINE.</p>
                     <p>Fast steamers leave Alexandria every Saturday at 6 p.m., and Port Said every
                         Sunday at 6 p.m., for JAFFA (for Jerusalem), CAIFFA (for Nazareth), BEYROUT
                         (for Damascus), TRIPOLI, ALEXANDRETTA, MESSINA, continuing in alternate
                         weeks to LARNACA and LIMASSOL (Cyprus).</p>
-                    <p><hi rend="bold">RED SEA LINE.</hi></p>
+                    <p>RED SEA LINE.</p>
                     <p>Steamers leave Suez fortnightly on Wednesday at 6 p.m. for JEDDAH, SUAKIN,
                         MASSOWAH, HODBIDAH, and ADEN ; and in the intervening weeks for PORT SUDAN
                         and SUAKIN direct. Calls will be made at TOR (for Mount Sinai) as
                         required.</p>
                     <p>N.B.—Deck chairs provided for the use of passengers, excellent cuisine and
                         table wine free.</p>
-                    <p>Steamer plans may be seen and passages booked at the Company’s Agencies at
+                    <p>Steamer plans may be seen and passages booked at the Company's Agencies at
                         Alexandria, Cairo, Port Said, and Suez, or at THOS. COOK &amp; SON or other
                         Tourist Agency. 31-12-904</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mss01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mss01">
                     <head>The Moss S.S. Company, Ltd.</head>
                     <p>For LIVERPOOL calling at MALTA (Messrs. JAMES MOSS &amp; Co. 31, James St,
                         Liverpool, Managers.)</p>
@@ -235,7 +248,7 @@
                         Cairo. Particulars on application to</p>
                     <p>R. J. MOSS &amp; Co., Alexandria, Agents. 26-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-bis01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-bis01">
                     <head>British India S. N. Company, Limited.</head>
                     <p>MAIL AND PASSENGER STEAM SHIPS.</p>
                     <p>SAILINGS FROM SUEZ, LONDON and CALCUTTA LINE.</p>
@@ -283,7 +296,7 @@
                     <p>For further particulars. Freight and Passage apply to G. BEYTS &amp; Co.
                         Agents, Suez. 31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-all01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-all01">
                     <head>ANCHOR LINE, LIMITED.</head>
                     <p>(HENDERSON BROTHERS,) LONDON, LIVERPOOL AND GLASGOW.</p>
                     <p>Booking Passengers and Cargo through to Ports in India, Europe &amp;
@@ -292,7 +305,7 @@
                     <table rows="2" cols="6">
                         <row>
                             <cell>For MARSEILLES &amp; LIVERPOOL</cell>
-                            <cell>S.S. “Bohemia”</cell>
+                            <cell>S.S. "Bohemia"</cell>
                             <cell>July 26</cell>
                             <cell>For CALCUTTA</cell>
                             <cell>S.S. "Assyria"</cell>
@@ -300,7 +313,7 @@
                         </row>
                         <row>
                             <cell>For LONDON</cell>
-                            <cell>S.S. “Persia"</cell>
+                            <cell>S.S. "Persia"</cell>
                             <cell>July 28</cell>
                             <cell>For BOMBAY</cell>
                             <cell>S.S. "Australia"</cell>
@@ -317,7 +330,7 @@
                     <p>For further partienlan of Freight or Passage apply to G. BEYTS &amp; Co.,
                         Suez. 31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mic01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mic01">
                     <head>MARINE INSURANCE COMPANY, LIMITED.</head>
                     <p>Established 1836. Capital £1,000,000. Reserve Fund £650,000.</p>
                     <p>THE IMPERIAL FIRE OFFICE united with THE ALLIANCE ASSURANCE, Co., Ltd.</p>
@@ -325,7 +338,7 @@
                         £10,000,000.</p>
                     <p>31-12-905. Policies issued at SUEZ by G. BEYTS &amp; Co., Agents.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-dll01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-dll01">
                     <head>Deutsche Levante-Linie.</head>
                     <p>Mail and Passenger Steamships. Regular three-weekly Service from<lb/>
                         HAMBURG, via ANTWERP &amp; MALTA, to ALEXANDRIA and vice-versa,
@@ -339,11 +352,11 @@
                     <p>For tariff and particulars apply to ADOLPHE STROSS, Alexandria, Agent.</p>
                     <p>15-2-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mma01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mma01">
                     <head>Messageries Maritimes.</head>
                     <p>From Alexandria</p>
                     <table rows="12" cols="6">
-                        <head><hi rend="bold">Sailing from Alexandria in July, 1905.</hi></head>
+                        <head>Sailing from Alexandria in July, 1905.</head>
                         <row>
                             <cell cols="6"><hi rend="bold">For Marseilles direct</hi></cell>
                         </row>
@@ -428,7 +441,7 @@
                         </row>
                     </table>
                     <table rows="8" cols="3">
-                        <head><hi rend="bold">Rates of passage mess</hi></head>
+                        <head>Rates of passage mess</head>
                         <head type="sub">Including table wine.</head>
                         <row role="label">
                             <cell/>
@@ -481,7 +494,7 @@
                         </row>
                     </table>
                     <table rend="frame" xml:id="SailingfromPortSaid">
-                        <head><hi rend="bold">Sailing from Port Said in July, 1905</hi></head>
+                        <head>Sailing from Port Said in July, 1905</head>
                         <row>
                             <cell rows="5">For Marseilles Direct</cell>
                             <cell>Probably on</cell>
@@ -530,7 +543,7 @@
                         </row>
                     </table>
                     <table rend="frame" xml:id="SailingfromSuez">
-                        <head><hi rend="bold">Sailing from Suez in July, 1905</hi></head>
+                        <head>Sailing from Suez in July, 1905</head>
                         <row>
                             <cell rows="2">For Aden, Colombo, Singapore, Saigon, Hong-Kong,
                                 Shanghai, Kobe and Yokohama</cell>
@@ -593,7 +606,7 @@
                     </table>
                     <p>Cairo Agency (Shepheard's Hotel) 28-2-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-pri01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pri01">
                     <head>Prince Line.</head>
                     <table rend="frame" xml:id="Table1">
                         <row>
@@ -776,7 +789,7 @@
                     <p>For terms of freight or passage apply to C. J. Grace &amp; Co., Alexandria,
                         Agents. 31-12-904</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-pap01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pap01">
                     <head>THE PAPAYANNI LINE.</head>
                     <head type="sub">(The Ellerman Lines, Ltd.)</head>
                     <p>Frequent Sailings from ALEXANDRIA to LIVERPOOL, also Regular Services from
@@ -791,7 +804,7 @@
                     <p>For passage or freight apply to the Agents, BARKER &amp; Co., Alexandria.
                         2061-17-10-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-aan01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-aan01">
                     <head>Anglo-American Nile Steamer &amp; Hotel Coy.</head>
                     <p>Weekly departure during Winter Season by the<lb/> Luxurious First Class
                         Tourist Steamers VICTORIA, PURITAN &amp; MAYFLOWER.<lb/> Regular weekly
@@ -799,14 +812,14 @@
                         TO KHARTOUM, GONDOKORO AND THE WHITE NILE.<lb/> Steamers and Dahabeahs for
                         private charter. Steam Tugs and Steam Launches for hire.<lb/> FREIGHT
                         SERVICE BY STEAM BARGES BETWEEN CAIRO AND ALEXANDRIA.<lb/> Working in
-                        conjunction and under special arrangement with the<lb/> “Upper Egypt Hotels
+                        conjunction and under special arrangement with the<lb/> "Upper Egypt Hotels
                         Company."</p>
                     <p>For details and illustrated programmes apply to "THE ANGLO-AMERICAN NILE
                         STEAMER and<lb/> HOTEL COMPANY."</p>
-                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings.”
+                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings."
                         31-3-06</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nll01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nll01">
                     <head>NORDDEUTSCHER LLOYD</head>
                     <p>BREMEN.</p>
                     <p>EXPRESS MAIL STEAMERS<lb/> FROM<lb/> ALEXANDRIA, PORT SAID, AND SUEZ,<lb/>
@@ -814,8 +827,8 @@
                         HAMBURG, AMERICA,<lb/> EASTERN ASIA, AUSTRALIA Etc.</p>
                     <p>For Particulars see Advertisement below.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-als01">
-                    <head>Austrian Lloyd’s Steam Navigation</head>
+                <div type="advert" colSpan="2" xml:id="deg-ad-als01">
+                    <head>Austrian Lloyd's Steam Navigation</head>
                     <p>Alexandria-Brindisi-Venice-Trieste.</p>
                     <p>Weekly Express Mail Service. Steamers leave Alexandria every Saturday at 4
                         p.m. arrive at Brindisi, Tuesday a.m. in time for express to Paris, London,
@@ -882,7 +895,7 @@
                         the Army of Occupation and their families.</p>
                     <p>31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-ell01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ell01">
                     <head>Ellerman Lines, Limited.</head>
                     <table rows="3" cols="6">
                         <row>
@@ -922,7 +935,7 @@
                         &amp; SON, Agents for Hall Line, Port Said ; or COOK &amp; SON (Egypt),
                         Ltd., Cairo. 23788-28-8-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-cun01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-cun01">
                     <head>Cunard Line.</head>
                     <table rows="4" cols="6">
                         <head>Alexandria to New-York and Boston via the Continent and
@@ -979,7 +992,7 @@
                         from Egypt, and particulars aply to the Agents Rodacanachi &amp; Co.,
                         Alexandria; Nic. Kerzis, Cairo; R. Broadbent, Port Said. 19-1-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-ngi01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ngi01">
                     <head>Navigation Générale Italienne.</head>
                     <p>Societes Reunies Florio-Rubattino. - Services Postaux. - Departs de
                         Juillet.</p>
@@ -1016,79 +1029,203 @@
                         </row>
                     </table>
                 </div>
-
             </div>
             <pb n="2"/>
-            <div type="page" n="2"> </div>
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n1/mode/1up"
+                status="incomplete">
+                <cb n="1"/>
+                <div type="item"/>
+                <cb n="2"/>
+                <div type="item"/>
+                <cb n="3"/>
+                <div type="item"/>
+                <cb n="4"/>
+                <div type="item"/>
+                <cb n="5"/>
+                <div type="item"/>
+                <div type="template" xml:id="deg-el-egsa03">
+                    <head>THE EGYPTIAN GAZETTE.</head>
+                    <p>SUBSCRIPTIONS.– Alexandria, Cairo, and the Interior of Egypt (including
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
+                        annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
+                        in the Postal Union P.T. 273 (£2.16s.) per annum.</p>
+                    <p>ADVERTISEMENTS.– P.T. 4 per line. Minimum charge P.T. 20. Births, Marriages,
+                        or Deaths, not exceeding three lines, P.T. 20, every additional line P.T.
+                        10. Notices in news columns P.T. 20 per line. Contracts entered into for
+                        standing advertisements.</p>
+                    <p>N.B.– Subscriptions commence from the 1st or 16th of any month.</p>
+                    <p>SUBSCRIPTIONS and ADVERTISEMENTS are due in advance. P.O. Orders and Cheques
+                        to be made payable to the Editor and Manager, Rowland Snelling,
+                        Alexandria.</p>
+                    <p>London Offices: 86, New Broad-street, E.C.</p>
+                    <p>THE "EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
+                        LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.)
+                            <measure type="indexNo">36-4</measure></p>
+                </div>
+                <div type="item" feature="imprint" xml:id="deg-el-egpi01">
+                    <head>The Egyptian Gazette</head>
+                    <p>An English Daily Newspaper, Established in 1880.</p>
+                    <p>Editor &amp; Manager: R. Snelling.</p>
+                    <p>Price: One Piastre Tariff.</p>
+                    <p><date when="1905-02-04">SATURDAY, FEBRUARY 4, 1905</date>.</p>
+                </div>
+                <div type="item" feature="leader">
+                    <head>ENGLISH AND EGYPTIANS.</head>
+                    <p> Some correspondence has, recently appeared in our columns on the subject of
+                        the relations of Anglo-Egyptian society towards the natives, and in another
+                        column of to-day's issue we publish another contribution on the same
+                        subject. Although we admit the accuracy of many of the facts adduced, we are
+                        not prepared to endorse the conclusions which our corres<cb n="6"/>pondent
+                        draws. The truth is that in Egypt the lines of cleavage between the English
+                        and the natives are racial, religious, and social, and this. cleavage is
+                        inevitable. The very atmosphere of official life in Oriental countries tends
+                        to force officials into a caste. It is by such an artificial support that
+                        our prestige is maintained, and to grumble at this tendency of official dom
+                        in Egypt is, in our view, to misapprehend the factors of the situation and,
+                        as we are about to show, misinterpret the teachings of history. It is true
+                        that Lord Curzon recently. declared to an English audience, "You will never
+                        rule the East except from the heart, and the moment imagination has gone out
+                        of your Oriental policy your Empire will dwindle and decay." But, with all
+                        due deference to Lord Curzon, this is not the main secret of our prestige.
+                        One of the great lessons of the long struggle of Portugal, France, Holland,
+                        and England for India is that the ultimate success rests with the people
+                        who, in the surroundings of the East, can maintain unimpaired the moral and
+                        physical strength of their race, and preserve their distinctive habits as
+                        well as their distinctive nationality. We are well aware that it is a common
+                        reproach against the English. that they have held themselves aloof from the
+                        Indian races with the insular exclusiveness of a conquering race. But the
+                        experience of Portugal, Holland, and France shows that this very isolation
+                        has been one of the main ingredients of our strength. Owing to this lack of
+                        racial pride the Portuguese fell back to the level of the people they govern
+                        ed. Later on we find a similar tendency among the Dutch in Java, and the
+                        French in Madras and Bengal. The moral of the story. is that while the Dutch
+                        are drained by an interminable war in Achin, the English of to-day in India
+                        still live their own lives, retain their vigour and ascendengy, and find
+                        their cooks and butlers among the descendants of Da Costa) and Suares. Such
+                        an exclusive, attitude may, no dubt, err in its lack of sympathy, but that
+                        is a light def et in comparison with the advantages it confers on a mall
+                        governing body amidst a host of entirely alien subjects. This great lesson
+                        of our rule in India must also hold good in the case of Egypt, for it is one
+                        of the chief elements of England's success in the East.</p>
+                </div>
+                <div type="advert">
+                    <p>TYROL-Weissenstein Castle 3410</p>
+                    <p>First-class private hotel near Windisch-Matrei; Station, Lienz (reached from
+                        Venice or Trieste). Bracing f air. Good Mountaineering centre. Tennis.
+                        Fishing. Best June, September. Apply Pro- prietor. 25365-48-1</p>
+                </div>
+            </div>
             <pb n="3"/>
-            <div type="page" n="3">
-                <div type="section" feature="wire"><div type="item">
-                    <head>BATTLE OF HEI-KOU-TAI. FURTHER FIGHTING. GEN. GRIPENBERG RECALLED.</head>
-                    <p><placeName>Tokio,</placeName> February 3. The battle of Hei-kou-tai was more
-                        extensive and desperate was originally indicated. The result of the battle
-                        hung in the balance. After four days of fighting, the Japanese were in a
-                        critical position and outnumbered. Oyama finally ordered night attacks by
-                        all the columns on the 28th ult, which the Russians were unable to
-                        withstand. The latter began to retreat, whereupon the Japanese charged and
-                        occupied Hei-kou-tai on the morning of the 29th. ult (Reuter.)</p>
-                    <p><placeName>Tokio,</placeName> February 3. Marshal Oyana reports that the
-                        Japanese casualties from the 33th to the 29th January last were 7,000. The
-                        Russians had at least 10,000. The prisoners state that four infantry
-                        regiments were nearly annihilated (Reuter.)</p>
-                    <p><placeName>St. Petersburg,</placeName> February 3. General Kuropatkin reports
-                        that the Japanese on the 1st inst, after a hot bombardment, attacked
-                        Djantankenam, on the left bank of the Hun-Hor and drove out the Russians.
-                        The litter, having been reinforced, recaptured the village. It is stated
-                        here that General Gripenberg, who comm the troops at Hei-kou-tai, has
-                        relinquished his command on the ground of ill health. General Oyloff
-                        succeeds him. (R.)</p>
-                    <p><placeName>St. Petersburg,</placeName> February 5. General Gripenberg has
-                        been recalled for reasons of health. (Havas).</p>
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n2/mode/1up">
+                <div type="section" feature="wire">
+                    <div type="item">
+                        <head>BATTLE OF HEI-KOU-TAI. FURTHER FIGHTING. GEN. GRIPENBERG
+                            RECALLED.</head>
+                        <div type="cable">
+                            <dateline>Tokio,, February 3.</dateline>
+                            <p>The battle of Hei-kou-tai was more extensive and desperate was
+                                originally indicated. The result of the battle hung in the balance.
+                                After four days of fighting, the Japanese were in a critical
+                                position and outnumbered. Oyama finally ordered night attacks by all
+                                the columns on the 28th ult, which the Russians were unable to
+                                withstand. The latter began to retreat, whereupon the Japanese
+                                charged and occupied Hei-kou-tai on the morning of the 29th. ult
+                                (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Tokio,, February 3.</dateline>
+                            <p>Marshal Oyana reports that the Japanese casualties from the 33th to
+                                the 29th January last were 7,000. The Russians had at least 10,000.
+                                The prisoners state that four infantry regiments were nearly
+                                annihilated (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, February 3.</dateline>
+                            <p>General Kuropatkin reports that the Japanese on the 1st inst, after a
+                                hot bombardment, attacked Djantankenam, on the left bank of the
+                                Hun-Hor and drove out the Russians. The litter, having been
+                                reinforced, recaptured the village. It is stated here that General
+                                Gripenberg, who comm the troops at Hei-kou-tai, has relinquished his
+                                command on the ground of ill health. General Oyloff succeeds him.
+                                (R.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, February 5.</dateline>
+                            <p>General Gripenberg has been recalled for reasons of health.
+                                (Havas).</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>RUSSIAN DISTURBANCES. THE WARSAW CASUALTIIES TROUBLES AT LODZ. </head>
+                        <div type="cable">
+                            <dateline>Warsaw,, February 3.</dateline>
+                            <p>There is now no doubt that the casualties at Warsaw far exceeded
+                                those of the Capital. The dead were buried at night guarded by
+                                troops. The looting was due to Hooligans, who wore incited by the
+                                police in order to discredit the movement. A hand of workmen
+                                yesterday entered the Hooligan quarter and killed all whom they
+                                found in possession of plunder. (Reuter).</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>London,, February 3.</dateline>
+                            <p>A strike has broken out in the coal district of Dombrova and
+                                Sosnowic, on which Warsaw and Lodz depend for their entire coal
+                                supply. (Reuter).</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Lodz,, February 3.</dateline>
+                            <p>Serious disturbances have taken place hen today, where the strikers
+                                number 250,000. The mob fought the troops with revolvers. There were
+                                many killed and wounded. (R.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Warsaw,, February 3.</dateline>
+                            <p>It is estimated that in the recent trouble-600 people were killed or
+                                wounded. (R).</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE TSAR'S UKASE.</head>
+                        <div type="cable">
+                            <dateline>St. Petersburg, February 3</dateline>
+                            <p>With reference to one section of the Tsar's Ukase relating to the
+                                reforms, the Committee of Ministers decided to recommend a series of
+                                measures for limiting individual initiative of Ministers with the
+                                Tsar, and specially as regards the alteration and suspension of
+                                laws, for increasing the control and the initiative of the Senate in
+                                this latter connection, for facilitating the prosecution of
+                                officials by private persons fur illegalities, for the establishing
+                                of local courts in connection with the Senate, and for the provision
+                                of educated jurymen where the question of the loss of civil rights
+                                is involved. (Reuter.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE BALTIC FLEET. MOVEMENTS OP SQUADRONS.</head>
+                        <div type="cable">
+                            <dateline>Djibouti,, February 3.</dateline>
+                            <p>Admiral Botrovosky's squadron has left for Madagascar, is German
+                                colliers are following the squadron. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>London,, February 3.</dateline>
+                            <p>Lloyd's learns from Mauritius that the Baltic Fleet was still at
+                                Nossi Be on the 28th January. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Manila,, February 3.</dateline>
+                            <p>The American Fleet has left for the south of the archipelago in order
+                                to maintain neutrality there. (R.)</p>
+                        </div>
+                    </div>
                 </div>
-                <div type="item">
-                    <head>RUSSIAN DISTURBANCES. THE WARSAW CASUALTIIES TROUBLES AT LODZ. </head>
-                    <p><placeName>Warsaw,</placeName> February 3. There is now no doubt that the
-                        casualties at Warsaw far exceeded those of the Capital. The dead were buried
-                        at night guarded by troops. The looting was due to Hooligans, who wore
-                        incited by the police in order to discredit the movement. A hand of workmen
-                        yesterday entered the Hooligan quarter and killed all whom they found in
-                        possession of plunder. (Reuter).</p>
-                    <p><placeName>London,</placeName> February 3. A strike has broken out in the
-                        coal district of Dombrova and Sosnowic, on which Warsaw and Lodz depend for
-                        their entire coal supply. (Reuter).</p>
-                    <p><placeName>Lodz,</placeName> February 3. Serious disturbances have taken
-                        place hen today, where the strikers number 250,000. The mob fought the
-                        troops with revolvers. There were many killed and wounded. (R.)</p>
-                    <p><placeName>Warsaw,</placeName> February 3. It is estimated that in the recent
-                        trouble-600 people were killed or wounded. (R).</p>
-                </div>
-                <div type="item">
-                    <head>THE TSAR’S UKASE.</head>
-                    <p><placeName>St. Petersburg,</placeName> February 3 With reference to one
-                        section of the Tsar's Ukase relating to the reforms, the Committee of
-                        Ministers decided to recommend a series of measures for limiting individual
-                        initiative of Ministers with the Tsar, and specially as regards the
-                        alteration and suspension of laws, for increasing the control and the
-                        initiative of the Senate in this latter connection, for facilitating the
-                        prosecution of officials by private persons fur illegalities, for the
-                        establishing of local courts in connection with the Senate, and for the
-                        provision of educated jurymen where the question of the loss of civil rights
-                        is involved. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>THE BALTIC FLEET. MOVEMENTS OP SQUADRONS.</head>
-                    <p><placeName>Djibouti,</placeName> February 3. Admiral Botrovosky's squadron
-                        has left for Madagascar, is German colliers are following the squadron.
-                        (Reuter.)</p>
-                    <p><placeName>London,</placeName> February 3. Lloyd's learns from Mauritius that
-                        the Baltic Fleet was still at Nossi Be on the 28th January. (Reuter.)</p>
-                    <p><placeName>Manila,</placeName> February 3. The American Fleet has left for
-                        the south of the archipelago in order to maintain neutrality there. (R.)</p>
-                </div></div>
-                <div type="advert"  xml:id="deg-ad-bcp01">
-                    <p>BECK &amp; CO’S PILSENER BEER</p>
+                <div type="advert" xml:id="deg-ad-bcp01">
+                    <head>BECK &amp; CO'S PILSENER BEER</head>
                     <p>BREMEN.</p>
-                    <p>Obtainable from every Respectable Firm In Cairo, Alexandria &amp; the Sudan.</p>
+                    <p>Obtainable from every Respectable Firm In Cairo, Alexandria &amp; the
+                        Sudan.</p>
                     <p>Otherwise apply to</p>
                     <p>V. J. FLEURENT, Cairo</p>
                     <p>F. MICALLEF, Sole Agent, 11 Bab Midan, Alexandria</p>
@@ -1096,10 +1233,11 @@
                 <div type="section" feature="local">
                     <head>LOCAL AND GENERAL</head>
                     <div type="item">
-                        <head>The Mahmal</head><p>arrived at Jeddah yesterday. Tin Brindisi Mail closes at the
-                            G. P. 0. Alexandria, at 3 p m. tomorrow. The Fitzer Quatuor will give
-                            two more rentals at the New Khedivial Hotel, Alexandria, on the 17th and
-                            24th inst.</p>
+                        <head>The Mahmal</head>
+                        <p>arrived at Jeddah yesterday. Tin Brindisi Mail closes at the G. P. 0.
+                            Alexandria, at 3 p m. tomorrow. The Fitzer Quatuor will give two more
+                            rentals at the New Khedivial Hotel, Alexandria, on the 17th and 24th
+                            inst.</p>
                     </div>
                     <div type="item">
                         <head>Suez Canal</head>
@@ -1109,21 +1247,21 @@
                     <div type="item">
                         <head>National Bank or Egtpt</head>
                         <p>The new agencies of this bank at Benha, Damanhour, Shebin el-Kom, Beni
-                            Souef, Keneh, Sohag, aud Assouan have commenced working this week.</p>
+                            Souef, Keneh, Sohag, and Assouan have commenced working this week.</p>
                     </div>
                     <div type="item">
                         <head>The Pirates of Penzance."</head>
-                        <p>The performance of "The Pirates of Penzance," we are informed, is to
-                            take place in Cairo ou the 22nd iust, aud not on the 17th, as the Duke
-                            of Connaught not arrive in Cairo until the 17th inst. An Important
-                            Postal Innovation will come into force on April 1, when a postal order
-                            service will be established between Egypt and Great Britain and her
-                            colonies. No other country has such a system in vogue in connection with
-                            the Egyptian Postal Administration.</p>
+                        <p>The performance of "The Pirates of Penzance," we are informed, is to take
+                            place in Cairo ou the 22nd iust, and not on the 17th, as the Duke of
+                            Connaught not arrive in Cairo until the 17th inst. An Important Postal
+                            Innovation will come into force on April 1, when a postal order service
+                            will be established between Egypt and Great Britain and her colonies. No
+                            other country has such a system in vogue in connection with the Egyptian
+                            Postal Administration.</p>
                     </div>
                     <div type="item">
                         <head>The Freres' Case</head>
-                        <p>The “Chambre Correctionuele” of the Appeal Court at Aix will hear the
+                        <p>The "Chambre Correctionuele" of the Appeal Court at Aix will hear the
                             appeal of M. Leon Yayon against the judgment given by the French
                             Consular Coart at Cairo against him for libelling the Christian
                             Brothers, on the 9th inst.</p>
@@ -1138,9 +1276,9 @@
                     <div type="item">
                         <head>Egyptian Institute</head>
                         <p>There will be a meeting of the Egyptian Institute on Monday afternoon
-                            next at 3 o’clock. Yacoub Pasha Artin will lecture on "8ome Artistic
+                            next at 3 o'clock. Yacoub Pasha Artin will lecture on "8ome Artistic
                             Curios of the Fourteenth Century," and Dr. Apostolidis will discuss
-                            "Hellenism in Egypt before the Macedonian Age.” There will be some
+                            "Hellenism in Egypt before the Macedonian Age." There will be some
                             elections of new members after the meeting.</p>
                     </div>
                     <div type="item">
@@ -1157,25 +1295,26 @@
                     <div type="item">
                         <head>Armenian Benevolent Society</head>
                         <p>The Zizinia Theatre was crowded last night on the occassion of the
-                            special performance of "Le Petit Lord” for the benefit of the Armenian
+                            special performance of "Le Petit Lord" for the benefit of the Armenian
                             Benevolent Society of Alexandria. All the boxes were decorated with
                             flowers and the audience was representative of the cream of Alexandrian
                             society. The play was well acted. Miss Loyer as Cedric Errol was
                             charming and acted the part of little Poutleroy to perfection. M.
                             Foamier as the Duke of Dorincourt was also good End the minor porta were
                             well filled. After the play various artists recited. M. Plan, whose
-                            volume of poems is criticised in another part of to-day’s issue, gave
-                            bis poem of “La Femme da Marin” and the taste and emotion of his recital
+                            volume of poems is criticised in another part of to-day's issue, gave
+                            his poem of "La Femme da Marin" and the taste and emotion of his recital
                             were greatly relished by the audience. Miss Daussmond and Miss Loyer
-                            gave some pretty monologues and the evening ended with Calmette’s farce
-                            “En Voitnre.”</p>
+                            gave some pretty monologues and the evening ended with Calmette's farce
+                            "En Voitnre."</p>
                     </div>
                 </div>
-                <div type="section" xml:lang="fr" feature="bulletinBourse"><head>BULLETIN DE LA BOURSE</head>
-                    <p>(Aujourd’ hui a midi et damie) La reprise des cotons, en attirent lee specula
+                <div type="item" xml:lang="fr" feature="bulletinBourse">
+                    <head>BULLETIN DE LA BOURSE</head>
+                    <p>(Aujourd' hui a midi et damie) La reprise des cotons, en attirent lee specula
                         teurs a la corbeille dee manchandises, a en traine du mime coop la
                         depreciation et le de laissement de la oorbeille des valours. Aussi
-                        avont-nous peu d’affaires a enregistrer quel qaes Oasis et denx ou trois
+                        avont-nous peu d'affaires a enregistrer quel qaes Oasis et denx ou trois
                         changes end autres valours, et o'est tout. Malgre cela, le marche se
                         maintient relative ment ferine.</p>
                 </div>
@@ -1206,12 +1345,12 @@
                         brought into Court to prove that during his wife's illness his conduct had
                         been most sympathetic. The truth was that he idolized his wife, that the
                         responsible position which he now 1 bolds as the commercial manager here of
-                        so important a company as that of the Rxffinerie d’Egypto, showed. That
+                        so important a company as that of the Rxffinerie d'Egypto, showed. That
                         laboured most seriously in order to enrich his wife. When he had attained
                         that i position, his wife had ruined his lile by her t flagrant infidelity.
                         As to the disgraceful allegations in regard to the perverted instincts of
                         his client, Maltre Coluoci said that such charges were always tramped up in
-                        these matrimonial cases in order to blacken the husband’s character. She has
+                        these matrimonial cases in order to blacken the husband's character. She has
                         complained during the eight years of her married life, and she now, through
                         her counsel, declared that her husband began to display his deprived
                         character three days after the marriage ceremony. Maitre Coluoci then read
@@ -1224,7 +1363,7 @@
                         the claim of the husband to a official separation, Maitre Colucci declared
                         that the reconciliation was only of a tacit and thus did not invalidate the
                         subsequent claim for a separation. He then declared that the wife's conduct
-                        was very like the rise of the heroine of Paul Bourget's "Cruelle Bnigme,”
+                        was very like the rise of the heroine of Paul Bourget's "Cruelle Bnigme,"
                         for, although she loved her husband, yet she was unable to resist deceiving
                         him. Mr. Ninci loved his wife to distraction, and his passionate devotion to
                         her fully explained the alleged violence of his conduct and his weakness in
@@ -1233,7 +1372,7 @@
                         right to a judicial separation, the reconciliation between him and his
                         erring wife should be tantamount to a complete resumption of marital
                         relations. But in the case in question this was not so but was merely a
-                        trick of his wife’s lover, Judge Constantine Dimaras, who, knowing the
+                        trick of his wife's lover, Judge Constantine Dimaras, who, knowing the
                         intricacies of the Italian aa well as of the Hollenio Code, had suggested to
                         his mistress that she should be temporarily reconciled with her husband, and
                         then provoke an incident, such as occurred at Helouan, in order that she
@@ -1248,12 +1387,12 @@
                         by the judge. Counsel then proved that Mr. Ninci was not certain of his
                         wife's misconduct at that time, because when Mr. Ninoi desired to have a
                         duel with the judge, the seconds came to an arrangement As the seconds were
-                        very respectable gentlemen, it was impossible for them to oome to arrange
+                        very respectable gentlemen, it was impossible for them to come to arrange
                         matters if there had been any certainty as to the adultery. Until the last
                         moment had continued her relations with the judge in a house in
                         Sesostris-street, and when the judge left for the Pinens last week, she had
                         a terrible attack of hysteria, which disturbed all the inhabitant# of the
-                        opponent. This fully showed the "diabolical persistence” of her passion for
+                        opponent. This fully showed the "diabolical persistence" of her passion for
                         her lover. As to alimony, Maltre Coluoci declared that counsel for the
                         defence had erroneously stated that, even if the wife waa alone guilty, it
                         should be granted. LB. 15 was demanded, but any alimony was out of the
@@ -1261,18 +1400,19 @@
                         the present, where the wife alone was to blame, obligatory | alimony will
                         quit. Maltre Coiaooi, his client was a man of feelings, and would not allow
                         his to starve. If however, the Court granted fixed sum, such as LE 16, the
-                        wife would Mare Egypt, and go to live with the judge at h« husband’s
+                        wife would Mare Egypt, and go to live with the judge at h« husband's
                         expense. He was prepared to give her an allowance of LE 6 monthly. In spite
                         of the protestations of Maltre Guidotti, Maltre Colucci declared that the
                         entire family of the wife, prior to her marriage, existed on LE 8 per month,
                         so that LE 6 for her alone was enough. This ended the speech of Maltre
                         Colnooi.and Maltre Guidotti then ruse to rejoin but was informed by the
                         judge that, as it was late, he should send his pleading to him and that
-                        judgment would be given in a few days’ time.</p>
+                        judgment would be given in a few days' time.</p>
                 </div>
-                <div type="section" feature="khedive"><head>THE KHEDIVE</head>
+                <div type="item" feature="khedive">
+                    <head>THE KHEDIVE</head>
                     <p>The Khedive will leave Montazah tomorrow for Cairo, and will return to
-                        Alexandria on Friday next to attend the El Orwa el-Woaka Society’s benefit
+                        Alexandria on Friday next to attend the El Orwa el-Woaka Society's benefit
                         performance at the Zizinia Theatre. All those who have recently been
                         promoted it decorated will be accorded an audience with H.H. the Khedive on
                         Monday, the 13th instant, at Abdeen Palace, at the following hours and in
@@ -1296,14 +1436,15 @@
                         in Cairo on the 17th inst.</p>
                 </div>
                 <div type="item">
-                    <head>LORD CROMER’S TRIP.</head>
-                    <p>(From our Correspondent.) Medinet-el-Fayoum, Saturday, 1 p.m. Lord and Lady
-                        Cromer and Lady Thynne arrived here to-day and were received by the Mondnieh
-                        officials, judges, Bedouin chiefs, village headmen, and a great gathering of
-                        other local notables. Lord Cromer made a speech touching on the cotton worm,
-                        locusts, irrigation, alcoholism, and many other matters, which was greatly
-                        appreciated. Our distinguished visitors leave for the South at 5.40
-                        o’clock.</p>
+                    <head>LORD CROMER'S TRIP.</head>
+                    <byline>(From our Correspondent.)</byline>
+                    <dateline> Medinet-el-Fayoum, Saturday, 1 p.m.</dateline>
+                    <p>Lord and Lady Cromer and Lady Thynne arrived here to-day and were received by
+                        the Mondnieh officials, judges, Bedouin chiefs, village headmen, and a great
+                        gathering of other local notables. Lord Cromer made a speech touching on the
+                        cotton worm, locusts, irrigation, alcoholism, and many other matters, which
+                        was greatly appreciated. Our distinguished visitors leave for the South at
+                        5.40 o'clock.</p>
                 </div>
                 <div type="item">
                     <head>JUDICIAL COMMISSION.</head>
@@ -1311,7 +1452,7 @@
                         held at the Mixed Court, Alexandria, under the presidency of Boutroe Pasha
                         Ghali, Minister for Foreign Affaire. The Judicial Adviser and the Khedivial
                         Counsellors, Messrs. Bernard and Rocca Serra, were present. The work of the
-                        Commission is now practically over. This morning’s conference was only
+                        Commission is now practically over. This morning's conference was only
                         concerned with some comparatively unimportant details.</p>
                 </div>
                 <div type="item">
@@ -1321,17 +1462,18 @@
                         Xenophon Stellakia, at present president of the Hellenic Consular Court at
                         Smyrna. The Greek Government has taken this step in consequence of the
                         scandals associated with Judge Dim area. The matrimonial case in which he is
-                        mixed up is reported in another column of today’s issue.</p>
+                        mixed up is reported in another column of today's issue.</p>
                 </div>
                 <div type="item">
-                    <head>THE S.S “FORTUNA."</head>
+                    <head>THE S.S "FORTUNA."</head>
                     <p>Our Suez Correspondent informs us that there is no truth in the rumour that
                         the S.S. "Fortuna" has been wrecked in the Bed Sea. He adds that he saw the
                         vessel anchored yesterday morning in the Suez roads loading cargo for
                         tour.</p>
                 </div>
-                <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS</head>
-                    <p>The S.S. "Indian Prince” left Manchester on Thursday with passengers and
+                <div type="item" feature="steamerMovements">
+                    <head>STEAMER MOVEMENTS</head>
+                    <p>The S.S. "Indian Prince" left Manchester on Thursday with passengers and
                         general cargo for Malta and Alexandria.</p>
                 </div>
                 <div type="item">
@@ -1349,7 +1491,7 @@
                     <head>SPORT AND PLAY. </head>
                     <div type="item">
                         <head>MENA HOUSE GYMKHANA.</head>
-                        <p>Yesterday afternoon’s pleasant fixture, the Mena House Gymkhana, was
+                        <p>Yesterday afternoon's pleasant fixture, the Mena House Gymkhana, was
                             attended by a large and fashionable gathering. A number of visitors came
                             out early to Mena to lunch at the hotel before the races began at 3
                             o'clock, and the hospitality of Men's House was taxed to its utmost to
@@ -1361,7 +1503,7 @@
                         <p>General Post Stakes on Horses.—1. Mrs. Wood, 2. Mrs. Nolan.</p>
                         <p>Camel Race for Gentlemen —1. Mr. littlewood, 9. Ahmed Pareg Bey. 3. Mr.
                             Vernon.</p>
-                        <p>Ladies’ Pony Race. — 1. Mrs. Wood, 2. Mrs. Nolan.</p>
+                        <p>Ladies' Pony Race. — 1. Mrs. Wood, 2. Mrs. Nolan.</p>
                         <p>Hubdu Race. — 1. Ibrahim Bey Cberif) 2. Ahmed Bey Cheri 3. Mr. Starkey. </p>
                         <p>Lamas Donkey Rat*.— 1. Miss Babs. HackRack—1. Mr. Colton Pox, 9. Mohamed
                             Pouad Nomad, 3. Ahmed Pang Bey.</p>
@@ -1369,7 +1511,6 @@
                             of eight Ramadam came in first, followed by Soldi and Kamel. The
                             presentation of prizes took plaoe on the terrace of the hotel.</p>
                     </div>
-
                     <div type="item">
                         <head>POINT-TO-POINT RACES.</head>
                         <p>The Abbassieh Hunt point-to-point race meeting was held yesterday at
@@ -1379,7 +1520,7 @@
                             Cairo. The enclosure, which commanded a very good view of the course,
                             was decorated with flags, and detachments of police and ghaffirs were
                             drawn up on the bank of the canal, at the point where the launches and
-                            barge stopped. Mr. Machell gave a large lunch party on the “Scout” and
+                            barge stopped. Mr. Machell gave a large lunch party on the "Scout" and
                             Sir William Gore tin also entertained a party on board one of the
                             launches of the Irrigation Department. Among those present were the Duke
                             and Duchess of Devonshire, Lady Londesborough, Lord and lady Dalhonsie,
@@ -1389,14 +1530,14 @@
                             the Misses Harley, Mrs. Crawley, Mr. H. Rumbold, Capt the Hon. A.
                             Stanley, Mr. and Mrs. Satow, Mr. and Mrs. Wyid, Dr. Keatings, Mr. and
                             Mrs. Graham, Mr. Carter Wilson, Capt Gillson, Mr. and Mrs. Astley
-                            Friend, Mr. and Mrs. Scott-Dalgleish, Mr. aud Mrs. Drummood-Hay, Capt.
+                            Friend, Mr. and Mrs. Scott-Dalgleish, Mr. and Mrs. Drummood-Hay, Capt.
                             Biggs, B.K., Mr. Tod, Mr. Bowden-Smith, and many others. The racing good
                             and expeditiously managed, the starts being capital.There were some
-                            tumbles bat no one came to any ham, aud the dust was the only thing that
+                            tumbles bat no one came to any ham, and the dust was the only thing that
                             at all interfered with the pleasure of the visitors. The following are
                             the results</p>
                         <p>Landowness Race — This race resolved itself into a match between Mohamed
-                            Salam el Shedid’s horse, a grey, and a chestnut owned by Hamad el Miftah
+                            Salam el Shedid's horse, a grey, and a chestnut owned by Hamad el Miftah
                             el Tabawi, who was beaten by a bare half-length. Beheri Bey Halawa won
                             the third prixe oat of five competitors.</p>
                         <p>Hunt Cup - There were five runners in the Hunt Cup Race, of whom Capt
@@ -1406,7 +1547,7 @@
                             his mount refused a jump and cost him a couple of bandied yards Capt.
                             Lewin was the winner, Capt the Hon. A. Stanley being a good second, and
                             Capt Bartlett third.</p>
-                        <p>Sheikhs’ Rack—Won after an amusing race by Sadi Bey Sbedid, Abdul Megib
+                        <p>Sheikhs' Rack—Won after an amusing race by Sadi Bey Sbedid, Abdul Megib
                             Toulba being second, and Beheri Bey Hajawa third.</p>
                         <p>Own Rack—Woo fairly easily by Capt the Hon. A. Stanley, Capt Bartlett
                             bring second, and Mr. Lockett third, Mr. Tod dose behind.</p>
@@ -1420,7 +1561,7 @@
                     </div>
                     <div type="item">
                         <head>Cairo v. Alexandria.</head>
-                        <p>A cricket match, "Cairo” v. "Alexandria,’' will be played in Cairo on
+                        <p>A cricket match, "Cairo" v. "Alexandria,'' will be played in Cairo on
                             Friday, 17th inst, at 10.30 am. The teams are as follows</p>
                     </div>
                     <div type="item">
@@ -1429,21 +1570,21 @@
                             in Alderson's Garden yesterday after noon, proved a very interesting
                             fixture arc drew a lam crowd of spectators. Play was very exciting. In
                             the first half it proved very quick and looked in favor of the RT.C, hot
-                            during the second half Alderson’s Garden played up , well and won by 6
+                            during the second half Alderson's Garden played up , well and won by 6
                             to A The following wen , the teams:— RT.C.—Townsend, Barnes. and
-                            Collier. Alderson’s Garden. - Douglas Alien, W Tookejr, end H. C.
+                            Collier. Alderson's Garden. - Douglas Alien, W Tookejr, end H. C.
                             Tookey.</p>
                     </div>
                 </div>
-                <div type="section" feature="social">
+                <div type="item" feature="social">
                     <head>PERSONAL AND SOCIAL</head>
-                    <p>The Nile season this year has never been surpassed, and Cook’s and the
-                        Anglo-American Line’s steamers are taking enormous numbers of tourists up
+                    <p>The Nile season this year has never been surpassed, and Cook's and the
+                        Anglo-American Line's steamers are taking enormous numbers of tourists up
                         the river. The dahabiehs and privately chartered steamers are also being
                         well patronised. Among the distinguished departure from Cairo yesterday for
                         the river trip was Prince Gusts via Adolphus of Sweden and Norway, who left
                         by the S.S. "Cleopatra for Upper Egypt. The Empress Eugenie also left
-                        yesterday for a river trip with her party, on board Cook’s S.S. "Nephtis."
+                        yesterday for a river trip with her party, on board Cook's S.S. "Nephtis."
                         The Empress will probably go as far at Khartoum. She was most pleased with
                         her stay it the Savoy Hotel where she will be beck in March. The Marquis di
                         Rudini was the guest of the evening last night at a banquet given at Cairo
@@ -1457,23 +1598,24 @@
                         their dahabieh trip up the river. Sir Ernest Ceasel and party, including Sir
                         Edward and lady Colebrooke are to be in Cairo for some time. They are
                         staying at the Savoy Hotel Lady Sarah Wilson has gone up the Nile with Lord
-                        and Lady Howe. Sir Benjamin Baker, Mr. Aird, and Mr. Blue are arriving at
-                        Cairo next week.</p>
-                    <p>The "At Home” given at the Carole International Mansoomh, Tuesday last, was
+                        and Lady Howe. Sir Benjamin Baker, <persName>Mr. Aird</persName>, and Mr.
+                        Blue are arriving at Cairo next week.</p>
+                    <p>The "At Home" given at the Carole International Mansoomh, Tuesday last, was
                         in every way a great success. Dancing commenced about 10 o'clock and went
                         merrily on anti! 3. There were about people present. Supper was served at 12
-                        o’clock and amongst the 24 guests of the Moadir we noticed the British
+                        o'clock and amongst the 24 guests of the Moadir we noticed the British
                         Consul and Mrs. Murdoch, Mr, Mrs, and Miss Smith, the Rev. T. Perininger,
-                        Mr, Mrs, and Miss Warner, Mr. Moberiy, Dr. Biring, Mr. Hopkins, Mr. and Mr*.
-                        Kindynekos. The president of the dub. Makaod Bey, and the vice-president,
-                        Mr. Midnatopdo, also entertained other guests. The health of the Moadir,
-                        Mustaph* Maher Pasha, was drank with social honors, and after several
-                        speeches dancing recommenced. Amongst other guests we noticed Mme. Commonoe,
-                        Mme Gertsen, Mr. George and Miss Dood, Judge Bemsn, judge Hegaus, the
-                        Russian Consul Mr. Hmkih Grets, etc. A great amounted of the success of the
-                        evening was due to the untiring efforts of Maksud Bey. The evening closed
-                        with “Should all acquaintance be forgot," “God Save the King” and the
-                        Turkish national anthem.</p>
+                        Mr, Mrs, and Miss Warner, <persName>Mr. Moberiy</persName>, Dr. Biring,
+                            <persName>Mr. Hopkins</persName>, Mr. and Mr*. Kindynekos. The president
+                        of the dub. Makaod Bey, and the vice-president, Mr. Midnatopdo, also
+                        entertained other guests. The health of the Moadir, Mustaph* Maher Pasha,
+                        was drank with social honors, and after several speeches dancing
+                        recommenced. Amongst other guests we noticed Mme. Commonoe, Mme Gertsen, Mr.
+                        George and Miss Dood, Judge Bemsn, judge Hegaus, the Russian Consul Mr.
+                        Hmkih Grets, etc. A great amounted of the success of the evening was due to
+                        the untiring efforts of Maksud Bey. The evening closed with "Should all
+                        acquaintance be forgot," "God Save the King" and the Turkish national
+                        anthem.</p>
                     <p>The United States Diplomatic Agent and Consul-General Mr. Biddle; is giving a
                         large dinner party at the Savoy Hotel on 23rd fast. Count Kocxiebrodxki, the
                         new Austro-Hungarian Consul-General, received the members of the office at
@@ -1489,12 +1631,16 @@
                         Europe. Mr. Antoine Saohtouris, Hellenic Vice Consul at Alexandria, has been
                         promoted to the rank of consul and transferred to Uskub, Macedonia. </p>
                 </div>
-                <div type="section" feature="passList">
+                <div type="item" feature="passList">
                     <head>PASSENGER LISTS DEPARTURES.</head>
-                    <p>Le paquebot "Congo” des Messegeries Mari-times parti pour Marseille le 3
-                        farrier avait a bord: M. Cotillon, M. Cornekmp, M. Coobard, M. Bandry, M.
-                        Auerbach. M. Antoine Misk, Mme Grandjren, Mme A. Worms, Mme A. Bertonx. M.
-                        Balks, et 19 pastogen de 3me et 4me classe.</p>
+                    <p>Le paquebot <name>"Congo"</name> des Messegeries Mari-times parti pour
+                        Marseille le 3 farrier avait a bord:</p>
+                    <p><persName>M. Cotillon</persName>, <persName>M. Cornekmp</persName>,
+                            <persName>M. Coobard</persName>, <persName>M. Bandry</persName>,
+                            <persName>M. Auerbach. M. Antoine Misk</persName>, <persName>Mme.
+                            Grandjren</persName>, <persName>Mme A. Worms</persName>, <persName>Mme
+                            A. Bertonx. M. Balks</persName>, et 19 pastogen de 3me et 4me
+                        classe.</p>
                 </div>
                 <div type="item">
                     <head>WINDSOR HOTEL.</head>
@@ -1509,13 +1655,1013 @@
                 </div>
             </div>
             <pb n="4"/>
-            <div type="page" n="4">
-            </div>
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n3/mode/1up"
+                status="empty"> </div>
             <pb n="5"/>
-            <div type="page" n="5">
-            </div>
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n4/mode/1up"
+                status="empty"> </div>
             <pb n="6"/>
-            <div type="page" n="6">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n5/mode/1up"
+                status="incomplete">
+                <cb n="1"/>
+                <!-- egyptian mining -->
+                <div type="item" feature="shareMarket">
+                    <head>EGYPTIAN SHARE MARKET. </head>
+                    <p>(FBox OUR FINANCIAL CORRESPONDENT.) </p>
+                    <p>. Londotr January 27. The world has indeed seen some stirring events since
+                        our last. A week ago telegram: from Russia announced a great strike of
+                        workmen was about to take place, but, as pointed out at the time, the word
+                        "revolt " better described the rising rather than "strike." The uprising has
+                        begun with all its terrible consequences-how much farther it will go no one
+                        can at the moment foresee ; if any reliance can be placed on the statements
+                        of the Russian authorities the worst would seem to have passed and some sort
+                        of order is being restored. No doubt it has opened the eyes of those in
+                        power as to the condition of affairs in that unfortunate country, and unless
+                        something is done to ameliorate the condition of his subjects, the Tsar will
+                        iudeud be in a worse plight than ever. "It is an ill wind that blowa nobody
+                        good," and as a result of these internal upheavals in Russia peace in the
+                        Far East is nearer to-day than it has been for some time past. Even the
+                        bellicose Dukes are beginning to realise that they cannot successfully carry
+                        on a great war with a foreign power whilst the fames of an interual war are
+                        breaking out in their unidst at home. Due to this cause is the evident
+                        satisfaction felt by the financial world at the moment that reckless
+                        expenditure may soon be stopped, before the financial strain becomes too
+                        great. </p>
+                    <p>The Hatiess of the Stock Markets which prevailed at the beginning of the week
+                        is rapidly passing away and to-night prices are leaving off buoyant by
+                        comparison. Even Egyptian stocks suffered early in the week, National Banks
+                        in particular making a drop of quito a poiut from last Saturday's olvac, and
+                        touching 25 sellers. The rally, however, has been equally sharp, the price
+                        recovering to 26+ in less than a couple of days, whilst Daira Sanieh shares,
+                        which have been down to 213 are up to 224 at the present moment. There have
+                        been some seilers of Daira Sugar about in Paris during the last day or two,
+                        but the price stands wonderfully firm st 5.13/16, as the shares were placed
+                        with little or no difficulty and without prejudicinig the market, which is
+                        distinctly firm at the above figure. Other Egyptian shares maintain their
+                        prices steadily with little change. Agricultural Banks look fairly firm at
+                        10. Nationals at the time of writing look steady at 251. It must be borne in
+                        mind that the present prices must show some good profite, so that naturally
+                        a certain amount of stook is finding its way back to the market. Generally
+                        speaking the tone during the latter part of the week has been distinctly
+                        better. | There is a marked recovery in South Africans, though it must be
+                        admitted that the motive power in this was an oversold market, and that when
+                        it was found that Paris took the Russian news as calmly as was the case,
+                        dealers made haste to cover their shorts. Foreign stocks are much firmer,
+                        notably Japanese, and Paris manages to hold up Russian stock wonderfully at
+                        about 89. Consuls are a good market, cheap money being a strong factor
+                        there; they close at 88 9/16. </p>
+                </div>
+                <div type="item" feature="shippingMovements" status="verified">
+                    <head>MOUVEMENT MARITIME DU PORT D'ALEXANDRIE </head>
+                    <p>ARRIVEES </p>
+                    <p>2 Février </p>
+                    <p>Cardiff : 19 j., vap. ang. "Westward", cap. Rother, ton. 2316, à ordre. </p>
+                    <p>3 Février. </p>
+                    <p>Smyrne et Candie : 64 h, vap, bell. "Athènes", cap. Catramatos, ton. 403, a
+                        Kechayas. </p>
+                    <p>Syrie et Port-Said : 15 h., vap. hell. "Marie Reine", cap. Papalas, ton. 734,
+                        à Rouho. </p>
+                    <p>4 Février. </p>
+                    <p>Smyme et Pirée : 40 h., vap. ott. "Alexandria", cap. Ghiaffis, ton. 639, à
+                        Ismiridi. </p>
+                    <p>Anvers : 17j, 1/2, vap. ang. "Richard", cap. Keen, ton. J128, &amp; Lambert
+                        et Ralli. </p>
+                    <p>Constantinople et Pirée : 40 h., vep. ang. "Ismailis", cap. Gatteschi, ton.
+                        2335, &amp; la Khedivial Mail. </p>
+                    <p>DEPARTS </p>
+                    <p>2 Février. </p>
+                    <p>Angleterre : vap. ang. "Edendale”, cap. Mac Donald. </p>
+                    <p>3 Février. </p>
+                    <p>Mesrine : vep. Ang. "Milo", cap. Burnett. : </p>
+                    <p>Pirée et Odessa : vsp. rüsse "Reine Olga", cap. Indieff. </p>
+                    <p>Marseille : vap. franç. "Congo", cap. Galletti. </p>
+                    <p>Hull; vap. ang. "Kolpino". cap. Udesooth. </p>
+                </div>
+                <cb n="2"/>
+            </div>
+            <pb n="7"/>
+            <div type="page" n="7"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n6/mode/1up"
+                status="empty"> </div>
+            <pb n="8"/>
+            <div type="page" n="8"
+                facs="https://archive.org/details/egyptian-gazette-1905-02-04/page/n7/mode/1up"
+                status="incomplete">
+                <cb n="1"/>
+                <!-- ads -->
+                <div type="template" xml:lang="fr" colSpan="2"
+                    xml:id="alexandria-general-produce-weekly" status="incomplete">
+                    <head>ALEXANDRIA GENERAL PRODUCE ASSOCIATION</head>
+                    <head>BULLETIN HEBDOMADAIRE</head>
+                    <p>VENDREDI à Midi <date when="1905-02-24">le 24 Fevrier 1905</date></p>
+                    <table xml:id="deg-ta-agpa01" cols="11">
+                        <row role="label">
+                            <cell cols="11">COTON</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rows="2">Arrivages</cell>
+                            <cell cols="6">EXPORTATIONS</cell>
+                            <cell cols="2" rows="2">TOTAL</cell>
+                            <cell rows="2">STOCK</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell cols="2">Angleterre</cell>
+                            <cell cols="2">Continent</cell>
+                            <cell cols="2">Etats-Unis</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Cantars</cell>
+                            <cell>Balles</cell>
+                            <cell>Cantars</cell>
+                            <cell>Balles</cell>
+                            <cell>Cantars</cell>
+                            <cell>Balles</cell>
+                            <cell>Cantars</cell>
+                            <cell>Balles</cell>
+                            <cell>Cantars</cell>
+                            <cell>Cantars</cell>
+                        </row>
+                        <row>
+                            <cell>Cette semaine</cell>
+                            <cell>
+                                <measure unit="qantar">133573</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">12782</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">103893</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">8965</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">67682</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">1326</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">10210</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">24080</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">181735</measure>
+                            </cell>
+                            <cell><measure unit="balle">1427267</measure>§</cell>
+                        </row>
+                        <row>
+                            <cell>Même semaine 1904</cell>
+                            <cell>
+                                <measure unit="qantar">140418</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">5738</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">44831</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">3159</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">23541</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">535</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">4120</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">9432</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">72002</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">1902657</measure> *</cell>
+                        </row>
+                        <row>
+                            <cell>A partir du 1er Sept. 1904</cell>
+                            <cell>
+                                <measure unit="qantar">4717046</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">278403</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">1883137</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">196739</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">1479514</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">43623</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">336128</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">487941</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">3693779</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même époque 1904</cell>
+                            <cell>
+                                <measure unit="qantar">5870126</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">372433</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">2123027</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">217462</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">1523841</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">37620</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">289671</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">533487</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="qantar">4036539</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="balle">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Y compris stock</cell>
+                            <cell cols="5">§ au <date when="1904-09-01">1er Septembre 1904</date>
+                                Cantars <measure unit="cantar">409000</measure></cell>
+                            <cell cols="5">* au <date when="1903-09-01">1er September 1903</date>
+                                Cantars <measure unit="cantar">69000</measure></cell>
+                        </row>
+                    </table>
+                    <table cols="8">
+                        <row role="label">
+                            <cell cols="6">GRAINES DE COTON</cell>
+                            <cell cols="2">TOURTEAUX</cell>
+                        </row>
+                        <row>
+                            <cell rows="3"/>
+                            <cell rows="2">Arrivages</cell>
+                            <cell cols="3">EXPORTATIONS</cell>
+                            <cell rows="2">STOCK</cell>
+                            <cell rows="2">Arrivages</cell>
+                            <cell rows="2">Exportations</cell>
+                        </row>
+                        <row>
+                            <cell>Angleterre</cell>
+                            <cell>Continent</cell>
+                            <cell>TOTAL</cell>
+                        </row>
+                        <row>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Tonnes</cell>
+                            <cell>Tonnes</cell>
+                        </row>
+                        <row>
+                            <cell>Cette semaine</cell>
+                            <cell>
+                                <measure unit="ard">31339</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">170558</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">170558</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">946974</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">2295</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">3404</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même semaine 1904</cell>
+                            <cell>
+                                <measure unit="ard">52854</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">62514</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">62514</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1267539</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">127</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">2138</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Depuis 1er Sept. 1904</cell>
+                            <cell>
+                                <measure unit="ard">2369203</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1775756</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">94703</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1870459</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">21399</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">46235</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même époque 1904</cell>
+                            <cell>
+                                <measure unit="ard">3645247</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1729530</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">118178</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1817708</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">17573</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="tonne">2720</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Y compris stockconstaté t au <date when="1904-09-01">1er
+                                    Septembre 1904</date> d'Ardebs <measure unit="ard"
+                                    >247527</measure></cell>
+                            <cell cols="4">et au <date when="1903-09-01">1er September 1903</date>
+                                d'Ardebs <measure unit="ard">70000</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="8">Pour les Feves, Orges, Bles, Lentilles, Mais et Oignons,
+                                la consommation locale n'est connue respectivement que les 31 Mars
+                                et 24 Novembre</cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="8">FEVES</cell>
+                        </row>
+                        <row>
+                            <cell rows="3"/>
+                            <cell cols="2">Arrivages</cell>
+                            <cell cols="3">EXPORTATIONS</cell>
+                            <cell rows="2">STOCK</cell>
+                            <cell rows="2">Consumation locale</cell>
+                        </row>
+                        <row>
+                            <cell>Saidi</cell>
+                            <cell>Behera</cell>
+                            <cell>Angleterre</cell>
+                            <cell>Continent</cell>
+                            <cell>TOTAL</cell>
+                        </row>
+                        <row>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                        </row>
+                        <row>
+                            <cell>Cette semaine</cell>
+                            <cell>
+                                <measure unit="ard">16</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">16603</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">2424</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">19027</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">111086</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même semaine 1904</cell>
+                            <cell>
+                                <measure unit="ard">2346</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">13248</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1046</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">14994</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">82847</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Depuis 1er avril 1904</cell>
+                            <cell>
+                                <measure unit="ard">377602</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1061</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">233160</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">31497</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">314657</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même époque 1904</cell>
+                            <cell>
+                                <measure unit="ard">364612</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">2629</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">176285</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">126209</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">392494</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="8">Stock au <date when="1905-04-01">1er. Avril 1904</date>
+                                Ardebs <measure unit="ard">47100</measure>. Stock au <date
+                                    when="1904-04-01">1er. Avril 1903</date> Ardebs <measure
+                                    unit="ard">17300</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="8">BLES</cell>
+                        </row>
+                        <row>
+                            <cell rows="3"/>
+                            <cell cols="2">ARRIVAGES</cell>
+                            <cell cols="3">EXPORTATIONS</cell>
+                            <cell rows="2">Consummation locale</cell>
+                            <cell rows="2">STOCK</cell>
+                        </row>
+                        <row>
+                            <cell>Saidi</cell>
+                            <cell>Behera</cell>
+                            <cell>Angleterre</cell>
+                            <cell>Continent</cell>
+                            <cell>Total</cell>
+                        </row>
+                        <row>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                        </row>
+                        <row>
+                            <cell>Cette semaine</cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">59</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell><measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même semaine 1904</cell>
+                            <cell>
+                                <measure unit="ard">807</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1024</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Depuis 1er avril 1904</cell>
+                            <cell>
+                                <measure unit="ard">18170</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">80729</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">454</measure>
+                            </cell>
+                            <cell><measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Même époque 1904</cell>
+                            <cell>
+                                <measure unit="ard">13443</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">124616</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">60</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. Avril 1904</date>
+                                Ardebs <measure unit="ard">–</measure></cell>
+                            <cell cols="4">Stock au <date when="1903-04-01">1er. Avril 1903</date>
+                                Ardebs <measure unit="ard">–</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="4" rows="3"/>
+                            <cell cols="2">LENTILLES</cell>
+                            <cell cols="2">ORGE</cell>
+                        </row>
+                        <row>
+                            <cell>Arrivages</cell>
+                            <cell>Exportation</cell>
+                            <cell>Arrivages</cell>
+                            <cell>Exportation</cell>
+                        </row>
+                        <row>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Cette semaine</cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">8</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Même semaine 1904</cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">8</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Depuis 1er Sept. 1904</cell>
+                            <cell>
+                                <measure unit="ard">4637</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">1731</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">679</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">27</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Même époque 1904</cell>
+                            <cell>
+                                <measure unit="ard">4941</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">5725</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">78307</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">73809</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. avril
+                                1904</date>Ardebs <measure unit="ard">1500</measure></cell>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. avril
+                                1904</date>Ardebs <measure unit="ard">–</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. Avril
+                                1903</date>Ardebs <measure unit="ard">5300</measure></cell>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. Avril
+                                1903</date>Ardebs <measure unit="ard">–</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="3" rows="3"/>
+                            <cell cols="3">MAIS</cell>
+                            <cell cols="2">OIGNONS</cell>
+                        </row>
+                        <row>
+                            <cell>Arrivages</cell>
+                            <cell>Exportation</cell>
+                            <cell>Consummation locale</cell>
+                            <cell>Arrivages</cell>
+                            <cell>Expor.</cell>
+                        </row>
+                        <row>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Ardebs</cell>
+                            <cell>Crs. 108 okes</cell>
+                            <cell>Crs. 108 okes</cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Cette semaine</cell>
+                            <cell>
+                                <measure unit="ard">896</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">854</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">397</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Même semaine 1904</cell>
+                            <cell>
+                                <measure unit="ard">1253</measure>
+                            </cell>
+                            <cell><measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">110</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Depuis 1er Sept. 1904</cell>
+                            <cell>
+                                <measure unit="ard">4676</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">126</measure>
+                            </cell>
+                            <cell><measure unit="ard">–</measure></cell>
+                            <cell>
+                                <measure unit="ard">585538</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">624789</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Même époque 1904</cell>
+                            <cell>
+                                <measure unit="ard">5465</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">198</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">–</measure></cell>
+                            <cell>
+                                <measure unit="ard">443440</measure>
+                            </cell>
+                            <cell>
+                                <measure unit="ard">446811</measure>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. avril
+                                1904</date>Ardebs <measure unit="ard"/></cell>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. avril
+                                1904</date>cantars <measure unit="ard">–</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. Avril
+                                1903</date>Ardebs <measure unit="ard"/></cell>
+                            <cell cols="4">Stock au <date when="1904-04-01">1er. Avril
+                                1903</date>cantars <measure unit="ard">–</measure></cell>
+                        </row>
+                    </table>
+                    <table cols="7">
+                        <row role="label">
+                            <cell cols="7">PRIX DE LA MARCHANDISE DISPONIBLE</cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="3">COTON (SUIVANT LES TYPES DE L'ASSOCIATION)</cell>
+                            <cell cols="4">GRAINS ET CEREALES</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Brown</cell>
+                            <cell>Haute-Egypte et Fayoumi</cell>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Fair</cell>
+                            <cell>Tall. <measure unit="tal">10 1/4</measure></cell>
+                            <cell><unclear>3</unclear>
+                                <measure unit="tal">8 /</measure></cell>
+                            <cell>Graines de Coton Mit-Afifi</cell>
+                            <cell rows="11">Qualità Buona Mercantile.</cell>
+                            <cell>P.T. <measure>57 1/2</measure>–/–</cell>
+                            <cell rows="11">Franco-Station</cell>
+                        </row>
+                        <row>
+                            <cell>Fully Fair,</cell>
+                            <cell>,, <measure unit="tal">11 3/8</measure></cell>
+                            <cell>,, <measure unit="tal">9 / –</measure></cell>
+                            <cell>,, ,, Haute-Egypte</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Good Fair</cell>
+                            <cell>,, <measure unit="tal">12 3/4</measure></cell>
+                            <cell>,, <measure unit="tal">10 1/4</measure></cell>
+                            <cell>Blé Saïdi</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Fully Good Fair,</cell>
+                            <cell>,, <measure unit="tal">13 1/4</measure></cell>
+                            <cell>,, <measure unit="tal">11 1/2</measure></cell>
+                            <cell>Blé Béhéra</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Good</cell>
+                            <cell>,, <measure unit="tal">14 /–</measure></cell>
+                            <cell>,, <measure unit="tal">12 1/4</measure></cell>
+                            <cell>Orge</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell rows="2"/>
+                            <cell role="label" rows="2">ABASSI</cell>
+                            <cell role="label" rows="2">JOANNOVICH</cell>
+                            <cell>Fèves Saïdi</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Fèves Fayoumi</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Fully Good Fair</cell>
+                            <cell>Tal. <measure unit="tal">14 /–</measure> à <measure unit="tal">14
+                                    1/4</measure></cell>
+                            <cell>Tal. <measure unit="tal">15 1/4</measure> à <measure unit="tal">15
+                                    1/2</measure></cell>
+                            <cell>Fèves Béhéra</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Good</cell>
+                            <cell>Tal. <measure unit="tal">15 1/2</measure> à <measure unit="tal">16
+                                    /–</measure></cell>
+                            <cell>Tal. <measure unit="tal">16 /–</measure> à <measure unit="tal">16
+                                    1/2</measure></cell>
+                            <cell>Lentilles</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell rows="3">Extra</cell>
+                            <cell rows="3">Tal. <measure unit="tal">16 3/4</measure> à <measure
+                                    unit="tal">16 /–</measure></cell>
+                            <cell rows="3">Tal. <measure unit="tal">17 /–</measure> à <measure
+                                    unit="tal">17 1/2</measure></cell>
+                            <cell>Maïs</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Oignons</cell>
+                            <cell>,, <measure>–</measure>–/–</cell>
+                        </row>
+                        <row>
+                            <cell>Sucre, 1er Jet. Daira</cell>
+                            <cell>le Cr.</cell>
+                            <cell>P.T. <measure>–</measure>a <measure>–</measure></cell>
+                        </row>
+                        <row>
+                            <cell role="label" cols="6">PRIX DES CONTRATS</cell>
+                        </row>
+                        <row>
+                            <cell>Coton Fully Good Fair Brown</cell>
+                            <cell>Mars pr.</cell>
+                            <cell>Tal. <measure unit="tal">13 1/32</measure></cell>
+                            <cell>Graines de Coton</cell>
+                            <cell>Fevrier-Mars pr.</cell>
+                            <cell>P.T. <measure unit="pt">58 35/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,, ,,</cell>
+                            <cell>Mai pr.</cell>
+                            <cell>,, <measure unit="tal">12 29/32</measure></cell>
+                            <cell>,, ,,</cell>
+                            <cell>Avril pr.</cell>
+                            <cell>,, <measure unit="pt">59 10/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,, ,,</cell>
+                            <cell>Juillet pr.</cell>
+                            <cell>,, <measure unit="tal">12 25/32</measure></cell>
+                            <cell>,, ,,</cell>
+                            <cell>Mai. pr.</cell>
+                            <cell>,, <measure unit="pt">59 30/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,, ,,</cell>
+                            <cell>Nov. pr.</cell>
+                            <cell>,, <measure unit="tal">12 6/32</measure></cell>
+                            <cell>,, ,,</cell>
+                            <cell>Nov.-Dec.-Jan. pr.</cell>
+                            <cell>,, <measure unit="pt">59 20/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,, ,,</cell>
+                            <cell>Janvier pr.</cell>
+                            <cell>,, <measure unit="tal">12 4/32</measure></cell>
+                            <cell>Fèves Saidi</cell>
+                            <cell>Fevrier-Mars pr.</cell>
+                            <cell>,, <measure unit="pt">75 20/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell>,, ,,</cell>
+                            <cell>Sept.-Oct. pr.</cell>
+                            <cell>,, <measure unit="pt">80 20/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="6">Marché des cotons soutenu et , lus cher pour les bonnes
+                                qualités</cell>
+                        </row>
+                    </table>
+                </div>
+                <!-- material -->
             </div>
         </body>
     </text>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -7,21 +7,23 @@
             <titleStmt>
                 <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Will Pearce</editor>
+                <editor role="primary">Will Pearce</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2017-02-26">February 26, 2017</date><gloss>3<!-- unverified --></gloss></edition>
+                    <date when="2017-02-26">February 26,
+                        2017</date><gloss>3<!-- unverified --></gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1906-06-27/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1906-06-27"><name>Wednesday</name>, June 27, 1906</date>
+                    <date when="1906-06-27">Wednesday, June 27, 1906</date>
                     <extent><measure unit="pages" quantity="8">8</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
@@ -29,30 +31,42 @@
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/mode/1up">
                 <div type="nameplate">
-                    <head>THE EGYPTIAN GAZETTE</head>
-                    <head type="sub">No. <measure quantity="7530">7,530</measure>] ALEXANDRIA,
-                        WEDNESDAY, JUNE 27, 1906. [EIGHT PAGES P.T. 1. </head>
+                    <table cols="6">
+                        <row>
+                            <cell rows="2" xml:id="deg-ad-etc01"><p>The Eastern Telegraph Company,
+                                    Limited.</p><p>This Company's system of submarine telegraph
+                                    <lb/>cables is the most direct and quickest means of
+                                    <lb/>communication from Egypt to Europe, North and <lb/>South
+                                    America, East, South and West Africa, <lb/>India, Australia, New
+                                    Zealand, China and Japan.</p><p>To secure quick transmission,
+                                    telegrams should <lb/>be marked <hi rend="italic">Via
+                                        Eastern</hi>.</p><p>For latest average time to London, see
+                                    daily <lb/>bulletin in this paper.</p><p>STATIONS IN EGYPT:
+                                    Alexandria, Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd, Suakin.
+                                    Head <lb/>Office. London.</p></cell>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2" xml:id="deg-ad-nll01"><!-- to verify --><p>NORDDEUTSCHER
+                                    LLOYD</p><p>BREMEN.</p><p>EXPRESS MAIL
+                                    STEAMERS<lb/>FROM<lb/>ALEXANDRIA, PORT SAID, AND
+                                    SUEZ,<lb/>TO<lb/>NAPLES, MARSEILLES,<lb/>GENOA, SOUTHAMPTON,
+                                    ANTWERP,<lb/>BREMEN, HAMBURG, AMERICA,<lb/>EASTERN ASIA,
+                                    AUSTRALIA Etc.</p><p>For Particulars see Advertisement
+                                    below.</p></cell>
+                        </row>
+                        <row>
+                            <cell> No. <measure quantity="7530">7,530</measure>]</cell>
+                            <cell> ALEXANDRIA, WEDNESDAY, JUNE 27, 1906.</cell>
+                            <cell> [EIGHT PAGES</cell>
+                            <cell> P.T. 1</cell>
+                        </row>
+                    </table>
                 </div>
-                <div type="section" scope="advertisement">
-                    <cols n="3"/>
-                    <cb n="1"/>
-                </div>
-                <div type="advert" xml:id="deg-ad-etc01">
-                    <head>The Eastern Telegraph Company, Limited.</head>
-                    <p>This Company's system of submarine telegraph <lb/>cables is the most direct
-                        and quickest means of <lb/>communication from Egypt to Europe, North and
-                        <lb/>South America, East, South and West Africa, <lb/>India, Australia, New
-                        Zealand, China and Japan.</p>
-                    <p>To secure quick transmission, telegrams should <lb/>be marked <hi>Via
-                            Eastern.</hi></p>
-                    <p>For latest average time to London, see daily <lb/>bulletin in this paper.</p>
-                    <p>STATIONS IN EGYPT: Alexandria, Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd,
-                        Suakin. Head <lb/>Office. London.</p>
-                </div>
+                <cb n="1"/>
                 <!-- LONDON Salisbury Hotel -->
-                <div type="advert" xml:id="deg-ad-pos01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pos01">
                     <head>Peninsular and Oriental S. N. Company.</head>
                     <p>Summer Rates will be charged from 1 May to 31 October.</p>
                     <table>
@@ -124,17 +138,17 @@
                     <p>Messrs. HABELDEN &amp; Co. ALEXANDRIA.</p>
                     <p>F. G. DAVIDSON, Superintendent P. &amp; O. S. N. Company in Egypt SUEZ.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-orm01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-orm01">
                     <head>Orient-Royal Mail Line.</head>
                     <p>OUTWARD to AUSTRALIA.</p>
-                    <p><name>R.M.S. “Orotava"</name> will leave Suez about <date when="1906-10-05"
+                    <p><name>R.M.S. "Orotava"</name> will leave Suez about <date when="1906-10-05"
                             >June 29</date></p>
                     <p><name>R.M.S "Omrah"</name> will leave Suez about <date when="1906-10-19">July
                             13</date>.</p>
                     <p>HOMEWARD to NAPLES, MARSEILLES, GIBRALTAR, PLYMOUTH, LONDON, TILBURY.</p>
                     <p><name>R.M.S. "Ortona"</name> will leave Port Said <date when="1906-10-23"
                             >July 3</date></p>
-                    <p><name>R.M.S. “Ormuz"</name> will leave Port Said <date when="1905-10-08">July
+                    <p><name>R.M.S. "Ormuz"</name> will leave Port Said <date when="1905-10-08">July
                             17</date></p>
                     <table>
                         <row>
@@ -172,7 +186,7 @@
                         all particulars apply</p>
                     <p>Wm. STAPLEDON &amp; Sons, PORT SAID and PORT-TEWFIK (Suez). 31-12-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-blm02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-blm02">
                     <head>BIBBY LINE MAIL TWIN-SCREW STEAMERS.</head>
                     <p>REDUCED SUMMER FARES MAY TO OCTOBER.</p>
                     <p>Port Said to Tilbury £ 12.15.0. and Port Said to Marseilles £ 9.0.0.</p>
@@ -191,19 +205,19 @@
                         &amp; SONS,</p>
                     <p>31-12-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-kml01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-kml01">
                     <head>KHEDIVIAL MAIL LINE.</head>
-                    <p><hi rend="bold">FAST BRITISH PASSENGER STEAMERS</hi></p>
-                    <p><hi rend="bold">GREECE - TURKEY LINE.</hi></p>
+                    <p>FAST BRITISH PASSENGER STEAMERS</p>
+                    <p>GREECE - TURKEY LINE.</p>
                     <p>Express Steamers leave Alexandria every Wednesday at 4 p.m. for PIRAEUS,
                         SMYRNA, MITYLENE, and CONSTANTINOPLE, in connection with Orient Express
                         train-de-luxe for Vienna, Paris, and London.</p>
-                    <p><hi rend="bold">PALESTINE - SYRIA LINE.</hi></p>
+                    <p>PALESTINE - SYRIA LINE.</p>
                     <p>Fast steamers leave Alexandria every Saturday at 4 p.m., and Port Said every
                         Sunday at 6 p.m., for JAFFA (for Jerusalem), CAIFFA (for Nazareth), BEYROUT
                         (for Damascus), TRIPOLI, ALEXANDRETTA, MESSINA, continuing in alternate
                         weeks to LARNACA and LIMASSOL (Cyprus).</p>
-                    <p><hi rend="bold">RED SEA LINE.</hi></p>
+                    <p>RED SEA LINE.</p>
                     <p>Steamers leave Suez weekly on Wednesday at 6 p.m. for Port Sudan and Suakin
                         direct returning from Suakin every Wednesday noon. Every Monday at 6 p.m. a
                         steamer leaves for Jeddah continuing every other week for Suakin, Massowah,
@@ -211,12 +225,12 @@
                         Tor (for Sinai) El Wedj and Yambo as required. </p>
                     <p>N.B.—Deck chairs provided for the use of passengers, excellent cuisine and
                         table wine free.</p>
-                    <p>Steamer plans may be seen and passages booked at the Company’s Agencies at
+                    <p>Steamer plans may be seen and passages booked at the Company's Agencies at
                         Alexandria, Cairo, Port Said, and Suez, or at THOS. COOK &amp; SON or other
                         Tourist Agency. </p>
                     <p>31-12-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mss01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mss01">
                     <head>The Moss S.S. Company, Ltd.</head>
                     <p>For LIVERPOOL calling at MALTA (Messrs. JAMES MOSS &amp; Co. 31, James St,
                         Liverpool, Managers.)</p>
@@ -265,8 +279,8 @@
                     <p>R. J. MOSS &amp; Co., Alexandria, Agents.</p>
                     <p><measure type="indexNo">26-5-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-phc01">
-                    <head>P. HENDERSON &amp; CO’s LINE.</head>
+                <div type="advert" colSpan="2" xml:id="deg-ad-phc01">
+                    <head>P. HENDERSON &amp; CO's LINE.</head>
                     <p>Steamers leave SUEZ and PORT SAID fortnightly for LONDON or LIVERPOOL
                         direct.</p>
                     <p>Fare (home.) £10. Passengers returning by end October allowed 20% off outward
@@ -287,7 +301,7 @@
                     <p><measure type="indexNo">31-12-906</measure></p>
                 </div>
                 <!-- The Ellerman Lines Limited template provided does not match this ad -->
-                <div type="advert" xml:id="deg-ad-ngi01" xml:lang="fr">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ngi01" xml:lang="fr">
                     <head>Navigation Générale Italienne.</head>
                     <p>Societes Reunies Florio-Rubattino. - Services Postaux. - Departs de
                         Juillet.</p>
@@ -324,7 +338,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="advert" xml:id="deg-ad-tcs03">
+                <div type="advert" colSpan="2" xml:id="deg-ad-tcs03">
                     <head>Thos. Cook &amp; Son, (EGYPT), LTD</head>
                     <p>HEAD OFFICE: LUDGATE CIRCUS—LONDON.</p>
                     <p>CHIEF EGYPTIAN OFFICE: — CAIRO, near SHEPHEARD'S HOTEL.</p>
@@ -345,7 +359,7 @@
                         rates.</p>
                     <p>Best camp equipment in the country.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-bis01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-bis01">
                     <head>British India S. N. Company, Limited.</head>
                     <p>MAIL AND PASSENGER STEAM SHIPS.</p>
                     <p>SAILINGS FROM SUEZ, LONDON and CALCUTTA LINE.</p>
@@ -395,7 +409,7 @@
                     <p>For further particulars. Freight and Passage apply to G. BEYTS &amp; Co.
                         Agents, Suez. <measure type="indexNo">31-12-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-all01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-all01">
                     <head>ANCHOR LINE, LIMITED.</head>
                     <p>(HENDERSON BROTHERS,) LONDON, LIVERPOOL AND GLASGOW.</p>
                     <p>Booking Passengers and Cargo through to Ports in India, Europe &amp;
@@ -404,7 +418,7 @@
                     <table rows="2" cols="6">
                         <row>
                             <cell>For MARSEILLES &amp; LIVERPOOL</cell>
-                            <cell><name>S.S. “Maseilla”</name></cell>
+                            <cell><name>S.S. "Maseilla"</name></cell>
                             <cell><date when="1905-07-26">July 5</date></cell>
                             <cell>For CALCUTTA</cell>
                             <cell><name>S.S. "Bavaria"</name></cell>
@@ -412,7 +426,7 @@
                         </row>
                         <row>
                             <cell>For LONDON</cell>
-                            <cell><name>S.S. “Assyria"</name></cell>
+                            <cell><name>S.S. "Assyria"</name></cell>
                             <cell><date when="1905-07-28">July 3</date></cell>
                             <cell>For BOMBAY</cell>
                             <cell><name>S.S. "Australia"</name></cell>
@@ -429,7 +443,7 @@
                     <p>For further particulars of Freight or Passage apply to G. BEYTS &amp; Co.,
                         Suez. <measure type="indexNo">31-12-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-dll01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-dll01">
                     <head>Deutsche Levante-Linie.</head>
                     <p>Mail and Passenger Steamships. Regular three-weekly Service from HAMBURG, via
                         ANTWERP &amp; MALTA, to ALEXANDRIA and vice-versa, admitting goods from all
@@ -451,11 +465,11 @@
                         the <date when="1906-07-01">1st July</date>.</p>
                     <p>For tariff and particulars apply to ADOLPHE STROSS, Alexandria, Agent.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mma01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mma01">
                     <head>Messageries Maritimes.</head>
                     <p>From Alexandria</p>
                     <table rows="12" cols="6">
-                        <head><hi rend="bold">Sailing from Alexandria in July, 1905.</hi></head>
+                        <head>Sailing from Alexandria in July, 1905.</head>
                         <row>
                             <cell cols="6"><hi rend="bold">For Marseilles direct</hi></cell>
                         </row>
@@ -540,7 +554,7 @@
                         </row>
                     </table>
                     <table rows="8" cols="3">
-                        <head><hi rend="bold">Rates of passage mes</hi></head>
+                        <head>Rates of passage mes</head>
                         <head type="sub">Including table wine.</head>
                         <row role="label">
                             <cell/>
@@ -593,7 +607,7 @@
                         </row>
                     </table>
                     <table rend="frame" xml:id="SailingfromPortSaid">
-                        <head><hi rend="bold">Sailing from Port Said in June, 1906</hi></head>
+                        <head>Sailing from Port Said in June, 1906</head>
                         <row>
                             <cell rows="5">For Marseilles Direct</cell>
                             <cell>Probably on</cell>
@@ -642,7 +656,7 @@
                         </row>
                     </table>
                     <table rend="frame" xml:id="SailingfromSuez">
-                        <head><hi rend="bold">Sailing from Suez in July, 1905</hi></head>
+                        <head>Sailing from Suez in July, 1905</head>
                         <row>
                             <cell rows="2">For Aden, Colombo, Singapore, Saigon, Hong-Kong,
                                 Shanghai, Kobe and Yokohama</cell>
@@ -706,7 +720,7 @@
                     <p>Cairo Agency (Shepheard's Hotel) <measure type="indexNo"
                         >28-2-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-pri01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pri01">
                     <head>Prince Line.</head>
                     <table rend="frame" xml:id="Table1">
                         <row>
@@ -883,7 +897,7 @@
                     <p>For terms of freight or passage apply to C. J. Grace &amp; Co., Alexandria,
                         Agents. 31-12-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-pap01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pap01">
                     <head>THE PAPAYANNI LINE.</head>
                     <head type="sub">(The Ellerman Lines, Ltd.)</head>
                     <p>Frequent Sailings from ALEXANDRIA to LIVERPOOL, also Regular Services from
@@ -898,7 +912,7 @@
                     <p>For passage or freight apply to the Agents, BARKER &amp; Co., Alexandria.
                             <measure type="indexNo">17-4-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-rsn01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-rsn01">
                     <head>Russian Stream Navigation &amp; Commercial Company.</head>
                     <p>Postal Service Accelerated from the 1st June, 1906.</p>
                     <p>between Alexandria, Piraeus, Smyrna, Constantinople, and Odessa by the
@@ -927,7 +941,7 @@
                     <p><measure type="indexNo">26376-31-8-906</measure></p>
                 </div>
                 <!-- Les Diamants "BERA" -->
-                <div type="advert" xml:id="deg-ad-aan03">
+                <div type="advert" colSpan="2" xml:id="deg-ad-aan03">
                     <head>Hamburg &amp; Anglo-American Nile Co.</head>
                     <p>Weekly departure during Winter Season by the<lb/> Luxurious First Class
                         Tourist Steamers VICTORIA, PURITAN &amp; MAYFLOWER.<lb/> Regular weekly
@@ -935,11 +949,11 @@
                         TO KHARTOUM, GONDOKORO AND THE WHITE NILE.<lb/> Steamers and Dahabeahs for
                         private charter. Steam Tugs and Steam Launches for hire.<lb/> FREIGHT
                         SERVICE BY STEAM BARGES BETWEEN CAIRO AND ALEXANDRIA.<lb/> Working in
-                        conjunction and under special arrangement with the<lb/> “Upper Egypt Hotels
+                        conjunction and under special arrangement with the<lb/> "Upper Egypt Hotels
                         Company."</p>
                     <p>For details and illustrated programmes apply to "THE HAMBURG and
                         ANGLO-AMERICAN<lb/> NILE COMPANY."</p>
-                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings.”
+                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings."
                             <measure type="indexNo">31-3-07</measure></p>
                     <p>Hamburg-Amerika Linie.</p>
                     <p>Return to Egypt<lb/> by the new S.S. Oceana of 9000 Tons, 350 berths
@@ -983,7 +997,7 @@
                         Street. Berlin, Unter den Linden <lb/>Cairo, Continental Hotel. Alexandria,
                         G. J. Grace &amp; Co. Chief Office: Hamburg ( Alsterdamm</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nll02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nll02">
                     <head>NORDDEUTSCHER LLOYD.</head>
                     <p>Regular Service from ALEXANDRIA (Passenger and Freight) to
                         NAPLES-MARSEILLES.</p>
@@ -1051,8 +1065,8 @@
                     <p>Messrs. THOS. COOK &amp; SON (Egypt) LTD. are anthorised to sell tickets in
                         CAIRO and ALEXANDRIA, <measure type="indexNo">31-8-905</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-als02">
-                    <head>Austrian Lloyd’s Steam Navigation</head>
+                <div type="advert" colSpan="2" xml:id="deg-ad-als02">
+                    <head>Austrian Lloyd's Steam Navigation</head>
                     <p>Alexandria-Brindisi-Trieste (Venice).</p>
                     <p>Weekly Express Mail Service. Steamers leave Alexandria every Saturday at 4
                         p.m. arrive at Brindisi, Tuesday 5 a.m. in time for express to Milan,
@@ -1138,7 +1152,7 @@
                         families.</p>
                     <p><measure type="indexNo">31-12-906</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-ell03">
+                <div type="advert" colSpan="2" xml:id="deg-ad-ell03">
                     <table rows="3" cols="6">
                         <row>
                             <cell cols="3">Ellermans CITY LINE.</cell>
@@ -1175,7 +1189,7 @@
                         &amp; SON, Agents for Hall Line, Port Said ; or COOK &amp; SON (Egypt),
                         Ltd., Cairo. <measure type="indexNo">28-2-907</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-cun02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-cun02">
                     <head>Cunard Line.</head>
                     <p><measure type="indexNo">19-1-907</measure></p>
                     <p>Frequent sailings of cargo steamers from Alexandria to Liverpool. Through
@@ -1189,7 +1203,7 @@
                     <p>Rodacanachi &amp; Co., Alexandria; Nicolas Kirgis, Cairo; R. Broadbent, Port
                         Said.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-sgr01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-sgr01">
                     <head>SUDAN GOVERNMENT RAILWAYS.</head>
                     <p>CAIRO-KHARTOUM SUMMER MAIL SERVICE.</p>
                     <p>Commencing from 1st of April, 1906, until further notice.</p>
@@ -1266,7 +1280,7 @@
                         Sleeping Cars will be attached to the ordinary night trains from Cairo and
                         Luxor three times a week, on the same above mentioned days.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-esr01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-esr01">
                     <head>Egyptian State Railways.</head>
                     <table rows="4" cols="9">
                         <head>THROUGH PASSENGER SERVICES. (Daily).--JUNE TIME-TABLE.</head>
@@ -1437,12 +1451,12 @@
                 </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2">
-                <div type="item">
-                    <head>THE EGYPTIAN GAZETTE, <date>WEDNESDAY, JUNE 27, 1906</date>.</head>
-                    <head>2</head>
-                </div>
-                <div type="advert" xml:id="deg-ad-ric01">
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n1/mode/1up">
+                <head>THE EGYPTIAN GAZETTE, <date>WEDNESDAY, JUNE 27, 1906</date>.</head>
+                <head>2</head>
+                <cb n="1"/>
+                <div type="advert" colSpan="2" xml:id="deg-ad-ric01">
                     <head>Royal Insurance Coy</head>
                     <p>FIRE AND LIFE.</p>
                     <p>Largest Fire Office in the World.</p>
@@ -1454,7 +1468,7 @@
                     <p><measure type="indexNo">31-3-906</measure> FRED. OTT &amp; CO., Sub-Agents,
                         Cairo.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-jbc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-caf01">
                     <head>John B. Caffari's "Economical Stores"</head>
                     <p>Cairo and Alexandria</p>
                     <p>The Perfection of Quality and Value.</p>
@@ -1498,14 +1512,14 @@
                 </div>
                 <div type="advert" xml:id="deg-ad-liv01">
                     <head>GO TO LIVADAS. </head>
-                    <p>Opposite Shepheard’s</p>
-                    <p>for Books, Stationery, Newspapers, and “Egyptian Gazette” Picture Post Cards. </p>
+                    <p>Opposite Shepheard's</p>
+                    <p>for Books, Stationery, Newspapers, and "Egyptian Gazette" Picture Post Cards. </p>
                     <p><measure type="indexNo">27061-3-1-907</measure></p>
                 </div>
                 <div type="advert" xml:id="deg-ad-bct01">
                     <head>British Commercial Travellers</head>
                     <p>Visiting Cairo should arrange with</p>
-                    <p>“ THE COMMERCIAL BUREAU ”</p>
+                    <p>" THE COMMERCIAL BUREAU "</p>
                     <p>"Sharia Madabegh, for introduction to Firms</p>
                     <p><measure type="indexNo">27362-31-1-907</measure></p>
                 </div>
@@ -1520,7 +1534,7 @@
                 </div>
                 <div type="advert" xml:id="deg-ad-smw01">
                     <p>What is Whisky ?</p>
-                    <p>“Sandy Macdonald” 10 YEARS OLD</p>
+                    <p>"Sandy Macdonald" 10 YEARS OLD</p>
                     <p>IS THE Finest Matured Malt WHISKY.</p>
                     <p>HIGHEST AWARDS.</p>
                     <p>MACDONALD &amp; CO.</p>
@@ -1548,7 +1562,7 @@
                     <p>Stationary Engraving and Printing Office</p>
                 </div>
                 <!-- Walker and Meimarachi ad does not match template -->
-                <div type="advert" xml:id="deg-ad-eeh01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-eeh01">
                     <head>EASTERN EXCHANGE HOTEL, PORT SAID.</head>
                     <p>First Class Hotel. Modern in all respects.</p>
                     <p>Fire-proof, Drained to the Sea, Lifts, Electric Light, English and French
@@ -1572,7 +1586,7 @@
                         in hermetically sealed Tins.</p>
                     <p>Manufacturers: Josiah R. Neave &amp; Co., Fordingbridge, England.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-san01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-san01">
                     <head>"Sanitas" Disinfecting Fluid</head>
                     <p>1/- Pint Bottles</p>
                     <p>COLORLESS, FRAGRANT, NON-POISONOUS.</p>
@@ -1580,7 +1594,7 @@
                     <p>INDISPENSABLE IN ALL SICK ROOMS.</p>
                     <p>Also 1/- Tins Powder and 1/8 Boxes Soap.</p>
                     <p>OF ALL CHEMISTS AND STOREKEEPERS.</p>
-                    <p>THE “SANITAS" CO., LTD., LIMEHOUSE, LONDON.</p>
+                    <p>THE "SANITAS" CO., LTD., LIMEHOUSE, LONDON.</p>
                 </div>
                 <div type="advert" xml:id="deg-ad-thc01">
                     <head>Thorne's High Class Whisky</head>
@@ -1590,7 +1604,7 @@
                     <p>T.G. TINDS. No.7, Rue de l'Eglise Debbane, Alexandria.</p>
                     <p>T.G. TRIANADAS. No. 7, Rue de l'Eglise Debbane, Alexandria.</p>
                 </div>
-                <div type="advert" xml:id="cps01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-cps01">
                     <head>Cairo Photographic Stores</head>
                     <head>O. DIRADOUR</head>
                     <p>PLACE DEL'OPERA</p>
@@ -1600,7 +1614,7 @@
                     <p><measure type="indexNo">530-18.3.907</measure></p>
                     <p>AMATEUR WORK, CAMERA REPAIRS, ETC.</p>
                 </div>
-                <div type="advert" xml:id="rbi01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-rbi01">
                     <head>Photographers. REISER &amp; BINDER Photographers.</head>
                     <p><measure type="indexNo">26848</measure> Alexandria &amp; Cairo. <measure
                             type="indexNo">4-12 906</measure></p>
@@ -1609,7 +1623,7 @@
                 <div type="section" feature="weather">
                     <head>DAILY WEATHER REPORT</head>
                     <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
-                    <div type="subsection">
+                    <div type="item">
                         <table rend="frame" xml:id="deg-ta-dawr01">
                             <head>ALEXANDRIA</head>
                             <row>
@@ -1645,13 +1659,13 @@
                         <p>Moon rises 9:51 a.m.</p>
                         <p>Moon sets 11.4 p.m.</p>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>REMARKS.</head>
                         <p>The weather yesterday was decidedly warm, but as the day advanced the
                             wind rose and it became somewhat gusty. The morning opens fine with a
                             light N. breeze and steady barometer.</p>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <table cols="3" xml:id="deg-ta-dawr02">
                             <head>OTHER STATIONS.</head>
                             <head type="sub">For the 24 hours ending 3 a.m. Yesterday</head>
@@ -1727,7 +1741,7 @@
                             </row>
                         </table>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <table rows="6" cols="5" xml:id="deg-ta-dawr03">
                             <head>FOREIGN STATIONS.</head>
                             <row role="label">
@@ -1774,7 +1788,7 @@
                             </row>
                         </table>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <table rend="frame" xml:id="deg-ta-dawr04">
                             <row role="label">
                                 <cell cols="3" rows="2">PHASES OF THE MOON</cell>
@@ -1825,10 +1839,10 @@
                     <p>5 O'clock Tea Served on Verandah.</p>
                 </div>
                 <!-- Grand Hotel National -->
-                <div type="item" xml:id="deg-el-egsa01">
+                <div type="template" xml:id="deg-el-egsa01">
                     <head>THE EGYPTIAN GAZETTE.</head>
                     <p>SUBSCRIPTIONS. Alexandria, Cairo, and the Interior of Egypt (including
-                        delivery in Alexandria or postage to subscriber’s address) P.T. 231½ per
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
                         annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
                         in the Postal Union P.T. 273 (£2.16s.) per annum. Six months P.T. 136½
                         (£1.8s.), three months P.T. 92 (£0.19s.) N.B.—Subscriptions commence from
@@ -1846,14 +1860,14 @@
                     <p>The Egyptian Gazette is printed on paper manufactured and supplied by the
                         London Paper Mills Co., Limited. (Sales Office: 27, Cannon Street. B.C.)</p>
                 </div>
-                <div type="item" feature="masthead">
+                <div type="item" feature="imprint">
                     <p>The Egyptian Gazette</p>
                     <p>An English Daily Newspaper, Established in 1880.</p>
                     <p>Editor &amp; Manager: R. Snelling.</p>
                     <p>Price: One Piastre Tariff.</p>
                     <p><date when="1906-06-27">Wednesday, JUNE 27, 1906</date>.</p>
                 </div>
-                <div type="item">
+                <div type="item" feature="leader">
                     <head>AFTER DENISHWAI.</head>
                     <p>The Court has given its decision, and four of the leaders of the savage mob
                         which committed a brutal and unprovoked attack on British officers will
@@ -1916,120 +1930,126 @@
                 </div>
             </div>
             <pb n="3"/>
-            <div type="page" n="3">
-                <div type="item">
-                    <head>THE EGYPTIAN GAZETTE, <date>WEDNESDAY, JUNE 27, 1906</date>.</head>
-                    <head>3</head>
-                </div>
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n2/mode/1up"
+                status="verified">
+                <head>THE EGYPTIAN GAZETTE, <date>WEDNESDAY, JUNE 27, 1906</date>. 3</head>
+                <cb n="1"/>
                 <div type="section" feature="local">
                     <head>LOCAL AND GENERAL.</head>
-                    <head>Cattle Plague.</head>
-                    <p>Bovine typhus has broken out at Tahta.</p>
-                </div>
-                <div type="item">
-                    <head>Bubonic Plague</head>
-                    <p>Today's bulletin records a case and two recoveries at
-                            <placeName>Samalout</placeName>, and a recovery at <placeName>Port
-                            Said</placeName>.</p>
-                </div>
-                <div type="item">
-                    <head>The Brindisi Mail</head>
-                    <p>The mail from <placeName>Europe</placeName>, via
-                            <placeName>Brindisi</placeName> and <placeName>Port Said</placeName>,
-                        will be distributed at the G.P.O., <placeName>Alexandria</placeName>, at
-                        4:30 p.m. today.</p>
-                </div>
-                <div type="item">
-                    <head>San Stefano Casino.</head>
-                    <p>A grand vocal and instrumental concert will be given at the Casino tomorrow
-                        afternoon. We are informed that the first children’s ball of the season will
-                        take place on Friday at 5 p.m.</p>
-                </div>
-                <div type="item">
-                    <head>British Museum.</head>
-                    <p>The Principal Trustees of the British Museum have appointed <persName>Mr.
-                            Herbert A. Grueber</persName>, Keeper of Coins and Medals, on the
-                        retirement of <persName>Dr. Barclay V. Head</persName>. <persName>Mr.
-                            Grueber</persName> is the Hon. Treasurer of the Egyptian Exploration
-                        Fund.</p>
-                </div>
-                <div type="item">
-                    <head>Savoy, Port Said.</head>
-                    <p>Among the latest arrival at the Savoy, Port Said, we notice <persName>
-                            Johnson Pacha</persName>, <persName> Mr. Seymour</persName>,<persName>
-                            Mr. Furnier</persName>,<persName> Mr. and Miss Sheldon
-                            Amos</persName>,<persName> Rev. and Mrs. Sydney
-                            Smith</persName>,<persName> M. Martin de la Tour</persName>,<persName>
-                            Major Lee Stack</persName>,<persName> M. and Mile Saint
-                            Plancat</persName>,<persName> M and Mme Chassinat</persName>,<persName>
-                            Mr.Widal</persName>,<persName> Mr. Vayssié</persName>,<persName> Mr. H.
-                            B. Greville</persName>,<persName> Hon. Littleton</persName>,<persName>
-                            Mr. Edward Crewe</persName>,<persName> M. Pierre
-                            Lacan</persName>,<persName> Mr. Owen R. Lewis</persName>,<persName> Mr.
-                            Fraser</persName>,<persName> M. and Mme Paul Oziol</persName>,<persName>
-                            Mr. Buttler</persName>,<persName> Mr. John
-                            Lawrence</persName>,<persName> Major Herbert</persName>,<persName> Mr.
-                            Hood</persName>,<persName> Mr Babb</persName>,<persName> Mr.
-                            Sore</persName>,<persName> Blattner Bey</persName>.</p>
-                </div>
-                <div type="item">
-                    <head>Deceptive Britain.</head>
-                    <p>The Berlin "Post" publishes a statement to the effet that the British
-                        Government proposes to construct a railway from <placeName>Port
-                            Said</placeName> to <placeName>India</placeName>. The line would
-                        traverse <placeName>Arabia</placeName>, touch the Lower Euphrates at
-                            <placeName>Koweit</placeName> and connect with the line across
-                            <placeName>Soouthern Persia</placeName> and
-                            <placeName>Afghanistan</placeName>. The "Post" infers that this scheme
-                        is the real eplanation of the value Great Britain attaches to the port of
-                        Akabah, and of her hostility to the German proposal to make Koweit the
-                        terminus of the Bagdad railway.</p>
-                </div>
-                <div type="item">
-                    <head>Exciting Incident at Bulkeley</head>
-                    <p>On Monday morning, <persName>Mr. H. Otway Smithers</persName> (of the
-                        Bedfordshire Regiment), who has been wintering in
-                            <placeName>Egypt</placeName>, recovering from the effects of enteric
-                        contracted in the South African campaign, was proceeding from Church road,
-                        Bulkeley, towards <placeName>Stanley Bay</placeName>, when his attention was
-                        attracted by the screams of a lady and two children sitting helplessly in a
-                        hired carriage and being conveyed down Mr. Ruffer’s Hill by a pair of horses
-                        entirely without control, for there was no driver on the box. <persName>Mr.
-                            Smithers</persName> ran after the runaways and, scrambling into the
-                        carriage, reached the driver’s vacant box and managed to catch hold of the
-                        reins. It was not before the bottom of the hill was reached that
-                            <persName>Mr. Smithers</persName> was able to stop the horses. He then
-                        drove back to Church road corner and found the - "arbaghi”—an abject
-                        helpless creature,— waiting, stricken with terror at what might have
-                        happened. <persName>Mr. Smithers</persName> rated him sound-ly in good
-                        English and consoled the lady and the Children. The lady thanked the gallant
-                        officer heartily for his prompt assistance</p>
+                    <div type="item">
+                        <head>Cattle Plague.</head>
+                        <p>Bovine typhus has broken out at Tahta.</p>
+                    </div>
+                    <div type="item">
+                        <head>Bubonic Plague</head>
+                        <p>Today's bulletin records a case and two recoveries at
+                                <placeName>Samalout</placeName>, and a recovery at <placeName>Port
+                                Said</placeName>.</p>
+                    </div>
+                    <div type="item">
+                        <head>The Brindisi Mail</head>
+                        <p>The mail from <placeName>Europe</placeName>, via
+                                <placeName>Brindisi</placeName> and <placeName>Port
+                            Said</placeName>, will be distributed at the G.P.O.,
+                                <placeName>Alexandria</placeName>, at 4:30 p.m. today.</p>
+                    </div>
+                    <div type="item">
+                        <head>San Stefano Casino.</head>
+                        <p>A grand vocal and instrumental concert will be given at the Casino
+                            tomorrow afternoon. We are informed that the first children's ball of
+                            the season will take place on Friday at 5 p.m.</p>
+                    </div>
+                    <div type="item">
+                        <head>British Museum.</head>
+                        <p>The Principal Trustees of the British Museum have appointed <persName>Mr.
+                                Herbert A. Grueber</persName>, Keeper of Coins and Medals, on the
+                            retirement of <persName>Dr. Barclay V. Head</persName>. <persName>Mr.
+                                Grueber</persName> is the Hon. Treasurer of the Egyptian Exploration
+                            Fund.</p>
+                    </div>
+                    <div type="item">
+                        <head>Savoy, Port Said.</head>
+                        <p>Among the latest arrival at the Savoy, Port Said, we notice <persName>
+                                Johnson Pacha</persName>, <persName> Mr.
+                                Seymour</persName>,<persName> Mr. Furnier</persName>,<persName> Mr.
+                                and Miss Sheldon Amos</persName>,<persName> Rev. and Mrs. Sydney
+                                Smith</persName>,<persName> M. Martin de la
+                                Tour</persName>,<persName> Major Lee Stack</persName>,<persName> M.
+                                and Mile Saint Plancat</persName>,<persName> M and Mme
+                                Chassinat</persName>,<persName> Mr.Widal</persName>,<persName> Mr.
+                                Vayssié</persName>,<persName> Mr. H. B.
+                                Greville</persName>,<persName> Hon. Littleton</persName>,<persName>
+                                Mr. Edward Crewe</persName>,<persName> M. Pierre
+                                Lacan</persName>,<persName> Mr. Owen R. Lewis</persName>,<persName>
+                                Mr. Fraser</persName>,<persName> M. and Mme Paul
+                                Oziol</persName>,<persName> Mr. Buttler</persName>,<persName> Mr.
+                                John Lawrence</persName>,<persName> Major
+                                Herbert</persName>,<persName> Mr. Hood</persName>,<persName> Mr
+                                Babb</persName>,<persName> Mr. Sore</persName>,<persName> Blattner
+                                Bey</persName>.</p>
+                    </div>
+                    <div type="item">
+                        <head>Deceptive Britain.</head>
+                        <p>The Berlin "Post" publishes a statement to the effet that the British
+                            Government proposes to construct a railway from <placeName>Port
+                                Said</placeName> to <placeName>India</placeName>. The line would
+                            traverse <placeName>Arabia</placeName>, touch the Lower Euphrates at
+                                <placeName>Koweit</placeName> and connect with the line across
+                                <placeName>Soouthern Persia</placeName> and
+                                <placeName>Afghanistan</placeName>. The "Post" infers that this
+                            scheme is the real eplanation of the value Great Britain attaches to the
+                            port of Akabah, and of her hostility to the German proposal to make
+                            Koweit the terminus of the Bagdad railway.</p>
+                    </div>
+                    <div type="item">
+                        <head>Exciting Incident at Bulkeley</head>
+                        <p>On Monday morning, <persName>Mr. H. Otway Smithers</persName> (of the
+                            Bedfordshire Regiment), who has been wintering in
+                                <placeName>Egypt</placeName>, recovering from the effects of enteric
+                            contracted in the South African campaign, was proceeding from Church
+                            road, Bulkeley, towards <placeName>Stanley Bay</placeName>, when his
+                            attention was attracted by the screams of a lady and two children
+                            sitting helplessly in a hired carriage and being conveyed down Mr.
+                            Ruffer's Hill by a pair of horses entirely without control, for there
+                            was no driver on the box. <persName>Mr. Smithers</persName> ran after
+                            the runaways and, scrambling into the carriage, reached the driver's
+                            vacant box and managed to catch hold of the reins. It was not before the
+                            bottom of the hill was reached that <persName>Mr. Smithers</persName>
+                            was able to stop the horses. He then drove back to Church road corner
+                            and found the - "arbaghi"—an abject helpless creature,— waiting,
+                            stricken with terror at what might have happened. <persName>Mr.
+                                Smithers</persName> rated him sound-ly in good English and consoled
+                            the lady and the Children. The lady thanked the gallant officer heartily
+                            for his prompt assistance</p>
+                    </div>
                 </div>
                 <div type="section" feature="letters">
                     <head>LETTERS TO THE EDITOR.</head>
                     <p>We do not hold ourselves responsible for the opinons expressed by our
                         correspondents, but we wish, in a spirit of fair play to all, to
                         permit-within certain necessary limits- this discussion.</p>
-                </div>
-                <div type="item">
-                    <head>PRIMARY EDUCATION EXAMINATION.</head>
-                    <p>To the Editor of the "Egyptian Gazette"</p>
-                    <p>Sir,—We, the candidates of the Primary Education Certificate, have the honour
-                        to ask you to join our cry to the Ministry of Public instruction for
-                        ordering the party, which is concerned in putting the marks of the
-                        examination papers of the dictation, to take notice of the many errors in
-                        the dictation given to us.</p>
-                    <p>These errors, however, were erroneously written not because of their
-                        difficulty, but because of our mishearing these words from the dictators
-                        who, on the other hand, had eaten up many letters and syllables.</p>
-                    <p>Besides, their mode of dictating was quite different from that which we were
-                        accustomed to by our Egyptian teachers who taught us that language; and that
-                        was due to the fact that they were in a great hurry.</p>
-                    <p>At last, we hope from you to deign and write our complaint on your newspaper
-                        "The Egyptian Gazette." Your opinion, however, will not fail in
-                        strengthening our demand. We hope again to accept our great thanks.</p>
-                    <p>The Condidates.</p>
-                    <dateline>Cairo, 22nd June, 1906.</dateline>
+                    <div type="item">
+                        <head>PRIMARY EDUCATION EXAMINATION.</head>
+                        <p>To the Editor of the "Egyptian Gazette"</p>
+                        <p>Sir,—We, the candidates of the Primary Education Certificate, have the
+                            honour to ask you to join our cry to the Ministry of Public instruction
+                            for ordering the party, which is concerned in putting the marks of the
+                            examination papers of the dictation, to take notice of the many errors
+                            in the dictation given to us.</p>
+                        <p>These errors, however, were erroneously written not because of their
+                            difficulty, but because of our mishearing these words from the dictators
+                            who, on the other hand, had eaten up many letters and syllables.</p>
+                        <p>Besides, their mode of dictating was quite different from that which we
+                            were accustomed to by our Egyptian teachers who taught us that language;
+                            and that was due to the fact that they were in a great hurry.</p>
+                        <p>At last, we hope from you to deign and write our complaint on your
+                            newspaper "The Egyptian Gazette." Your opinion, however, will not fail
+                            in strengthening our demand. We hope again to accept our great
+                            thanks.</p>
+                        <p>The Condidates.</p>
+                        <dateline>Cairo, 22nd June, 1906.</dateline>
+                    </div>
                 </div>
                 <div type="item">
                     <head>Supplement Commercial et Financier, DE "L'EGYPTIAN GAZETTE"</head>
@@ -2042,103 +2062,123 @@
                         etc. etc.</p>
                     <p>L'abonnement pour une annee en Egypte coute q L.E. y compris les frais de
                         poste; pour l'etranger 10 P.T. de port en sus.</p>
-                </div><div type="section" feature="wire">
-                <div type="item">
-                    <head>RUSSIAN REVOLUTION.</head>
-                    <head>PROPAGANDA IN ARMY PROGRESSING.</head>
-                    <head>BATOUM GARRISON REVOLTS.</head>
-                    <dateline>St. Petersburg, June 26.</dateline>
-                    <p>The revolutionary propaganda is progressing in the Russian Army: the Guards
-                        Regiments here and at <placeName>Krasnoe-Selo</placeName> are affected. Many
-                        arrests have been made.</p>
-                    <p>A revolt amongst the garrison has occurred at <placeName>Batoum</placeName>.
-                        The Cossacks are surrounding the mutineers; the inhabitants are in a state
-                        of panic. (Reuter)</p>
                 </div>
-                <div type="item">
-                    <dateline>St. Petersburg, June 26.</dateline>
-                    <p>A Council, to meet at Peterhof, will tomorrow discuss the question of
-                        constituting a Monroutseff Parliamentary Ministry, keeping only the present
-                        Ministers of War, Marine, and Foreign Affairs. (Havas)</p>
+                <cb n="2"/>
+                <div type="section" feature="wire">
+                    <div type="item">
+                        <head>RUSSIAN REVOLUTION.<lb/>PROPAGANDA IN ARMY PROGRESSING.<lb/>BATOUM
+                            GARRISON REVOLTS.</head>
+                        <div type="cable">
+                            <dateline>St. Petersburg, June 26.</dateline>
+                            <p>The revolutionary propaganda is progressing in the Russian Army: the
+                                Guards Regiments here and at <placeName>Krasnoe-Selo</placeName> are
+                                affected. Many arrests have been made.</p>
+                            <p>A revolt amongst the garrison has occurred at
+                                    <placeName>Batoum</placeName>. The Cossacks are surrounding the
+                                mutineers; the inhabitants are in a state of panic. (Reuter)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, June 26.</dateline>
+                            <p>A Council, to meet at Peterhof, will tomorrow discuss the question of
+                                constituting a Monroutseff Parliamentary Ministry, keeping only the
+                                present Ministers of War, Marine, and Foreign Affairs. (Havas)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>NATAL REBELLION<lb/>REBELS OCCUPY POLICE STATION.</head>
+                        <div type="cable">
+                            <dateline>Greytown, June 26.</dateline>
+                            <p>The natives in the vicinity of the Insuizi and Noodsberg police
+                                station have rebelled and occupied the former. (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>DISTURBED BAGDAD.<lb/>REPRESENTATIONS TO THE PORTE.</head>
+                        <div type="cable">
+                            <dateline>Constantinople, June 26.</dateline>
+                            <p><persName>Sir Nicholas O'Conor</persName> has made vigorous
+                                representations to the Porte with reference to the disturbed
+                                condition of the vilayets of <placeName>Bagdad</placeName> and
+                                    <placeName>Basra</placeName> and the frequent murders of British
+                                subjects.</p>
+                            <p>The Turkish Commission has been ordered to proceed to
+                                    <placeName>Bagdad</placeName> in order to make investigations.
+                                (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>BRITAIN AND GERMANY.<lb/>THE CONSEQUENCES OF WAR.</head>
+                        <div type="cable">
+                            <dateline>Berlin, June 26.</dateline>
+                            <p><persName>Doctor Barth</persName>, a member of the Reichstag,
+                                emphasizes the consequences of a war between <placeName>Great
+                                    Britain</placeName> and <placeName>Germany</placeName>: neither,
+                                he said, would be a penny better off, but the whole of
+                                    <placeName>Europe</placeName> would suffer enormous loss, and
+                                    <placeName>America</placeName> would become the leader of the
+                                world. (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>MILLIONAIRE COMMITS MURDER.<lb/>LOVE AND JEALOUSY.</head>
+                        <div type="cable">
+                            <dateline>New York, June 26.</dateline>
+                            <p>An immense sensation has been caused here by the millionaire
+                                    <persName>Harry Thaw</persName>, who fired and killed an eminent
+                                and wealthy architect named <persName>Mr. Stanford White</persName>
+                                at <placeName>Madison Square Garden Theatre</placeName>. The deed
+                                has been ascribed to jealousy. <persName>Mr. Thaw</persName> lately
+                                married a beautiful chorus girl whom <persName>Mr. White</persName>
+                                has previously known. Both Thaw and his wife have been arrested.
+                                (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>EDUCATION BILL<lb/>OPPOSITION AMENDMENT REJECTED.</head>
+                        <div type="cable">
+                            <dateline>London, June 26.</dateline>
+                            <p>The debate on Clause 4 of the Education Bill has developed strong
+                                opposition on all sides, including some Ministerialists.
+                                (Reuter)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>London, June 26.</dateline>
+                            <p>An important Opposition amendment to Clause 4 of the Education Bill,
+                                making the clauses mandatory, was rejected by 340 votes to 237.
+                                (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>UNIONISTS AND FISCAL REFORM.</head>
+                        <div type="cable">
+                            <dateline>London, June 26.</dateline>
+                            <p><persName>Mr. Chamberlain</persName>, speaking at the inaugural
+                                dinner of the 1900 Club, outlined the Unionist policy, in the
+                                forefront of which; he said, stood Fiscal Reform, to which all
+                                Unionists were pledged. (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>GERMAN EDITORS AT MANSION HOUSE.</head>
+                        <div type="cable">
+                            <dateline>London, June 26.</dateline>
+                            <p>The Lord Mayor entertained the German editors at luncheon at the
+                                Mansion House. (Reuter)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>HOME CRICKET.</head>
+                        <div type="cable">
+                            <dateline>London, June 26.</dateline>
+                            <p>Cricket. Derby: Notts beat Derbyshire by 10 wickets. (Reuter)</p>
+                        </div>
+                    </div>
                 </div>
+                <cb n="3"/>
                 <div type="item">
-                    <head>NATAL REBELLION</head>
-                    <head>REBELS OCCUPY POLICE STATION.</head>
-                    <dateline>Greytown, June 26.</dateline>
-                    <p>The natives in the vicinity of the Insuizi and Noodsberg police station have
-                        rebelled and occupied the former. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>DISTURBED BAGDAD.</head>
-                    <head>REPRESENTATIONS TO THE PORTE.</head>
-                    <dateline>Constantinople, June 26.</dateline>
-                    <p><persName>Sir Nicholas O'Conor</persName> has made vigorous representations
-                        to the Porte with reference to the disturbed condition of the vilayets of
-                            <placeName>Bagdad</placeName> and <placeName>Basra</placeName> and the
-                        frequent murders of British subjects.</p>
-                    <p>The Turkish Commission has been ordered to proceed to
-                            <placeName>Bagdad</placeName> in order to make investigations.
-                        (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>BRITAIN AND GERMANY.</head>
-                    <head>THE CONSEQUENCES OF WAR.</head>
-                    <dateline>Berlin, June 26.</dateline>
-                    <p><persName>Doctor Barth</persName>, a member of the Reichstag, emphasizes the
-                        consequences of a war between <placeName>Great Britain</placeName> and
-                            <placeName>Germany</placeName>: neither, he said, would be a penny
-                        better off, but the whole of <placeName>Europe</placeName> would suffer
-                        enormous loss, and <placeName>America</placeName> would become the leader of
-                        the world. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>MILLIONAIRE COMMITS MURDER.</head>
-                    <head>LOVE AND JEALOUSY.</head>
-                    <dateline><placeName>New York</placeName>, June 26.</dateline>
-                    <p>An immense sensation has been caused here by the millionaire <persName>Harry
-                            Thaw</persName>, who fired and killed an eminent and wealthy architect
-                        named <persName>Mr. Stanford White</persName> at <placeName>Madison Square
-                            Garden Theatre</placeName>. The deed has been ascribed to jealousy.
-                            <persName>Mr. Thaw</persName> lately married a beautiful chorus girl
-                        whom <persName>Mr. White</persName> has previously known. Both Thaw and his
-                        wife have been arrested. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>EDUCATION BILL</head>
-                    <head>OPPOSITION AMENDMENT REJECTED.</head>
-                    <dateline><placeName>London</placeName>, June 26.</dateline>
-                    <p>The debate on Clause 4 of the Education Bill has developed strong opposition
-                        on all sides, including some Ministerialists. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <dateline><placeName>London</placeName>, June 26.</dateline>
-                    <p>An important Opposition amendment to Clause 4 of the Education Bill, making
-                        the clauses mandatory, was rejected by 340 votes to 237. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>UNIONISTS AND FISCAL REFORM.</head>
-                    <dateline><placeName>London</placeName>, June 26.</dateline>
-                    <p><persName>Mr. Chamberlain</persName>, speaking at the inaugural dinner of the
-                        1900 Club, outlined the Unionist policy, in the forefront of which; he said,
-                        stood Fiscal Reform, to which all Unionists were pledged. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>GERMAN EDITORS AT MANSION HOUSE.</head>
-                    <dateline><placeName>London</placeName>, June 26.</dateline>
-                    <p>The Lord Mayor entertained the German editors at luncheon at the Mansion
-                        House. (Reuter)</p>
-                </div>
-                <div type="item">
-                    <head>HOME CRICKET.</head>
-                    <dateline><placeName>London</placeName>, June 26.</dateline>
-                    <p>Cricket. Derby: Notts beat Derbyshire by 10 wickets. (Reuter)</p>
-                </div></div>
-                <div type="item">
-                    <head>DEATH SENTENCE</head>
-                    <head>VERDICT IN DENISHWAI CASE.</head>
-                    <head>DEATH PENALTY FOR FOUR LEADERS.</head>
-                    <head>EXECUTION AT DENISHWAI.</head>
-                    <p>(From our Special Correspondent)</p>
+                    <head>DEATH SENTENCE<lb/>VERDICT IN DENISHWAI CASE.<lb/>DEATH PENALTY FOR FOUR
+                        LEADERS.<lb/>EXECUTION AT DENISHWAI.</head>
+                    <byline>(From our Special Correspondent)</byline>
                     <p>Shibin el Kom, Wednesday.</p>
                     <p>The verdict of the special tribunal constituted to try the accused in the
                         fatal affray with British officers at <placeName>Denishwai</placeName>
@@ -2157,250 +2197,263 @@
                         rest were acquitted.</p>
                     <p>The execution will take place at <placeName>Denishwai</placeName> tomorrow
                         afternoon at 2 o'clock.</p>
-                </div>
-                <div type="item">
-                    <dateline>Chibin el Kom, Tuesday.</dateline>
-                    <p>When the Court reassembled this morning <persName>Ibrahim Bey
-                            Helbawi</persName>, counsel for the prosecution, continued his address.
-                        The fire in the tibn floor, said counsel, could not have been caused by the
-                        officer’s gun. as was amply demonstrated by the evidence, but was started by
-                        the natives, who, by nature, were capable of any crime. On the following
-                        day, when the authorities were forming a cordon round the village, a woman
-                        began to shout that a fire was burning in a "girn" and this second fire was
-                        extinguished as quickly as the first. This was also caused by the natives
-                        and, said counsel, was done in order to attract the attention of those
-                        forming the cordon and afford the villagers, who were guilty of the attack,
-                        time to run away. The accused were revengeful. He could not say why. Was it
-                        becasue the officers were English or for other reasons? The villagers were,
-                        however, as he said before capable of any crime. Even supposing that the
-                        fire was caused by the officers, it must be remembered that they gave up
-                        their guns. Why should the attack continue? The officers denied having
-                        caused the fire. In giving evidence the officers had sworn to speak the
-                        exact truth and he believed them whe they said that the four wounded persons
-                        were not shot by them.</p>
-                </div>
-                <div type="item">
-                    <head>The Onbashi's Role</head>
-                    <p>Referring to the onbashi of police who accompanied them, counsel said that
-                        his evidence was in agreement with the prisoners. According to him, one of
-                        the officers fired at the natives when they seized <persName>Lieut.
-                            Porter</persName>’s gun. They did not call for evidence from the onbashi
-                        of police in the first instance, as they did not wish to put forward the man
-                        as an example of the shortcomings of the Egyptian police. They would rather
-                        conceal the fact that the police were unintelligent and incapable. Counsel
-                        for accused desired the evidence of the onbashi and the prosecution were
-                        quite willing for him to be called. The evidence was as the Court had
-                        already heard. The onbashi denied meeting any one on the road when he left
-                        the officers in order to call the omdeh. He passed the house of
-                            <persName>Hassan Mahfouz</persName> and it could not be determined that
-                        he saw nobody; but he denied seeing anyone and instead of going to see the
-                        omdeh, he went off to take lunch with <persName>Gabr Zohran</persName>. He
-                        was also asked what took place during the attack and he said that the
-                        natives and officers were beating and firing at each other. But he knew
-                        nothing. He had fallen from his horse and became frightened. He first stated
-                        that the officers fired at the natives and said later that he did know if
-                        this was the case. He also said when telephoning to the markezz that the
-                        natives fired, but even the officers did not say that they did so, so that
-                        his evidence was obviously false.</p>
-                </div>
-                <div type="item">
-                    <head>Accidental Discharge of Gun.</head>
-                    <p>It was asserted that the woman who was wounded was shot by the officers, but
-                        ocunsel was convinced that she was shot when the gun was being wrested from
-                            <persName>Lieut. Porter</persName>. The medical report showed that the
-                        sheikh of the ghaffirs received his wounds in the knee from a gun about 20
-                        ins. away and that the woman was about 1 metre away, while the officer was
-                        surrounded by people, and this showed that the gun went off when it was
-                        being taken away from the officer. All four persons received the shots from
-                        the same gun in their legs, this showing that the gun was not fired
-                        purposely. This was in accordance with the statements of the officers. The
-                        guns were given up and why did the natives continue the attack except with
-                        the intention of doing wilful harm? If the officers had known Arabic they
-                        would have had far more evidence to present. On account of the
-                        interpretation of the officers evidence the audience did not realise the
-                        extreme gravity of their assertions, but counsel was in possession of the
-                        full details and know exactly how it took place. The officers were disarmed
-                        and ran away, not making any stand against the natives. The were beaten and
-                            <persName>Major Pine-Coffin</persName> fell senseless three times.</p>
-                </div>
-                <div type="item">
-                    <head>Wanted to kill them.</head>
-                    <p>The strokes were nearly all about the head as if it had been so arranged, and
-                        from this it might be inferred that they intended to kill the officers. When
-                            <persName>Major Pine-Coffin</persName> tell the people still continued
-                        to attack the officers. "What did they want? They wanted to kill them.” When
-                        they arrived at the carriages the natives did not let the officers go. The
-                        arbagi tried to drive away, but was struck on the head by a nabout. The men
-                        were using nabouts and the women throwing bricks and stones. The officers
-                        were dragged back towards the village and the natives continued their
-                        attempts to kill them. They had tibn; placed all round the officers with
-                        which to burn them. It appeared, however, that one of the accused persuaded
-                        them to abandon their terrible design. They tortured them for an hour. When
-                        a quarrel arises both parties usually exchange blows; but in this case only
-                        one side attacked. The officers did not even curse the villagers! Two of the
-                        officers went ahead for help and three remained at the mercy of an ignorantt
-                        and savage crowd. <persName>Capt. Ball</persName> was struck and afterwards
-                        ran on for five kilometres to <persName>Sersina</persName>, which he reached
-                        about two o’clock or half past. The thermometer stood at 42°C.</p>
-                </div>
-                <div type="item">
-                    <head><persName>Captain Bull</persName>'s Death</head>
-                    <p><persName>Capt. Bull</persName> was not sufficiently conscious to keep to the
-                        road and he fell in a field, about 7 metres from the main road.
-                            <persName>Capt. Bostock</persName> swam across the canal, fully clothed,
-                        in order to get to the camp. From the steps taken by the officers it was
-                        easy to believe that they thought the natives intended to kill them. The
-                        aggression of the people was not forcibly resisted by the officers. This was
-                        the exact truth. Even those who were most prejudiced, either from ignorance
-                        or from "national" feeling doubted the correctness of their prejudice in
-                        this case when they wrote to the Officer in Command of the Army of
-                        Occupation thanking <persName>Capt. Bostock</persName> for having reported
-                        the death of <persName>Capt. Bull</persName> in accordance with the facts.
-                        The correspondents of whom he spoke did not even believe what they wrote in
-                        their papers, and had later expressed in other papers their belief that the
-                        officers were blameless.</p>
-                </div>
-                <div type="item">
-                    <head>Premeditation.</head>
-                    <p>The truth was self-evident. "Did the people previously intend to kill the
-                        officers or did they suddenly conceive the idea after the attack had
-                        commenced? I believe that it was previous intention—even before the officers
-                        arrived at the village.” He believed the people intended to kill the
-                        officers in the event of their coming near the village to shoot pigeons.
-                        Counsel believed <persName>Hassan Mahfouz</persName> (No. 11); not only to
-                        have taken part in the attaock, but to have been the leader. He denied
-                        participation but the event took place opposite his house.</p>
-                    <p>The Court then rose for an intervan of a quarter of an hour.</p>
-                    <p>Counsel; continuing, said that from article 297 and note 8, page 414 of the
-                        Code, “intention to kill" can be constituted by preparing arms, uttering
-                        threats, showing hatred and anger in consequence of previous events. The
-                        accused were therefore guilty of premeditation. In note 15 it is laid down
-                        that the intent to kill may be formed from a past event. It is difficult to
-                        say whether all the accused had previous intention to kill but there could
-                        be no doubt of the intentions of the leaders. The fact, however, that they
-                        supported the leaders constituted, by law, premeditated murder. As regards
-                        the officers who escaped, it was attempted murder. <persName>Capt.
-                            Bull</persName> was murdered and the accused are responsible for his
-                        death. It was stated in the first medical report, which was made by the
-                        Markas doctor and <persName>Capt. Bostock</persName>, that death was due to
-                        concussion of the brain aggravated by sunstroke. The accused refused to
-                        believe this report and it was afterwards demanded that the body of
-                            <persName>Capt. Bull</persName> should be exhumed for the purposes of an
-                        autopsy. The second report by <persName>Dr. Nolan</persName> confirmed the
-                        first. The sunstroke, said counsel, was caused by the attack as much as the
-                        concussion.</p>
-                    <p><persName>Hassan Mahfouz</persName>(11), <persName>Ahmen Mohamed el
-                            Sissi</persName>(13), <persName>Youssef Hussein Salem</persName>(34),
-                            <persName>Mohamed Abdel Nebi el Moazin</persName>(19), <persName>Ahmed
-                            Abdel Aal Mahfouz</persName>(24), <persName>Said Issa Salem</persName>
-                        (25), and <persName>Mohamed Darweesh Zohran</persName>(48) were the leaders
-                        of the crowd. In the house of No. 48 two guns and other articles belonging
-                        to the officers were found.</p>
-                    <p>Counsel then enumerated all the participants in the attack.</p>
-                </div>
-                <div type="item">
-                    <head>Conduct of Officers.</head>
-                    <p>In concluding, <persName>Ibrahim Bey Helbawi</persName> said that the British
-                        officers had given proof of their fine character. They might have killed
-                        people to defend themselves, bu they desisted to preserve the honour of
-                        their nation. These five officers had seen military service. <persName>Major
-                            Pine-Coffin</persName> had distinguished himself in the Transvaal; he
-                        bore a medal. He had receieved from the officer in command of the Army of
-                        Occupation details concerning all the officers. According to any criminal
-                        code the accused might be sentenced; including the Moslem law. The tribunal
-                        woul dbe fulfilling its duty if it condemned to death seven of the accused
-                        whom he had named.</p>
-                    <p>This concluded counsel's eloquent address; which had lasted three hours and a
-                        quarter.</p>
-                </div>
-                <div type="item">
-                    <head>The Defence.</head>
-                    <p><persName>Mohamed Bey Youssef</persName>, first counsel for the defence, then
-                        pleaded. He thanked God that no outrage against the Army of Occupation had
-                        taken place with the exception of one at <placeName>Galioubieh</placeName>
-                        and the attack which had recently taken place at
-                            <placeName>Denishwai</placeName>. The outrage, the work of ignorant and
-                        savage people, inhabiting a criminal district, would, it was to be hoped,
-                        make no change in the relations of the British Army towards them.
-                            <persName>Major Pine-Coffin</persName> had said that the natives were
-                        always friendly to him. Counsel for the defence were very grateful for the
-                        liberty which the Court allowed them. As for premeditation, it was in no way
-                        established, and no one could say that the poeple of
-                            <placeName>Denishwai</placeName> bore malice against the Army of
-                        Occupation.</p>
-                    <p>After giving a resume o the occurrence counsel said that <persName>Hassan
-                            Mahfouz</persName> (11) had warned the party through their guide when
-                        they were going to shoot. They were not attacked because the people intended
-                        to do them harm but probably because they were shooting near the village. He
-                        could not say that shooting pigeons justified murder. The reason of the
-                        attack was the firing of the tibn and the wounding of a woman.
-                            <persName>Mohamed Abd el Nebi</persName>, the owner of the "girn," saw
-                        that the officer had a gun in his hand and he thought he saw fire coming
-                        from its mouth. A man who saw his "girn" burnt and his wife shot would not
-                        feel particularly grateful. The tree officers who came to assist their
-                        colleague fired in his defence and the case then became graver. The
-                        policeman said in giving evidence that the officers fired. He could not
-                        believe that the gun went off after the people took it becasue
-                            <persName>Lieut. Porter</persName> said that he had put it at "safety"
-                        and the people did not know how to cock it. At any rate, if one rifle went
-                        off accidentally and the others did not, and he believed that the officers
-                        had fired and inflicted injuries on four persons. The natives could not take
-                        the rifles and fire them themselves. As regards premeditation, the principal
-                        witness wsa <persName>Ahmed Bey Habib</persName>. The fire could not have
-                        been taken as a signal for an attack. Could it be thought that it would take
-                        3,300 people, the number of inhabitants of the village, to kill five men? It
-                        was the custom of the fellaheen to form a crowd. If they intended to kill
-                        the officers, who could have prevented them? He asked for the release of the
-                        accused.</p>
-                </div>
-                <div type="item">
-                    <head>Medical Evidence.</head>
-                    <p>The Court rose for an internal of three hours, and on resuming <persName>Dr.
-                            Nolan</persName> was called as <persName>Ahmed Bey Loutfi</persName>
-                        wished to hear his statement as the condition of the four wounded fellaheen
-                        because he did not believe that they had all been hurt by one shot.
-                            <persName>Dr. Nolan</persName> was of the opinion that all were wounded
-                        by one shot and that it was quite possible fora single charge to inflict the
-                        injuries.</p>
-                    <p><persName>Ahmed Bey Loutfi</persName>then spoke. After regretting the
-                        occurrence of this incident when <persName>Lord Cromer</persName> had just
-                        alluded to the tranquility of Menoufieh, he said he wished to refer to three
-                        points: first, a motive for the crime; secondly, the trial according to the
-                        code of law, and thirdly, the amount of responsibility chargeable to the
-                        accused. The crime was caused by the fire and the excitement arose on the
-                        spot and at the moment. <persName>Mohamed Abd el Nebi</persName> believed
-                        the fire to be due to the shooting, but it was now known that it was not due
-                        to the officers. After taking the guns from the officers, the natives
-                        behaved shamefully, but there was no evidence of previous intention to kill.
-                        As regards to his second point, the Court must give judgment according to
-                        the Egyptian Code. As regards to the third, it was evident from the medical
-                        report that the blows were not sufficient to cause death, which was due to
-                        sunstroke. Had the occurrence taken place when the heat of the sun was less
-                        powerful it is probable that death would not have occurred.</p>
-                </div>
-                <div type="item">
-                    <head>Plea of Insanity.</head>
-                    <p>He had full confidence in the justice of the tribunal, and he would ask the
-                        Court to find that <persName>Abd el Nebi Mahfouz</persName> was insane and
-                        not responsible for his actions. <persName>For El Gubashi</persName>(15),
-                            <persName>Gubali Ali Salem</persName>(40), <persName>Mohamed Ahmed
-                            Assissi</persName>(42), <persName>Abd el Daim</persName> (46),
-                            <persName>Ali Ali Montassib</persName>(49), <persName>Mohamed Ali
-                            Tonkar</persName> (47), all of whom had been identified, he demanded
-                        justice. As for <persName>Mohamed Darweesh Zohran</persName> (48) and
-                            <persName>Youssef Hassan Salem</persName>, he coul dbut appeal for mercy
-                        in their case, and mercy was above even justice.</p>
-                    <p><persName>Ismain Bey Assem</persName> then pleaded. He said that there was no
-                        previous intention but that the event occurred through a misunderstanding.
-                        He could but ask that the judgment would be given according to Egyptian
-                        law.</p>
+                    <div type="item">
+                        <dateline>Chibin el Kom, Tuesday.</dateline>
+                        <p>When the Court reassembled this morning <persName>Ibrahim Bey
+                                Helbawi</persName>, counsel for the prosecution, continued his
+                            address. The fire in the tibn floor, said counsel, could not have been
+                            caused by the officer's gun. as was amply demonstrated by the evidence,
+                            but was started by the natives, who, by nature, were capable of any
+                            crime. On the following day, when the authorities were forming a cordon
+                            round the village, a woman began to shout that a fire was burning in a
+                            "girn" and this second fire was extinguished as quickly as the first.
+                            This was also caused by the natives and, said counsel, was done in order
+                            to attract the attention of those forming the cordon and afford the
+                            villagers, who were guilty of the attack, time to run away. The accused
+                            were revengeful. He could not say why. Was it becasue the officers were
+                            English or for other reasons? The villagers were, however, as he said
+                            before capable of any crime. Even supposing that the fire was caused by
+                            the officers, it must be remembered that they gave up their guns. Why
+                            should the attack continue? The officers denied having caused the fire.
+                            In giving evidence the officers had sworn to speak the exact truth and
+                            he believed them whe they said that the four wounded persons were not
+                            shot by them.</p>
+                    </div>
+                    <div type="item">
+                        <head>The Onbashi's Role</head>
+                        <p>Referring to the onbashi of police who accompanied them, counsel said
+                            that his evidence was in agreement with the prisoners. According to him,
+                            one of the officers fired at the natives when they seized
+                                <persName>Lieut. Porter</persName>'s gun. They did not call for
+                            evidence from the onbashi of police in the first instance, as they did
+                            not wish to put forward the man as an example of the shortcomings of the
+                            Egyptian police. They would rather conceal the fact that the police were
+                            unintelligent and incapable. Counsel for accused desired the evidence of
+                            the onbashi and the prosecution were quite willing for him to be called.
+                            The evidence was as the Court had already heard. The onbashi denied
+                            meeting any one on the road when he left the officers in order to call
+                            the omdeh. He passed the house of <persName>Hassan Mahfouz</persName>
+                            and it could not be determined that he saw nobody; but he denied seeing
+                            anyone and instead of going to see the omdeh, he went off to take lunch
+                            with <persName>Gabr Zohran</persName>. He was also asked what took place
+                            during the attack and he said that the natives and officers were beating
+                            and firing at each other. But he knew nothing. He had fallen from his
+                            horse and became frightened. He first stated that the officers fired at
+                            the natives and said later that he did know if this was the case. He
+                            also said when telephoning to the markezz that the natives fired, but
+                            even the officers did not say that they did so, so that his evidence was
+                            obviously false.</p>
+                    </div>
+                    <div type="item">
+                        <head>Accidental Discharge of Gun.</head>
+                        <p>It was asserted that the woman who was wounded was shot by the officers,
+                            but ocunsel was convinced that she was shot when the gun was being
+                            wrested from <persName>Lieut. Porter</persName>. The medical report
+                            showed that the sheikh of the ghaffirs received his wounds in the knee
+                            from a gun about 20 ins. away and that the woman was about 1 metre away,
+                            while the officer was surrounded by people, and this showed that the gun
+                            went off when it was being taken away from the officer. All four persons
+                            received the shots from the same gun in their legs, this showing that
+                            the gun was not fired purposely. This was in accordance with the
+                            statements of the officers. The guns were given up and why did the
+                            natives continue the attack except with the intention of doing wilful
+                            harm? If the officers had known Arabic they would have had far more
+                            evidence to present. On account of the interpretation of the officers
+                            evidence the audience did not realise the extreme gravity of their
+                            assertions, but counsel was in possession of the full details and know
+                            exactly how it took place. The officers were disarmed and ran away, not
+                            making any stand against the natives. The were beaten and
+                                <persName>Major Pine-Coffin</persName> fell senseless three
+                            times.</p>
+                    </div>
+                    <cb n="4"/>
+                    <div type="item">
+                        <head>Wanted to kill them.</head>
+                        <p>The strokes were nearly all about the head as if it had been so arranged,
+                            and from this it might be inferred that they intended to kill the
+                            officers. When <persName>Major Pine-Coffin</persName> tell the people
+                            still continued to attack the officers. "What did they want? They wanted
+                            to kill them." When they arrived at the carriages the natives did not
+                            let the officers go. The arbagi tried to drive away, but was struck on
+                            the head by a nabout. The men were using nabouts and the women throwing
+                            bricks and stones. The officers were dragged back towards the village
+                            and the natives continued their attempts to kill them. They had tibn;
+                            placed all round the officers with which to burn them. It appeared,
+                            however, that one of the accused persuaded them to abandon their
+                            terrible design. They tortured them for an hour. When a quarrel arises
+                            both parties usually exchange blows; but in this case only one side
+                            attacked. The officers did not even curse the villagers! Two of the
+                            officers went ahead for help and three remained at the mercy of an
+                            ignorantt and savage crowd. <persName>Capt. Ball</persName> was struck
+                            and afterwards ran on for five kilometres to
+                                <persName>Sersina</persName>, which he reached about two o'clock or
+                            half past. The thermometer stood at 42°C.</p>
+                    </div>
+                    <div type="item">
+                        <head><persName>Captain Bull</persName>'s Death</head>
+                        <p><persName>Capt. Bull</persName> was not sufficiently conscious to keep to
+                            the road and he fell in a field, about 7 metres from the main road.
+                                <persName>Capt. Bostock</persName> swam across the canal, fully
+                            clothed, in order to get to the camp. From the steps taken by the
+                            officers it was easy to believe that they thought the natives intended
+                            to kill them. The aggression of the people was not forcibly resisted by
+                            the officers. This was the exact truth. Even those who were most
+                            prejudiced, either from ignorance or from "national" feeling doubted the
+                            correctness of their prejudice in this case when they wrote to the
+                            Officer in Command of the Army of Occupation thanking <persName>Capt.
+                                Bostock</persName> for having reported the death of <persName>Capt.
+                                Bull</persName> in accordance with the facts. The correspondents of
+                            whom he spoke did not even believe what they wrote in their papers, and
+                            had later expressed in other papers their belief that the officers were
+                            blameless.</p>
+                    </div>
+                    <div type="item">
+                        <head>Premeditation.</head>
+                        <p>The truth was self-evident. "Did the people previously intend to kill the
+                            officers or did they suddenly conceive the idea after the attack had
+                            commenced? I believe that it was previous intention—even before the
+                            officers arrived at the village." He believed the people intended to
+                            kill the officers in the event of their coming near the village to shoot
+                            pigeons. Counsel believed <persName>Hassan Mahfouz</persName> (No. 11);
+                            not only to have taken part in the attaock, but to have been the leader.
+                            He denied participation but the event took place opposite his house.</p>
+                        <p>The Court then rose for an intervan of a quarter of an hour.</p>
+                        <p>Counsel; continuing, said that from article 297 and note 8, page 414 of
+                            the Code, "intention to kill" can be constituted by preparing arms,
+                            uttering threats, showing hatred and anger in consequence of previous
+                            events. The accused were therefore guilty of premeditation. In note 15
+                            it is laid down that the intent to kill may be formed from a past event.
+                            It is difficult to say whether all the accused had previous intention to
+                            kill but there could be no doubt of the intentions of the leaders. The
+                            fact, however, that they supported the leaders constituted, by law,
+                            premeditated murder. As regards the officers who escaped, it was
+                            attempted murder. <persName>Capt. Bull</persName> was murdered and the
+                            accused are responsible for his death. It was stated in the first
+                            medical report, which was made by the Markas doctor and <persName>Capt.
+                                Bostock</persName>, that death was due to concussion of the brain
+                            aggravated by sunstroke. The accused refused to believe this report and
+                            it was afterwards demanded that the body of <persName>Capt.
+                                Bull</persName> should be exhumed for the purposes of an autopsy.
+                            The second report by <persName>Dr. Nolan</persName> confirmed the first.
+                            The sunstroke, said counsel, was caused by the attack as much as the
+                            concussion.</p>
+                        <p><persName>Hassan Mahfouz</persName>(11), <persName>Ahmen Mohamed el
+                                Sissi</persName>(13), <persName>Youssef Hussein
+                            Salem</persName>(34), <persName>Mohamed Abdel Nebi el
+                            Moazin</persName>(19), <persName>Ahmed Abdel Aal Mahfouz</persName>(24),
+                                <persName>Said Issa Salem</persName> (25), and <persName>Mohamed
+                                Darweesh Zohran</persName>(48) were the leaders of the crowd. In the
+                            house of No. 48 two guns and other articles belonging to the officers
+                            were found.</p>
+                        <p>Counsel then enumerated all the participants in the attack.</p>
+                    </div>
+                    <div type="item">
+                        <head>Conduct of Officers.</head>
+                        <p>In concluding, <persName>Ibrahim Bey Helbawi</persName> said that the
+                            British officers had given proof of their fine character. They might
+                            have killed people to defend themselves, bu they desisted to preserve
+                            the honour of their nation. These five officers had seen military
+                            service. <persName>Major Pine-Coffin</persName> had distinguished
+                            himself in the Transvaal; he bore a medal. He had receieved from the
+                            officer in command of the Army of Occupation details concerning all the
+                            officers. According to any criminal code the accused might be sentenced;
+                            including the Moslem law. The tribunal woul dbe fulfilling its duty if
+                            it condemned to death seven of the accused whom he had named.</p>
+                        <p>This concluded counsel's eloquent address; which had lasted three hours
+                            and a quarter.</p>
+                    </div>
+                    <div type="item">
+                        <head>The Defence.</head>
+                        <p><persName>Mohamed Bey Youssef</persName>, first counsel for the defence,
+                            then pleaded. He thanked God that no outrage against the Army of
+                            Occupation had taken place with the exception of one at
+                                <placeName>Galioubieh</placeName> and the attack which had recently
+                            taken place at <placeName>Denishwai</placeName>. The outrage, the work
+                            of ignorant and savage people, inhabiting a criminal district, would, it
+                            was to be hoped, make no change in the relations of the British Army
+                            towards them. <persName>Major Pine-Coffin</persName> had said that the
+                            natives were always friendly to him. Counsel for the defence were very
+                            grateful for<cb n="5"/> the liberty which the Court allowed them. As for
+                            premeditation, it was in no way established, and no one could say that
+                            the poeple of <placeName>Denishwai</placeName> bore malice against the
+                            Army of Occupation.</p>
+                        <p>After giving a resume o the occurrence counsel said that <persName>Hassan
+                                Mahfouz</persName> (11) had warned the party through their guide
+                            when they were going to shoot. They were not attacked because the people
+                            intended to do them harm but probably because they were shooting near
+                            the village. He could not say that shooting pigeons justified murder.
+                            The reason of the attack was the firing of the tibn and the wounding of
+                            a woman. <persName>Mohamed Abd el Nebi</persName>, the owner of the
+                            "girn," saw that the officer had a gun in his hand and he thought he saw
+                            fire coming from its mouth. A man who saw his "girn" burnt and his wife
+                            shot would not feel particularly grateful. The tree officers who came to
+                            assist their colleague fired in his defence and the case then became
+                            graver. The policeman said in giving evidence that the officers fired.
+                            He could not believe that the gun went off after the people took it
+                            becasue <persName>Lieut. Porter</persName> said that he had put it at
+                            "safety" and the people did not know how to cock it. At any rate, if one
+                            rifle went off accidentally and the others did not, and he believed that
+                            the officers had fired and inflicted injuries on four persons. The
+                            natives could not take the rifles and fire them themselves. As regards
+                            premeditation, the principal witness wsa <persName>Ahmed Bey
+                                Habib</persName>. The fire could not have been taken as a signal for
+                            an attack. Could it be thought that it would take 3,300 people, the
+                            number of inhabitants of the village, to kill five men? It was the
+                            custom of the fellaheen to form a crowd. If they intended to kill the
+                            officers, who could have prevented them? He asked for the release of the
+                            accused.</p>
+                    </div>
+                    <div type="item">
+                        <head>Medical Evidence.</head>
+                        <p>The Court rose for an internal of three hours, and on resuming
+                                <persName>Dr. Nolan</persName> was called as <persName>Ahmed Bey
+                                Loutfi</persName> wished to hear his statement as the condition of
+                            the four wounded fellaheen because he did not believe that they had all
+                            been hurt by one shot. <persName>Dr. Nolan</persName> was of the opinion
+                            that all were wounded by one shot and that it was quite possible fora
+                            single charge to inflict the injuries.</p>
+                        <p><persName>Ahmed Bey Loutfi</persName>then spoke. After regretting the
+                            occurrence of this incident when <persName>Lord Cromer</persName> had
+                            just alluded to the tranquility of Menoufieh, he said he wished to refer
+                            to three points: first, a motive for the crime; secondly, the trial
+                            according to the code of law, and thirdly, the amount of responsibility
+                            chargeable to the accused. The crime was caused by the fire and the
+                            excitement arose on the spot and at the moment. <persName>Mohamed Abd el
+                                Nebi</persName> believed the fire to be due to the shooting, but it
+                            was now known that it was not due to the officers. After taking the guns
+                            from the officers, the natives behaved shamefully, but there was no
+                            evidence of previous intention to kill. As regards to his second point,
+                            the Court must give judgment according to the Egyptian Code. As regards
+                            to the third, it was evident from the medical report that the blows were
+                            not sufficient to cause death, which was due to sunstroke. Had the
+                            occurrence taken place when the heat of the sun was less powerful it is
+                            probable that death would not have occurred.</p>
+                    </div>
+                    <div type="item">
+                        <head>Plea of Insanity.</head>
+                        <p>He had full confidence in the justice of the tribunal, and he would ask
+                            the Court to find that <persName>Abd el Nebi Mahfouz</persName> was
+                            insane and not responsible for his actions. <persName>For El
+                                Gubashi</persName>(15), <persName>Gubali Ali Salem</persName>(40),
+                                <persName>Mohamed Ahmed Assissi</persName>(42), <persName>Abd el
+                                Daim</persName> (46), <persName>Ali Ali Montassib</persName>(49),
+                                <persName>Mohamed Ali Tonkar</persName> (47), all of whom had been
+                            identified, he demanded justice. As for <persName>Mohamed Darweesh
+                                Zohran</persName> (48) and <persName>Youssef Hassan
+                            Salem</persName>, he coul dbut appeal for mercy in their case, and mercy
+                            was above even justice.</p>
+                        <p><persName>Ismain Bey Assem</persName> then pleaded. He said that there
+                            was no previous intention but that the event occurred through a
+                            misunderstanding. He could but ask that the judgment would be given
+                            according to Egyptian law.</p>
+                    </div>
                 </div>
                 <div type="advert" xml:id="deg-ad-fpc01">
-                    <p>MILITARY TAILORS.</p>
+                    <head>MILITARY TAILORS.</head>
                     <p>EGYPTIAN ARMY OUTFITS A SPECIALITY.</p>
                     <p>RIDING BREECHES.</p>
                     <p>F. Phillips &amp; Co. </p>
-                    <p>LADIES’ TAILORS.</p>
+                    <p>LADIES' TAILORS.</p>
                     <p>(high class work only).</p>
                     <p>CAIRO &amp; ALEXANDRIA.</p>
                 </div>
@@ -2413,9 +2466,10 @@
                     <p>Agents at Alexandria</p>
                     <p>ALEXANDRIA BONDED WAREHOUSE CO. LTD.</p>
                 </div>
+                <cb n="6"/>
                 <div type="item">
-                    <head>EGYPTIAN EXHIBITS WANTED.</head>
-                    <head>INTERNATIONAL EXHIBITION IN NEW ZEALAND.</head>
+                    <head>EGYPTIAN EXHIBITS WANTED.<lb/>INTERNATIONAL EXHIBITION IN NEW
+                        ZEALAND.</head>
                     <p>In a letter from <placeName>Christchurch, N.Z.</placeName>, to H.B.M.'s
                         Consul at Cairo, directing his attention to the New Zealand International
                         Exhibition, which is to open in November, 1906, and. continue until April,
@@ -2447,7 +2501,7 @@
                         be landed direct from the steamer to the exhibition at a cost of 8s, 6d. per
                         ton."</p>
                 </div>
-                <div type="section" feature="councilMinisters">
+                <div type="item" feature="councilMinisters">
                     <head>COUNCIL OF MINISTERS.</head>
                     <p>The following are the prinicpal decisions of Monday's Council of Ministers:
                         -</p>
@@ -2470,7 +2524,7 @@
                 <div type="item">
                     <head>DEMENTI</head>
                     <p>We notice in "L'Egypte" of 26th instant a paragraph to the effect that
-                            <persName>Mr. Geo. Lewis</persName>, acting editory of the "Egyptian
+                            <persName>Mr. Geo. Lewis</persName>, acting editor of the "Egyptian
                         Morning News," has resigned that position owing to his numerous occupations.
                         We are requested to formally contradict this statement, which is totally
                         unfounded.</p>
@@ -2478,10 +2532,11 @@
                         principle, finding himself entirely at variance with the Aglophobe articles
                         which appeared in "L'Egypte" on the 23rd and 24th instant in connection with
                         the <placeName>Denishwai</placeName> affair, and it is only just that the
-                        truth shoul dbe known as there has been a very evident attempt to suppress
+                        truth should be known as there has been a very evident attempt to suppress
                         it.</p>
                 </div>
-                <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS</head>
+                <div type="item" feature="steamerMovements">
+                    <head>STEAMER MOVEMENTS</head>
                     <p>The Ellerman s.s. Falernian sailed from Liverpool on Sunday for Gibraltar,
                         Malta, and Alexandria.</p>
                     <p>The Ellerman s.s. City of Venice arrived at Liverpool yesterday morning.</p>
@@ -2500,7 +2555,8 @@
                 </div>
             </div>
             <pb n="4"/>
-            <div type="page" n="4">
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n3/mode/1up">
                 <div type="item">
                     <head>THE EGYPTIAN GAZETTE. WEDNESDAY, JUNE 27, 1906.</head>
                     <head>4</head>
@@ -2521,7 +2577,7 @@
                     <p>Alexandrien, den 25 Juni 1906.</p>
                     <p><measure type="indexNo">28162-1</measure> Kaiserlich Deutsches Konsulat.</p>
                 </div>
-                <div type="item">
+                <div type="item" feature="notice">
                     <head>NOTICE.</head>
                     <p>A firm of English manufacturers require an Agent (on commission) in
                             <placeName>Egypt</placeName> having connection amongst hardware dealers
@@ -2665,7 +2721,7 @@
                         IBADI</persName></docAuthor>
                 </div>
                 <!-- Election Dates -->
-                <div type="advert" xml:id="rob01">
+                <div type="advert" xml:id="deg-ad-rob01">
                     <p>The Best Drink for Hot Countries is</p>
                     <p>BARLEY WATER.</p>
                     <p>The Best Way to make Barley Water is to use </p>
@@ -2673,9 +2729,9 @@
                     <p>It can be obtained in One Pound Tins at the Local Store. </p>
                     <p>Manufacturers :</p>
                     <p>KEEN, ROBINSON &amp; Co., Ltd., LONDON, ENGLAND. </p>
-                    <p>Makers of ROBINSON’S PATENT GROATS.</p>
+                    <p>Makers of ROBINSON'S PATENT GROATS.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-msp01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-msp01">
                     <head>MCLAREN'S STEAM PLOUGHS</head>
                     <p>SUITABLE FOR EVERY DESCRIPTION OF SOIL AND CROP.</p>
                     <p>ESTABLISHED 1876,</p>
@@ -2700,7 +2756,11 @@
                         insurances effected to all parts of the world.</p>
                     <p><measure type="indexNo">27376-28-2-907</measure></p>
                 </div>
-                <!-- English Made Ploughs -->
+                <div type="advert" colSpan="2" xml:id="deg-ad-jfh01">
+                    <head>ENGLISH MADE PLOUGHS</head>
+                    <p>FOR ALL COUNTRIES AND ALL PURPOSES.</p>
+                    <p>J. &amp; F. HOWARD, BEDFORD, England.</p>
+                </div>
                 <div type="advert" xml:id="deg-ad-clh01" xml:lang="fr">
                     <head>CIGARES de la HAVANE</head>
                     <p>de provenance directe et de toutes les meilleures marques</p>
@@ -2735,8 +2795,9 @@
                     <p>Sharia Wabour El Moya.</p>
                     <p>Comfortable apartments, with or without board. Terms very reasonable.</p>
                     <p><measure type="indexNo">26348-18-12-906</measure></p>
-                </div> <div type="advert" xml:id="deg-ad-hob01">
-                    <p>“A good article recommends itself.”</p>
+                </div>
+                <div type="advert" xml:id="deg-ad-hob01">
+                    <p>"A good article recommends itself."</p>
                     <p>HOWIES Butter is no exception</p>
                     <p>Awarded Twelve 1st Prize Medals at the Khedivial Agricultural Show 1902, 1903
                         and 1905. </p>
@@ -2745,12 +2806,13 @@
                 </div>
             </div>
             <pb n="5"/>
-            <div type="page" n="5">
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n4/mode/1up">
                 <div type="item">
                     <head>THE EGYPTIAN GAZETTE. WEDNESDAY, JUNE 27, 1906.</head>
                     <head>5</head>
                 </div>
-                <div type="section" feature="homePapers">
+                <div type="item" feature="homePapers">
                     <head>PITH OF THE PRESS</head>
                     <head>EXTRACTS FROM THE HOME PAPERS</head>
                     <head>The Denishwai Affair.</head>
@@ -2770,14 +2832,14 @@
                 </div>
                 <div type="item">
                     <head>Griding the Denominationalists.</head>
-                    <p>“Four-fifths of the occupants of the Front Bench declared before, daring,
-                        and after the electoral campaign that Free Trade and Chinese slavery were
-                        the dominant issues. Free Trade is not for the moment a problem. And as to
-                        Chinese slavery, we all know what has happened. Those who were "slaves”
+                    <p>"Four-fifths of the occupants of the Front Bench declared before, daring, and
+                        after the electoral campaign that Free Trade and Chinese slavery were the
+                        dominant issues. Free Trade is not for the moment a problem. And as to
+                        Chinese slavery, we all know what has happened. Those who were "slaves"
                         before have been slaves—barring a dozen—since Sir Henry Campbell Bannerman
                         became Premier. No one, however, can pretend that the Free Trade and Anti
                         Chinese electors gave any sort of mandate to any Ministers to grind the
-                        faces of Anglicans, Roman Catholics, and Jews.” (Telegraph.”)</p>
+                        faces of Anglicans, Roman Catholics, and Jews." (Telegraph.")</p>
                 </div>
                 <div type="item">
                     <head>Shipping Losses in War-time.</head>
@@ -2805,8 +2867,8 @@
                         to sacrifice honour rather than publish it is striking evidence of the
                         gravity of the case disclosed to the Commission. It makes more clear than
                         ever the duty of Europe to enforce the guarantees for good government, that
-                        induced the Powers to sanction the founding of the Congo Free State. (“Daily
-                        News.”)</p>
+                        induced the Powers to sanction the founding of the Congo Free State. ("Daily
+                        News.")</p>
                 </div>
                 <div type="item">
                     <head>A Polygamous Suggestion.</head>
@@ -2818,13 +2880,13 @@
                 <div type="item">
                     <head>German Editors in London.</head>
                     <p>The first entertainment of the German editors on reaching London will be
-                        given at His Majesty’s Theatre, where our distinguished visitors will
-                        witness a performance of “Colonel Newcome.”__ We can only express our sorrow
+                        given at His Majesty's Theatre, where our distinguished visitors will
+                        witness a performance of "Colonel Newcome."__ We can only express our sorrow
                         that there is not sufficient time for Mr. Tree to present the play in
                         German. As a school-boy remarked in our hearing yesterday, with that
-                        veracity distinctive of English schoolboys; “German would adsum life to the
-                        comedy.” His head was smacked, but he smiled loudly for many, many minutes.
-                        (“Westminster G zette.”)</p>
+                        veracity distinctive of English schoolboys; "German would adsum life to the
+                        comedy." His head was smacked, but he smiled loudly for many, many minutes.
+                        ("Westminster G zette.")</p>
                 </div>
                 <div type="item">
                     <head>The Modern Novel.</head>
@@ -2836,7 +2898,7 @@
                         novel of mental process, in this age of tottering faiths and insecure
                         philosophies, is apt to be too painful to convey the pleasure which should
                         be given by a work of art. </p>
-                    <p>(Miss Louise Wilson, in the “North American Review.”)</p>
+                    <p>(Miss Louise Wilson, in the "North American Review.")</p>
                 </div>
                 <div type="item">
                     <head>Judicial "Humour"</head>
@@ -2847,10 +2909,10 @@
                         emit flashes of the rare quality. Laughter in Court, is very easily
                         produced, but it must be confessed that the observations which call it forth
                         do not always or even frequently impress those who do not breathe the
-                        judicial atmosphere. (“Times.”)</p>
+                        judicial atmosphere. ("Times.")</p>
                 </div>
                 <div type="advert" xml:id="deg-ad-bcp01">
-                    <p>BECK &amp; CO’S PILSENER BEER</p>
+                    <head>BECK &amp; CO'S PILSENER BEER</head>
                     <p>BREMEN.</p>
                     <p>Obtainable from every Respectable Firm In Cairo, Alexandria &amp; the
                         Sudan.</p>
@@ -2858,27 +2920,29 @@
                     <p>V. J. FLEURENT, Cairo</p>
                     <p>F. MICALLEF, Sole Agent, 11 Bab Midan, Alexandria</p>
                 </div>
-                <div type="item" feature="notesOther">
+                <div type="section" feature="notesOther">
                     <head>NOTES FROM SYRIA.</head>
-                    <head>BEYROUT ELECTRIC TRAMWAYS.</head>
-                    <head>CAIRO COMPANY INTERESTED.</head>
-                    <byline>(From our Correspondent.)</byline>
-                    <p>Beyrout, June 18.</p>
-                    <p>The Imperial Iradé sanctioning the concession for the electric tramways of
-                        Beyrout has at last been granted, and here is one of the many proofs of the
-                        great favour and influence that Negib Pacha Malhamé enjoys at Yildiz. The
-                        concession, as I have already mentioned, in a previous letter, has been sold
-                        for £10,000. The sum is out of all proportion to the financial importance of
-                        the scheme, the total cost of which is estimated at not more than six
-                        million francs, and the only way the liberality of the concession purchaser
-                        can be accounted for is the plausible conjecture that part of the sum is
-                        payable in shares.</p>
-                    <p>So far the capital required has not been found, but it is said that the
-                        Barque de Paris et des Pays Bas is exerting itself in that direction. Most
-                        probably the Franco-Belgian Company, which has supplied the Electric Tramway
-                        Company of Damascus with the rolling stock and other material, will
-                        undertake the construction. Others believe that the Companie des Tramways du
-                        Caire may be undertaking the work.</p>
+                    <div type="item">
+                        <head>BEYROUT ELECTRIC TRAMWAYS.</head>
+                        <head>CAIRO COMPANY INTERESTED.</head>
+                        <byline>(From our Correspondent.)</byline>
+                        <dateline>Beyrout, June 18.</dateline>
+                        <p>The Imperial Iradé sanctioning the concession for the electric tramways
+                            of Beyrout has at last been granted, and here is one of the many proofs
+                            of the great favour and influence that Negib Pacha Malhamé enjoys at
+                            Yildiz. The concession, as I have already mentioned, in a previous
+                            letter, has been sold for £10,000. The sum is out of all proportion to
+                            the financial importance of the scheme, the total cost of which is
+                            estimated at not more than six million francs, and the only way the
+                            liberality of the concession purchaser can be accounted for is the
+                            plausible conjecture that part of the sum is payable in shares.</p>
+                        <p>So far the capital required has not been found, but it is said that the
+                            Barque de Paris et des Pays Bas is exerting itself in that direction.
+                            Most probably the Franco-Belgian Company, which has supplied the
+                            Electric Tramway Company of Damascus with the rolling stock and other
+                            material, will undertake the construction. Others believe that the
+                            Companie des Tramways du Caire may be undertaking the work.</p>
+                    </div>
                 </div>
                 <div type="item">
                     <head>Gas Versus Electricity.</head>
@@ -3010,17 +3074,17 @@
                     <p>For all particulars apply to <orgName>Fix &amp; David</orgName>, CAIRO
                         (Sharia Mansour Pacha, Telephone 865).</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-tce01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-tce01">
                     <head>Telephone Company of Egypt, Limited.</head>
                     <p>CAIRO-ALEXANDRIA TELEPHONE.--Rates as follows P.T. 5 for each 3 minutes, or
                         fraction of 3 minutes; P.T. 10 for over 3 up to 8 minutes communication.</p>
                     <p>PUBLIC CALL-OFFICES : Cairo, Central Office, Opera Square, and New Bar;
-                        Helouan, Central Office, Maison Purvis ; Alexandria, St Mark’s Buildings,
+                        Helouan, Central Office, Maison Purvis ; Alexandria, St Mark's Buildings,
                         Egyptian Bar, I. Castelli &amp; Co.; Ramleh, Central Office. San Stefano
                         Casino 30.4.906</p>
                 </div>
                 <!-- Rose's Lime Juice -->
-                <div type="advert" xml:id="deg-ad-hbc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-hbc01">
                     <head>HOTEL BRISTOL. CAIRO.</head>
                     <p>Full South, Electric Light, opposite Esbekieh Gardens, Large Verandahs,
                         Moderate Charges,</p>
@@ -3030,7 +3094,7 @@
                         officers of Army of Occupation. <measure type="indexNo"
                             >24,882-31-10-5</measure></p>
                 </div>
-                <div type="advert" xml:id="nvh01">
+                <div type="advert" xml:id="deg-ad-nvh01">
                     <head>NEW VICTORIA HOTEL,</head>
                     <p>NOW OPEN.</p>
                     <p>San Stefano, Near Alexandria, Halt No. 2.</p>
@@ -3088,7 +3152,7 @@
                         little credence is attached to these reports in Bremen.</p>
                 </div>
                 <!-- PREUNA THE GREAT TONIC -->
-                <div type="advert" xml:id="lip01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-lip01">
                     <head>LIPTON , Limited.</head>
                     <p>NAVAL &amp; MILITARY CONTRACTORS.</p>
                     <p>Office and Stores : 31 Boulevard de Ramleh.</p>
@@ -3123,14 +3187,14 @@
                         Windhuk and Lüderitzbucht (South West Africa). </p>
                     <p><measure type="indexNo">72220-18-1907</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nsa01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nsa01">
                     <head>N. SPATHIS</head>
                     <p>THE BRITISH AERATED &amp; MINERAL WATER MANUFACTORY.</p>
                     <p>CAIRO Exbekieh ALEXANDRIA Rue Avernoff</p>
                     <p>Soda Water, Lemonade, Ginger Ale, Ginger Beer. Tonic Water</p>
                     <p>Pomegranade, Orangeade, Lime Juice and Soda, Champagne Cider, Lemon
                         Squash.</p>
-                    <p>Water guaranteed by Chamberlain’s Filter (Pasteur’s System).</p>
+                    <p>Water guaranteed by Chamberlain's Filter (Pasteur's System).</p>
                     <p>Inventor of WHISKY &amp; SODA and BRANDY &amp; SODA, bottled ready for
                         use.</p>
                     <table>
@@ -3196,77 +3260,80 @@
                 </div>
             </div>
             <pb n="6"/>
-            <div type="page" n="6">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n5/mode/1up">
                 <head>THE EGYPTIAN GAZETTE. WEDNESDAY, JUNE 27, 1906.</head>
                 <head>6</head>
-                <div type="item" xml:lang="fr" feature="circulaire"><head>Circulaire H. de Vries et Boutigny.</head>
+                <cb n="1"/>
+                <div type="item" xml:lang="fr" feature="circulaire">
+                    <head>Circulaire H. de Vries et Boutigny.</head>
                     <head>NOTES ET CRITIQUES</head>
                     <dateline>Le Caire, 26 Juin 1906.</dateline>
                     <p>Le taux de l'escompte libre à Londres reste toujours invarié à 3 1/4 pour
                         cent.</p>
                     <p>Hier, an Stock Exchange, le Consolidé anglais a baissé de non moins de 5/8 de
-                        livre à 80 1/8. L’Unifiée est restée invariée à 104 3/4, de même que la
+                        livre à 80 1/8. L'Unifiée est restée invariée à 104 3/4, de même que la
                         National Bank à 25 5/8, la Daira à 17 1/8 et la Delta Light à 12.</p>
-                    <p>A Paris, l’action Crédit Fonciér Egyptien a perdu 1 franc à 771. La Banque
-                        d’Athène est demeurée inchangée à 154.</p>
+                    <p>A Paris, l'action Crédit Fonciér Egyptien a perdu 1 franc à 771. La Banque
+                        d'Athène est demeurée inchangée à 154.</p>
                     <p>Ici, le marché des valeurs a été, aujourd'hui, moins animé, moins actif
-                        qu’hier. Toutefois, les dispositions ne sont pas mauvaises, bien que la
+                        qu'hier. Toutefois, les dispositions ne sont pas mauvaises, bien que la
                         fermeté ne se soit pas maintenue sur toute la ligne.</p>
-                    <p>Pen d’afiaireè en National Bank, qui à couturé à 25 1/2-9/16. L’Agricolé
-                        s’est tenue à son prix d’hier, soit 9 11/16. La Cassa di Sconto s’est
-                        alourdie à 213 l’action ancienne, ainsi que la Banque d’Athènes à 154 et la
-                        Banque d’Orient à 131 1/2. </p>
-                    <p>L’action Crédit Foncier a molli à 770 et là part de fondateur à 910.</p>
-                    <p>L’action Immobilière a fléchi à 366, l’Entreprise and Development à 11 15/16
-                        et l’Agricole du Nil à 259; la part de fondateur a progressé, par contre, à
+                    <p>Pen d'afiaireè en National Bank, qui à couturé à 25 1/2-9/16. L'Agricolé
+                        s'est tenue à son prix d'hier, soit 9 11/16. La Cassa di Sconto s'est
+                        alourdie à 213 l'action ancienne, ainsi que la Banque d'Athènes à 154 et la
+                        Banque d'Orient à 131 1/2. </p>
+                    <p>L'action Crédit Foncier a molli à 770 et là part de fondateur à 910.</p>
+                    <p>L'action Immobilière a fléchi à 366, l'Entreprise and Development à 11 15/16
+                        et l'Agricole du Nil à 259; la part de fondateur a progressé, par contre, à
                         7 1/16.</p>
                     <p>Bonne demande en Improvements Corporation, qui a gagné 1/8 à 4 11/16 3/4.</p>
-                    <p>L’action Entreprises Immobilière et Tra-vâux a’est raffermie à 4 1/16; la
+                    <p>L'action Entreprises Immobilière et Tra-vâux a'est raffermie à 4 1/16; la
                         part de fondateur, très recherchée, a avancé à 70.</p>
-                    <p>L’action Wardan Estate s’est inscrite à 6 et la,Nile Land à 13 1/2.</p>
+                    <p>L'action Wardan Estate s'est inscrite à 6 et la,Nile Land à 13 1/2.</p>
                     <p>La part de fondateur Land Allotment a encore faibli à 110.</p>
-                    <p>L’action de capital Eaux du Caire a fait 120-121; les Jouissances ont clôturé
+                    <p>L'action de capital Eaux du Caire a fait 120-121; les Jouissances ont clôturé
                         à 261 1/2 après avoir atteint 264.</p>
                     <p>Dans le groupe des Hôtels, les Nungovich, délaissés, sont restés à 15 7/16
-                        l’action anciene, et 15 3/8 la nouvelle. Les Baehler ont débuté à 5 23/32
+                        l'action anciene, et 15 3/8 la nouvelle. Les Baehler ont débuté à 5 23/32
                         pour finir à 5 21/32 11/16. Lee National ont progressé à 3 3/8.</p>
                     <p>Parmi les petites valeurs, les Delta Land ont été' ramenés à 3 13/16 et les
                         Glymenopoulo à 1 9/16.</p>
                     <p>***</p>
-                    <p>Nous détachons d’une lettre de Londres, en date du 19 Juin, les lignes
+                    <p>Nous détachons d'une lettre de Londres, en date du 19 Juin, les lignes
                         suivantes concernant la situation monétaire:</p>
-                    <p>"Les conditions de l’argent se sont avanta-geaiement modifiées. L’encaisse de
-                        la Banque d’Angleterre s’est considérablement accru et la proportion de la
-                        réserve s’est élevée à plus de 47%. Le taux de l’escompte libre oscille
+                    <p>"Les conditions de l'argent se sont avanta-geaiement modifiées. L'encaisse de
+                        la Banque d'Angleterre s'est considérablement accru et la proportion de la
+                        réserve s'est élevée à plus de 47%. Le taux de l'escompte libre oscille
                         entre 8 3/8 et 3 1/4 pour cent. La situation est donc, sans conteste,
                         meilleure, bien que les disponibilités du marché aient à faire face à
                         l'emprunt irlandais, annoncé pour le 7 Juillet; là tenue du cours du
-                        Consolidé anglais en est affectée. Le “Statist” ne prévoit pas une
-                        augmentation prochaine des disponibilités et s’attend même à des sorties
+                        Consolidé anglais en est affectée. Le "Statist" ne prévoit pas une
+                        augmentation prochaine des disponibilités et s'attend même à des sorties
                         considérables poor la fin du mois courant.</p>
-                    <p>Le Stock Exchange jouit en ce moment d’un repos relatif; c'est l’effet de la
+                    <p>Le Stock Exchange jouit en ce moment d'un repos relatif; c'est l'effet de la
                         morte saison. Là clientèle est devenue rare, et les mouvements des valeurs
                         quelque peu somnolentes ont beaucoup perdu de leur étendue."</p>
                     <p>***</p>
-                    <p>On annonce d’Athènes que L’assemblée générale extraordinaire des actionnaires
+                    <p>On annonce d'Athènes que L'assemblée générale extraordinaire des actionnaires
                         de la Banque du Crédit Industriel de Grèce, tenue samedi passé, a voté à
-                        l’unanimité la fusion avec la Banque d’Athènes.</p>
-                    <p>L’assemblée extraordinaire de la Banque d’Athènes, qui doit statuer sur le
+                        l'unanimité la fusion avec la Banque d'Athènes.</p>
+                    <p>L'assemblée extraordinaire de la Banque d'Athènes, qui doit statuer sur le
                         même objet; est fixée comme on sait; au samedi 7 Juillet prochain.</p>
                     <p>***</p>
-                    <p>On assure que l’arrangement négocié entre le gouvernement et la Société des
-                        Sucreries et Raffinerie d’Egyptè concernant l’achat par l’Etat des lignes de
-                        railways à voie étroite de cet té Société serait sur le point d’être conclu,
-                        au prix d’environ LE. 350,000.</p>
+                    <p>On assure que l'arrangement négocié entre le gouvernement et la Société des
+                        Sucreries et Raffinerie d'Egyptè concernant l'achat par l'Etat des lignes de
+                        railways à voie étroite de cet té Société serait sur le point d'être conclu,
+                        au prix d'environ LE. 350,000.</p>
                     <p>***</p>
-                    <p>Au dire d’un journal d’Alexandrie, un groupe financier, à la tête daquel se
-                        trouverait M. Scott, ancien directeur de la Compagnie d’assurance "The
+                    <p>Au dire d'un journal d'Alexandrie, un groupe financier, à la tête daquel se
+                        trouverait M. Scott, ancien directeur de la Compagnie d'assurance "The
                         Gresham," se propose de former une Société anonyme de constructions
                         economiques dont le siege social serait au Caire:</p>
-                    <p>"Les acheteurs-locataires deviendraient pro priétaires au bout d’un certain
-                        nombrè d’années en payant un loyer comprenant l’amortis sement du prix de
-                        l’immeuble et une prime d’assurance, de sorte qu’en cas de mort leurs
-                        héritiers deviendraient par le fait propriétaires.”</p>
+                    <p>"Les acheteurs-locataires deviendraient pro priétaires au bout d'un certain
+                        nombrè d'années en payant un loyer comprenant l'amortis sement du prix de
+                        l'immeuble et une prime d'assurance, de sorte qu'en cas de mort leurs
+                        héritiers deviendraient par le fait propriétaires."</p>
                 </div>
                 <div type="item">
                     <head>The Egyptian Hotels Limited.</head>
@@ -3285,12 +3352,13 @@
                     <p>Secretaries.</p>
                     <p><measure type="indexNo">28162-3-1</measure></p>
                 </div>
-                <div type="item">
+                <cb n="2"/>
+                <div type="item" feature="notice">
                     <head>Egyptian Delta Light Railways, Limited.</head>
                     <head>NOTICE.</head>
                     <p>Tenders are invited for the local supply of sundry storesrequired by this
                         Railway for one year. Samples of Articles required may be seen at the
-                        Company’s Office at Alexandria. List of Stores and Conditions of Contract
+                        Company's Office at Alexandria. List of Stores and Conditions of Contract
                         may be obtained, free of charge, on application to the Chief Storekeeper,
                         Egyptian Delta Light Railways, Ltd., P.O. Box No. 261, Alexandria 28154
                         4-1</p>
@@ -3303,35 +3371,35 @@
                         donner des leçons à des conditions, avantageuses. Bonnes références.</p>
                     <p>Une grande maison anglaisé de commerce à Alexandrie demande an caissier
                         apprenti connaissant l'anglais.</p>
-                    <p>Là même maison demande un bon employé connaissant aussi l’anglais pour sa
+                    <p>Là même maison demande un bon employé connaissant aussi l'anglais pour sa
                         succursale au Caire.</p>
                     <p>Une autre grande maison de détail demande un employé connaissant très bien le
-                        rayon chemiserie et bonneterie, et sachant le français et l’italien. Très
+                        rayon chemiserie et bonneterie, et sachant le français et l'italien. Très
                         belle situation.</p>
                     <p>Une maison de Port-Saïd demande un jeune homme connaissant bien le travail de
                         bureau en général, les langues allemande et française, et si possible
-                        quelques notions d’anglais; il aurait a assister à l’expédition des bateaux
-                        comme “shipping clerk.”</p>
+                        quelques notions d'anglais; il aurait a assister à l'expédition des bateaux
+                        comme "shipping clerk."</p>
                     <p>Deux employés de grande Maison de Banque, disposant de quelques heures par
                         jour, demandent à tenir des livres de comme. Bonne références.</p>
-                    <p>Un bon placier, an besoin comptable, connaissant le français, l’italien,
-                        l’allemand, l’arabe et le turc demande emploi.</p>
-                    <p>Caissier comptable connaissant le français, l’anglais, le grec, le turc et
-                        l’arménien demande emploi.</p>
+                    <p>Un bon placier, an besoin comptable, connaissant le français, l'italien,
+                        l'allemand, l'arabe et le turc demande emploi.</p>
+                    <p>Caissier comptable connaissant le français, l'anglais, le grec, le turc et
+                        l'arménien demande emploi.</p>
                     <p>On demande un employé pour diriger imprimerie.</p>
                     <p>Un bon encaisseur, connaissant la vente des drogueries, cherchę place, bonnes
                         références.</p>
-                    <p>Un professeur d’escrime demande place et au besoin à donner des leçons
+                    <p>Un professeur d'escrime demande place et au besoin à donner des leçons
                         domicile. </p>
                     <p>On demandé an imprimeur pour Suer, pour diriger une imprimerie agé de 20 et
                         30 ans, connaissant les langues.</p>
                     <p>Une Maison de Commissions, demande un bon placier connaissant l'Arabe et
                         diverses langues, bon traitement.</p>
                     <p>On demandé pour Port-Saïd un jeune homme de vingt ans environ, connaisant le
-                        français et l’anglais et ayant travaillé dans une librairie; le logement est
+                        français et l'anglais et ayant travaillé dans une librairie; le logement est
                         fourni par la maison. Adresser demande avec référencés ainsi que les
                         appointements désirés. </p>
-                    <p>N-.B.— Pour tous renseignements s’adresser an Siège Social de la Société, Rue
+                    <p>N-.B.— Pour tous renseignements s'adresser an Siège Social de la Société, Rue
                         Mosquée Àttarine No. 21;</p>
                     <p>Le Secrétariat est ouvert tous les jours, excepté les dimanchès et jours de
                         fête, de 7 h. 1/2 à 8 h. 1/2 du soir. </p>
@@ -3341,20 +3409,102 @@
                 <!-- AU DE ROUGE TEMPLATE does not match. -->
                 <!-- The Val De Travers Asphalte Paving Company, Limited -->
                 <!-- The Crown Preserved Coal Co., template doesnt match -->
-                <!-- Export Manifests template doesnt match chart in this issue. -->
-                <div type="item" xml:id="deg-el-etcl1">
+                <cb n="3"/>
+                <div type="item" feature="exportManifests" status="verified">
+                    <head>EXPORT MANIFESTS. </head>
+                    <p>For Malta and LIVERPOOL, by the S.S. Seti, sailed on the 14th Jane :</p>
+                    <p>E. Toriel &amp; Son, 5 bales cotton</p>
+                    <p>P. C. Baines &amp; Co, 160</p>
+                    <p>Choremi, Benachi &amp; Co., 415</p>
+                    <p>Carver Bros. &amp; Co. Ltd; 623</p>
+                    <p>Peel &amp; Co., : 106</p>
+                    <p>1. Planta &amp; Co., 274</p>
+                    <p>G. Riecken, 40</p>
+                    <p>Mohr &amp; Fonderl, 25</p>
+                    <p>G. Frauger &amp; Co., 104</p>
+                    <p>Comptoir Fin. Com. d'Egyte, 180</p>
+                    <p>Bostros &amp; Hari, 35</p>
+                    <p>1,767 bales cotton</p>
+                    <p>Anglo-Egypt. Bank Ltd, 246 bales wool .</p>
+                    <p>Schneider &amp; Rothacker,. 81</p>
+                    <p>Lavik &amp; Co., 30</p>
+                    <p>Holz &amp; Co., 70 ,</p>
+                    <p>Kafr-el-Zayat Cotton Co., 3,305 bags oil cake</p>
+                    <p>Anglo-Bgyptian Bank 25 bags senna, 23 bags gum ,</p>
+                    <p>B. Nathan &amp; Co. 7 bags arabio gum</p>
+                    <p>Georgiafendis, 6 bales dry hides.</p>
+                    <p>Alex. Bonded Warehouse, 7 packages mercb.</p>
+                    <p>Thos. Cook &amp; Son, 2 cases books</p>
+                    <p>Davies Bryan &amp; Co., 1 case effects.</p>
+                    <p>E: Hatoan, 2 cases hardware</p>
+                    <p>John B. Caffari, 82 empty books:</p>
+                    <p>Thos. Cook &amp; Son, 9 packages offects</p>
+                    <p>Coromili &amp; Hazoponlo. 1 case books</p>
+                    <p>John B. Caffari, 7 packages curios effects</p>
+                    <p>Eastern Telegraphi Co., I ease paper</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 59 bales empty bags</p>
+                    <p>Alex, Fire Brigade, 1 motor fire engine</p>
+                    <p>N. Bóassa Bros., 2 caseg. cigarettes</p>
+                    <p>B. Hazan.&amp; Co., 10</p>
+                    <p>E. N. Tocos, 1</p>
+                    <p>F: M. Cortesi, 1.</p>
+                    <p>Various, 32 packagas sundries</p>
+                    <p>For Malta and MANCHESTER, by the S.S. British Prince, sailed on the 16th Jane
+                        ::</p>
+                    <p>Carver Bros., &amp; Co. Ltd, 600 tons cotton seed</p>
+                    <p>Nathan, 43-bags gum :</p>
+                    <p>Robs, 650 empty barrels</p>
+                    <p>Bonded Stores, 61 package, emp'y bags</p>
+                    <p>Various, 15 packages sundries</p>
+                    <p>Birch &amp; Co., ; 25 bales cotton</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 927.,</p>
+                    <p>E. Mallison &amp; Co., 9.</p>
+                    <p>Pranger &amp; Co.,</p>
+                    <p>G. Riecken, 38</p>
+                    <p>Choremi: Benachi &amp; Co., 266</p>
+                    <p>Mooroi Bros.,</p>
+                    <p>Peel &amp; Co.,</p>
+                    <p>R. &amp;,0. Lindemann, 2,422:</p>
+                    <p>bales cotton</p>
+                    <p>For NAPLES and MARSE LLES, by the. S.S. Sobleswig, sailed on the 20th June
+                        :...</p>
+                    <p>Voriogr, 20 bales cotton, 1,704 bags black, 156 cases sugar</p>
+                    <p>For ENGLAND, by, the S.S. Persian Prince, sailed on the 21st Jane : . :</p>
+                    <p>Behrend &amp;-Co., 2,350 tóns cotton' seed</p>
+                    <p>For Port Saip, by the S.S. Bosforo, sailed on 22nd Jane :</p>
+                    <p>Various,. 4 barrels vermouth, 25. bales: cotton (for Bombay).</p>
+                    <p>For Maira and DUNKERQUE, by the S.9, T: Carib Prince, sailed on the 22nd Jane
+                        ::</p>
+                    <p>P.G. Baines &amp; Co., 79 bsles cotfon:</p>
+                    <p>H. Bindernagel, 50</p>
+                    <p>Mohr &amp; Penderl, :: 93</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 266</p>
+                    <p>A. Hess &amp; Co., 238</p>
+                    <p>F. Andres, : 50</p>
+                    <p>Choremi, Benachi &amp; Co., 50</p>
+                    <p>R&amp;0Lindemapin, 75</p>
+                    <p>J. Planta &amp; Co., 235</p>
+                    <p>Peel &amp; Co.,', 256</p>
+                    <p>E. Mallison &amp; Co. : 30</p>
+                    <p>G: Frauger &amp; Co.: 894</p>
+                    <p>W. Getty &amp; Co., : ; * 50</p>
+                    <p>2,366, bales cotton</p>
+                    <p>Behrend &amp; Co., 402,090 kilog. cotton seed, 300,000 kilog. beans .</p>
+                    <p>Carver Bros: &amp; Co. Ltd, 200,000 kilog. beans</p>
+                </div>
+                <div type="template" xml:id="deg-el-etcl01">
                     <head>EASTERN TELEGRAPH CO. LTD.</head>
                     <p>AVERAGE TIME occupied in transmission of Egyptian telegrams from England to
                         Alexandria on <date when="1906-06-26">Tuesday, 26th June, 1906</date>. </p>
                     <p>OUTWARDS.</p>
                     <p>Between the hours of 10 a.m. and 6 p.m. (Cairo time)</p>
-                    <table rows="6" cols="3" xml:id="deg-ta-etcl1">
+                    <table rows="6" cols="3" xml:id="deg-ta-etcl01">
                         <row role="label">
                             <cell rows="2">FROM</cell>
                             <cell cols="2">MESSAGES HANDED IN AT</cell>
                         </row>
                         <row role="label">
-                            <cell>The Company’s Offices. H. M.</cell>
+                            <cell>The Company's Offices. H. M.</cell>
                             <cell>Postal Telegraph Offices. H. M.</cell>
                         </row>
                         <row>
@@ -3384,8 +3534,8 @@
                         </row>
                     </table>
                 </div>
-                <div type="item" xml:id="deg-el-tdeq01">
-                    <head>TO-DAY’S EXCHANGE QUOTATIONS</head>
+                <div type="template" xml:id="deg-el-tdeq01">
+                    <head>TO-DAY'S EXCHANGE QUOTATIONS</head>
                     <table rows="14" cols="3" xml:id="deg-ta-tdeq01">
                         <row role="label">
                             <cell> </cell>
@@ -3460,7 +3610,8 @@
                     </table>
                     <p>*Less one per mille brokerage.</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-bokh01">
+                <cb n="4"/>
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-bokh01">
                     <head>BOURSE KHEDIVIALE</head>
                     <p>CONTRATS</p>
                     <p>Fluctuations de 9h.30 à 1h. p.m.</p>
@@ -3487,7 +3638,7 @@
                     <p>Fèves.— En baisse et sans affaires, faute d'acheteurs.</p>
                     <p>Bourse Khédviale, le <date when="1906-06-26">26 juin 1906</date>.</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-ctns01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-ctns01">
                     <head>COTONS</head>
                     <p>copie de la dépêche</p>
                     <p>DE L'ALEXANDRIA GENERAL PRODUCE ASSOCIATION</p>
@@ -3552,7 +3703,7 @@
                     </table>
                     <p>Marché steady</p>
                 </div>
-                <div type="section" xml:lang="fr" xml:id="deg-el-mmeb01">
+                <div type="template" xml:lang="fr" xml:id="deg-el-mmeb01">
                     <head>MARCHE DE MINET-EL-BASSAL</head>
                     <dateline><date when="1906-06-27">27 juin 1906</date>.—(11h.55 a.m.)</dateline>
                     <p><hi rend="italic">Cotons</hi> —Clôture du marché du <date when="1906-06-26"
@@ -3589,7 +3740,7 @@
                     </table>
                     <p>Etat du marché de ce jour, cotons : Faible</p>
                     <p>Les arrivages de ce jour se chiffrent par cantars <measure unit="cantar"
-                            >-</measure> contre même jour l’année précédente cantars <measure
+                            >-</measure> contre même jour l'année précédente cantars <measure
                             unit="cantar">1491</measure>
                     </p>
                     <p><hi rend="italic">Grains de coton</hi>.—Sans changement</p>
@@ -3759,7 +3910,7 @@
                     <div type="item">
                         <head>ARRIVAGES</head>
                         <dateline>du <date when="1906-06-27">mercedi 27 juin 1906</date></dateline>
-                        <p>Documents de l’ “Alexandria General Produce Association.”</p>
+                        <p>Documents de l' "Alexandria General Produce Association."</p>
                         <table rows="9" cols="4" xml:id="deg-ta-mmeb07">
                             <row role="label">
                                 <cell/>
@@ -3822,10 +3973,10 @@
                             </row>
                         </table>
                         <p><hi rend="italic">Cotons</hi>.-Total des arrivages depuis le <date
-                                when="1905-09-01">1er septembre 1905</date> jusqu’à ce jour, cantars
+                                when="1905-09-01">1er septembre 1905</date> jusqu'à ce jour, cantars
                                 <measure unit="cantar">5,870,823</measure>.</p>
                         <p><hi rend="italic">Grains de coton</hi>.—Total des arrivages depuis le
-                                <date when="1904-09-01">1er septembre 1905</date> jusqu’à ce jour,
+                                <date when="1904-09-01">1er septembre 1905</date> jusqu'à ce jour,
                             Ard. <measure unit="ard">3,556,081</measure></p>
                         <p>Contre même jour en 1905 :</p>
                         <table rows="3" cols="2" xml:id="deg-ta-mmeb08">
@@ -3850,10 +4001,10 @@
                             </row>
                         </table>
                         <p><hi rend="italic">Cotons</hi>.—Total des arrivages depuis le <date
-                                when="1904-09-01">ler septembre 1904</date> jusqu’à ce jour, cantars
+                                when="1904-09-01">ler septembre 1904</date> jusqu'à ce jour, cantars
                                 <measure unit="cantar">6,197,482</measure></p>
                         <p><hi rend="italic">Graines de coton</hi>.—Total des arrivages depuis le
-                                <date when="1904-09-01">ler septembre 1904</date> jusqu’à ce jour
+                                <date when="1904-09-01">ler septembre 1904</date> jusqu'à ce jour
                             Ard. <measure unit="ard">3,470,102</measure></p>
                     </div>
                 </div>
@@ -3942,7 +4093,7 @@
                         premier cours juillet 67 3/4. </p>
                     <p><hi rend="italic">Fèves-Saidi</hi>: Nouvelle récolte.—Marché nul.</p>
                 </div>
-                <div type="item" xml:id="deg-el-reut01">
+                <div type="template" xml:id="deg-el-reut01">
                     <head>REUTER'S TELEGRAMS</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="4" xml:id="deg-ta-reut01">
@@ -4109,7 +4260,7 @@
                             <cell><measure>4.85 1/4</measure></cell>
                         </row>
                         <row>
-                            <cell>Cotton day’s receipts at all U.-S. Ports</cell>
+                            <cell>Cotton day's receipts at all U.-S. Ports</cell>
                             <cell/>
                             <cell>bales </cell>
                             <cell><measure>8,000</measure></cell>
@@ -4284,13 +4435,14 @@
                         </row>
                     </table>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-teha01">
+                <div type="template" xml:lang="fr" feature="stocksShares" xml:id="deg-el-teha01"
+                    status="unverified">
                     <head>TELEGRAMME HAVAS</head>
                     <dateline>BOURSE du <date when="1906-06-26">26 juin 1906</date></dateline>
                     <p>COURS DES VALEURS A TERMS, CLOTURE</p>
                     <table cols="3" xml:id="deg-ta-teha01">
                         <row role="label">
-                            <cell cols="3"><placeName>PARIS</placeName></cell>
+                            <cell cols="3">PARIS</cell>
                         </row>
                         <row>
                             <cell>Rente Française 3 %</cell>
@@ -4363,7 +4515,7 @@
                             <cell><measure unit="fcs">25 16</measure></cell>
                         </row>
                         <row role="label">
-                            <cell cols="3"><placeName>LONDRES</placeName></cell>
+                            <cell cols="3">LONDRES</cell>
                         </row>
                         <row>
                             <cell>Consolidés anglais</cell>
@@ -4375,7 +4527,7 @@
                         Berlin <measure>5%</measure>
                     </p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-adcm01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-adcm01">
                     <head>ASSOCIATION DES COURTIERS EN MARCHANISES</head>
                     <p>Le comité de l'Association des Courtiers en Marchandises a fixé comme suit,
                         pour ce jour, le prix de compensation extraordinaire : </p>
@@ -4407,7 +4559,8 @@
                         ce jour.</p>
                     <p>Paiement <date when="1906-06-28">le lundi 28 courant</date>.</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-extr01">
+                <cb n="6"/>
+                <div type="template" xml:lang="fr" xml:id="deg-el-extr01">
                     <head>Exterieur</head>
                     <p>Dépêches particulières du <date when="1906-06-26">26 juin 1906</date></p>
                     <p>PRODUITS EGYPTIENS</p>
@@ -4435,13 +4588,14 @@
                     <p>Futurs juil.: <measure unit="$">10.13</measure> (2 points de busse)</p>
                     <p>" oct. : <measure unit="$">10.25</measure> (1 point de baisse)</p>
                     <p>Arrivages du jour, balles <measure unit="balles">8,000</measure></p>
-                    <p>Contre même jour, l’année dernière, balles <measure unit="balles"
+                    <p>Contre même jour, l'année dernière, balles <measure unit="balles"
                             >18,000</measure></p>
                 </div>
-                <div type="item" xml:id="deg-el-shli01">
+                <div type="template" feature="stocksShares" xml:id="deg-el-shli01"
+                    status="unverified">
                     <head>SHARE LIST</head>
-                    <p>Issued by the “Association des Courtiers en Valeurs d'Alexandrie”.</p>
-                    <p>Clôture d’aujourd'hui à 12h.30 p.m.</p>
+                    <p>Issued by the "Association des Courtiers en Valeurs d'Alexandrie".</p>
+                    <p>Clôture d'aujourd'hui à 12h.30 p.m.</p>
                     <table rows="37" cols="5" xml:id="deg-ta-shli01">
                         <row>
                             <cell>Agric. Bank of Egypt</cell>
@@ -4478,7 +4632,7 @@
                             <cell><measure unit="£">12 — </measure></cell>
                         </row>
                         <row>
-                            <cell>Tram. d’Alexandrie</cell>
+                            <cell>Tram. d'Alexandrie</cell>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">192 1/2</measure></cell>
                             <cell>"</cell>
@@ -4548,7 +4702,7 @@
                             <cell><measure unit="£"> — 29/32</measure></cell>
                         </row>
                         <row>
-                            <cell>Bière d’Alex. Priv.</cell>
+                            <cell>Bière d'Alex. Priv.</cell>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">200 —</measure></cell>
                             <cell>"</cell>
@@ -4658,7 +4812,7 @@
                             <cell><measure unit="£">— —</measure></cell>
                         </row>
                         <row>
-                            <cell>Banque d’Athènes </cell>
+                            <cell>Banque d'Athènes </cell>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">154 1/2</measure></cell>
                             <cell>"</cell>
@@ -4853,23 +5007,23 @@
                     </table>
                 </div>
                 <!-- Shares not quoted in the above list -->
-                <div type="item" xml:lang="fr" xml:id="deg-el-acms01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-acms01">
                     <head>ASSOCIATION DES COURTIERS EN MARCHANDISES</head>
                     <head type="sub">(Service spécial)</head>
                     <p>DÉPÊCHE D'OUVERTURE</p>
                     <p>LIVERPOOL, 10h. a.m.</p>
                     <p>Américain</p>
-                    <p>Futurs: juil- août. : <measure unit="$">5.77</measure></p>
+                    <p>Futurs: juilaoût. : <measure unit="$">5.77</measure></p>
                     <p>,, oct.-nov. : <measure unit="$">5.55</measure></p>
                     <p>Seconde Dépêche, 10h,5 a.m.</p>
                     <p>Futurs: juil.-août. : <measure unit="$">5.78</measure></p>
                     <p>,, oct.-nov. : <measure unit="$">5.55</measure></p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-dehe1">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-dehe01">
                     <head>DERNIERE HEURE</head>
                     <p>(Clôture de la Bourse Khédiviale 1h. p.m.) </p>
-                    <p>Cours de l’Association des Courtiers en Marchandises </p>
-                    <table cols="5" xml:id="deg-ta-dehe1">
+                    <p>Cours de l'Association des Courtiers en Marchandises </p>
+                    <table cols="5" xml:id="deg-ta-dehe01">
                         <row role="label">
                             <cell>Coton F.G.F.Br.</cell>
                         </row>
@@ -4951,7 +5105,8 @@
                 </div>
             </div>
             <pb n="7"/>
-            <div type="page" n="7">
+            <div type="page" n="7"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n6/mode/1up">
                 <head>THE EGYPTIAN GAZETTE. WEDNESDAY, JUNE 27, 1906.</head>
                 <head>7</head>
                 <div type="item">
@@ -5349,11 +5504,12 @@
                 <!-- Davies Bryan & Co. -->
             </div>
             <pb n="8"/>
-            <div type="page" n="8">
+            <div type="page" n="8"
+                facs="https://archive.org/details/egyptian-gazette-1906-06-27/page/n7/mode/1up">
                 <head>THE EGYPTIAN GAZETTE. WEDNESDAY, JUNE 27, 1906.</head>
                 <head>8</head>
                 <!-- W.H. Allenson, & CO. -->
-                <div type="advert" xml:id="deg-ad-gmc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-gmc01">
                     <head>G. MARCUS &amp; Co.</head>
                     <p>SOLE AGENTS FOR EGYPT FOR MILNER'S SAFE COMPANY, LIMITED.</p>
                     <p>Transatlantic Fire Insurance Company, Limited of Hamburg. (Covers also
@@ -5365,7 +5521,7 @@
                     <p>17-11A-905</p>
                 </div>
                 <!-- London Stock Exhange template doesnt match -->
-                <div type="item" xml:id="deg-el-rrat01">
+                <div type="template" xml:id="deg-el-rrat01">
                     <head>RAMLEH RAILWAY COMPANY</head>
                     <table cols="4" xml:id="deg-ta-rrat01">
                         <head>RECETTES</head>
@@ -5533,17 +5689,17 @@
                         words Eugene Le Clore, impressed thereon to protect the public from
                         fraud.</p>
                 </div>
-                <div type="item">
+                <div type="advert">
                     <head>DR. LE CLERC'S SOAP</head>
                     <p>Medical, antiseptic, used and recommended by eminent dermatologists in the
                         treatment of eczema, lepra, psoriasis, ulcerations, skin eruptions, itching
                         and irritating skin humours, baby rashes, etc., also a prophylactic against
                         the risk of contraoting disease and infectious disorders generally. Its
-                        healing properties greatly minimise the inconvenienoes of shaving in cases
+                        healing properties greatly minimise the inconveniences of shaving in cases
                         of pimples, spots, tecacne. In Tablets, price 1s. sold by Max Fischer. Cairo
                         and Alexandria.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-aac01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-aac01">
                     <p>Allen, Alderson &amp; Co. Limited.</p>
                     <p>SOLE AND EXCLUSIVE AGENTS FOR</p>
                     <p>Messrs. RUSTON, PROCTOR &amp; CO., LIMITED, Lincoln. Fixed and Portable Steam
@@ -5559,11 +5715,11 @@
                     <p>Messrs. MERRYWEATHER &amp; SONS, London. Steam and Manual Fire Engines.</p>
                     <p>Messrs. F. REDDAWAY &amp; CO., LD., Pendleton, Manchester. The Camel Brand
                         Belting, etc., etc.</p>
-                    <p>Ratner’s Safes.</p>
+                    <p>Ratner's Safes.</p>
                     <p>THE ENGELBERG RICE HULLER. Gilkes Vortex Turbines.</p>
                     <p>Messrs. A. RANSOME &amp; Co., LIMITED, Newark-on-Trent. Wood Working
                         Machinery and Appliances.</p>
-                    <p>McCORMICK’S REAPERS &amp; MOWERS.</p>
+                    <p>McCORMICK'S REAPERS &amp; MOWERS.</p>
                     <p>PLANET JUNIOR AGRICULTURAL IMPLEMENTS. Horse Hoes, Seed, Drills, etc.,
                         etc.</p>
                     <p>OLIVER PLOUGHS.</p>
@@ -5572,7 +5728,7 @@
                     <p>Chatwood's Safes in Stock.</p>
                     <p>Agents for Green's Economisers.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-edl01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-edl01">
                     <head>Egyptian Delta Light Railways Co., Limited.</head>
                     <p>Connections made with the most important trains of the State Railway in the
                         Provinces of Behera, Gharbieh, Dakahlieh Charkieh and Galioubieh.<hi
@@ -5659,7 +5815,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="advert" xml:id="deg-ad-smc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-smc01">
                     <head>STEINEMANN, MABARDI &amp; C°</head>
                     <p>The Egyptian Engineering Stores.</p>
                     <p>MERCHANTS, CONTRACTORSS &amp; MACHINERY IMPORTERS, ALEXANDRIA.</p>
@@ -5693,7 +5849,7 @@
                     <p>Goods delivered against cash for account of shippers. <measure type="indexNo"
                             >[NR]</measure></p>
                 </div>
-                <div type="advert" xml:id="deg-ad-cst01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-cst01">
                     <head>Cairo Sewage Transport Cy., Ld.</head>
                     <p>Chief Office: Sharia Kasr-el-Nil, Cairo. Near the National Bank of Egypt.</p>
                     <p>Engrais Naturels Complets</p>
@@ -5720,8 +5876,8 @@
                 </div>
                 <div type="item">
                     <head>Commercial &amp; Financial Supplement OF THE "Egyptian Gazette."</head>
-                    <p>The Commercial and Financial Supplement of the “Egyptian Gazette” is
-                        published at midday every Saturday in time for the Austrian Lloyd’s mail.
+                    <p>The Commercial and Financial Supplement of the "Egyptian Gazette" is
+                        published at midday every Saturday in time for the Austrian Lloyd's mail.
                         The supplement contains exhaustive and important reviews of the cotton,
                         cotton seed, and stock and share markets, with all the latest statistics up
                         to the evening of the preceding day, complete tabular forms of the various
@@ -5731,7 +5887,7 @@
                         For further particulars apply to the Manager "Egyptian Gazette.</p>
                 </div>
                 <div type="advert" xml:id="deg-ad-the01">
-                    <p>A BROKEN-DOWN SYSTEM.</p>
+                    <head>A BROKEN-DOWN SYSTEM.</head>
                     <p>This is a condition (or disease) to which doctors give many names, but which
                         few of them really understand. It it simply weakness—a break-down, as it
                         were, of the vital forces that sustain the system. No matter what may be its
@@ -5750,7 +5906,7 @@
                         restored,</p>
                     <p>THE EXPIRING LAMP OF LIFE LIGHTED UP AFRESH,</p>
                     <p>and a new existence imparted in place of what had so lately seemed worn-out,
-                        "used up,” and valueless. This wonderful medicament is purely vegetable and
+                        "used up," and valueless. This wonderful medicament is purely vegetable and
                         innocuous, is agreeable to the taste —suitable for all constitutions and
                         conditions, in either sex; and it is difficult to imagine a case of disease
                         or derangement, whose main features are those of debility, that will not be
@@ -5761,13 +5917,13 @@
                     <p>is sold by the principal Chemists throughout the world. Price in England, 2 9
                         and 4/6. Purchasers should see that the word 'THERAPION' appears on British
                         Government Stamp (in white letters on a red ground) affixed to every package
-                        by order of His Majesty’s Hon. Commissioners, and without which it is a
+                        by order of His Majesty's Hon. Commissioners, and without which it is a
                         forgery.</p>
                     <p>Sold by E. Del Mar, Alexandria, Cairo &amp; Port Said</p>
                 </div>
                 <!-- Charles Evans -->
                 <div type="advert" xml:id="deg-ad-bcp02">
-                    <p>BECK &amp; CO’S PILSENER BEER</p>
+                    <head>BECK &amp; CO'S PILSENER BEER</head>
                     <p>BREMEN.</p>
                     <p>FEARS NO HONEST COMPETITION FOR QUALITY.</p>
                     <p>N.B. -- Inferior Brands now being offered to Managers of certain good
@@ -5776,7 +5932,7 @@
                         Beer</p>
                 </div>
                 <!-- National Gas Engine, Ltd Co., and others-->
-                <div type="advert" xml:id="deg-ad-okl01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-okl01">
                     <head>Orenstein &amp; Koppel, Ltd.</head>
                     <p>Capital 10,000,000 Frs.</p>
                     <p>Purveyors to H.H. the Khedive.</p>
@@ -5804,7 +5960,7 @@
                     <p>Alexandria: 29, Cherif Pasha Street. Telephone No. 661.</p>
                 </div>
                 <!-- Thos. Hinshelwood & Co. -->
-                <div type="advert" xml:id="deg-ad-tcs02">
+                <div type="advert" colSpan="2" xml:id="deg-ad-tcs02">
                     <head>Thos. Cook &amp; Son (Egypt), Ltd.</head>
                     <p>Engineers, Boulac, Cairo. Alexandria.</p>
                     <p>MECHANICAL AND ELECTRICAL ENGINEERS, ALSO SHIPBUILDERS, &amp;C., &amp;C. All
@@ -5817,7 +5973,7 @@
                         Road rollers, threshing and straw-chopping machines.</p>
                     <p>SHAND, MASON &amp; CO. Patent Steam and Manual Fire Engines.</p>
                     <p>NOBEL'S EXPLOSIVES CO., LTD. Gelignits, Blasting Gelatine, detonators, safety
-                        fuse, etc. ‘‘Sporting Ballistite” and “Empire" Cartridges.</p>
+                        fuse, etc. ''Sporting Ballistite" and "Empire" Cartridges.</p>
                     <p>GEO. ANGUS &amp; CO., LTD. Machine belting of every description, leather,
                         rubber, cotton and Balata.</p>
                     <p>TANGYES LIMITED (SOLE VENDORS.) Steam, Oil and Gas Engines, with Produce
@@ -5832,9 +5988,9 @@
                     <p>THE SEAMLESS STEEL BOAT CO., LTD. Seamless steel boats fitted with any class
                         of motor.</p>
                     <p>THE COOPER STEAM DIGGER CO. LTD. Diggers made in size No. 5, 6, 8 and 12.</p>
-                    <p>Specialities: TANGYES’ GAS ENGINES with Producer Plants, COOPER PATENT STEAM
+                    <p>Specialities: TANGYES' GAS ENGINES with Producer Plants, COOPER PATENT STEAM
                         DIGGER, specially suitable for small landowners.</p>
-                    <p>Telegraphic Address :"ENGINEER, CAIRO" and “ENGINEER, ALEXANDRIA."</p>
+                    <p>Telegraphic Address :"ENGINEER, CAIRO" and "ENGINEER, ALEXANDRIA."</p>
                     <p>Works Office in town, Sharia Bab-El-Hadeed (Cairo).</p>
                     <p>Alexandria Office and Stores, Abu Dirdar Street, No. 12. 10.12.905</p>
                 </div>

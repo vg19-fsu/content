@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
@@ -6,9 +6,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Egyptian Gazette</title>
+                <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Dante Grieco</editor>
+                <editor role="primary">Dante Grieco</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -18,29 +18,81 @@
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1905-05-03/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date when="1905-05-03">May 3, 1905</date>
-                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
+                    <date when="1905-05-03">Wednesday, May 3, 1905</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
-                <head>THE EGYPTIAN GAZETTE</head>
-                <head type="sub">No. 7239] ALEXANDRIA, WEDNESDAY, MAY 3, 1905. [SIX PAGES P.T. 1. </head>
-                <div type="section" scope="advertisement"> </div>
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/mode/1up"
+                status="incomplete">
+                <div type="nameplate">
+                    <table cols="6">
+                        <row>
+                            <cell rows="2" xml:id="deg-ad-etc01">The Eastern Telegraph Company,
+                                Limited.<lb/> This Company's system of submarine telegraph
+                                <lb/>cables is the most direct and quickest means of
+                                <lb/>communication from Egypt to Europe, North and <lb/>South
+                                America, East, South and West Africa, <lb/>India, Australia, New
+                                Zealand, China and Japan.<lb/> To secure quick transmission,
+                                telegrams should <lb/>be marked <hi rend="italic">Via
+                                Eastern</hi>.For latest average time to London, see daily
+                                <lb/>bulletin in this paper.<lb/> STATIONS IN EGYPT: Alexandria,
+                                Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd, Suakin. Head <lb/>Office.
+                                London.</cell>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2" xml:id="deg-ad-nll01"> NORDDEUTSCHER LLOYD<lb/>
+                                BREMEN.<lb/> EXPRESS MAIL STEAMERS<lb/> FROM<lb/> ALEXANDRIA, PORT
+                                SAID, AND SUEZ,<lb/> TO<lb/> NAPLES, MARSEILLES,<lb/> GENOA,
+                                SOUTHAMPTON, ANTWERP,<lb/> BREMEN, HAMBURG, AMERICA,<lb/> EASTERN
+                                ASIA, AUSTRALIA Etc.<lb/> For Particulars see Advertisement below.
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>No. <measure quantity="7188">7,188</measure>]</cell>
+                            <cell>ALEXANDRIA, WEDNESDAY, MAY 3, 1905.</cell>
+                            <cell>[EIGHT PAGES</cell>
+                            <cell>P.T. 1</cell>
+                        </row>
+                    </table>
+                </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2">
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n1/mode/1up"
+                status="templateDefault">
+                <cb n="1"/>
+                <div type="advert" colSpan="2" xml:id="deg-ad-ric01">
+                    <head>Royal Insurance Coy</head>
+                    <p>FIRE AND LIFE.</p>
+                    <p>Largest Fire Office in the World.</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p>R. VITERBO &amp; CO., Agents, Cairo.</p>
+                    <p>PHOENIX ASSURANCE COMPANY, LIMITED.</p>
+                    <p>(ESTABLISHED 1782);</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p><measure type="indexNo">31-3-906</measure> FRED. OTT &amp; CO., Sub-Agents,
+                        Cairo.</p>
+                </div>
+                <cb n="2"/>
+                <div type="item"/>
+                <cb n="3"/>
+                <div type="item"/>
+                <cb n="4"/>
+                <div type="item"/>
+                <cb n="5"/>
                 <div type="section" feature="weather">
                     <head>DAILY WEATHER REPORT</head>
                     <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
-                    <div type="subsection">
+                    <div type="item">
                         <table rend="frame" xml:id="deg-ta-dawr01">
                             <head>ALEXANDRIA</head>
                             <row>
@@ -75,89 +127,145 @@
                         </table>
                     </div>
                 </div>
+                <div type="template" xml:id="deg-el-egsa02" status="templateDefault">
+                    <head>THE EGYPTIAN GAZETTE.</head>
+                    <p>SUBSCRIPTIONS.—Alexandria, Cairo, and the Interior of Egypt (including
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
+                        annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
+                        in the Postal Union P.T. 273 (£2.16s.) per annum. Six months P.T. 136½
+                        (£1.8s.), three months P.T. 92 (£0.19s.) N.B.—Subscriptions commence from
+                        the 1st or 16th of any month. </p>
+                    <p>ADVERTISEMENTS.—P.T. 4 per line. Minimum charge P.T. 20. Births, Marriages,
+                        or Deaths, not exceeding three lines, P.T. 20. Every additional line P.T.
+                        10. Notices in news column P.T. 20 per line. Contracts entered into for
+                        standing advertisements. </p>
+                    <p>ADVERTISEMENTS and SUBSCRIPTIONS are due in advance. P.O. Orders and Cheques
+                        to be made payable to the Editor and Manager, Rowland Snelling, Alexandria. </p>
+                    <p>London Offices : 36, New Broad-street. B.C. </p>
+                    <p>THE EGYPTIAN GAZETTE can be obtained in London at our office, 36, New Broad
+                        Street, E.C.</p>
+                    <p>Cairo Offices.-No. 1 Sharia Vervudachi, (opposite the Agricultural Bank.)</p>
+                    <p>THE "EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
+                        LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.) </p>
+                </div>
+                <div type="item" feature="imprint" xml:id="deg-el-egpi01" status="templateDefault">
+                    <head>The Egyptian Gazette</head>
+                    <p>An English Daily Newspaper, Established in 1880.</p>
+                    <p>Editor &amp; Manager: R. Snelling.</p>
+                    <p>Price: One Piastre Tariff.</p>
+                    <p><date when="1905-04-14">FRIDAY, APRIL 14, 1905.</date>.</p>
+                </div>
+                <div type="item"/>
+                <cb n="6"/>
+                <div type="item"/>
             </div>
             <pb n="3"/>
-            <div type="page" n="3">
-                <div type="section" feature="wire"> <head>RUSSIAN UNREST. RENEWED DISTURBANCES. BRUTAL CONDUCT OF TROOPS.</head>
-                <div type="item">
-                    <dateline>Warsaw, May 2.</dateline>
-                    <p>The disturbances were renewed in the suburb of Praga at 11 o'clock yesterday
-                        evening. The Hussars fired on the crowd, killing four per- sons and wounding
-                        many. At 9.45 p.m. a bomb was thrown into a military patrol which was
-                        passing through the chief street. The troops fired three volleys. The bomb
-                        killed two Cos- sacks and a policeman, and wounded two ladies. Many persons
-                        were killed and wounded by the volleys, but the number is unascertain- able
-                        as the troops immediately surrounded the whole district. (Reuter.)</p>
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n2/mode/1up">
+                <div type="section" feature="wire">
+                    <div type="item">
+                        <head>RUSSIAN UNREST. RENEWED DISTURBANCES. BRUTAL CONDUCT OF TROOPS.</head>
+                        <div type="cable">
+                            <dateline>Warsaw, May 2.</dateline>
+                            <p>The disturbances were renewed in the suburb of Praga at 11 o'clock
+                                yesterday evening. The Hussars fired on the crowd, killing four per-
+                                sons and wounding many. At 9.45 p.m. a bomb was thrown into a
+                                military patrol which was passing through the chief street. The
+                                troops fired three volleys. The bomb killed two Cos- sacks and a
+                                policeman, and wounded two ladies. Many persons were killed and
+                                wounded by the volleys, but the number is unascertainable as the
+                                troops immediately surrounded the whole district. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Lodz, May 2.</dateline>
+                            <p>The crowds have stoned some patrols. The soldiers fired, killing two
+                                persons and wounding a boy. Two other persons were killed during a
+                                similar encounter with a police patrol. A bomb was thrown on a
+                                patrol yesterday evening but without any effect. The patrol fired
+                                and killed three persons and wounded two. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Lodz, May 2.</dateline>
+                            <p>Eighty-five thousand workmen are out on strike in this district.
+                                (Havas.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Warsaw, May 2.</dateline>
+                            <p>During the fighting yesterday the troops not only fired but used the
+                                butts of their rifles, bayonets, and swords, breaking the heads and
+                                limbs of women and children, and inflicting serious injuries. 10
+                                wounded died at the hospital. The death-roll is at least 50.</p>
+                            <p>Outwardly all is quiet to-day, but workmen are going from factory to
+                                factory to compel the men to strike.</p>
+                            <p>The troops at Kalismi, in Poland, entered a church when the
+                                congregation was singing patriotic songs. A fight ensued. A soldier
+                                and some women were killed.</p>
+                            <p>In consequence of yesterday's bloodshed a general strike has been
+                                proclaimed throughout Poland and Lithuania. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Lodz, May 2.</dateline>
+                            <p>The strikers here number 75,000. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Minsk, May 2.</dateline>
+                            <p>A bomb exploded yesterday evening at the police station here. A
+                                detachment of Cossacks was fired on from the crowd and replied. The
+                                casualties are unknown. (Reuter.) </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE NAVAL MANOEUVRES. TORPEDO-BOAT GOES ON REEF.</head>
+                        <div type="cable">
+                            <dateline>Berenhaven, May 2.</dateline>
+                            <p>During the manoeuvres here yesterday night the torpedo-boat destroyer
+                                "Syren" ran on a reef and broke her back. There is no loss of
+                                life.</p>
+                            <p>(Later). The "Syren" and 33 other torpedo- boats and destroyers were
+                                attacking the cruiser "Sapphire" in the harbour with lights out. The
+                                "Syren" was steaming at a rate of 26 knots when she struck the rock.
+                                (Reuter.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>GERMANY AND MOROCCO.</head>
+                        <div type="cable">
+                            <dateline>Tangier, May 2.</dateline>
+                            <p>Count Tattenhach, accompanied by the German mission, has started for
+                                Fez. (Reuter,) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Tangier, May 2.</dateline>
+                            <p>The German mission has left for Fez. (H.) </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE KAISER AT VENICE.</head>
+                        <div type="cable">
+                            <dateline>Venice, May 2.</dateline>
+                            <p>The Emperor William has arrived. (Havas.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>THE QUEEN AT ATHENS.</head>
+                        <div type="cable">
+                            <dateline>Athens, May 2.</dateline>
+                            <p>The Queen of England has arrived. (Havas.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>NEWMARKET RACES.</head>
+                        <div type="cable">
+                            <dateline>London, May 2.</dateline>
+                            <p>Two Thousand Guineas.—Betting: 2 to 1 against Croix; 4 to 1 against
+                                Vedas; 5 to 1 against Llangibby, 100 to 9 against Measure; 100 to 8
+                                against Shilfa. (Reuter.)</p>
+                        </div>
+                    </div>
                 </div>
-                <div type="item">
-                    <dateline>Lodz, May 2.</dateline>
-                    <p>The crowds have stoned some patrols. The soldiers fired, killing two persons
-                        and wound- ing a boy. Two other persons were killed during a similar
-                        encounter with a police patrol. A bomb was thrown on a patrol yesterday
-                        evening but without any effect. The patrol fired and killed three persons
-                        and wounded two. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <dateline>Lodz, May 2.</dateline>
-                    <p>Eighty-five thousand workmen are out on strike in this district. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <dateline>Warsaw, May 2.</dateline>
-                    <p>During the fighting yesterday the troops not only fired but used the butts of
-                        their rifles, bayonets, and swords, breaking the heads and limbs of women
-                        and children, and inflicting serious injuries. 10 wounded died at the
-                        hospital. The death-roll is at least 50.</p>
-                    <p>Outwardly all is quiet to-day, but workmen are going from factory to factory
-                        to compel the men to strike.</p>
-                    <p>The troops at Kalismi, in Poland, entered a church when the congregation was
-                        singing patriotic songs. A fight ensued. A soldier and some women were
-                        killed.</p>
-                    <p>In consequence of yesterday’s bloodshed a general strike has been proclaimed
-                        throughout Poland and Lithuania. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <dateline>Lodz, May 2.</dateline>
-                    <p>The strikers here number 75,000. (Reuter.) Minsk, May 2.</p>
-                    <p>A bomb exploded yesterday evening at the police station here. A detachment of
-                        Cossacks was fired on from the crowd and replied. The casualties are
-                        unknown. (Reuter.) </p>
-                </div>
-                <div type="item">
-                    <head>THE NAVAL MANOEUVRES. TORPEDO-BOAT GOES ON REEF.</head>
-                    <dateline>Berenhaven, May 2.</dateline>
-                    <p>During the manoeuvres here yesterday night the torpedo-boat destroyer “Syren”
-                        ran on a reef and broke her back. There is no loss of life.</p>
-                    <p>(Later). The "Syren” and 33 other torpedo- boats and destroyers were
-                        attacking the cruiser “Sapphire” in the harbour with lights out. The "Syren"
-                        was steaming at a rate of 26 knots when she struck the rock. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>GERMANY AND MOROCCO.</head>
-                    <dateline>Tangier, May 2.</dateline>
-                    <p>Count Tattenhach, accompanied by the German mission, has started for Fez.
-                        (Reuter,) Tangier, May 2.</p>
-                    <p>The German mission has left for Fez. (H.) </p>
-                </div>
-                <div type="item">
-                    <head>THE KAISER AT VENICE.</head>
-                    <dateline>Venice, May 2.</dateline>
-                    <p>The Emperor William has arrived. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>THE QUEEN AT ATHENS.</head>
-                    <dateline>Athens, May 2.</dateline>
-                    <p>The Queen of England has arrived. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>NEWMARKET RACES.</head>
-                    <dateline>London, May 2.</dateline>
-                    <p>Two Thousand Guineas.—Betting: 2 to 1 against Croix; 4 to 1 against Vedas; 5
-                        to 1 against Llangibby, 100 to 9 against Measure; 100 to 8 against Shilfa.
-                        (Reuter.)</p>
-                </div></div>
                 <div type="item">
                     <head>PAPAYANNI LINE.</head>
-                    <p>The "City of Cambridge,” 3,844 tons, will sail for Liverpool on or about the
+                    <p>The "City of Cambridge," 3,844 tons, will sail for Liverpool on or about the
                         6th May and will be followed by the "City of Oxford," 4,019 tons, on or
                         about the 20th May. Both ships have excellent first-class accommodation
                         amid- ships and are fitted throughout with electric light. Fare £14 single
@@ -165,20 +273,20 @@
                         Government officials. For further particulars apply to the Agents, Barker
                         &amp; Co., 25824-6A6 Alexandria.</p>
                 </div>
-                <div type="item">
+                <div type="item" feature="notice">
                     <head>NOTICE.</head>
                     <p>The Annual General Meeting of local sub- scribers to the Alexandria Merchant
-                        Sea- men’s Home will be held at H.B.M.'s Consulate, on Thursday, the 4th
+                        Sea- men's Home will be held at H.B.M.'s Consulate, on Thursday, the 4th
                         May, at 4.45 p.m. 96886-1</p>
                 </div>
                 <div type="section" feature="local">
                     <head>LOCAL AND GENERAL</head>
                     <div type="item">
-                        <p>The Brindisi Mail will be distributed at the G. P. 0., Alexandria, at
-                            9.30 p.m. today.</p>
+                        <head>The Brindisi Mail </head>
+                        <p>will be distributed at the G. P. 0., Alexandria, at 9.30 p.m. today.</p>
                     </div>
                     <div type="item">
-                        <head>The Egyptian Delta Light Railway’s</head>
+                        <head>The Egyptian Delta Light Railway's</head>
                         <p>summer time-table came into force on May 1.</p>
                     </div>
                     <div type="item">
@@ -227,17 +335,17 @@
                     </div>
                     <div type="item">
                         <head>New Italian Newspaper</head>
-                        <p>A weekly Ita- lian newspaper, entitled “Il Tempo," is to be founded at
+                        <p>A weekly Ita- lian newspaper, entitled "Il Tempo," is to be founded at
                             Alexandria and will make its first appearance on Sunday next. The editor
                             and manager is Sig. Quintavalle, the well-known Alexandria publicist. On
-                            June 1 “Il Giornale" will again be published at Cairo as a daily Italian
+                            June 1 "Il Giornale" will again be published at Cairo as a daily Italian
                             newspaper nuder the management of Sig. Santorelli.</p>
                     </div>
                     <div type="item">
                         <head>Alhambra Theatre</head>
                         <p>The début of the Magnani operetta company took place last night at this
                             theatre before a large and repre- sentative audience. The operetta given
-                            was Joseph Strauss's “Fruhlingsluft," which was billed as "Primavera
+                            was Joseph Strauss's "Fruhlingsluft," which was billed as "Primavera
                             Scapigliata." This lively operetta has been a great success in Europe,
                             and the performance last night did full justice to the brightness of the
                             dialogue and the vivacity of the music. The costumes were very
@@ -249,24 +357,25 @@
                             detailed criticism until to-morrow.</p>
                     </div>
                 </div>
-                <div type="section" feature="social">
+                <div type="item" feature="social">
                     <head>PERSONAL AND SOCIAL.</head>
-                    <p>Lord and Lady Cromer leave Cairo to- morrow on a steamer trip in the Delta
+                    <p>Lord and Lady Cromer leave Cairo tomorrow on a steamer trip in the Delta
                         which will last for about ten days.</p>
                     <p>Viscount Milner will return to Cairo from Assouan to-morrow. He will come
                         down to Alexandria the same day and will stay here for a couple of days,
                         leaving by the Austrian Lloyd boat on Saturday next for Europe.</p>
-                    <p>Brig.-General G. M. Bullock, C.B., Com- manding tho British Force in Egypt,
+                    <p>Brig.-General G. M. Bullock, C.B., Commanding tho British Force in Egypt,
                         came down from Cairo to-day.</p>
-                    <p>Sir William Garstin leaves Cairo for the Sudan to-day.</p>
+                    <p><persName>Sir William Garstin</persName> leaves Cairo for the Sudan
+                        to-day.</p>
                     <p>Count Antoine de Zogheb is paying a short visit to Ramleh and is staying at
                         the San Stefano Hotel-Casino.</p>
-                    <p>Mr. Pigott, Judge of the Supreme Consular Court in the Ottoman Dominions, is
-                        expected to arrive at Cairo on Monday next.</p>
-                    <p>M. Bousquet, French Consul at Cairo, re- turned from Jerusalem via Port-Said
-                        yesterday afternoon.</p>
-                    <p>Mr. Carter Wilson left Cairo for Europe yesterday. He will be absent for
-                        three months.</p>
+                    <p><persName>Mr. Pigott</persName>, Judge of the Supreme Consular Court in the
+                        Ottoman Dominions, is expected to arrive at Cairo on Monday next.</p>
+                    <p><persName>M. Bousquet</persName>, French Consul at Cairo, returned from
+                        Jerusalem via Port-Said yesterday afternoon.</p>
+                    <p><persName>Mr. Carter Wilson</persName> left Cairo for Europe yesterday. He
+                        will be absent for three months.</p>
                     <p>Among the passengers who are leaving for Europe to-day by the "Hohenzollern"
                         are Count Gabriel de Zogheb, Gallini Pasha, Mr. F. Formby Back, Major
                         Rhodes, Major MacMahon, Mr. E. A. Harrison, Mrs. Willmore, Miss Caillard,
@@ -279,19 +388,19 @@
                         Prospectuses and Pho- tographs, "Egyptian Gazette" office, Cairo.
                         253655-48*-37</p>
                 </div>
-                <div type="item">
-                    <head>BANDMANN-DALLAS OPERA. “THE TOREADOR"</head>
+                <div type="item" feature="theatre">
+                    <head>BANDMANN-DALLAS OPERA. "THE TOREADOR"</head>
                     <p>The manager of this company deserves our congratulations on two things;
                         firstly, on con- ceiving the idea of giving an extra performance in aid of
                         the Jewish schools, and secondly, on chosing for such an occasion the
-                        “Toreador.” The latter is probably the best play that has appeared at the
+                        "Toreador." The latter is probably the best play that has appeared at the
                         Gaiety in recent years: com- posed in a cheery strain the music is more
                         tuneful and original than usual, the libretto clever and witty, and during
                         Act I. the plot is quite interesting and easy to follow. The second act, it
                         is true, has suffered from changes, not all for the best, but it plays
                         brightly and seldom allows the attention of the spectator to leave the
                         stage. Of the eight plays we have just heard we should prefer a repetition
-                        of the “Toreador" to any of the others. This impression is due to the foot
+                        of the "Toreador" to any of the others. This impression is due to the foot
                         that most of the principals seemed more familiar with their lines and songs
                         than before. The part of "Giggs" gives great chances to the comedian, and
                         Mr. Cotter missed very few of them putting an amount of energy into his
@@ -300,15 +409,15 @@
                         Roberts—who surely should have played "Giggs"—made a lot of points in the
                         small part of "Gus Traill." Susan is not a character that suits Miss Morra,
                         though she made a very fair success of it, and Miss Marie Elba sang her
-                        songs, especially "On, on he’s dashing," with great spirit and éclat. We
+                        songs, especially "On, on he's dashing," with great spirit and éclat. We
                         much admired the dancing of the little Gaiety trio and should have liked to
                         see them again, their one effort being very short and sweet.</p>
                 </div>
                 <div type="item">
                     <head>"VERONIQUE."</head>
-                    <p>Musically and dramatically "Veronique” is on a higher level than any of the
+                    <p>Musically and dramatically "Veronique" is on a higher level than any of the
                         pieces given previously by the Bandmann opera company and it may fairly be
-                        described as "operetta” in contradistinction to “musical comedy.” There is
+                        described as "operetta" in contradistinction to "musical comedy." There is
                         nothing very remarkable about the plot, and the music contains too many
                         reminiscences, though the "Swing Song" is pretty enough in an unassuming
                         way, but there is at least a thread running through the piece and some of
@@ -322,7 +431,7 @@
                         an admirable rendering of Mons. Coquenard. His duet with the bailiff (Mr.
                         Sinclair Cotter) and his flirtation with the Countess de Champ Azur (Miss
                         Wilmot Karkeet) delighted the audience. Mr. Cotter was also good—if a little
-                        inclined to overact—while Mr. O’Connor showed almost too much restraint, but
+                        inclined to overact—while Mr. O'Connor showed almost too much restraint, but
                         was in capital voice. The parts of Agatha and Denise were also well filled
                         by Miss Ziegler and Miss Nora Morra. On the whole it was the best
                         performance that we have heard, though the orchestra and the performers were
@@ -333,24 +442,24 @@
                         they have been in Cairo.</p>
                 </div>
                 <div type="item">
-                    <head>“THE HOLY CITY”.</head>
+                    <head>"THE HOLY CITY".</head>
                     <p>The choir of St Mark's Church, Alexandria, assisted by several members of the
                         choir of All Saints' Church, Ramleh, who afforded so much pleasure by their
-                        able rendering of Gaul's “Holy City” in St Mark's last week, gave this
+                        able rendering of Gaul's "Holy City" in St Mark's last week, gave this
                         beautiful cantata again yesterday evening in All Saints' before an
                         appreciative congregation. The work was again given with much spirit and
                         effect, and soloists, chorus, organist and pianist deserve much credit for
                         their excellent interpretation of the work. In the unavoidable absence of
-                        Mrs. Bayliss and Mr. Percy Smith, the soprano and bass solos in “List the
+                        Mrs. Bayliss and Mr. Percy Smith, the soprano and bass solos in "List the
                         Cheru- bic Host" were most kindly and ably taken by Miss MunGavin and Mr.
                         Johnston. We hope this will not be the last time we may hear these choirs in
                         similar work.</p>
                 </div>
                 <div type="section" feature="letters">
                     <p>To the Editor of the Egyptian Gazette. Dear Mr. Editor,— I willingly confess
-                        to be the writer of the letter signed "Harmony,” wherein it was stated that
+                        to be the writer of the letter signed "Harmony," wherein it was stated that
                         I, and many others, thought Gaul's beautiful music deserved comment. It was
-                        very disappointing to see my letter misinterpreted by "Accord,” of whose
+                        very disappointing to see my letter misinterpreted by "Accord," of whose
                         letter I entirely disapprove. Only those who know certain details (which it
                         would not be wise to print) understand the real cause of complaint.
                         "Ex-Choirmaster" has written a letter which is a disguised apology for a
@@ -360,30 +469,28 @@
                         unpleasant and un-Christianlike form, would have been avoided, and I think
                         it would be better that no more anonymous letters be published on the
                         subject, which I am sure must be very hurtful to Canon Ward, who is away at
-                        Jerusalem and for whom we all have a most profound respect—Yours faithfully,
-                        Walter F. Sarjeant. Alexandria. 8rd May. [This correspondence in now
-                        closed.—Ed.E.G.]</p>
+                        Jerusalem and for whom we all have a most profound respect—Yours faithfully, </p>
+                    <byline>Walter F. Sarjeant.</byline>
+                    <dateline> Alexandria. 8rd May. </dateline>
+                    <note>[This correspondence in now closed.—Ed.E.G.]</note>
                 </div>
                 <div type="item">
                     <head>DERELICT IN THE RED SEA.</head>
                     <byline>(From Our Correspondent).</byline>
-                </div>
-                <div type="item">
                     <dateline>Suez, Thursday.</dateline>
-                    <p>The Messageries Maritimes steamer “Nera” reported that on the 28th ult. at
+                    <p>The Messageries Maritimes steamer "Nera" reported that on the 28th ult. at
                         6.15 p.m., at 23 miles S. 40 E. of Shadwan, she passed the wreck of a large
                         barge (probably a native craft) and again the same wreck was sighted at
-                        10.10 a.m. on the 1st inst. by the Dutch steamer “Sule”; the position given
+                        10.10 a.m. on the 1st inst. by the Dutch steamer "Sule"; the position given
                         is 27° N. 34° 35 E.</p>
-                </div>
-                <div type="item">
                     <p>From the above position it would seem that the wreck has drifted S. 60 E. 14
                         miles, and may be considered a danger to navigation.</p>
                 </div>
-                <div type="section" feature="khedive"><head>THE KHEDIVE.</head>
+                <div type="item" feature="khedive">
+                    <head>THE KHEDIVE.</head>
                     <p>The Khedive is due to arrive at Bab el- Ghedid station to-morrow morning at
-                        11.30 o’clock.</p>
-                    <p>His Highness’s last reception at Cairo was held yesterday morning at Abdeen
+                        11.30 o'clock.</p>
+                    <p>His Highness's last reception at Cairo was held yesterday morning at Abdeen
                         Palace. His Highness arrived at Abdeen from Koubbeh Palace early and the
                         reception commenced shortly after eight o'clock and was not con- cluded
                         until noon.</p>
@@ -413,13 +520,13 @@
                 <div type="item">
                     <head>NEW LINE TO EGYPT.</head>
                     <p>The Roumanian Steam Navigation Com- pany, which inaugurated its new service
-                        from Constantinople to the Piraeus last week with the “Regele Carol,”
+                        from Constantinople to the Piraeus last week with the "Regele Carol,"
                         intends to extend this service to Egypt at a future date.</p>
                 </div>
                 <div type="item">
                     <head>EGYPTIAN TRUST &amp; INVESTMENT.</head>
                     <p>Yesterday afternoon a special meeting of the committee of the Alexandria
-                        Stockbrokers’ As- sociation was convened for the purpose of con- sidering
+                        Stockbrokers' As- sociation was convened for the purpose of con- sidering
                         the application made by the general manager of the Egyptian Trust and
                         Invest- ment, Limited, to the effect that the shares of this company be
                         admitted and quoted officially on the Stock Exchange lists. When the votes
@@ -441,36 +548,36 @@
                     <p>The following are the handicaps for the 1st Summer Meeting, second day, on
                         Saturday next:—</p>
                     <p>Ramleh Scurry.—Capt. G. B. Byrne's Fitz, 9.5; Mr. E. Karam's Coeur de Lion,
-                        9.3, and Tamerlan, 9.7; Khalil Pasha Khayat’s Bana- back, 11.0, and
+                        9.3, and Tamerlan, 9.7; Khalil Pasha Khayat's Bana- back, 11.0, and
                         Klondyke, 10.0; Omar Bey Sultan and Ahmed Bey Bakri's Rachid, 11.7; Ishack
-                        Bey Hussein’s Moofid, 10.11; Hussein Bey Sioufi's Sweetie, 9.9; Prince Omar
-                        Tous- sonn’s Marzouk, 9.0: Saleh Bey Yaghen's Wassal, 8.10; Mr. Tueni's
+                        Bey Hussein's Moofid, 10.11; Hussein Bey Sioufi's Sweetie, 9.9; Prince Omar
+                        Tous- sonn's Marzouk, 9.0: Saleh Bey Yaghen's Wassal, 8.10; Mr. Tueni's
                         Ajax, 9.0; Mohar- rem Pasha Chehim's Mizzaud, 9.10.</p>
                     <p>Pony Handicap.—Mr. E. Karam's Nimrod, 9.0, and Eclipse, 9.8; Mr. E. Bustro's
                         Roland, 9.6; Khalil Pasha Khayat's Suleik, 10.7, and Sadik, 11.0; Messrs. W.
-                        B. Rees and G. H. Barker's Suari, 10.3, and India, 9.3; Ibrahim Bey Cherif’s
+                        B. Rees and G. H. Barker's Suari, 10.3, and India, 9.3; Ibrahim Bey Cherif's
                         Fantazia, 10.4, and Royalist, 10.4; Ishack Bey Hussein's Shahrour, 10.10;
                         Hus- sein Bey Sioufi's Peacock, 8.12; Prince Omar Toussoun's Hadban, 8.2;
                         Saleh Bey Yaghen's Abou Arkoub, 9.0, and Spectre, 8.10; Hassan Pasha
-                        Mohsen’s Taib, 8.6; Mr. M. Tueni’s Viking, 9.5; Elie Bey Sursock’s and Mr.
-                        Tueni’s Amory, 9.6.</p>
+                        Mohsen's Taib, 8.6; Mr. M. Tueni's Viking, 9.5; Elie Bey Sursock's and Mr.
+                        Tueni's Amory, 9.6.</p>
                 </div>
                 <div type="item">
-                    <head>LORD CROMER’S SANE IMPERIALISM.</head>
+                    <head>LORD CROMER'S SANE IMPERIALISM.</head>
                     <p>No one whose business it is to study the varying phases of public opinion can
                         have failed to notice that at the present moment a certain pessimism
                         prevails among thoughtful men in regard to the future of the Empire. People
                         are inclined to talk as if there were no alternative to that egotistical
                         Imperialism which strives for monopoly abroad and protec- tion at home save
                         a Little Englandism which is fearful of all responsibility, which suspects
-                        the right of the Anglo-Saxon race to develop and to role the “lesser breeds”
+                        the right of the Anglo-Saxon race to develop and to role the "lesser breeds"
                         and which looks with anxiety and dread upon that vast heritage of Empire to
                         which we have succeeded. To men of sane and liberal ideals both alternatives
-                        are odious. They do not want a grasping, arbitrary, material, “tied-house"
+                        are odious. They do not want a grasping, arbitrary, material, "tied-house"
                         Empire on the one hand, and on the other they cannot endure the thought of
                         abandoning our heritage of rule, and of shrinking from the responsibilities
-                        and duties which go with the “white man's burden." “Is there no third way?
-                        Must the choice lie between these two alternatives?”—such are the questions
+                        and duties which go with the "white man's burden." "Is there no third way?
+                        Must the choice lie between these two alternatives?"—such are the questions
                         which they ask. In our opinion, there is another alternative. The true
                         solution of the Imperial problem is, we hold, to be found in that sane
                         Imperialism of which Lord Cromer is the latest, and one of the greatest
@@ -521,7 +628,7 @@
                         and work be inspired by liberal ideals that we owe the Im- perial
                         fabric.</p>
                     <p>We wish we had space to draw attention in detail to the great number of wise
-                        and inform- ing things said by Lord Cromer in his new Annual Report. What
+                        and informing things said by Lord Cromer in his new Annual Report. What
                         makes that Report of special interest this year is the fact that it marks an
                         epoch. The Anglo-French Agree- ment has legalised our position in Egypt and
                         has given us a free hand. We have now the right to build as we will. That we
@@ -575,7 +682,7 @@
                         salaries. Before we leave the subject of Lord Cromer's Report we most find
                         space for the very satis- factory passage in which he awards praise and
                         credit to the young British officers who have helped that able
-                        administrator, Sir Reginald Wingate, in the government of the Sudan:— “I am
+                        administrator, Sir Reginald Wingate, in the government of the Sudan:— "I am
                         not called upon to discuss, and still less to defend, the British military
                         system considered as a whole. But I wish to say something of the officers,
                         and more especially of the young officers, with whom I am brought in
@@ -599,8 +706,8 @@
                         perform, made responsible for the proper performance of that work, and left
                         a good deal to them- selves, they speedily develop that power of government
                         which, I trust I may be lowedal to say without incurring a charge of undue
-                        national pride, is the prerogative of their Imperial race.”</p>
-                    <p>That Lord Cromer’s experience is in no way exceptional we have not a doubt.
+                        national pride, is the prerogative of their Imperial race."</p>
+                    <p>That Lord Cromer's experience is in no way exceptional we have not a doubt.
                         The ma- from which the British officer is ma- nufactured is the best
                         material in the nation, —the material which produces in the Law, in the
                         Church, and in commerce, keen, able men. If the British officer—though, in
@@ -626,46 +733,47 @@
                         responsibilities, properly understood and carried out serve as antiseptics
                         in the body politic, and prevent the growth of that narrow and selfish
                         materialism which, as history shows, is apt to overcome the moral force of
-                        small, popu- lous, and wealthy states. ("The Spectator”.)</p>
+                        small, popu- lous, and wealthy states. ("The Spectator".)</p>
                 </div>
             </div>
             <pb n="4"/>
-            <div type="page" n="4">
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n3/mode/1up">
                 <head>ARABIC TYPE. FIRST APPEARANCE IN ENGLAND.</head>
                 <dateline>By Mr. Falconer Madan (B. N. C. Oxford).</dateline>
                 <p>The use of Arabic and Syriac type in England can be carried a few years farther
                     back than Mr. Talbot Reed was able to do in his "History of Old English Letter
-                    Foundries” (London, 1887), which is the recognised authority on such points. He
+                    Foundries" (London, 1887), which is the recognised authority on such points. He
                     did not find any book in which Arabic occurred earlier than 1648, when Miles
-                    Flesher printed at London a work ‘De Siglis Arabum.' And of Syriac he says that
-                    it “did not make its appearance in England till the middle of the seventeenth
+                    Flesher printed at London a work 'De Siglis Arabum.' And of Syriac he says that
+                    it "did not make its appearance in England till the middle of the seventeenth
                     century"—in fact, not till the prospectus and specimen of Walton's Polyglot were
                     issued in 1652.</p>
                 <p>In turning over a volume of the Thomason Civil War Tracts at the British Museum
                     lately, I was struck by a profusion of types of both languages in the margins of
-                    ‘A Discovery of the Rebels' and ‘The Great Antichrist,' both by “J. V.,
+                    'A Discovery of the Rebels' and 'The Great Antichrist,' both by "J. V.,
                     Prisoner," and dated 1643 Thomason has noted that the author was Vicars, who was
-                    not the well-known John Vicars, author of the ‘Parliamentary Chronicle,' but
+                    not the well-known John Vicars, author of the 'Parliamentary Chronicle,' but
                     John Viccars, an Oriental scholar, who was concerned with the preparation of the
-                    Polyglot mentioned above. And on reference to Viccars’s one great work, the
-                    “Decapla in Psalmos' (Londini, apud Robertum Young, Anno M. D. C. XXXIX), the
+                    Polyglot mentioned above. And on reference to Viccars's one great work, the
+                    "Decapla in Psalmos' (Londini, apud Robertum Young, Anno M. D. C. XXXIX), the
                     position became clear. ThE 'Decapla' is a commentary on the Psalms from sources
                     written in ten languages, and the title expressely states that it was "Novis
-                    Typis Arab, and Syriacis Donates.” Here, then, is the first use of Arabic and
+                    Typis Arab, and Syriacis Donates." Here, then, is the first use of Arabic and
                     Syriac printing in England, in 1689. The whole fount is displayed on the last
                     leaf of the prefatory matter, and even Arabis and Syriac ligatures are to be
                     found in it.</p>
-                <p>The dedication to Archbishop Laud states that “Decapla hæc, post annum integrum
+                <p>The dedication to Archbishop Laud states that "Decapla hæc, post annum integrum
                     sub prælo xXu3uvilisiav novis Typis Syriacis and Arabicis (sumptibus haud
                     exiguis) adornata in lucem emittuntor." This carries back the actual printing to
                     1638, and fits in with the letter from John Greaves of February 10th, 1637/8
-                    (“Domestic State Papers,' vol. 381, No. 75), where a rather indefinite mention
+                    ("Domestic State Papers,' vol. 381, No. 75), where a rather indefinite mention
                     is made of a purchase of Oriental puncheons (and ma- trixes?) by a Mr. Browne on
                     the Continent. This letter is mentioned by Mr. Talbot Reed. Even the "J. V.
-                    Prisoner” is cleared up in the same dedication, where the author speaks of
-                    himself as “post septennii vincula captivus.”</p>
+                    Prisoner" is cleared up in the same dedication, where the author speaks of
+                    himself as "post septennii vincula captivus."</p>
                 <p>It is interesting to note that in this very year 1639, when Dr. Thomas Greaves
-                    printed his oration ‘De Linguæ Arabicæ utilitate’ and wished to print an Arabic
+                    printed his oration 'De Linguæ Arabicæ utilitate' and wished to print an Arabic
                     sentence, it is found in some copies written in in Arabic, and in some copies
                     printed in Hebrew type! The first Arabic printing at Oxford was in 1648, and the
                     first Syriac in 1661.</p>
@@ -673,12 +781,12 @@
                     <head>THE ARAB CONQUEST OF EGYPT.</head>
                     <p>Mr. Butler announces that he has come across a fresh piece of evidence for
                         the identi- fication of Al Mukaukas with Cyrus, Patriarch of Alexandria. In
-                        the Syriac ‘Chronicon Ano- nymum,' edited with a Latin translation by Guidi,
-                        occurs the following passage :- “Potiti sunt Arabes tota regione Syriæ et
+                        the Syriac 'Chronicon Ano- nymum,' edited with a Latin translation by Guidi,
+                        occurs the following passage :- "Potiti sunt Arabes tota regione Syriæ et
                         Palæstine. Ægyptum quoque ingredi erat in animo: sed non valuerunt: custo-
                         diehantur enim fines magno exercitu et vi a patriarcha Alexandrino, locis
                         quoque quibus hostes in regionem ingredi aut egredi possont præclusis et
-                        exstructis in ripa Nili per omnem regionem muris.” In other words, the
+                        exstructis in ripa Nili per omnem regionem muris." In other words, the
                         Moslem forces which over- ran Syria from 631 to 640 were deterred from an
                         earlier attempt on Egypt by a powerful Roman army placed on the borders, and
                         power- ful defences prepared, by the Patriarch of Alexandria. It is not open
@@ -689,10 +797,10 @@
                         in criticising the theory, remarks (Proc. Royal Irish Acad., vol. xxiv. sec.
                         C. 13, p. 254):- "Cyrus was Patriarch and civil governor, but not military
                         prefect; yet we find him (if be be El Mukawkis) commanding at the battle of
-                        Heliopolis,” i.e.according to the Arab historians. Precisely, and given the
+                        Heliopolis," i.e.according to the Arab historians. Precisely, and given the
                         fact that Cyrus was responsible for the military defences of the country,
                         his command at the battle follows quite naturally.</p>
-                    <p>Now as to the authority of the "Chronicon Anonymum.” Guidi is clear that the
+                    <p>Now as to the authority of the "Chronicon Anonymum." Guidi is clear that the
                         document as it stands can be assigned with certainty to a date between 670
                         and 680, while the portions relating to the Persian kings have an air of
                         still greater antiquity. The writer was thus contemporary with, if not
@@ -713,9 +821,10 @@
                         every modern comfort. Fireproof System Hénnébique. Illustrated pamphlet on
                         Innsbruck free from proprietor: CARL LANDSEE.</p>
                 </div>
-                <div type="section" feature="army">
+                <div type="item" feature="army">
                     <head>ARMY AND NAYY.</head>
-                    <dateline>(From our Correspondent). London, April 22.</dateline>
+                    <byline>(From our Correspondent).</byline>
+                    <dateline> London, April 22.</dateline>
                     <p>Colonel the Hon. M. G. Talbot, R.E., who recently went on half-pay on giving
                         up the appointment of Director of Surveys under the Egyptian Administration,
                         has taken his retired full pay. He entered the service just 82 years ago and
@@ -730,7 +839,7 @@
                         previous night in Dame Street, by having his coat off, shouting at the top
                         of his voice, challenging the crowd to fight him, and violently resisting
                         arrest. He was also charged with assaulting three constables. A medical
-                        student, named M’Swiney, and Cap- tain T.R.B. Clifford, 3rd Connaught
+                        student, named M'Swiney, and Cap- tain T.R.B. Clifford, 3rd Connaught
                         Rangers, were also charged with attempting to rescue Lieutenant Howard. It
                         seemed that the de- fendants got involved in a row with the crowd coming out
                         of the Empire Music Hall, when the alleged assault on the constables took
@@ -738,21 +847,21 @@
                         disorderly crowd, and that when Lieutenant Howard was being brought to the
                         police station he was struck twice by one of the constables on the eye. The
                         two officers were returned for trial to the City Sessions, in £10 bail, and
-                        M’Swiney was fined in 20s., or 14 days, afterwards increased to 21s. to
+                        M'Swiney was fined in 20s., or 14 days, afterwards increased to 21s. to
                         admit of appeal, in addition to being returned for trial.</p>
                     <p>The following appears in the newspapers to- day :— Lieutenant Howard, of the
                         Berkshire Regiment, was charged at Dublin with participa- tion in a street
                         row, and was allowed out on bail to appear at the City Sessions. This was on
                         Wednesday. On Thursday a detective at Queenstown reported that he had
                         searched the luggage of a passenger giving the name of Courtney, who was
-                        going on board the “Teu- tonic," bound for New York, and had strong
+                        going on board the "Teu- tonic," bound for New York, and had strong
                         suspicions that he was Lieutenant Howard. Instructions were at once
-                        telegraphed to Queenstown that Mr. “Courtney” should be detained, but
-                        fifteen minutes before they were received the “Teutonic" had left, and Mr.
-                        "Courtney” is now on his way to America.</p>
+                        telegraphed to Queenstown that Mr. "Courtney" should be detained, but
+                        fifteen minutes before they were received the "Teutonic" had left, and Mr.
+                        "Courtney" is now on his way to America.</p>
                     <p>The Sessions commence on May 6, and it is felt that the police cannot move in
                         the matter until then, as it is quite possible for Lieutenant Howard,
-                        supposing it is he who left on the “Teutonic”, to voluntarily return by
+                        supposing it is he who left on the "Teutonic", to voluntarily return by
                         then.</p>
                     <p>The friction between Lord Kitchener and the Military Member of the Council
                         was not al- together unexpected. Though the details of disagreement are not
@@ -779,18 +888,18 @@
                         encouraging to the chances of a long-service system of recruiting becoming
                         popular. It was hoped that it might have boon otherwise, since enlistments
                         for short ser- vice have been stopped for some six months now. The winter is
-                        usually the best recruit- ing time of the year, and trade during the past
+                        usually the best recruiting time of the year, and trade during the past
                         winter has been unusually slack. Yet for each month from October, 1904, to
                         March, 1905, there has been a falling off in the numbers taken, which
                         amounts to a loss of 3,140 as compared with the same period of 1903-4. All
                         this is very discouraging, but not in the least surprising to those who
-                        doubted the success of Mr. Arnold-Forster’s methods. Meu do not en- list
+                        doubted the success of Mr. Arnold-Forster's methods. Meu do not en- list
                         nowadays from a sense of patriotism; the upper classes are sadly deficient
                         in patriotism, they are showing an increasing disinclina- tion to joining
                         even the commissioned ranks, because the prospects are so poor. It is hardly
                         to be expected that the poorer classes are going to enlist to gratify Mr.
                         Arnold- Forster and the Army Council. When the Army is made a career that
-                        will compare favor- ably with civil occupations, recruits in plenty will to
+                        will compare favorably with civil occupations, recruits in plenty will to
                         forthcoming, and of the right sort. But there must be some assurance or
                         security that when a man leaves the Army he will be better off in the matter
                         of employment than if he had remained a civilian. In the present state of
@@ -831,7 +940,7 @@
                         is interesting to remember that less than forty years ago scientists
                         declared it impossible that diamonds could exist at Kimberley, unless they
                         were carried thither in the crops of ostriches from some unknown land.</p>
-                    <p>Captain Lyons in a recent report states:— “No reliable evidence of the
+                    <p>Captain Lyons in a recent report states:— "No reliable evidence of the
                         occurrence of coal in workable quantities in Egypt has yet been forthcoming;
                         most of the strata are of marine origin, and those which are not, have so
                         far yielded no traces of carbonaceous deposits, beyond local layers of
@@ -840,7 +949,7 @@
                         very slight one, and up to the present no indications of such have been met
                         with, in spite of the borings 400 feet deep in the oases, and the wide area
                         which has been traversed without finding any outcrop of beds of this
-                        nature.”</p>
+                        nature."</p>
                     <p>It will be remembered that last year, with the consent of the Emperor
                         Menelik, a geo- logical expedition, under Mr. Barron, had been sent into
                         Abyssinia with a view to discovering, first, whether the native reports of
@@ -1050,39 +1159,39 @@
                 </div>
                 <div type="item">
                     <head>ALDERSON'S CARDEN, RULKELEY.</head>
-                    <p>In consequence of extensive alterations to the theatre in Alderson’s Garden,
+                    <p>In consequence of extensive alterations to the theatre in Alderson's Garden,
                         there will be no play next Saturday, but tea will be served as usual.
                         25886-3-1</p>
                 </div>
                 <div type="item">
                     <head>WEAPONS AND EXPLOSIVES IN EGYPT. IMPORTANT LAW.</head>
-                    <p>In a fortnight’s time the new law will come into force regulating the trade
+                    <p>In a fortnight's time the new law will come into force regulating the trade
                         in weapons, ammunition and explosives in this country. The following are the
                         main provisions of this law :—</p>
                     <p>Le commerce des armes, des munitions, du matériel et des matures explosives,
                         dont l'im- portation est admire par lee Conventions Com- merciales ne pourra
                         être exercée que par les personnes dûment autorisées par le Gouverne- ment
-                        et dans les magasins désignés dans l’autorisation.</p>
+                        et dans les magasins désignés dans l'autorisation.</p>
                     <p>Cette autorisation est personnelle, et elle devient nolle si elle est cédée à
-                        un tiers. Nul ne pourra transporter d’un endroit à un autre une quantité
-                        d’armes excédant celle qui lui est nécessaire pour son propre usage, sans
+                        un tiers. Nul ne pourra transporter d'un endroit à un autre une quantité
+                        d'armes excédant celle qui lui est nécessaire pour son propre usage, sans
                         une autorisation specials du gouverneur ou du moudir, et, si le transport
-                        doit avoir lieu d’une ville à une autre ou d’un village à un autre, on
+                        doit avoir lieu d'une ville à une autre ou d'un village à un autre, on
                         indiquera dans la permission le nombre et la nature des armes, ainsi que la
                         personne à la- quelle elles sont destinées.</p>
                     <p>Toute personne qui exerce actuellement le commerce des armes, des munitions,
-                        du maté- riel et des matières explosives devra, dans le délai d’un mois à
+                        du maté- riel et des matières explosives devra, dans le délai d'un mois à
                         partir de la publication du présent règlement, en faire la déclaration au
                         gouverner ou au moudir, en indiquant le ma- gasin dans lequel ces objets
                         sont mis en vente.</p>
-                    <p>Il est absolument défendu d’avoir dans la Province-Frontière, des dépôts
-                        d’armes ou au- tres objets indiqués à l’article précédent.</p>
-                    <p>L’autorité de police aura, dans cette pro- vince, le droit de fairs dee
+                    <p>Il est absolument défendu d'avoir dans la Province-Frontière, des dépôts
+                        d'armes ou au- tres objets indiqués à l'article précédent.</p>
+                    <p>L'autorité de police aura, dans cette pro- vince, le droit de fairs dee
                         visites domiciliaires, dans les formes prévues dans les Conventions
                         commerciales et le procès verbal y annexé pour les perquisitions faites dans
                         la ligne douanière, de saisir et de confisquer les armes et les autres
                         objets désignés ci-dessus.</p>
-                    <p>Est permise l’importation des armes de chasse et de luxe, ainsi que des armes
+                    <p>Est permise l'importation des armes de chasse et de luxe, ainsi que des armes
                         de com- merce, des munitions et du matériel ci-dessous spécifiés:</p>
                     <p>1. Les fusils âme lisse et les mousquetons de chasse, système Lefaucheux,
                         Lancaster, et autres, à un ou deux coups, se chargeant par la bouche, à la
@@ -1091,13 +1200,13 @@
                         cartouches pourvu qu'ils signent une déclaration par laquelle ils
                         reconnaissent que ces fusils sont pour leur pro- pre usage et que la vante
                         en est défendue.</p>
-                    <p>Toute contravention à l’une ou 1'autre des conditions de cet engagement
+                    <p>Toute contravention à l'une ou 1'autre des conditions de cet engagement
                         entrainers, de plein droit, la confiscation du fusil.</p>
                     <p>2. Les armes de luxe, savoir: les armes anti- ques, ainsi que les fusils,
                         carabines, mousque- tons, revolvers et pistolets de toute longueur dont la
                         crosse, le chien ou le canon sont es- sentiellement enrichis d'or ou
                         d'argent ou ci- selés artistiquement. Pour que les armes de luxe, à
-                        l’exception des armes antiques, soient admises, le prix de vente ne devra
+                        l'exception des armes antiques, soient admises, le prix de vente ne devra
                         pas être inférieur à 500 francs par arme pour les fusils, carabines et
                         mousquetons; à 200 francs pour les revolvers, et à 80 francs pour les
                         pistolets. Il est entendu que les armes dont l'introduc- tion est admise en
@@ -1111,16 +1220,16 @@
                     <p>3. Les fusils, carabines et pistolets dits Flobert et les armes semblables de
                         petit calibre, ainsi que celles à spirales dites de salon.</p>
                     <p>4. Les sabres dont la poignée ou la lame est essentiellement enrichie d'or ou
-                        d’argent ou ciselée artistiquement.</p>
-                    <p>Les épées et lames d’épées, fleurets d'es- crime et couteaux de chasse.</p>
-                    <p>Tout voyageur muni de passeport ou teskéré en règle ne pourra importer qu’un
-                        seul pistolet revolver ou une paire de pistolets de n’importe quelle sorte
+                        d'argent ou ciselée artistiquement.</p>
+                    <p>Les épées et lames d'épées, fleurets d'es- crime et couteaux de chasse.</p>
+                    <p>Tout voyageur muni de passeport ou teskéré en règle ne pourra importer qu'un
+                        seul pistolet revolver ou une paire de pistolets de n'importe quelle sorte
                         plus cent cartouches chàrgées au maximum.</p>
                     <p>Toutes les armes dont l'importation est admise seront, après vérification de
                         la Douane, sans délai ni frais pour le propriétaire, à son choix, et par les
                         soins de cette administration, munies d'une ficelle plombée ou
                         poinçounnées.</p>
-                    <p>L’introduction de tout matériel d'arme, de toutes munitions non mentionnés
+                    <p>L'introduction de tout matériel d'arme, de toutes munitions non mentionnés
                         dans le pré- sent tableau, de toute sorte de poudre, ainsi que de toutes les
                         compositions qui ont la même destination ou qui, inventées plus tard,
                         pourraient produire les mêmes effets que la poudre, telles que la dynamite,
@@ -1132,8 +1241,8 @@
                         prohibition d'impor- tation et de vente des produits qui, en vertu de leur
                         composition, sont explosifs dans cer- taines conditions ou qui peuvent
                         servir à la fabrication de matières explosives, comme, par exemple, le
-                        soufre, l’éther, le nitrate de soude. Elle doit seulement empêcher
-                        l’introduction de matières qui sont destinées à être exclusive- ment ou au
+                        soufre, l'éther, le nitrate de soude. Elle doit seulement empêcher
+                        l'introduction de matières qui sont destinées à être exclusive- ment ou au
                         moins principalement employées comme poudres à carrière ou pour des usages
                         analogues.</p>
                 </div>
@@ -1152,17 +1261,17 @@
                     <head>Société Internationale des Employes D'ALEXANDRIE </head>
                     <head>Siège Social: Rue Mosquée Attarine No. 21 </head>
                     <head>BUREAU DE PLACEMENT</head>
-                    <p>Offres d’Emplois </p>
-                    <p>BONNE MAISON d’Alexandria demande: </p>
+                    <p>Offres d'Emplois </p>
+                    <p>BONNE MAISON d'Alexandria demande: </p>
                     <p>1. un employé connaissant bien la Mercerie. </p>
                     <p>2. un jeune homme aide-vendeur. </p>
                     <p>Demandes </p>
                     <p>Comptable pr. Le Carre sachant bien la Comptabilité et connaissant
-                        l’Anglais.</p>
+                        l'Anglais.</p>
                     <p>Comptable pr. Le Caire avec connaissances en langues. </p>
                     <p>Comptable pr. Port-Said avec connaissances en langues. </p>
                     <p>Comptable pr. Alexandrie, comme employé général. </p>
-                    <p>N.B.—Pour tous renseignements s’adresser soit directement, soit par lettre au
+                    <p>N.B.—Pour tous renseignements s'adresser soit directement, soit par lettre au
                         Siège Social de la Société, Rue Mosquée Attarine No.21. </p>
                     <p>Le Secrétariat est ouvert les Lundi, Mercredi et Vendredi de 7 h. 1/2 à 8 h.
                         1/2 du soir. </p>
@@ -1171,736 +1280,167 @@
                 </div>
             </div>
             <pb n="5"/>
-            <div type="page" n="5">
-            </div>
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n4/mode/1up"
+                status="empty"> </div>
             <pb n="6"/>
-            <div type="page" n="6">
-                <div type="item" feature="exportManifests">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n5/mode/1up">
+                <cb n="1"/>
+                <!-- chronique judiciare -->
+                <!-- depart -->
+                <!-- bulletin bourse -->
+                <!-- passList -->
+                <!-- steamerMovements -->
+                <!-- Methropolitan Cairo Railway -->
+                <cb n="2"/>
+                <!-- Eg Petroleum -->
+                <!-- Eastern Telegraph -->
+                <div type="item" feature="shippingMovements" status="empty">
+                    <head>MOUVEMENT MARITIME DU PORT D'ALEXANDRIE</head>
+                </div>
+                <div type="item" feature="exportManifests" status="verified">
                     <head>EXPORT MANIFESTS</head>
-                      <table rows="8" cols="5">
-                            <head>For Liverpool, by the S.S. &quot;Belgravian&quot;, sailed on the
-                                19th April:</head>
-                            <row>
-                                <cell>Carver Bros. &amp; Co. Ltd,</cell>
-                                <cell>200</cell>
-                                <cell>tons</cell>
-                                <cell>cotton</cell>
-                                <cell>seed</cell>
-                            </row>
-                            <row>
-                                <cell>Barker &amp; Co.,</cell>
-                                <cell>151</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>T. Ghirghis et fils,</cell>
-                                <cell>2,000</cell>
-                                <cell>quarters</cell>
-                                <cell>beans</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Choremi, Benachi &amp; Co.,</cell>
-                                <cell>184</cell>
-                                <cell>bales</cell>
-                                <cell>cotton</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>F.C. Baines &amp; Co.,</cell>
-                                <cell>200</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Bank of Egypt,</cell>
-                                <cell>455</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Peel &amp; Co.,</cell>
-                                <cell>84</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>J. Planta &amp; Co.,</cell>
-                                <cell>66</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>G. Frauger &amp; Co.,</cell>
-                                <cell>65</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Carver Bros. &amp; Co. Ltd,</cell>
-                                <cell>157</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>1,211</cell>
-                                <cell>bales</cell>
-                                <cell>cotton</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>N. Trianfafileu fr.,</cell>
-                                <cell>241</cell>
-                                <cell>bags</cell>
-                                <cell>onions</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>H. Deghem,</cell>
-                                <cell>2,091</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>O.K. Levick,</cell>
-                                <cell>5,157</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Eastwood,</cell>
-                                <cell>1,516</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>H. Hindi,</cell>
-                                <cell>1,800</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Moh. Deff,</cell>
-                                <cell>1,400</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>J. Abouchanab,</cell>
-                                <cell>377</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>M. Osman,</cell>
-                                <cell>342</cell>
-                                <cell/>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>W. Crossley,</cell>
-                                <cell>895</cell>
-                                <cell/>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>M. Deff,</cell>
-                                <cell>1,380</cell>
-                                <cell/>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>H. Hindi,</cell>
-                                <cell>917</cell>
-                                <cell/>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>B. Antoun,</cell>
-                                <cell>635</cell>
-                                <cell/>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Huileries &amp; Sav.,</cell>
-                                <cell>955</cell>
-                                <cell>bags</cell>
-                                <cell>oil</cell>
-                                <cell>cake</cell>
-                            </row>
-                            <row>
-                                <cell>C. Bolonachi,</cell>
-                                <cell>30</cell>
-                                <cell>barils</cell>
-                                <cell>cogniac</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Holz &amp; Co.,</cell>
-                                <cell>42</cell>
-                                <cell>bales</cell>
-                                <cell>wool</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Carver Bros. &amp; Co. Ltd,</cell>
-                                <cell>10</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>J. Ross &amp; Co.,</cell>
-                                <cell>665</cell>
-                                <cell>empty</cell>
-                                <cell>casks</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>J.B. Caffari,</cell>
-                                <cell>84</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>J. Papapandelides,</cell>
-                                <cell>2</cell>
-                                <cell>wagons</cell>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Various,</cell>
-                                <cell>8</cell>
-                                <cell>packages </cell>
-                                <cell>sundries</cell>
-                                <cell/>
-                            </row>
-                        </table>
+                    <p>For LIVERPOOL, by the S.S. &quot;Belgravian&quot;, sailed on the 19th
+                        April:</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 200 tons cotton seed</p>
+                    <p>Barker &amp; Co., 151 „ „</p>
+                    <p>T. Ghirghis et fils, 2,000 quarters beans</p>
+                    <p>Choremi, Benachi &amp; Co., 184 bales cotton</p>
+                    <p>F.C. Baines &amp; Co., 200 „ „</p>
+                    <p>Bank of Egypt, 455 „ „</p>
+                    <p>Peel &amp; Co., 84 „ „</p>
+                    <p>J. Planta &amp; Co., 66 „ „</p>
+                    <p>G. Frauger &amp; Co., 65 „ „</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 157 „ „</p>
+                    <p>1,211 bales cotton</p>
+                    <p>N. Trianfafileu fr., 241 bags onions</p>
+                    <p>H. Deghem, 2,091 „ „</p>
+                    <p>O.K. Levick, 5,157 „ „</p>
+                    <p>Eastwood, 1,516 „ „</p>
+                    <p>H. Hindi, 1,800 „ „</p>
+                    <p>Moh. Deff, 1,400 „ „</p>
+                    <p>J. Abouchanab, 377 „ „</p>
+                    <p>M. Osman, 342</p>
+                    <p>W. Crossley, 895</p>
+                    <p>M. Deff, 1,380</p>
+                    <p>H. Hindi, 917</p>
+                    <p>B. Antoun, 635</p>
+                    <p>Huileries &amp; Sav., 955 bags oil cake</p>
+                    <p>C. Bolonachi, 30 barils cogniac</p>
+                    <p>Holz &amp; Co., 42 bales wool</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 10 „ „</p>
+                    <p>J. Ross &amp; Co., 665 empty casks</p>
+                    <p>J.B. Caffari, 84 „ „</p>
+                    <p>J. Papapandelides, 2 wagons</p>
+                    <p>Various, 8 packages sundries</p>
+                    <cb n="3"/>
                     <p>Pour PORT SAID et MERSINE, par le bateau ang. "Dakahlieh", parti le 22
                         avril:</p>
                     <p>Divers, 2,049 sacs riz, 410 sacs sucre, 100 sacs oignons, 22 sacs henné, 25
                         sacs fèves, 137 balls peaux, 31 colis légumes, 1,500 colis divers</p>
-                    <p>
-                        <table rows="3" cols="4">
-                            <head>POUR KOBE</head>
-                            <row>
-                                <cell>Peel &amp; Co., </cell>
-                                <cell>300</cell>
-                                <cell>balles </cell>
-                                <cell>coton</cell>
-                            </row>
-                            <row>
-                                <cell>Barker &amp; Co.,</cell>
-                                <cell>50</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>350</cell>
-                                <cell>balles </cell>
-                                <cell>coton</cell>
-                            </row>
-                        </table>
-                    </p>
-                        <table rows="20" cols="4">
-                            <head>For Liverpool, by the S.S. &quot;Anatolia&quot;, sailed on the
-                                26th April:</head>
-                            <row>
-                                <cell>T. Ghirghis et fils,</cell>
-                                <cell>1,000</cell>
-                                <cell>quarters</cell>
-                                <cell>beans</cell>
-                            </row>
-                            <row>
-                                <cell>Moursi Bros., </cell>
-                                <cell>500</cell>
-                                <cell>tons</cell>
-                                <cell>cotton seed</cell>
-                            </row>
-                            <row>
-                                <cell>M. Tilche e figli,</cell>
-                                <cell>41 </cell>
-                                <cell>bales</cell>
-                                <cell>cotton</cell>
-                            </row>
-                            <row>
-                                <cell>B. Tilche e figli,</cell>
-                                <cell>64</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Choremi, Benachi &amp; Co.,</cell>
-                                <cell>325</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>B.J. Coury &amp; Co.,</cell>
-                                <cell>129</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Bank of Egypt Ltd,</cell>
-                                <cell>128</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Mohr &amp; Fenderl,</cell>
-                                <cell>302</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Peel &amp; Co.,</cell>
-                                <cell>50</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>R. &amp; O. Lindemann,</cell>
-                                <cell>50</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Carver Bros. &amp; Co. Ltd,</cell>
-                                <cell>330</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell> </cell>
-                                <cell>1,419</cell>
-                                <cell>bales</cell>
-                                <cell>cotton</cell>
-                            </row>
-                            <row>
-                                <cell>A. Tarpinian &amp; Co.,</cell>
-                                <cell>44</cell>
-                                <cell>bales</cell>
-                                <cell>wool</cell>
-                            </row>
-                            <row>
-                                <cell>Bank of Egypt Ltd,</cell>
-                                <cell>33</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Carver Bros. &amp; Co. Ltd,</cell>
-                                <cell>9</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Scriven Bros. &amp; Co.,</cell>
-                                <cell>29</cell>
-                                <cell>bales</cell>
-                                <cell>fleshings</cell>
-                            </row>
-                            <row>
-                                <cell>Khedivial Mail,</cell>
-                                <cell>42</cell>
-                                <cell>cases</cell>
-                                <cell>oranges</cell>
-                            </row>
-                            <row>
-                                <cell>B. Hazan &amp; Co.,</cell>
-                                <cell>2</cell>
-                                <cell>cases</cell>
-                                <cell>cigarettes</cell>
-                            </row>
-                            <row>
-                                <cell>Alex. Bonded Warehouse,</cell>
-                                <cell>7</cell>
-                                <cell>cases </cell>
-                                <cell>cigarettes</cell>
-                            </row>
-                            <row>
-                                <cell>Cook &amp; Son,</cell>
-                                <cell>9</cell>
-                                <cell>packages</cell>
-                                <cell>effects</cell>
-                            </row>
-                            <row>
-                                <cell>Moh. Osman,</cell>
-                                <cell>650</cell>
-                                <cell>bags</cell>
-                                <cell>onions</cell>
-                            </row>
-                            <row>
-                                <cell>G. Scrivano,</cell>
-                                <cell>1,208</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>C.H. Schoeller,</cell>
-                                <cell>4,950</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>O.K. Levick,</cell>
-                                <cell>1,740</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>N.D. Adamandiadis,</cell>
-                                <cell>168</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Th. Eastwod,</cell>
-                                <cell>3,912</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>L. Onofrio,</cell>
-                                <cell>600</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>T. Ghirghis et fils,</cell>
-                                <cell>3,150</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>M. Deff,</cell>
-                                <cell>600</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>G. Pappa,</cell>
-                                <cell>670</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Moh. Eid,</cell>
-                                <cell>650</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Ibr. Deff,</cell>
-                                <cell>2,990</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>N. Antoun,</cell>
-                                <cell>274</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>H. Hindi,</cell>
-                                <cell>1,219</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Various</cell>
-                                <cell>11</cell>
-                                <cell>packages</cell>
-                                <cell>sundries</cell>
-                            </row>
-                        </table>
-                        <table rows="21" cols="4">
-                            <head>Pour Brindisi et Treiste, par le bateau autr. "Habsburg&quot;,
-                                parti le 29 avril:</head>
-                            <row>
-                                <cell>H.A. Deghem,</cell>
-                                <cell>2,000</cell>
-                                <cell>sacs </cell>
-                                <cell>oignons</cell>
-                            </row>
-                            <row>
-                                <cell>L. Tolentino,</cell>
-                                <cell>3,000</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Banca Mobiliare,</cell>
-                                <cell>3,500</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Griva fr.,</cell>
-                                <cell>3,768</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Coen &amp; Co.,</cell>
-                                <cell>600</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>A. Hess &amp; Co.,</cell>
-                                <cell>3,000</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>G.D. Kaniskeri,</cell>
-                                <cell>3,500</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Stern fr.,</cell>
-                                <cell>998</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>G. Brach &amp; Co.,</cell>
-                                <cell>1,000</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Banca Anglo-Austriaca,</cell>
-                                <cell>3,075</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>A. Grioni,</cell>
-                                <cell>3,600</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>S.G. Violara,</cell>
-                                <cell>3,000</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>C. Constantinidis,</cell>
-                                <cell>2,000</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>H. Stavridi,</cell>
-                                <cell>1,000</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>J. Riches &amp; Co.,</cell>
-                                <cell>260</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Fili Facchini,</cell>
-                                <cell>5</cell>
-                                <cell>sacs </cell>
-                                <cell>noix de coco</cell>
-                            </row>
-                            <row>
-                                <cell>R. Delia,</cell>
-                                <cell>81</cell>
-                                <cell>cages</cell>
-                                <cell>tomatoes</cell>
-                            </row>
-                            <row>
-                                <cell>Sté An. Le Khédive,</cell>
-                                <cell>12</cell>
-                                <cell>cais. </cell>
-                                <cell>cigarettes</cell>
-                            </row>
-                            <row>
-                                <cell>F. Iglich,</cell>
-                                <cell>53</cell>
-                                <cell>cages</cell>
-                                <cell>tomatoes</cell>
-                            </row>
-                            <row>
-                                <cell>A. Frick,</cell>
-                                <cell>14</cell>
-                                <cell>barils</cell>
-                                <cell>poisson frais</cell>
-                            </row>
-                            <row>
-                                <cell>Divers,</cell>
-                                <cell>23</cell>
-                                <cell>colis</cell>
-                                <cell>divers</cell>
-                            </row>
-                        </table>
-                        <table rows="19" cols="4">
-                            <head>Pour Trieste, par le bateau autr. &quot;Daphné&quot;, parti le 1er
-                                mai:</head>
-                            <row>
-                                <cell>Birra di Graz,</cell>
-                                <cell>1,400</cell>
-                                <cell>barils</cell>
-                                <cell>vides</cell>
-                            </row>
-                            <row>
-                                <cell>Cook &amp; Son,</cell>
-                                <cell>2</cell>
-                                <cell>cais.</cell>
-                                <cell>tissus égyptiens</cell>
-                            </row>
-                            <row>
-                                <cell>F. Oberhofer,</cell>
-                                <cell>2,000</cell>
-                                <cell>sacs</cell>
-                                <cell>oignons</cell>
-                            </row>
-                            <row>
-                                <cell>H. Stavridis,</cell>
-                                <cell>998</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>A. Grioni,</cell>
-                                <cell>998</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Filli Facchini,</cell>
-                                <cell>484</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Griva fr.,</cell>
-                                <cell>233</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>R. &amp; O. Lindemann,</cell>
-                                <cell>545</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>J. Planta &amp; Co.,</cell>
-                                <cell>154</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Carver Bros. &amp; Co. Ltd,</cell>
-                                <cell>250</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>G. Riecken,</cell>
-                                <cell>30</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Mohr &amp; Fenderl</cell>
-                                <cell>255</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>F.C. Baines &amp; Co.,</cell>
-                                <cell>32</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>A. Hess &amp; Co.,</cell>
-                                <cell>33</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Schmid &amp; Co.,</cell>
-                                <cell>108</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Choremi, Benachi &amp; Co.,</cell>
-                                <cell>30</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>B. Barki,</cell>
-                                <cell>33</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell>Birch &amp; Co.,</cell>
-                                <cell>30</cell>
-                                <cell>"</cell>
-                                <cell>"</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>1,500</cell>
-                                <cell>balles</cell>
-                                <cell>coton</cell>
-                            </row>
-                        </table>
+                    <p>POUR KOBE</p>
+                    <p>Peel &amp; Co., 300 balles coton</p>
+                    <p>Barker &amp; Co., 50 „ „</p>
+                    <p>350 balles coton</p>
+                    <p>For LIVERPOOL, by the S.S. &quot;Anatolia&quot;, sailed on the 26th
+                        April:</p>
+                    <p>T. Ghirghis et fils, 1,000 quarters beans</p>
+                    <p>Moursi Bros., 500 tons cotton seed</p>
+                    <p>M. Tilche e figli, 41 bales cotton</p>
+                    <p>B. Tilche e figli, 64 „ „</p>
+                    <p>Choremi, Benachi &amp; Co., 325 „ „</p>
+                    <p>B.J. Coury &amp; Co., 129 „ „</p>
+                    <p>Bank of Egypt Ltd, 128 „ „</p>
+                    <p>Mohr &amp; Fenderl, 302 „ „</p>
+                    <p>Peel &amp; Co., 50 „ „</p>
+                    <p>R. &amp; O. Lindemann, 50 „ „</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 330 „ „</p>
+                    <p>1,419 bales cotton</p>
+                    <p>A. Tarpinian &amp; Co., 44 bales wool</p>
+                    <p>Bank of Egypt Ltd, 33 „ „</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 9 „ „</p>
+                    <p>Scriven Bros. &amp; Co., 29 bales fleshings</p>
+                    <p>Khedivial Mail, 42 cases oranges</p>
+                    <p>B. Hazan &amp; Co., 2 cases cigarettes</p>
+                    <p>Alex. Bonded Warehouse, 7 cases cigarettes</p>
+                    <p>Cook &amp; Son, 9 packages effects</p>
+                    <p>Moh. Osman, 650 bags onions</p>
+                    <p>G. Scrivano, 1,208 „ „</p>
+                    <p>C.H. Schoeller, 4,950 „ „</p>
+                    <p>O.K. Levick, 1,740 „ „</p>
+                    <p>N.D. Adamandiadis, 168 „ „</p>
+                    <p>Th. Eastwod, 3,912 „ „</p>
+                    <p>L. Onofrio, 600 „ „</p>
+                    <p>T. Ghirghis et fils, 3,150 „ „</p>
+                    <p>M. Deff, 600 „ „</p>
+                    <p>G. Pappa, 670 „ „</p>
+                    <p>Moh. Eid, 650 „ „</p>
+                    <p>Ibr. Deff, 2,990 „ „</p>
+                    <p>N. Antoun, 274 „ „</p>
+                    <p>H. Hindi, 1,219 „ „</p>
+                    <p>Various 11 packages sundries</p>
+                    <p>Pour BRINDISI et TRIESTE, par le bateau autr. "Habsburg&quot;, parti le 29
+                        avril:</p>
+                    <p>H.A. Deghem, 2,000 sacs oignons</p>
+                    <p>L. Tolentino, 3,000 „ „</p>
+                    <p>Banca Mobiliare, 3,500 „ „</p>
+                    <p>Griva fr., 3,768 „ „</p>
+                    <p>Coen &amp; Co., 600 „ „</p>
+                    <p>A. Hess &amp; Co., 3,000 „ „</p>
+                    <p>G.D. Kaniskeri, 3,500 „ „</p>
+                    <p>Stern fr., 998 „ „</p>
+                    <p>G. Brach &amp; Co., 1,000 „ „</p>
+                    <p>Banca Anglo-Austriaca, 3,075 „ „</p>
+                    <p>A. Grioni, 3,600 „ „</p>
+                    <p>S.G. Violara, 3,000 „ „</p>
+                    <p>C. Constantinidis, 2,000 „ „</p>
+                    <p>H. Stavridi, 1,000 „ „</p>
+                    <p>J. Riches &amp; Co., 260 „ „</p>
+                    <p>Fili Facchini, 5 sacs noix de coco</p>
+                    <p>R. Delia, 81 cages tomatoes</p>
+                    <p>Sté An. Le Khédive, 12 cais. cigarettes</p>
+                    <p>F. Iglich, 53 cages tomatoes</p>
+                    <p>A. Frick, 14 barils poisson frais</p>
+                    <p>Divers, 23 colis divers</p>
+                    <p>Pour TRIESTE, par le bateau autr. &quot;Daphné&quot;, parti le 1er mai:</p>
+                    <p>Birra di Graz, 1,400 barils vides</p>
+                    <p>Cook &amp; Son, 2 cais. tissus égyptiens</p>
+                    <p>F. Oberhofer, 2,000 sacs oignons</p>
+                    <p>H. Stavridis, 998 „ „</p>
+                    <p>A. Grioni, 998 „ „</p>
+                    <p>Filli Facchini, 484 „ „</p>
+                    <p>Griva fr., 233 „ „</p>
+                    <p>R. &amp; O. Lindemann, 545 „ „</p>
+                    <p>J. Planta &amp; Co., 154 „ „</p>
+                    <p>Carver Bros. &amp; Co. Ltd, 250 „ „</p>
+                    <p>G. Riecken, 30 „ „</p>
+                    <p>Mohr &amp; Fenderl 255 „ „</p>
+                    <p>F.C. Baines &amp; Co., 32 „ „</p>
+                    <p>A. Hess &amp; Co., 33 „ „</p>
+                    <p>Schmid &amp; Co., 108 „ „</p>
+                    <p>Choremi, Benachi &amp; Co., 30 „ „</p>
+                    <p>B. Barki, 33 „ „</p>
+                    <p>Birch &amp; Co., 30 „ „</p>
+                    <p>1,500 balles coton</p>
                 </div>
+                <!-- bourse khedivial -->
+                <!-- Cotons -->
+                <!-- others -->
             </div>
             <pb n="7"/>
-            <div type="page" n="7">
+            <div type="page" n="7"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n6/mode/1up">
                 <div type="advert" xml:id="deg-ad-dbc01">
                     <head>DAVIES BRYAN &amp; Co.</head>
                     <p>Continental Hotel Buildings CAIRO.</p>
-                    <p>St. David’s Buildings, ALEXANDRIA,</p>
+                    <p>St. David's Buildings, ALEXANDRIA,</p>
                     <p>and 35 - 37 Noble Street LONDON, E.C.</p>
                     <p>English Tailors, Drapers and Outfitters.</p>
                     <p>TRAVELLING REQUISITIES: COMPRESSED CANE TRUNKS. SOLID LEATHER OVERLAND
                         TRUNKS. GLADSTONE &amp; KIT BAGS. SUIT CASES, RUGS, &amp;c.</p>
-                    <p>ATHLETIC GOODS: A VARIED STOCK, INCLUDING Slazenger’s Doherty “E.G.M.” Demon.
-                        AND Ayre’s Central Strung Racquets.</p>
+                    <p>ATHLETIC GOODS: A VARIED STOCK, INCLUDING Slazenger's Doherty "E.G.M." Demon.
+                        AND Ayre's Central Strung Racquets.</p>
                     <p>TENNIS BALLS FRESH SUPPLY WEEKLY.</p>
                     <p>BOOTS &amp; SHOES.</p>
                     <p>All the newest shapes in the best English makes:—</p>
@@ -1911,7 +1451,7 @@
                         : TROPICAL TWEEDS, FLANNELS, DRILLS, &amp; c., &amp; c</p>
                     <p>All garments cut by experienced English cutters. Fit and style
                         guaranteed.</p>
-                    <p>GENTS’ OUTFITTING: The newest Shades in Crepe de Chene Ties. Cellular,
+                    <p>GENTS' OUTFITTING: The newest Shades in Crepe de Chene Ties. Cellular,
                         Oxford, Zephyr Shirts and Pyjamas in great variety.</p>
                     <p>Special Attention paid to Shirts Made to Measure.</p>
                     <p>HOSIERY AND UNDERCLOTHING IN THE BEST MAKES.</p>
@@ -1924,8 +1464,9 @@
                 </div>
             </div>
             <pb n="8"/>
-            <div type="page" n="8">
-                <div type="section" xml:lang="fr" xml:id="deg-el-ameb01">
+            <div type="page" n="8"
+                facs="https://archive.org/details/egyptian-gazette-1905-05-03/page/n7/mode/1up">
+                <div type="template" xml:lang="fr" xml:id="deg-el-ameb01">
                     <head>ARRIVAGES A MINET-EL-BASSAL</head>
                     <p>du mois de mai 1904</p>
                     <table rows="31" cols="7" xml:id="deg-ta-ameb01">
@@ -2224,8 +1765,8 @@
                             <cell>83,622</cell>
                         </row>
                     </table>
-                    <p>N.B.—Cette liste est relevée des Registres de l’ “Alexandria General Produce
-                        Association”; nous la publions afin qu’on puisse la comparer avec les
+                    <p>N.B.—Cette liste est relevée des Registres de l' "Alexandria General Produce
+                        Association"; nous la publions afin qu'on puisse la comparer avec les
                         arrivages du mois de juillet de cette année.</p>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
@@ -6,9 +6,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Egyptian Gazette</title>
+                <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>Daisy Vazquez</editor>
+                <editor role="primary">Daisy Vazquez</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -18,11 +18,12 @@
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
+                <idno type="URI">https://github.com/dig-eg-gaz/content/1905-01-30/tei</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date when="1905-01-30"><name>Monday</name>, January 30, 1905</date>
+                    <date when="1905-01-30">Monday, January 30, 1905</date>
                     <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
@@ -30,17 +31,30 @@
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1">
-                <head>THE EGYPTIAN GAZETTE</head>
-                <head type="sub">No. 7239] ALEXANDRIA, THURSDAY, JULY 13, 1905. [SIX PAGES P.T. 1. </head>
-                <div type="section" scope="advertisement"> </div>
-                <div type="advert" xml:id="deg-ad-pos01">
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-30/mode/1up">
+                <div type="nameplate">
+                    <table cols="6">
+                        <row>
+                            <cell rows="2"/>
+                            <cell cols="4">THE EGYPTIAN GAZETTE</cell>
+                            <cell rows="2"/>
+                        </row>
+                        <row>
+                            <cell> No. <measure quantity="7110">7,110</measure>]</cell>
+                            <cell> ALEXANDRIA, MONDAY, JANUARY 30, 1905.</cell>
+                            <cell> [SIX PAGES</cell>
+                            <cell> P.T. 1</cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="advert" colSpan="2" xml:id="deg-ad-pos01">
                     <head>Peninsular and Oriental S. N. Company.</head>
                     <p>Summer Rates will be charged from 2 May to 31 October.</p>
-                    <p>For the convenience of families and others, a large portion of each ship’s
+                    <p>For the convenience of families and others, a large portion of each ship's
                         accommodation has been reserved for Egypt, so that Berths can be definitely
                         engaged at once, as if the voyage were commencing at Port Said. Plans can be
-                        seen at the Offices of the Company’s Agents.</p>
+                        seen at the Offices of the Company's Agents.</p>
                     <p>The through Steamers for Marseilles and London are intended to leave Port
                         Said after the arrival of the 11 a.m. train from Cairo, every Tuesday for
                         the present except the MONGOLIA, which is taking passengers to the
@@ -89,14 +103,14 @@
                     <p>Messrs. HABELDEN &amp; Co. ALEXANDRIA.</p>
                     <p>F. G. DAVIDSON, Superintendent P. &amp; O. S. N. Company in Egypt SUEZ.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-opl01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-opl01">
                     <head>Orient-Pacific Line of Royal Mail Steamers.</head>
                     <p>REDUCED SUMMER FARES FROM MAY TO OCTOBER INCLUSIVE.</p>
                     <p>OUTWARDS to AUSTRALIA.</p>
-                    <p>R.M.S. “Orotava" will leave Suez about July 28 | R.M.S "Ormuz" will leave
+                    <p>R.M.S. "Orotava" will leave Suez about July 28 | R.M.S "Ormuz" will leave
                         Suez about August 11.</p>
                     <p>HOMEWARDS to NAPLES MARSEILLES, GIBRALTAR, PLYMOUTH, LONDON, TILBURY</p>
-                    <p>R.M.S. "Oroya" will leave Port Said about July 18 | R.M.S. “Ortona" will
+                    <p>R.M.S. "Oroya" will leave Port Said about July 18 | R.M.S. "Ortona" will
                         leave Port Said about August 1</p>
                     <table>
                         <row>
@@ -147,7 +161,7 @@
                         all information apply</p>
                     <p>Wm. STAPLEDON &amp; Sons, PORT-SAID &amp; PORT-TEWFIK (Suez) 31-12-904</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-blm01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-blm01">
                     <head>BIBBY LINE MAIL STEAMERS.</head>
                     <p>Special Reduced Rates During Summer Season,</p>
                     <p>OUTWARDS to COLOMBO, TUTICORIN, etc., and RANGOON. Departures from Suez.</p>
@@ -161,30 +175,30 @@
                     <p>Agents Cairo: THOS. COOK &amp; SON. Suez &amp; Port Said : WM. STAPLEDON
                         &amp; SONS, 31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-kml01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-kml01">
                     <head>KHEDIVIAL MAIL LINE.</head>
-                    <p><hi rend="bold">FAST BRITISH PASSENGER STEAMERS</hi></p>
-                    <p><hi rend="bold">GREECE - TURKEY LINE.</hi></p>
+                    <p>FAST BRITISH PASSENGER STEAMERS</p>
+                    <p>GREECE - TURKEY LINE.</p>
                     <p>Express Steamers leave Alexandria every Wednesday at 4 p.m. for PIRAEUS,
                         SMYRNA, MITYLENE, and CONSTANTINOPLE, in connection with Orient Express
                         train-de-luxe for Vienna, Paris, and London.</p>
-                    <p><hi rend="bold">PALESTINE - SYRIA LINE.</hi></p>
+                    <p>PALESTINE - SYRIA LINE.</p>
                     <p>Fast steamers leave Alexandria every Saturday at 6 p.m., and Port Said every
                         Sunday at 6 p.m., for JAFFA (for Jerusalem), CAIFFA (for Nazareth), BEYROUT
                         (for Damascus), TRIPOLI, ALEXANDRETTA, MESSINA, continuing in alternate
                         weeks to LARNACA and LIMASSOL (Cyprus).</p>
-                    <p><hi rend="bold">RED SEA LINE.</hi></p>
+                    <p>RED SEA LINE.</p>
                     <p>Steamers leave Suez fortnightly on Wednesday at 6 p.m. for JEDDAH, SUAKIN,
                         MASSOWAH, HODBIDAH, and ADEN ; and in the intervening weeks for PORT SUDAN
                         and SUAKIN direct. Calls will be made at TOR (for Mount Sinai) as
                         required.</p>
                     <p>N.B.—Deck chairs provided for the use of passengers, excellent cuisine and
                         table wine free.</p>
-                    <p>Steamer plans may be seen and passages booked at the Company’s Agencies at
+                    <p>Steamer plans may be seen and passages booked at the Company's Agencies at
                         Alexandria, Cairo, Port Said, and Suez, or at THOS. COOK &amp; SON or other
                         Tourist Agency. 31-12-904</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mss01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mss01">
                     <head>The Moss S.S. Company, Ltd.</head>
                     <p>For LIVERPOOL calling at MALTA (Messrs. JAMES MOSS &amp; Co. 31, James St,
                         Liverpool, Managers.)</p>
@@ -234,7 +248,7 @@
                         Cairo. Particulars on application to</p>
                     <p>R. J. MOSS &amp; Co., Alexandria, Agents. 26-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-bis01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-bis01">
                     <head>British India S. N. Company, Limited.</head>
                     <p>MAIL AND PASSENGER STEAM SHIPS.</p>
                     <p>SAILINGS FROM SUEZ, LONDON and CALCUTTA LINE.</p>
@@ -282,7 +296,7 @@
                     <p>For further particulars. Freight and Passage apply to G. BEYTS &amp; Co.
                         Agents, Suez. 31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-all01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-all01">
                     <head>ANCHOR LINE, LIMITED.</head>
                     <p>(HENDERSON BROTHERS,) LONDON, LIVERPOOL AND GLASGOW.</p>
                     <p>Booking Passengers and Cargo through to Ports in India, Europe &amp;
@@ -291,7 +305,7 @@
                     <table rows="2" cols="6">
                         <row>
                             <cell>For MARSEILLES &amp; LIVERPOOL</cell>
-                            <cell>S.S. “Bohemia”</cell>
+                            <cell>S.S. "Bohemia"</cell>
                             <cell>July 26</cell>
                             <cell>For CALCUTTA</cell>
                             <cell>S.S. "Assyria"</cell>
@@ -299,7 +313,7 @@
                         </row>
                         <row>
                             <cell>For LONDON</cell>
-                            <cell>S.S. “Persia"</cell>
+                            <cell>S.S. "Persia"</cell>
                             <cell>July 28</cell>
                             <cell>For BOMBAY</cell>
                             <cell>S.S. "Australia"</cell>
@@ -316,7 +330,7 @@
                     <p>For further partienlan of Freight or Passage apply to G. BEYTS &amp; Co.,
                         Suez. 31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-mic01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-mic01">
                     <head>MARINE INSURANCE COMPANY, LIMITED.</head>
                     <p>Established 1836. Capital £1,000,000. Reserve Fund £650,000.</p>
                     <p>THE IMPERIAL FIRE OFFICE united with THE ALLIANCE ASSURANCE, Co., Ltd.</p>
@@ -324,7 +338,7 @@
                         £10,000,000.</p>
                     <p>31-12-905. Policies issued at SUEZ by G. BEYTS &amp; Co., Agents.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-dll01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-dll01">
                     <head>Deutsche Levante-Linie.</head>
                     <p>Mail and Passenger Steamships. Regular three-weekly Service from<lb/>
                         HAMBURG, via ANTWERP &amp; MALTA, to ALEXANDRIA and vice-versa,
@@ -338,7 +352,7 @@
                     <p>For tariff and particulars apply to ADOLPHE STROSS, Alexandria, Agent.</p>
                     <p>15-2-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nbe01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nbe01">
                     <head>NATIONAL BANK OF EGYPT.</head>
                     <p>CAPITAL: L. 2,500,000. RESERVE (ENVIRON) : L. 862,000.</p>
                     <p>Gouverneur: Sir ELWIN PALMER, K.C.B., K.C.M.G.</p>
@@ -348,10 +362,10 @@
                         et Londres (4 et 5, King William Street).</p>
                     <p>La National Bank of Egypt reçoit des dépots à termes fixes, fait des avances
                         et ouvre des comptes courants sur titres, valeurs et marchandises. Elle
-                        s’occupe de l’achat et de la vente d'effets sur l’Etranger, de l'escompte,
+                        s'occupe de l'achat et de la vente d'effets sur l'Etranger, de l'escompte,
                         ainsi que de toutes opérations de Banque. 31-12-904</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-iob01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-iob01">
                     <head>IMPERIAL OTTOMAN BANK.</head>
                     <p>CAPITAL: £10,000,000.</p>
                     <p>HEAD OFFIOE IN CONSTANTINOPLE. CHIEF AGENCIES: LONDON &amp; PARIS.</p>
@@ -365,14 +379,14 @@
                         invoices, annuities and dividends collected and every description of banking
                         business transacted. 18-4-906</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-pss01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-pss01">
                     <head>PORT SAID-SAVOY HOTEL.</head>
                     <p>NEW FIRST-CLASS HOTEL, OVERLOOKING THE HARBOUR &amp; OPPOSITE CUSTOM
                         HOUSE</p>
                     <p>Open all the year round. — Well-appointed Bar.</p>
                     <p>MODERATE CHARGES. SPECIAL TERMS FOR RESIDENTS 1190A2-5</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-hbc01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-hbc01">
                     <head>HOTEL BRISTOL. CAIRO.</head>
                     <p>Full South, Electric Light, opposite Esbekieh Gardens, Large Verandahs,
                         Moderate Charges,</p>
@@ -381,7 +395,7 @@
                         Terms for pension fare at the rate of ten shillings a day. Special terms for
                         officers of Army of Occupation. 24,882-31-10-5</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-aan01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-aan01">
                     <head>Anglo-American Nile Steamer &amp; Hotel Coy.</head>
                     <p>Weekly departure during Winter Season by the<lb/> Luxurious First Class
                         Tourist Steamers VICTORIA, PURITAN &amp; MAYFLOWER.<lb/> Regular weekly
@@ -389,14 +403,14 @@
                         TO KHARTOUM, GONDOKORO AND THE WHITE NILE.<lb/> Steamers and Dahabeahs for
                         private charter. Steam Tugs and Steam Launches for hire.<lb/> FREIGHT
                         SERVICE BY STEAM BARGES BETWEEN CAIRO AND ALEXANDRIA.<lb/> Working in
-                        conjunction and under special arrangement with the<lb/> “Upper Egypt Hotels
+                        conjunction and under special arrangement with the<lb/> "Upper Egypt Hotels
                         Company."</p>
                     <p>For details and illustrated programmes apply to "THE ANGLO-AMERICAN NILE
                         STEAMER and<lb/> HOTEL COMPANY."</p>
-                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings.”
+                    <p>OFFICES IN CAIRO: Sharia Boulac, "Grand Continental Hotel Buildings."
                         31-3-06</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-nll01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-nll01">
                     <head>NORDDEUTSCHER LLOYD</head>
                     <p>BREMEN.</p>
                     <p>EXPRESS MAIL STEAMERS<lb/> FROM<lb/> ALEXANDRIA, PORT SAID, AND SUEZ,<lb/>
@@ -404,8 +418,8 @@
                         HAMBURG, AMERICA,<lb/> EASTERN ASIA, AUSTRALIA Etc.</p>
                     <p>For Particulars see Advertisement below.</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-als01">
-                    <head>Austrian Lloyd’s Steam Navigation</head>
+                <div type="advert" colSpan="2" xml:id="deg-ad-als01">
+                    <head>Austrian Lloyd's Steam Navigation</head>
                     <p>Alexandria-Brindisi-Venice-Trieste.</p>
                     <p>Weekly Express Mail Service. Steamers leave Alexandria every Saturday at 4
                         p.m. arrive at Brindisi, Tuesday a.m. in time for express to Paris, London,
@@ -472,7 +486,7 @@
                         the Army of Occupation and their families.</p>
                     <p>31-12-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-gac01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-gac01">
                     <head>GUARDIAN ASSURANCE COMPANY, LIMITED,</head>
                     <p>OF LONDON</p>
                     <p>Established 1821.</p>
@@ -482,147 +496,299 @@
                     <p>Agents far Egypt and the Sudan - HEWAT &amp; Co., Alexandria.</p>
                     <p>24336--17-6-905</p>
                 </div>
-                <div type="advert" xml:id="deg-ad-sio01">
+                <div type="advert" colSpan="2" xml:id="deg-ad-sio01">
                     <head>Sun Insurance Office,</head>
                     <p>LONDON. Founded 1710.-Total sum insured in 1902 £487,600,000.</p>
                     <p>Agents : LEON HELLER, Cairo, and BEHREND &amp; Co., Alexandria. 16-1-906</p>
                 </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2"> </div>
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-30/page/n1/mode/1up"
+                status="incomplete">
+                <cb n="1"/>
+                <div type="advert" colSpan="2" xml:id="deg-ad-ric01">
+                    <head>Royal Insurance Coy</head>
+                    <p>FIRE AND LIFE.</p>
+                    <p>Largest Fire Office in the World.</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p>R. VITERBO &amp; CO., Agents, Cairo.</p>
+                    <p>PHOENIX ASSURANCE COMPANY, LIMITED.</p>
+                    <p>(ESTABLISHED 1782);</p>
+                    <p>HASELDEN &amp; CO., Agents, Alexandria.</p>
+                    <p><measure type="indexNo">31-3-905</measure> FRED. OTT &amp; CO., Sub-Agents,
+                        Cairo.</p>
+                </div>
+                <div type="item"/>
+                <cb n="2"/>
+                <div type="item"/>
+                <cb n="3"/>
+                <div type="item"/>
+                <cb n="4"/>
+                <div type="item"/>
+                <cb n="5"/>
+                <div type="item"/>
+                <!-- weather -->
+                <cb n="6"/>
+                <!-- sudan government -->
+                <div type="template" xml:id="deg-el-egsa03">
+                    <head>THE EGYPTIAN GAZETTE.</head>
+                    <p>SUBSCRIPTIONS.– Alexandria, Cairo, and the Interior of Egypt (including
+                        delivery in Alexandria or postage to subscriber's address) P.T. 231½ per
+                        annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
+                        in the Postal Union P.T. 273 (£2.16s.) per annum.</p>
+                    <p>ADVERTISEMENTS.– P.T. 4 per line. Minimum charge P.T. 20. Births, Marriages,
+                        or Deaths, not exceeding three lines, P.T. 20, every additional line P.T.
+                        10. Notices in news columns P.T. 20 per line. Contracts entered into for
+                        standing advertisements.</p>
+                    <p>N.B.– Subscriptions commence from the 1st or 16th of any month.</p>
+                    <p>SUBSCRIPTIONS and ADVERTISEMENTS are due in advance. P.O. Orders and Cheques
+                        to be made payable to the Editor and Manager, Rowland Snelling,
+                        Alexandria.</p>
+                    <p>London Offices: 86, New Broad-street, E.C.</p>
+                    <p>THE "EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
+                        LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.)
+                            <measure type="indexNo">36-4</measure></p>
+                </div>
+                <div type="item" feature="imprint" xml:id="deg-el-egpi01">
+                    <head>The Egyptian Gazette</head>
+                    <p>An English Daily Newspaper, Established in 1880.</p>
+                    <p>Editor &amp; Manager: R. Snelling.</p>
+                    <p>Price: One Piastre Tariff.</p>
+                    <p><date when="1905-01-30">MONDAY, JANUARY 30, 1905</date>.</p>
+                </div>
+                <div type="item" feature="leader">
+                    <head>TWENTY YEARS AFTER.</head>
+                    <p>It is apity that the example set by the Sailors' and Soldiers' Institute at
+                        Alexandria in holding an "In Memoriam" service to General Gordon yesterday
+                        is not universally followed through out the Army of Occupation in Egypt and
+                        the, Sudan on the Sunday after the anniversary of the fall of Khartoum, for
+                        the calendar marked on Thursday last the death anniversary of the man who,
+                        had he lived in the Middle Ages would not have had to wait long for cauonisa
+                        tion. Twenty years ago, on the 26th of January, solitary, apparently
+                        abandoned, but holding onto the post of danger andduty to the bitter last
+                        -his good sword in his hand, the Imitatio Christi covering the heart on
+                        which its maxime were engraven-fell the martyr-soldier Gordon. Hero worship
+                        in such a case is liable to no reproach and yesterday's service at the
+                        Sailors' and Soldiers' Institute served to set before the defenders of our
+                        Entpire the exemplar of a man unique in his characteristics, his life and
+                        his. death. If from beyond the veil it is permitted to departed souls to
+                        contemplate the scene of their earthly career-and we, at least, do notdoubt
+                        it, then Charles Edward Gordon has his reward. To many a British boy of the
+                        rising generation he is, we hope and believe, the model, the mentor, and the
+                        ideal. To endless generations yet to be born in that valley where the Blue
+                        Nile comes down to the White. ne will be the undying saviour aud benefactor.
+                        Such men die not, "They rest from their labore and their works do follow
+                        them."</p>
+                    <p>To Britons of an older growth, to ourselves, to-day, assailed on every hand
+                        by carping critics, stemming the tide of Europe's overtand. covert
+                        hostility, deafened by the parrot cry of Decadence! Decadence the name of
+                        Gordon has a use, and we hope; not an improper one Though we cannot say:
+                        "Sparta hath many's worthier son than he !" we can take courage</p>
+                    <p>that we are of the epoch and the race that gave him birth a race that for a
+                        thousand years has been able</p>
+                    <p>"To face unflinching life's alarms</p>
+                    <p>And sodut a hostile world in arms." Let us, then, close our ranks, and, for
+                        God and king and empire; tace the future with, stout hearts, calmly
+                        coufident that whatever emergency fate may hold in store for us, Heaven will
+                        provide in our midst the man, and the men, to confront it with courage, to
+                        resolve it with honor, and to venquish it with victory.</p>
+                </div>
+            </div>
             <pb n="3"/>
-            <div type="page" n="3">
-                <div type="section" feature="wire"><div type="item">
-                    <head>THE RUSSIAN STRIKES. </head>
-                    <p>TWO KILLED AT WARSAW. </p>
-                    <p>St. Petersburg Quiet </p>
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-30/page/n2/mode/1up">
+                <div type="section" feature="wire">
+                    <div type="item">
+                        <head>THE RUSSIAN STRIKES. <lb/>TWO KILLED AT WARSAW. <lb/>St. Petersburg
+                            Quiet <lb/>CIRCULAR OF THE HOLY SYNOD.</head>
+                        <div type="cable">
+                            <p>
+                                <placeName> St Petersburg</placeName>. January 28 </p>
+                            <p>There are 100,000 strikers both at Warsaw No newspapers are being
+                                published The bakeries at Warsaw are almost entirely without bread.
+                                (Reuter) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>LIBAU January 28.</dateline>
+                            <p>The strikers here have destroyed the tele-graph poles. They attempted
+                                to raid the bakeries but were dispersed by the troops who were
+                                reinforced. (Reuter.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline> Warsaw, January 28.</dateline>
+                            <p>Two killed were killed in a conflict between the police and the
+                                strikers. (Havas.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline> St. Petersburg, January 29. </dateline>
+                            <p>The city is quiet. (Havas.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline> Warsaw, January 29. </dateline>
+                            <p>Seventy arrests have been made. (Havas.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 29.</dateline>
+                            <p>A circular from the Holy Synod to the Chruch says that the strikes
+                                have been instigated by enemies at home and abread and have been led
+                                by a crinimal priest. They have broken out at a moment when all
+                                should cooperate to protect their Fatherland. The object of Russia's
+                                enemies is to produce a civil war and to prevent reinforcements
+                                being sent to the Manchurian Army; It concludes with an appeal for
+                                obedience to the Emperor and to God's commands, and a warning
+                                against advisers with who are in the pay of Russia's enemies. Moscow
+                                and our city are quiet. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Warsaw, January 29.</dateline>
+                            <p>The strike here has extended, The strikers have stopped the traincars
+                                and traffic is practically suspended. (Reuter).</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>ANGLOPHOBE PROCLAMATIONS. </head>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 28.</dateline>
+                            <p>"The official Messenge" and the semi-official "Journal de St.
+                                Petersburg" printed yesterday, as having been received by the
+                                General Staff, the same news regarding the subject of the Moscow
+                                proclamations as we have already published. It is stated that Sir C.
+                                Hardiage has again protested, and in a stronger manner. (Reuter.)
+                            </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Moscow, January 28.</dateline>
+                            <p>The Chief of the Police yesterday informed the British Counsel that,
+                                on his own responsibility, he is leaving the posters standing for
+                                two days longer, in order to assist in tiding over the present
+                                difficulties The Consul has telegraphed to Sir C. Hardinge.
+                                (Reuter.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>FRANCO-RUSSIAN ALLIANCE. ATTACKED IN FRENCH CHAMBER.</head>
+                        <div type="cable">
+                            <dateline>Paris, January 28.</dateline>
+                            <p>Chamber of Deputies.—M. Ronvier's reference to the Russian Alliance
+                                was greeted with an uproar, M. Jaures and others protested against
+                                the continuance of an alliance with a Government of murderers, etc.,
+                                etc. M.Delcasse repeatedly intervened imploring the speakers to
+                                moderate their expressions for the sake of the name and interest, of
+                                France. He added that they should never forget that this alliance
+                                had given security to France. A vote of confidence was carried by
+                                4lO votes to 107. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Paris, January 28.</dateline>
+                            <p>Replying to the Socialists in the Chamber of Deputies, M. Delcasse
+                                spoke in support of the alliance with Russia. (Havas.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>NORTH SEA ENQUIRY. </head>
+                        <div type="cable">
+                            <dateline>Paris, January 29.</dateline>
+                            <p>The North Sea Commission has been hitting during the week with open
+                                doors. It examined the Hull fishermen, who gave flat denials to the
+                                presence of Japuncso torpedo-boat. (R.)</p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>ITALIAN NAVAL ESTIMATES.</head>
+                        <div type="cable">
+                            <dateline>Rome, January 28.</dateline>
+                            <p>The Italian Naval Estimates show an increase of £45,000 on account of
+                                the formation of a reserve fleet and a naval station in America.
+                                (Reuter.) </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>HUNGARIAN ELECTIONS. </head>
+                        <div type="cable">
+                            <dateline>Budapest, January 28.</dateline>
+                            <p>The Government has been completely overthrown at the elections.
+                                (Reuter.) </p>
+                        </div>
+                    </div>
+                    <div type="item">
+                        <head>MANCHURIA RENEWED FIGHTING. VILLAGE TAKEN AND ABANDONED BY
+                            RUSSIANS</head>
+                        <div type="cable">
+                            <dateline> St. Petersburg, January 28.</dateline>
+                            <p>General Knropatkin cables that the Japanese counter-attack was
+                                repulsed. At 7 p.m. on the 25th inst., after a desperate fight, the
+                                Russians entered the large, and strongly entrenched, village of
+                                Sandepu. During the day, 100 Japanese prisoners were captured. The
+                                offensive was resumed on 26th inst., the enemy's entrenchments at
+                                Sha-Ho-Pu being occupied. Attempts to dislodge the Russians were
+                                repulsed At 4 p.m. the Japanese were re-attacking the positions at
+                                Sandepu. (R.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 29.</dateline>
+                            <p>General Sakbaroff wires yesterday that the Russians continued their
+                                attack on Sandepu with tho object of demolishing the principal
+                                Japanese redoubt. Their cavalry put to flight several columns of
+                                Japanese from Heikoutai, and captured 50 prisoners. It is stated
+                                here that the Russians had 1,000 casualties during the assault on
+                                Sandepu. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>London, January 28.</dateline>
+                            <p>Reuter's correspondent with Kuroki states that the weather is awful.
+                                A combination of frost, snow, and fog is frustrating a general
+                                engagement and entailing the most severe sufferings on any troops
+                                camping in the open. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Tokyo, January 28.</dateline>
+                            <p>Oyama reports that the Russian Army Corps on the right bank of the
+                                Hun-Ho advanced on the 25th inst., and was attacked by the Japanese
+                                on the 26th. The Russians were defeated at Chenchiehpao. Fighting
+                                was proceeding at Heikoutai. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 28.</dateline>
+                            <p>General Kuropatkin telegraphs that the Russians have captured the
+                                village of Sandepu. (Havas.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 29.</dateline>
+                            <p>General Sakharoff telegraphs that the Russians have abandoned the
+                                village of Sandepu. Their losses were 24 officers and 1,600 men.
+                                (Havas.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Mukden, January 29.</dateline>
+                            <p>The Japanese have fallen back. The Russian cavalry advanced on their
+                                lines 10 miles. The firing continued on the right flank on the 27th
+                                inst., but it does not seem to have developed on the centre or
+                                eastern flank, and ceased altogether on the 28th. (Reuter.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 29.</dateline>
+                            <p>General Mistchenko has been wouuded in the leg, but remains at the
+                                front. (Reuter.)</p>
+                        </div>
+                        <div type="cable">
+                            <dateline>St. Petersburg, January 29.</dateline>
+                            <p>General. Sakharoff telegraphs that, after occupying on the 26th the
+                                greater part of Sandepu, the Russians encountered a strong redoubt
+                                with a triple row of artificial obstacles. Seeing the impossibity of
+                                carrying the redoubt without a previous bombardment, the Russians
+                                evacuated Sandepu, where it was impossible to remain without risking
+                                a defeat. They violently bombarded Sandepu and the redoubt during
+                                the 27th and 28th. (Reuter.) </p>
+                        </div>
+                        <div type="cable">
+                            <dateline>Tokyo, January 29.</dateline>
+                            <p>Marshal Oyama reports that, as a result of Saturday's fighting, the
+                                Russians at Hei-kou-tai and Liv-tia-kou reunited on the right bank
+                                of the Hun Ho; The Japanese captured 500 Russians.(Reuter.)</p>
+                        </div>
+                    </div>
                 </div>
-                <div type="item">
-                    <head>CIRCULAR OF THE HOLY SYNOD.</head>
-                    <p>
-                        <placeName> St Petersburg</placeName>. January 28 </p>
-                    <p>There are 100,000 strikers both at Warsaw No newspapers are being published
-                        The bakeries at Warsaw are almost entirely without bread. (Reuter) </p>
-                </div>
-                <div type="item">
-                    <p><placeName> LIBAU </placeName> January 28.</p>
-                    <p>The strikers here have destroyed the tele-graph poles. They attempted to raid
-                        the bakeries but were dispersed by the troops who were reinforced. (Reuter.)
-                    </p>
-                </div>
-                <div type="item">
-                    <p><placeName> Warsaw, January 28.</placeName></p>
-                    <p>Two killed were killed in a conflict between the police and the strikers.
-                        (Havas.) </p>
-                    <p>
-                        <placeName> St. Petersburg,</placeName> January 29. </p>
-                    <p>The city is quiet. (Havas.) </p>
-                </div>
-                <div type="item">
-                    <p><placeName> Warsaw,</placeName> January 29. Seventy arrests have been made.
-                        (Havas.) St. Petersburg, January 29. A circular from the Holy Synod to the
-                        Chruch says that the strikes have been instigated by enemies at home and
-                        abread and have been led by a crinimal priest. They have broken out at a
-                        moment when all should cooperate to protect their Fatherland. The object of
-                        Russia's enemies is to produce a civil war and to prevent reinforcements
-                        being sent to the Manchurian Army; It concludes with an appeal for obedience
-                        to the Emperor and to God's commands, and a warning against advisers with
-                        who are in the pay of Russia's enemies. Moscow and our city are quiet.
-                        (Reuter.) Warsaw, January 29. The strike here has extended, The strikers
-                        have stopped the traincars and traffic is practically suspended.
-                        (Reuter).</p>
-                </div>
-                <div type="item">
-                    <head>ANGLOPHOBE PROCLAMATIONS. </head>
-                    <p><placeName>St. Petersburg,</placeName> January 28. "The official Messenge"
-                        and the semi-official "Journal de St. Petersburg” printed yesterday, as
-                        having been received by the General Staff, the same news regarding the
-                        subject of the Moscow proclamations as we have already published. It is
-                        stated that Sir C. Hardiage has again protested, and in a stronger manner.
-                        (Reuter.) </p>
-                    <p><placeName> Moscow,</placeName> January 28. The Chief of the Police yesterday
-                        informed the British Counsel that, on his own responsibility, he is leaving
-                        the posters standing for two days longer, in order to assist in tiding over
-                        the present difficulties The Consul has telegraphed to Sir C. Hardinge.
-                        (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>FRANCO-RUSSIAN ALLIANCE. ATTACKED IN FRENCH CHAMBER.</head>
-                    <p><placeName>Paris,</placeName> January 28. Chamber of Deputies.—M. Ronvier's
-                        reference to the Russian Alliance was greeted with an uproar, M. Jaures and
-                        others protested against the continuance of an alliance with a Government of
-                        murderers, etc., etc. M.Delcasse repeatedly intervened imploring the
-                        speakers to moderate their expressions for the sake of the name and
-                        interest, of France. He added that they should never forget that this
-                        alliance had given security to France. A vote of confidence was carried by
-                        4lO votes to 107. (Reuter.)</p>
-                    <p><placeName>Paris,</placeName> January 28. Replying to the Socialists in the
-                        Chamber of Deputies, M. Delcasse spoke in support of the alliance with
-                        Russia. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>NORTH SEA ENQUIRY. </head>
-                    <p><placeName>Paris,</placeName> January 29. The North Sea Commission has been
-                        hitting during the week with open doors. It examined the Hull fishermen, who
-                        gave flat denials to the presence of Japuncso torpedo-boat. (R.)</p>
-                </div>
-                <div type="item">
-                    <head>ITALIAN NAVAL ESTIMATES.</head>
-                    <p>The Italian Naval Estimates show an increase of £45,000 on account of the
-                        formation of a reserve fleet and a naval station in America. (Reuter.) </p>
-                </div>
-                <div type="item">
-                    <head>HUNGARIAN ELECTIONS. </head>
-                    <p>Budapest, January 28. The Government has been completely overthrown at the
-                        elections. (Reuter.) </p>
-                </div>
-                <div type="item">
-                    <head>MANCHURIA RENEWED FIGHTING. VILLAGE TAKEN AND ABANDONED BY RUSSIANS</head>
-                    <p>
-                        <placeName>St. Petersburg,</placeName> January 28. General Knropatkin cables
-                        that the Japanese counter-attack was repulsed. At 7 p.m. on the 25th inst.,
-                        after a desperate fight, the Russians entered the large, and strongly
-                        entrenched, village of Sandepu. During the day, 100 Japanese prisoners were
-                        captured. The offensive was resumed on 26th inst., the enemy’s entrenchments
-                        at Sha-Ho-Pu being occupied. Attempts to dislodge the Russians were repulsed
-                        At 4 p.m. the Japanese were re-attacking the positions at Sandepu. (R.) St.
-                        Petersburg, January 29. General Sakbaroff wires yesterday that the Russians
-                        continued their attack on Sandepu with tho object of demolishing the
-                        principal Japanese redoubt. Their cavalry put to flight several columns of
-                        Japanese from Heikoutai, and captured 50 prisoners. It is stated here that
-                        the Russians had 1,000 casualties during the assault on Sandepu.
-                        (Reuter.)</p>
-                    <p><placeName>London,</placeName> January 28. Reuter’s correspondent with Kuroki
-                        states that the weather is awful. A combination of frost, snow, and fog is
-                        frustrating a general engagement and entailing the most severe sufferings on
-                        any troops camping in the open. (Reuter.)</p>
-                    <p><placeName>Tokyo,</placeName> January 28. Oyama reports that the Russian Army
-                        Corps on the right bank of the Hun-Ho advanced on the 25th inst., and was
-                        attacked by the Japanese on the 26th. The Russians were defeated at
-                        Chenchiehpao. Fighting was proceeding at Heikoutai. (Reuter.)</p>
-                    <p><placeName>St. Petersburg,</placeName> January 28. General Kuropatkin
-                        telegraphs that the Russians have captured the village of Sandepu. (Havas.) </p>
-                    <p><placeName>St. Petersburg,</placeName> January 29. General Sakharoff
-                        telegraphs that the Russians have abandoned the village of Sandepu. Their
-                        losses were 24 officers aud 1,600 men. (Havas.) </p>
-                    <p><placeName>Mukden,</placeName> January 29. The Japanese have fallen back. The
-                        Russian cavalry advanced on their lines 10 miles. The firing continued on
-                        the right flank on the 27th inst., but it does not seem to have developed on
-                        the centre or eastern flank, and ceased altogether on the 28th. (Reuter.) </p>
-                    <p><placeName>St. Petersburg,</placeName> January 29. General Mistchenko has
-                        been wouuded in the leg, but remains at the front. (Reuter.)</p>
-                    <p><placeName> St. Petersburg,</placeName> January 29. General. Sakharoff
-                        telegraphs that, after occupying on the 26th the greater part of Sandepu,
-                        the Russians encountered a strong redoubt with a triple row of artificial
-                        obstacles. Seeing the impossibity of carrying the redoubt without a previous
-                        bombardment, the Russians evacuated Sandepu, where it was impossible to
-                        remain without risking a defeat. They violently bombarded Sandepu and the
-                        redoubt during the 27th and 28th. (Reuter.) </p>
-                    <p><placeName>Tokyo,</placeName> January 29. Marshal Oyama reports that, as a
-                        result of Saturday’s fighting, the Russians at Hei-kou-tai and Liv-tia-kou
-                        reunited on the right bank of the Hun Ho; The Japanese captured 500
-                        Russians.(Reuter.)</p>
-                </div></div>
                 <div type="item">
                     <head>NILE TOURISTS.</head>
                     <p>The following passengers left Shellal yesterday by the P.S. "Prince Abbas"
@@ -632,7 +798,7 @@
                         and Miss Elsie Jo-eph. Mr. E. C., Mrs. M.E. C., Misses Mary E. C. and Edith
                         L and Mr. John H. Willis, Mr. Titica, Miss C.E. and Miss E.K. Davidson, Mr.
                         W.E. and Miss Grace Chess. The following passengers left Cairo on Friday by
-                        the "Hatasoo”: Mr. W. H. Kirkpatrick, Mayor G. von Hechhitz, Mr. Kappell Mr.
+                        the "Hatasoo": Mr. W. H. Kirkpatrick, Mayor G. von Hechhitz, Mr. Kappell Mr.
                         Kappell, Mr. A. Hudd, Mr. G. Wain Wright, Mr. R. H. Mason, Mrs. R. Mason.
                         Miss M. Grout, Mr. J. C. Taite, Mrs. Taite, Mrs. Chas. and Miss C. Tapp, Mr.
                         Fritz and Mrs. Margarithe Pohlmann, Mr. Paul and Mrs. Johanna Wiesenthal,
@@ -642,7 +808,7 @@
                         Huttner, Mr. G. Zeidler, Mr. and Mrs. H F. Longmore, Mrs. H. M. Mason, Mr.
                         Ludovic, Mr. L. Mann.</p>
                 </div>
-                <div type="item">
+                <div type="advert">
                     <head>WINDSOR HOTEL</head>
                     <p>Largest 1st class and most comfortable Hotel in Alexandria. Facing the
                         Central position. Under English management. .)</p>
@@ -651,9 +817,9 @@
                     <head>LOCAL AND GENERAL</head>
                     <div type="item">
                         <head>Erratum</head>
-                        <p>In our Saturday’s note on the thieft of the LE. 8,000 from the Mahmal
+                        <p>In our Saturday's note on the thieft of the LE. 8,000 from the Mahmal
                             train, the Arabic proverb quoted was misprinted. It should have been
-                            Yisraqu maken Nebi. H.M.S. "E-sex” left Alexandria yesterday heading for
+                            Yisraqu maken Nebi. H.M.S. "E-sex" left Alexandria yesterday heading for
                             Port Said and Corfu, where she will coal and indulge in target practice
                             until she returns to Alexandria to embark the Duke and Duchess of
                             Connaught. </p>
@@ -701,12 +867,12 @@
                             Liza Cariola, makes her rentree this evening. </p>
                     </div>
                     <div type="item">
-                        <head>H. M. Transport "Sicilia”</head>
+                        <head>H. M. Transport "Sicilia"</head>
                         <p>(Capt. G. H. C. Weston, R. N. R.) arrived at Port Said early on Saturday
                             morning from Bombay, and left at noon for Southampton direct. The troops
                             on board, consisting of details, numbered 1,206 of all ranks. A draft of
                             100 men embarked at p.r Said. Major J. R Carte, R. G. A., is the officer
-                            commanding. The North German Lloyd’s S.S. “Ho-henzollern” arrived at
+                            commanding. The North German Lloyd's S.S. "Ho-henzollern" arrived at
                             Alexandria today from Naples and Marseilles at about 2 p.m. She brought
                             about eighty first class passengers for Egypt, including a number of
                             distinguished visitors. They expect to catch the 4.25 afternoon express
@@ -749,11 +915,12 @@
                     <head>STEAMER MOVEMENTS.</head>
                     <p>The Moss liner " Menes " arrived here yesterday afternoon from Liverpool, via
                         Gibraltar, Algiers, and Malta, with passengers, mails, and general cargo.
-                        The Moss liner " Tabor ” passed Scilly on Saturday last bound for Liverpool.
-                        The S.S. " Nitocris” arrived here yesterday morning from Glasgow, via
-                        Gibraltar and Malta, with passengers, general cargo, and coal. The Moss
-                        liner " Rameses" sailed from , Liverpool on Tuesday afternoon, and is due
-                        here about the l0th proxo, with passengers, mails, and general cargo. </p>
+                        The Moss liner " Tabor " passed Scilly on Saturday last bound for Liverpool.
+                        The S.S. " Nitocris" arrived here yesterday morning from Glasgow, via
+                        Gibraltar and Malta, with passengers, general cargo, and coal.</p>
+                    <p>The Moss liner " Rameses" sailed from , Liverpool on Tuesday afternoon, and
+                        is due here about the l0th proxo, with passengers, mails, and general cargo.
+                    </p>
                 </div>
                 <div type="item">
                     <head>THE ROYAL VISIT</head>
@@ -769,7 +936,6 @@
                         Royal Highnesses to the Sudan. On Friday H.R.H. the Duke of Connaught called
                         upon Dr. Rucker Jenisch on the occasion of the birthday of the German
                         Emperor.</p>
-
                     <div type="item">
                         <head>ARRIVAL AT LUXOR.</head>
                         <byline>(From Our Correspondent.)</byline>
@@ -785,12 +951,12 @@
                             Highnsesses spent about half an hour in inspecting the ruins, in which
                             the Princesses took especial interest. They did not proceed to Karnak,
                             as was intended, owing to the delay caused to the Royal train by the
-                            “train de luxe," which stopped for about an hour and a half on its up
+                            "train de luxe," which stopped for about an hour and a half on its up
                             journey and prevented the Royal train from arriving here at the
                             scheduled time. After visiting the temple, the Royal party went on board
-                            the S.S. “Ibis,” which was anchored near the Anglo-American Nile Steamer
-                            and Hotel Company's landing-stage^ which Mr. Simpson, the company’s
-                            agent, had tastefully decorated in honor of the occasion. Tho “Ibis”
+                            the S.S. "Ibis," which was anchored near the Anglo-American Nile Steamer
+                            and Hotel Company's landing-stage^ which Mr. Simpson, the company's
+                            agent, had tastefully decorated in honor of the occasion. Tho "Ibis"
                             left on its journey to Assouan at 12.15 p.m. Luxor station was prettily
                             decorated and the streets were lined by large crowds of people, who were
                             kept in order by the polios, whose arrangements were excellent. The
@@ -803,7 +969,7 @@
                         <head>EDFON PASSED.</head>
                         <byline>( From our Correspondent ).</byline>
                         <dateline>Edfon, Sunday.</dateline>
-                        <p>The S.S. “Ibis,” with the Duke and Duchess of Connaught on board, passed
+                        <p>The S.S. "Ibis," with the Duke and Duchess of Connaught on board, passed
                             Edfou last night at 10 o'olock on the southward journey. On Saturday
                             morning, H.H. the Khedive received M. de la Bonlinitra, who presented
                             General de Nifgrier; the Hon. John W. Riddle, who presented Messr. James
@@ -818,8 +984,8 @@
                         brilliant success. There was a very large and representative gathering
                         present, including all the leaders of local society. The scene presented in
                         the magnificent ball-room at the height of the ball was animated and pretty,
-                        some of the fair dancers being garbed in exquisite "creations,” which it is
-                        beyond the power of a “mere man" to describe. The ball, however, was notable
+                        some of the fair dancers being garbed in exquisite "creations," which it is
+                        beyond the power of a "mere man" to describe. The ball, however, was notable
                         for the magnificence of the ladies' toilettes and the number of gentlemen
                         present bedecked with decorations. It would be futile to attempt to give an
                         idea of the number of well-known people who filled the ball-room and the
@@ -840,13 +1006,13 @@
                 </div>
                 <div type="item">
                     <head>RUSSIAN CRUISER IN CANAL BOUND FOR DJIBOUTI WITH PROVISIONS.</head>
-                    <p>The Russian armed cruiser "Irtich” (Capt. Ergomicheff), flying the naval Bag,
+                    <p>The Russian armed cruiser "Irtich" (Capt. Ergomicheff), flying the naval Bag,
                         arrived at Port Said on Friday from Liban direct, and entered the Canal on
                         Saturday for Djibouti, she has a crew of 223. Our Suez Correspondent
-                        telegraphed on Saturday that the "Irtich” had arrived there and anchored in
+                        telegraphed on Saturday that the "Irtich" had arrived there and anchored in
                         the bay. She was to have sailed in the evening. (From Our
                         Correspondent).</p>
-                    <p><placeName>Suez,</placeName> Monday. The Russian cruiser “ Irtich" which was
+                    <p><placeName>Suez,</placeName> Monday. The Russian cruiser " Irtich" which was
                         formerly a Hamburg-American liner, sailed at 12.30 p.m. today for Djibouti,
                         taking with certain provisions.</p>
                 </div>
@@ -876,7 +1042,7 @@
                         brought by Messrs. Boutros Brothers, the well-known Syrian capitalists,
                         against the Khedivial Bourse, the Alexandria Stock brokers Associations, and
                         the Produce Brokers Association. Judgment was given against the plaintiffs.
-                        The details of this important judgment will be found on page 4 of today’s
+                        The details of this important judgment will be found on page 4 of today's
                         issue.</p>
                 </div>
                 <div type="item">
@@ -900,7 +1066,7 @@
                         night was a great success. M. Nani, who has a very powerful baritone voice
                         which he knows how to use, was loudly applauded for his splendid rendering
                         of the prologue to Pagliacci, and Mme. Bracale gave a fine interpretation of
-                        Elisabeth's Aria in Don Carlos. Mascagni's "Hymn to the Sun” was also well
+                        Elisabeth's Aria in Don Carlos. Mascagni's "Hymn to the Sun" was also well
                         given by the orchestra and chorus. Altogether the concert was a thorough
                         success. Saturday evening's dance at the Savoy was attended with the usual
                         success, all the Savoy habitues being there. The Restaurant was full both
@@ -920,15 +1086,14 @@
                         usual, a great success and showed that the season in Cairo was at its
                         height. At dinner-time the splendid restaurant was overcrowded and it was
                         difficult to obtain a table. Dancing began at half-past nine and was very
-                        animated. At 12 o’clock the majority of those present part took of sapper,
+                        animated. At 12 o'clock the majority of those present part took of sapper,
                         which is quite a Ghesireh speciality. We will not attempt to mention the
                         names of the guests as it would take up too much space, but we may say that
                         the best of Cairo society and the most prominent of the visitors attended
                         the dance. Next Thursday's dance promises to be even more successdul as
                         already a good many dinners have been ordered for that evening.</p>
                 </div>
-
-                <div type="section" feature="social">
+                <div type="item" feature="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p>The Empress Eugenie intends paying a visit to Assouan. The Mistress of
                         Donegall, who is among the latest arrivals in Cairo, is a charming and one
@@ -938,15 +1103,17 @@
                         her distinguished compatriot, gave the bride away. The Earl and Countess of
                         Lendesborough entertained a distinguished party at dinner at the Savoy
                         Restaurant yesterday evening, the guests including General, Mrs. and Miss
-                        Blade, Sir William Garstio, Mr. Marshall, Mr. George Chobnondeley. Mr.
-                        Vinemit Corbet, Mr. Locket, Miss G. Harley, Miss Dunn Villa, and the Hon. A
-                        Stanley. Mr. Edgar Anderson also entertained a party of friends to dinner,
-                        including Mr. Price, M.P., Mr. Forretier Walker, Mr. Constantinidis, Mr.
-                        Paravicini, and Mr. Wyatt, at the Savoy Restaurant yesterday evening. The P.
-                        and O.S.S. "Marmora," due at Port Said this week, a number of distingnished
-                        passengers on board for Egypt, including Earl and Countess Howe, Sir Edward
-                        and Lady Colebrooke, Gen. Sir R. Biddulph, and Sir. Ernest Cassel. The Earl
-                        and Countess of Carnarvop are passengers for Ceylon by the same steamer. </p>
+                        Blade, Sir William Garstio, <persName>Mr. Marshall</persName>, Mr. George
+                        Chobnondeley. Mr. Vinemit Corbet, <persName>Mr. Locket</persName>, Miss G.
+                        Harley, Miss Dunn Villa, and the Hon. A Stanley. Mr. Edgar Anderson also
+                        entertained a party of friends to dinner, including Mr. Price, M.P.,
+                            <persName>Mr. Forretier Walker</persName>, <persName>Mr.
+                            Constantinidis</persName>, Mr. Paravicini, and Mr. Wyatt, at the Savoy
+                        Restaurant yesterday evening. The P. and O.S.S. "Marmora," due at Port Said
+                        this week, a number of distingnished passengers on board for Egypt,
+                        including Earl and Countess Howe, Sir Edward and Lady Colebrooke, Gen. Sir
+                        R. Biddulph, and Sir. Ernest Cassel. The Earl and Countess of Carnarvop are
+                        passengers for Ceylon by the same steamer. </p>
                     <p>We regret to state that Countess Howe is still an invalid and had to be
                         carried in an invalid chair from her carriage to the train at Victoria
                         station, London, on Saturday week. Lord Howe and Mr. Churchill, M.P., were
@@ -962,13 +1129,13 @@
                         well-known figure in London society, the Clerk Marshal and Chief Equerry to
                         the King, Mqjor-General Sir Stanley da Astel Calvert Clarke, G.C.V.O,
                         K.C.V.O., C.M.G., left Marseilles last week en route for Egypt. Mr. Harold
-                        Spender, Editor of the "Westminster Gazette,” and Mrs. Spender, who are in
+                        Spender, Editor of the "Westminster Gazette," and Mrs. Spender, who are in
                         Cairo, are going as for as Khartoum. Count Bolesta von Kosziedrowski
                         returned to Cairo from Alexandria yesterday. A marriage has been arranged
                         and will shortly take place between Miss Nana Maeredie of Sydney, Australia,
                         and Mr. J. W. Williamson of Cairo.</p>
                     <p>On Saturday afternoon last, Mrs. Carton de Wiart gave a small and very smart
-                        “at home” at her charming house et Kasrel-Doubere. The arrangements were
+                        "at home" at her charming house et Kasrel-Doubere. The arrangements were
                         perfect in every respect. A dainty tea was served on the large verandah
                         overlooking the garden, where the Blue Hungarians played interesting
                         selection of aire in their best style. Among the number of guests were Mrs.
@@ -978,9 +1145,9 @@
                         Lean, and many others. Col.and Mrs. de Plante came down to Alexandria, today
                         after spending about a week at the Savoy Hotel, Cairo. Mr. and Mrs.
                         Watmouth, of New York,have returned to Cairo after a long trip on the Nile
-                        in the steam dahabieh "Mena.” Lieut Colonel H. S, McGill. R.AM.C., will be
+                        in the steam dahabieh "Mena." Lieut Colonel H. S, McGill. R.AM.C., will be
                         on promotion, probably be posted to Egypt. Colonel G. P. Gorringe, C.M.G.,
-                        D.S.O., R.E is shown in this month's “Army list" as still borne on the
+                        D.S.O., R.E is shown in this month's "Army list" as still borne on the
                         establishment of the Egyptian Army. This is clearly an error, for we
                         announced some time ago his resignation of his Egyptian appointment, and it
                         is announced from Aldershot that he has joined the Army Corps , there—as it
@@ -988,64 +1155,32 @@
                         of the command, vice Major F. V. Jeffreys, who has left the station.</p>
                 </div>
             </div>
-
             <pb n="4"/>
-            <div type="page" n="4">
-                <div type="item" xml:lang="fr" feature="shippingMovements">
-                    <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
-                    <p>ARRIVÉES</p>
-                    <p><date when="1905-07-12">12 juillet</date></p>
-                    <p><placeName>Odessa</placeName> et <placeName>Sude</placeName>; 1 j., vap.
-                        russe Tzaritza, cap. <persName>Roller</persName>, ton. <measure unit="ton"
-                            >1,727</measure>, à la Cie Russe.</p>
-                    <p><placeName>Gènes</placeName> et <placeName>Toulon</placeName> ; 10 j., 1/2,
-                        vap. ital. Jeanne Marcelle, cap. <persName>Passaton</persName>, ton.
-                            <measure unit="ton">1,674</measure>, à Luxardo.</p>
-                    <p><date when="1905-07-13">13 juillet</date></p>
-                    <p><placeName>Londres</placeName> et <placeName>Tripoli</placeName>; 4 j., 3/4,
-                        vap. angl. Kaffir Prince, cap. <persName>Wright</persName>, ton. <measure
-                            unit="ton">1402</measure>, à Grace &amp; Co.</p>
-                    <p><placeName>Syrie</placeName> et <placeName>Port-Saïd</placeName>; 16 h., vap.
-                        ang. El Kahira, cap. <persName>Silvestri</persName>, ton. <measure
-                            unit="ton">848</measure>, à la Khedivial Mail.</p>
-                    <p><placeName>Cardiff</placeName>; 14 j. 1/2, vap. ang. Chiverstone, cap.
-                            <persName>Dwyer</persName>, ton. <measure unit="ton">1889</measure>, à
-                        ordre.</p>
-                    <p><placeName>Beyrouth</placeName> et <placeName>Port-Saïd</placeName> ; 16 h.,
-                        vapour français Sénégal, cap. Vincenti, ton. <measure unit="ton"
-                            >2,235</measure>, aux Messageries Maritimes.</p>
-                    <p>DÉPARTS</p>
-                    <p><date when="1905-07-12">12 juillet</date></p>
-                    <p><placeName>Pirée</placeName> et <placeName>Constantinople</placeName> : vap.
-                        ang. Ismailieh, cap. <persName>Gatteschi</persName>.</p>
-                    <p><placeName>Hull</placeName>; vap. ang. Lorenzo, cap.
-                            <persName>Wing</persName>.</p>
-                    <p><placeName>Jaffa</placeName>; vap. ott, Marigo, cap.
-                            <persName>Cofupandelis</persName>, sur lest.</p>
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-30/page/n3/mode/1up">
+                <div type="item" xml:lang="fr" feature="shippingMovements" status="empty">
+                    <head>MOUVEMENT MARITIME DU PORT D'ALEXANDRIE</head>
                 </div>
-                <div type="item" xml:id="deg-el-stsh01">
+                <div type="template" feature="stocksShares" xml:id="deg-el-stsh01"
+                    status="templateDefault">
                     <head>STOCKS AND SHARES</head>
-                    <p>
-                        <hi rend="italic">Closing Prices, to-day at 1 p.m.</hi>
-                    </p>
+                    <dateline>Closing Prices, to-day at 1 p.m.</dateline>
                     <table cols="4" xml:id="deg-ta-stsh01">
                         <row role="label">
                             <cell>Shares</cell>
-                            <cell cols="2">
-                                <hi rend="bold">BANKS.</hi>
-                            </cell>
+                            <cell cols="2"> BANKS. </cell>
                             <cell>Debenture</cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure type="currency" unit="£">13 ¾</measure></cell>
-                            <cell><orgName>Imperial Ottoman Bank</orgName></cell>
+                            <cell>Imperial Ottoman Bank</cell>
                             <cell><measure type="currency" unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure type="currency" unit="£">26 5/16</measure></cell>
-                            <cell><orgName>Nat. Bank of Egypt</orgName></cell>
+                            <cell>Nat. Bank of Egypt</cell>
                             <cell><measure type="currency" unit="£">—</measure></cell>
                         </row>
                         <row>
@@ -1057,54 +1192,52 @@
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">426 —</measure></cell>
-                            <cell><orgName>National Bank of Greece</orgName></cell>
+                            <cell>National Bank of Greece</cell>
                             <cell><measure unit="fcs">—</measure></cell>
                         </row>
                         <row>
                             <cell>L.E.</cell>
                             <cell><measure unit="LE">— 1/16</measure></cell>
-                            <cell><orgName>Banque Industrielle</orgName></cell>
+                            <cell>Banque Industrielle</cell>
                             <cell><measure unit="LE">—</measure></cell>
                         </row>
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">815 —</measure></cell>
-                            <cell><orgName>Credit Foncier Egyptian</orgName> Lottery Bonds</cell>
+                            <cell>Credit Foncier Egyptian Lottery Bonds</cell>
                             <cell><measure unit="fcs">317</measure></cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">13 13/16</measure></cell>
-                            <cell><orgName>Agricultural Bank</orgName></cell>
+                            <cell>Agricultural Bank</cell>
                             <cell><measure unit="£">9 3/8</measure></cell>
                         </row>
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">122 ½</measure></cell>
-                            <cell><orgName>Banque d’Athènes</orgName></cell>
+                            <cell>Banque d'Athènes</cell>
                             <cell><measure unit="fcs">—</measure></cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">1 3/8</measure></cell>
-                            <cell><orgName>Egypt. Investment Co.</orgName></cell>
+                            <cell>Egypt. Investment Co.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">9 5/16</measure></cell>
-                            <cell><orgName>Land Bank of Egypt</orgName></cell>
+                            <cell>Land Bank of Egypt</cell>
                             <cell><measure unit="£">90</measure></cell>
                         </row>
                         <row role="label">
-                            <cell cols="4">
-                                <hi rend="bold">LAND, &amp;c.</hi>
-                            </cell>
+                            <cell cols="4"> LAND, &amp;c. </cell>
                         </row>
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">1000 —</measure></cell>
-                            <cell><orgName>Agric.-Indust. Egypt</orgName>...</cell>
+                            <cell>Agric.-Indust. Egypt...</cell>
                             <cell><measure unit="fcs">520</measure></cell>
                         </row>
                         <row>
@@ -1116,84 +1249,82 @@
                         <row>
                             <cell>L.E.</cell>
                             <cell><measure unit="LE">43 ¼</measure></cell>
-                            <cell><orgName>Behera Company</orgName></cell>
+                            <cell>Behera Company</cell>
                             <cell><measure unit="LE">5 1/8</measure></cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">2 7/16</measure></cell>
-                            <cell><orgName>Egypt. Delta Land Co.</orgName></cell>
+                            <cell>Egypt. Delta Land Co.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">6 3/8</measure></cell>
-                            <cell><orgName>Wardan Estate Coy.</orgName></cell>
+                            <cell>Wardan Estate Coy.</cell>
                             <cell><measure unit="£">5</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">4 7/8</measure></cell>
-                            <cell><orgName>Land &amp; Mortgage.</orgName></cell>
+                            <cell>Land &amp; Mortgage.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">28 1/16</measure></cell>
-                            <cell><orgName>New Daira Sanieh Fond.</orgName></cell>
+                            <cell>New Daira Sanieh Fond.</cell>
                             <cell><measure unit="£">180</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">—</measure></cell>
-                            <cell><orgName>Corporation of Western Egypt</orgName></cell>
+                            <cell>Corporation of Western Egypt</cell>
                             <cell><measure unit="£">15/16</measure></cell>
                         </row>
                         <row>
                             <cell> </cell>
                             <cell><measure unit="sh">34/ —</measure></cell>
-                            <cell><orgName>New Egyptian Co.</orgName></cell>
+                            <cell>New Egyptian Co.</cell>
                             <cell/>
                         </row>
                         <row>
                             <cell/>
                             <cell/>
-                            <cell><orgName>Egypt. Estates Ltd.</orgName></cell>
+                            <cell>Egypt. Estates Ltd.</cell>
                             <cell><measure unit="sh">7/8</measure></cell>
                         </row>
                         <row role="label">
-                            <cell cols="4">
-                                <hi rend="bold">COMMERCIAL INDUSTRIAL</hi>
-                            </cell>
+                            <cell cols="4"> COMMERCIAL INDUSTRIAL </cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">30 —</measure></cell>
-                            <cell><orgName>Alexand. Bonded Stores Pref.</orgName></cell>
+                            <cell>Alexand. Bonded Stores Pref.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">— 23/32</measure></cell>
-                            <cell><orgName>Anglo-Egypt. Spinning Co.</orgName></cell>
+                            <cell>Anglo-Egypt. Spinning Co.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">23 —</measure></cell>
-                            <cell><orgName>Bourse Khédiviale</orgName></cell>
+                            <cell>Bourse Khédiviale</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">75 —</measure></cell>
-                            <cell>pref. <orgName>Cairo Sewage Transport</orgName> Ord.</cell>
+                            <cell>pref. Cairo Sewage Transport Ord.</cell>
                             <cell><measure unit="£">60</measure></cell>
                         </row>
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">200 —</measure></cell>
-                            <cell>ex <orgName>Cr. Brewery Alex.</orgName> Fond.</cell>
+                            <cell>ex Cr. Brewery Alex. Fond.</cell>
                             <cell><measure unit="fcs">100</measure></cell>
                         </row>
                         <row>
@@ -1211,7 +1342,7 @@
                         <row>
                             <cell>Sh.</cell>
                             <cell><measure unit="sh">5/3 —</measure></cell>
-                            <cell><orgName>Egypt. Cotton Mills</orgName></cell>
+                            <cell>Egypt. Cotton Mills</cell>
                             <cell><measure unit="sh">—</measure></cell>
                         </row>
                         <row>
@@ -1229,107 +1360,103 @@
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">70 —</measure></cell>
-                            <cell><orgName>Ciments d’Egypte</orgName></cell>
+                            <cell>Ciments d'Egypte</cell>
                             <cell><measure unit="fcs">15</measure></cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">—</measure></cell>
-                            <cell><orgName>Egypt. Trust &amp; Invest.</orgName></cell>
+                            <cell>Egypt. Trust &amp; Invest.</cell>
                             <cell><measure unit="£">1 7/16</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">7 ¼</measure></cell>
-                            <cell><orgName>Kafr-el-Zayat Cot. Coy.</orgName></cell>
+                            <cell>Kafr-el-Zayat Cot. Coy.</cell>
                             <cell><measure unit="£">102 ½</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">9 7/16</measure></cell>
-                            <cell><orgName>Nungovich Hotels</orgName></cell>
+                            <cell>Nungovich Hotels</cell>
                             <cell><measure unit="£">103 ¾</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">37 —</measure></cell>
-                            <cell><orgName>Soc. Pressage et Dépôts</orgName></cell>
+                            <cell>Soc. Pressage et Dépôts</cell>
                             <cell><measure unit="£">102</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">25 —</measure></cell>
-                            <cell><orgName>Société Presses Libres</orgName></cell>
+                            <cell>Société Presses Libres</cell>
                             <cell><measure unit="£">102</measure></cell>
                         </row>
                         <row role="label">
-                            <cell cols="4">
-                                <hi rend="bold">NAVIGATION &amp; WATER WORKS.</hi>
-                            </cell>
+                            <cell cols="4"> NAVIGATION &amp; WATER WORKS. </cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">5 7/16</measure></cell>
-                            <cell>ex <orgName>Anglo - American Nile &amp;c. Co.</orgName></cell>
+                            <cell>ex Anglo - American Nile &amp;c. Co.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">4 3/16</measure></cell>
-                            <cell><orgName>Khedivial Mail S.S. &amp;c. Co.</orgName> Fonds.</cell>
+                            <cell>Khedivial Mail S.S. &amp;c. Co. Fonds.</cell>
                             <cell><measure unit="£">16/3</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">15</measure></cell>
-                            <cell><orgName>Alex. Water Company</orgName></cell>
+                            <cell>Alex. Water Company</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">1115</measure></cell>
-                            <cell><orgName>Cairo Water Coy. Fonds.</orgName></cell>
+                            <cell>Cairo Water Coy. Fonds.</cell>
                             <cell><measure unit="fcs">1040</measure></cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">22 ½</measure></cell>
-                            <cell><orgName>Tantah Water Co. Fonds.</orgName></cell>
+                            <cell>Tantah Water Co. Fonds.</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row role="label">
-                            <cell cols="4">
-                                <hi rend="bold">RAILWAYS &amp; TRAMWAYS.</hi>
-                            </cell>
+                            <cell cols="4"> RAILWAYS &amp; TRAMWAYS. </cell>
                         </row>
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">12 7/8</measure></cell>
-                            <cell>ex <orgName>Delta Light</orgName></cell>
+                            <cell>ex Delta Light</cell>
                             <cell><measure unit="£">100</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">—</measure></cell>
-                            <cell><orgName>Delta Light</orgName> Def</cell>
+                            <cell>Delta Light Def</cell>
                             <cell><measure unit="£">14</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">9 —</measure></cell>
-                            <cell><orgName>Fayoum</orgName></cell>
+                            <cell>Fayoum</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>"</cell>
                             <cell><measure unit="£">26 ¾</measure></cell>
-                            <cell><orgName>Keneh-Assouan</orgName></cell>
+                            <cell>Keneh-Assouan</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                         <row>
                             <cell>Fcs.</cell>
                             <cell><measure unit="fcs">165 ¼</measure></cell>
-                            <cell><orgName>Alexandria Trams</orgName></cell>
+                            <cell>Alexandria Trams</cell>
                             <cell><measure unit="fcs">480</measure></cell>
                         </row>
                         <row>
@@ -1341,7 +1468,7 @@
                         <row>
                             <cell>Lst.</cell>
                             <cell><measure unit="£">7 1/8</measure></cell>
-                            <cell><orgName>Ramleh Railway</orgName></cell>
+                            <cell>Ramleh Railway</cell>
                             <cell><measure unit="£">—</measure></cell>
                         </row>
                     </table>
@@ -1351,7 +1478,7 @@
                         and purchase of Stocks and Shares, on the local Bourse and also on the
                             <orgName>London Stock Exchange</orgName>.</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-bokh01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-bokh01">
                     <head>BOURSE KHEDIVIALE</head>
                     <p>CONTRATS</p>
                     <p>Fluctuations de 9h.30 à 1h. p.m.</p>
@@ -1417,7 +1544,7 @@
                     <p>Fèves.—<!-- Fill --></p>
                     <p>Bourse Khédviale, le <date when="1905-07-11">11 juillet 1905</date>.</p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-ctns01">
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-ctns01">
                     <head>COTONS</head>
                     <p>copie de la dépêche</p>
                     <p>DE L'ALEXANDRIA GENERAL PRODUCE ASSOCIATION</p>
@@ -1482,7 +1609,7 @@
                     </table>
                     <p>Marché ferme </p>
                 </div>
-                <div type="item" xml:lang="fr" xml:id="deg-el-cotn01">
+                <div type="template" xml:lang="fr" xml:id="deg-el-cotn01">
                     <head>COTON</head>
                     <p>Exportation du mois de juin 1905</p>
                     <table cols="2" xml:id="deg-ta-cotn01">
@@ -1555,7 +1682,7 @@
                     <p>N.B.--Dans les expéditions pour l'Angleterre sont compris balles 4,738 à
                         destination des État-Unis. </p>
                 </div>
-                <div type="section" xml:lang="fr" xml:id="deg-el-mmeb01">
+                <div type="template" xml:lang="fr" xml:id="deg-el-mmeb01">
                     <head>MARCHE DE MINET-EL-BASSAL</head>
                     <dateline><date when="1905-07-12">12 juillet 1905</date>.—(11h.55
                         a.m.)</dateline>
@@ -1593,7 +1720,7 @@
                     </table>
                     <p>Etat du marché de ce jour, cotons : Ferme</p>
                     <p>Les arrivages de ce jour se chiffrent par cantars <measure unit="cantar"
-                            >1011</measure> contre même jour l’année précédente cantars <measure
+                            >1011</measure> contre même jour l'année précédente cantars <measure
                             unit="cantar">156</measure>
                     </p>
                     <p><hi rend="italic">Grains de coton</hi>.—Sans changement</p>
@@ -1767,7 +1894,7 @@
                         <head>ARRIVAGES</head>
                         <dateline>de <date when="1905-07-12">mercredi 12 juillet
                             1905</date></dateline>
-                        <p>Documents de l’ “Alexandria General Produce Association.”</p>
+                        <p>Documents de l' "Alexandria General Produce Association."</p>
                         <table rows="9" cols="4" xml:id="deg-ta-mmeb07">
                             <row role="label">
                                 <cell/>
@@ -1830,10 +1957,10 @@
                             </row>
                         </table>
                         <p><hi rend="italic">Cotons</hi>.-Total des arrivages depuis le <date
-                                when="1904-09-01">1er septembre 1904</date> jusqu’à ce jour, cantars
+                                when="1904-09-01">1er septembre 1904</date> jusqu'à ce jour, cantars
                                 <measure unit="cantar">6,209,388</measure>.</p>
                         <p><hi rend="italic">Grains de coton</hi>.—Total des arrivages depuis le
-                                <date when="1904-09-01">1er septembre 1904</date> jusqu’à ce jour,
+                                <date when="1904-09-01">1er septembre 1904</date> jusqu'à ce jour,
                             Ard. <measure unit="ard">3,503,332</measure></p>
                         <p>Contre même jour en 1904 :</p>
                         <table rows="9" cols="2" xml:id="deg-ta-mmeb08">
@@ -1888,10 +2015,10 @@
                             </row>
                         </table>
                         <p><hi rend="italic">Cotons</hi>.—Total des arrivages depuis le <date
-                                when="1903-09-01">1er septembre 1903</date> jusqu’à ce jour, cantars
+                                when="1903-09-01">1er septembre 1903</date> jusqu'à ce jour, cantars
                                 <measure unit="cantar">6,458,818</measure></p>
                         <p><hi rend="italic">Graines de coton</hi>.—Total des arrivages depuis le
-                                <date when="1903-09-01">1er septembre 1903</date> jusqu’à ce jour
+                                <date when="1903-09-01">1er septembre 1903</date> jusqu'à ce jour
                             Ard. <measure unit="ard">3,533,437</measure></p>
                     </div>
                     <div type="item">
@@ -1983,966 +2110,1011 @@
                         <p>Récolte actuelle.—Juillet a obtenu P.T. 58 ¾ à l'ouverture. </p>
                         <p><hi rend="italic">Fèves-Saidi</hi>: Nouvelle récolte.—Marché nul.</p>
                     </div>
-                    <div type="section" xml:lang="fr" xml:id="deg-el-ameb01">
-                        <head>ARRIVAGES A MINET-EL-BASSAL</head>
-                        <p>du mois de juillet 1904</p>
-                        <table rows="31" cols="7" xml:id="deg-ta-ameb01">
-                            <row role="label">
-                                <cell>Du</cell>
-                                <cell cols="2">Coton</cell>
-                                <cell cols="2">Graines de coton</cell>
-                                <cell cols="2">Fèves</cell>
-                            </row>
-                            <row>
-                                <cell>1,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>702</cell>
-                                <cell>sacs</cell>
-                                <cell>750</cell>
-                            </row>
-                            <row>
-                                <cell>2,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>642</cell>
-                                <cell>sacs</cell>
-                                <cell>5056</cell>
-                            </row>
-                            <row>
-                                <cell>3,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>200</cell>
-                                <cell>sacs</cell>
-                                <cell>3116</cell>
-                            </row>
-                            <row>
-                                <cell>4,</cell>
-                                <cell>S/B </cell>
-                                <cell>70</cell>
-                                <cell>Ard.</cell>
-                                <cell>1279</cell>
-                                <cell>sacs</cell>
-                                <cell>1135</cell>
-                            </row>
-                            <row>
-                                <cell>5,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>950</cell>
-                                <cell>sacs</cell>
-                                <cell>1817</cell>
-                            </row>
-                            <row>
-                                <cell>6,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>3182</cell>
-                                <cell>sacs</cell>
-                                <cell>3666</cell>
-                            </row>
-                            <row>
-                                <cell>7,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1900</cell>
-                                <cell>sacs</cell>
-                                <cell>3726</cell>
-                            </row>
-                            <row>
-                                <cell>8,</cell>
-                                <cell>S/B </cell>
-                                <cell>14</cell>
-                                <cell>Ard.</cell>
-                                <cell>1149</cell>
-                                <cell>sacs</cell>
-                                <cell>1251</cell>
-                            </row>
-                            <row>
-                                <cell>9,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>850</cell>
-                                <cell>sacs</cell>
-                                <cell>1595</cell>
-                            </row>
-                            <row>
-                                <cell>10,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1295</cell>
-                                <cell>sacs</cell>
-                                <cell>3582</cell>
-                            </row>
-                            <row>
-                                <cell>11,</cell>
-                                <cell>S/B </cell>
-                                <cell>11</cell>
-                                <cell>Ard.</cell>
-                                <cell>1511</cell>
-                                <cell>sacs</cell>
-                                <cell>5059</cell>
-                            </row>
-                            <row>
-                                <cell>12,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1524</cell>
-                                <cell>sacs</cell>
-                                <cell>1757</cell>
-                            </row>
-                            <row>
-                                <cell>13,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>57</cell>
-                                <cell>sacs</cell>
-                                <cell>3506</cell>
-                            </row>
-                            <row>
-                                <cell>14,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>70</cell>
-                                <cell>sacs</cell>
-                                <cell>8574</cell>
-                            </row>
-                            <row>
-                                <cell>15,</cell>
-                                <cell>S/B </cell>
-                                <cell>38</cell>
-                                <cell>Ard.</cell>
-                                <cell>372</cell>
-                                <cell>sacs</cell>
-                                <cell>3082</cell>
-                            </row>
-                            <row>
-                                <cell>16,</cell>
-                                <cell>S/B </cell>
-                                <cell>24</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>4293</cell>
-                            </row>
-                            <row>
-                                <cell>17,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>1579</cell>
-                            </row>
-                            <row>
-                                <cell>18,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1466</cell>
-                                <cell>sacs</cell>
-                                <cell>1740</cell>
-                            </row>
-                            <row>
-                                <cell>19,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1053</cell>
-                                <cell>sacs</cell>
-                                <cell>3023</cell>
-                            </row>
-                            <row>
-                                <cell>20,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>40</cell>
-                                <cell>sacs</cell>
-                                <cell>1630</cell>
-                            </row>
-                            <row>
-                                <cell>21,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>3611</cell>
-                            </row>
-                            <row>
-                                <cell>22,</cell>
-                                <cell>S/B </cell>
-                                <cell>23</cell>
-                                <cell>Ard.</cell>
-                                <cell>782</cell>
-                                <cell>sacs</cell>
-                                <cell>1816</cell>
-                            </row>
-                            <row>
-                                <cell>23,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>81</cell>
-                                <cell>sacs</cell>
-                                <cell>3888</cell>
-                            </row>
-                            <row>
-                                <cell>24,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>560</cell>
-                                <cell>sacs</cell>
-                                <cell>4075</cell>
-                            </row>
-                            <row>
-                                <cell>25,</cell>
-                                <cell>S/B </cell>
-                                <cell>1 N.R.</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>2016</cell>
-                            </row>
-                            <row>
-                                <cell>26,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1200</cell>
-                                <cell>sacs</cell>
-                                <cell>5638</cell>
-                            </row>
-                            <row>
-                                <cell>27,</cell>
-                                <cell>S/B </cell>
-                                <cell>1 N.R.</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>1901</cell>
-                            </row>
-                            <row>
-                                <cell>28,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>2324</cell>
-                            </row>
-                            <row>
-                                <cell>29,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>—</cell>
-                                <cell>sacs</cell>
-                                <cell>1352</cell>
-                            </row>
-                            <row>
-                                <cell>30,</cell>
-                                <cell>S/B </cell>
-                                <cell>2</cell>
-                                <cell>Ard.</cell>
-                                <cell>453</cell>
-                                <cell>sacs</cell>
-                                <cell>3763</cell>
-                            </row>
-                            <row>
-                                <cell>31,</cell>
-                                <cell>S/B </cell>
-                                <cell>—</cell>
-                                <cell>Ard.</cell>
-                                <cell>1327</cell>
-                                <cell>sacs</cell>
-                                <cell>2396</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>S/B </cell>
-                                <cell>184</cell>
-                                <cell>Ard.</cell>
-                                <cell>22645</cell>
-                                <cell>Sacs</cell>
-                                <cell>92717</cell>
-                            </row>
-                        </table>
-                        <p>N.B.—Cette liste est relevée des Registres de l’ “Alexandria General
-                            Produce Association”; nous la publions afin qu’on puisse la comparer
-                            avec les arrivages du mois de juillet de cette année.</p>
-                    </div>
-                    <div type="item" xml:lang="fr" xml:id="deg-el-extr01">
-                        <head>Exterieur</head>
-                        <p>Dépêches particulières du <date when="1905-07-11">11 juillet
-                            1905</date></p>
-                        <p>PRODUITS EGYPTIENS</p>
-                        <p>LIVERPOOL</p>
-                        <p><hi rend="italic">Coton: Etat du Marché</hi>.—Soutenu</p>
-                        <p><hi rend="italic">Disp</hi>..— F.G.F.: <measure unit="£">7 7/8</measure>
-                            (sans changement)</p>
-                        <p><hi rend="italic">Futurs</hi> Juillet :<measure unit="£">7
-                                52/64</measure> (6/64 point de hausse)</p>
-                        <p>LIVERPOOL</p>
-                        <p><hi rend="italic">Graines de coton</hi>.—Soutenues</p>
-                        <p><hi rend="italic">Fèves</hi> — Fermes</p>
-                        <p>HULL</p>
-                        <p><hi rend="italic">Graines de coton</hi>.—Calmes, sans changement</p>
-                        <p><hi rend="italic">Fèves</hi>.—Soutenues</p>
-                        <p>LONDRES</p>
-                        <p><hi rend="italic">Graines de coton</hi>.— Sans changement</p>
-                        <p>COTON AMÉRICAIN</p>
-                        <p>LIVERPOOL</p>
-                        <p>Futurs août-sept.: <measure unit="$">5.90</measure> (15 points de
-                            baisse)</p>
-                        <p>" oct-nov.: <measure unit="$">5.92</measure> (13 points de baisse)</p>
-                        <p>Disponible : <measure unit="$">6.12</measure> (11 points de hausse)</p>
-                        <p>NEW-YORK</p>
-                        <p>Middling Upland: <measure unit="$">11.00</measure> (30 points de
-                            hausse)</p>
-                        <p>Futurs août: <measure unit="$">10.82</measure> (24 points de busse)</p>
-                        <p>" oct. : <measure unit="$">10.96</measure> (24 points de baisse)</p>
-                        <p>Arrivages du jour, balles <measure unit="balles">22,000</measure></p>
-                        <p>Contre même jour, l’année dernière, balles <measure unit="balles"
-                                >1,800</measure></p>
-                        <p>Pointer : bal. —,— contre bal. —,—</p>
-                    </div>
-                    <div type="item" xml:id="deg-el-lsex01">
-                        <head>LONDON STOCK EXCHANGE.</head>
-                        <head type="sub">Prices on <date when="1905-07-07">Friday, July 7,
-                                1905</date>.</head>
-                        <table cols="4" xml:id="deg-ta-lsex01">
-                            <row>
-                                <cell>Consols a/c</cell>
-                                <cell><measure>90 1/8</measure></cell>
-                                <cell>@</cell>
-                                <cell><measure>— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Consols cash</cell>
-                                <cell><measure>90 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— 1/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian 4 % Unified</cell>
-                                <cell><measure>104 ¾</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>105 ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian 4 ½ % State Domain</cell>
-                                <cell><measure>103 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>104 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian 3 ½ % Government Pref.</cell>
-                                <cell><measure>101 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>102 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian 3 ½ % Inscribed </cell>
-                                <cell><measure>98 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>99 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian 4% Daira l980 </cell>
-                                <cell><measure>100 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>101 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Turkish Unified</cell>
-                                <cell><measure>87 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>88 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Austrian Gold 4 %</cell>
-                                <cell><measure>99 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>100 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>French 3% Rentes</cell>
-                                <cell><measure>98 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>99 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>German 3% 1891</cell>
-                                <cell><measure>88 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>89 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Greek 5 % 1881</cell>
-                                <cell><measure>50 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>51 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Italian 5 % 1861</cell>
-                                <cell><measure>103 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>104 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Russian 4 % Con. 1889</cell>
-                                <cell><measure>87 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Japan 5 % 1902</cell>
-                                <cell><measure>99 ¾</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>100 ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>United States 4 % 1925</cell>
-                                <cell><measure>134 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>136 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Daira Sanieh</cell>
-                                <cell><measure>28 1/8</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— 3/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell> Daira Deferred</cell>
-                                <cell><measure>177 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>180 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>National Banks</cell>
-                                <cell><measure>26 ¼</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>National Banks New</cell>
-                                <cell><measure>6 ¼</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ½</measure>pm</cell>
-                            </row>
-                            <row>
-                                <cell>Agricultural Banks</cell>
-                                <cell><measure>13 ¾</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>14 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell> Agricultural Preferred </cell>
-                                <cell><measure>10 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell> Agricultural 3 ½ % Bonds</cell>
-                                <cell><measure>94 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Delta Preference</cell>
-                                <cell><measure>12 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>13 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell> Delta Deferred</cell>
-                                <cell><measure>12 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>14 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Delta Lands</cell>
-                                <cell><measure>1 7/8</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>2 1/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Daira Sugar</cell>
-                                <cell><measure>5 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ¾</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Salt &amp; Soda</cell>
-                                <cell><measure>1 5/8</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>1 7/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian Markets</cell>
-                                <cell><measure>1 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Nile Valley</cell>
-                                <cell><measure>1 1/8</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Sudan Mines</cell>
-                                <cell><measure>— 3/8</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian Sudan Mines Syndicate</cell>
-                                <cell><measure>1 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ¾</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian Mines Exploration Ltd.</cell>
-                                <cell><measure>12/9 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>13/3 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Um Rus fully paid</cell>
-                                <cell><measure>— 15/16</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>1 1/16</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Corporation of Western Egypt</cell>
-                                <cell><measure>— ¼</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— 3/8</measure>pm</cell>
-                            </row>
-                            <row>
-                                <cell>United Africans</cell>
-                                <cell><measure>1 ¼</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— 3/8</measure>pm</cell>
-                            </row>
-                            <row>
-                                <cell>Egypt. Invest &amp; Agency </cell>
-                                <cell><measure>— 1/8</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— 1/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian Estates </cell>
-                                <cell><measure>— 1/8</measure> dis.</cell>
-                                <cell>,,</cell>
-                                <cell><measure>— 3/8</measure>pm</cell>
-                            </row>
-                        </table>
-                    </div>
-                    <div type="item" xml:id="deg-el-shli01">
-                        <head>SHARE LIST</head>
-                        <p>Issued by the “Association des Courtiers en Valeurs d'Alexandrie”.</p>
-                        <p>Clôture d’aujourd'hui à 12h.45 p.m.</p>
-                        <table rows="39" cols="5" xml:id="deg-ta-shli01">
-                            <row>
-                                <cell>Agric. Bank of Egypt</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£"><!-- uncorrect template --></measure> à 7/8 </cell>
-                                <cell>à</cell>
-                                <cell><measure unit="£">9 7/16</measure> à 1/2</cell>
-                            </row>
-                            <row>
-                                <cell>Nat. Bank of Egypt</cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="£">26 5/16</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="£">— 3/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Ramleh Railway</cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="£">7 1/8</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian Delta Railway ex.-c.</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">12 7/8</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 15/16</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Tram. d’Alexandrie</cell>
-                                <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">165 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">165 ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>" " div.</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">340 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Alexandria Water</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£">15 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Eaux du Cairo</cell>
-                                <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">1115 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Daira Sanieh</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£">28 1/16</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 1/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Béhéra</cell>
-                                <cell>L.E.</cell>
-                                <cell><measure unit="LE">— —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="LE">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Bourse Khédiviale</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egyptian Markets</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">22 6</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">22/9 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Anglo-Egyptian Spinning</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">—11/16</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£"> — ¾</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Bière d’Alex. Priv.</cell>
-                                <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">200 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">203 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell> " " Div.</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">100 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">105 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>" du Cairo Priv.</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">110 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">111 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>" " Div.</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">60 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Egypt Cotton Mills</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£">5/3 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">5/6 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>" Salt &amp; Soda</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">34/9 —</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">35/ —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Pressage</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Presses Libres</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Oblig. Credit Foncier Egyptien 3 %</cell>
-                                <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">316 —</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">316 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Lots Turcs</cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="fcs">— —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Banque Nationale de Grèce</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Banque Industrielle</cell>
-                                <cell>L.E.</cell>
-                                <cell><measure unit="LE">— 1/16</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="LE">— 1/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Cassa di Sconto</cell>
-                                <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">177 —</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">165 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Anglo-American Nile</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£">5 7/16</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Banque d’Athènes </cell>
-                                <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">122 ¼</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">122 ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Deferred Delta</cell>
-                                <cell>Lst.</cell>
-                                <cell><measure unit="£">13 ¾</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 7/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Nungovich Hotels</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">9 7/16</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Delta Land</cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="£">2 15/32</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell> Egyptian Invest. &amp; Agency Ld.</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">1 11/32</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 3/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Land Bank</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">9 5/16</measure>
-                                </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 3/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Trust Investment</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">1 13/32</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 7/16</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Splendid Hôtels</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">4 ¼</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Estates</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 27/32</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 7/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Cheik Fadl </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">123 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="fcs">124 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Entreprises Urbaines</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">4 5/8</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="£">— 11/16</measure></cell>
-                            </row>
-                        </table>
-                    </div>
-                    <div type="item" xml:lang="fr" xml:id="deg-el-acms01">
-                        <head>ASSOCIATION DES COURTIERS EN MARCHANDISES</head>
-                        <head type="sub">(Service spécial)</head>
-                        <p>DÉPÊCHE D'OUVERTURE</p>
-                        <p>LIVERPOOL, 10h. a.m.</p>
-                        <p>Américain</p>
-                        <p>Futurs: août-sept. : <measure unit="$">5.85</measure></p>
-                        <p>,, oct.-nov. : <measure unit="$">5.84</measure></p>
-                    </div>
-                    <div type="item" xml:lang="fr" xml:id="deg-el-dehe1">
-                        <head>DERNIERE HEURE</head>
-                        <p>(Clôture de la Bourse Khédiviale 1h. p.m.) </p>
-                        <p>Cours de l’Association des Courtiers en Marchandises </p>
-                        <table cols="5" xml:id="deg-ta-dehe1">
-                            <row role="label">
-                                <cell>Coton F.G.F.Br.</cell>
-                            </row>
-                            <row>
-                                <cell>Novembre</cell>
-                                <cell>Tal.</cell>
-                                <cell><measure unit="tal">14 15/16</measure>
-                                </cell>
-                                <cell>à</cell>
-                                <cell><measure unit="tal">— 31/32</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Janvier</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">14 27/32</measure></cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="tal">— 7/8</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Mars</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">15 1/16</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">— —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Juillet</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">15 7/32</measure></cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="tal">— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Août</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">15 17/32</measure></cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="tal">— 9/16</measure></cell>
-                            </row>
-                            <row role="label">
-                                <cell>Graines de coton</cell>
-                            </row>
-                            <row>
-                                <cell>N.-D.-J. </cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">61 10/40</measure>
-                                </cell>
-                                <cell>à</cell>
-                                <cell><measure unit="tal">— 20/40</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Juillet</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">59 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">– –</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Août</cell>
-                                <cell> "</cell>
-                                <cell><measure unit="tal">59 30/40</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">— 35/40</measure></cell>
-                            </row>
-                            <row role="label">
-                                <cell>Fèves-Saïdi</cell>
-                            </row>
-                            <row>
-                                <cell>Sept-Oct.</cell>
-                                <cell>P.T.</cell>
-                                <cell><measure unit="pt">95 —</measure></cell>
-                                <cell>à</cell>
-                                <cell><measure unit="pt">— ½</measure></cell>
-                            </row>
-                        </table>
-                    </div>
-
+                </div>
+                <div type="template" xml:lang="fr" xml:id="deg-el-ameb01">
+                    <head>ARRIVAGES A MINET-EL-BASSAL</head>
+                    <p>du mois de juillet 1904</p>
+                    <table rows="31" cols="7" xml:id="deg-ta-ameb01">
+                        <row role="label">
+                            <cell>Du</cell>
+                            <cell cols="2">Coton</cell>
+                            <cell cols="2">Graines de coton</cell>
+                            <cell cols="2">Fèves</cell>
+                        </row>
+                        <row>
+                            <cell>1,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>702</cell>
+                            <cell>sacs</cell>
+                            <cell>750</cell>
+                        </row>
+                        <row>
+                            <cell>2,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>642</cell>
+                            <cell>sacs</cell>
+                            <cell>5056</cell>
+                        </row>
+                        <row>
+                            <cell>3,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>200</cell>
+                            <cell>sacs</cell>
+                            <cell>3116</cell>
+                        </row>
+                        <row>
+                            <cell>4,</cell>
+                            <cell>S/B </cell>
+                            <cell>70</cell>
+                            <cell>Ard.</cell>
+                            <cell>1279</cell>
+                            <cell>sacs</cell>
+                            <cell>1135</cell>
+                        </row>
+                        <row>
+                            <cell>5,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>950</cell>
+                            <cell>sacs</cell>
+                            <cell>1817</cell>
+                        </row>
+                        <row>
+                            <cell>6,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>3182</cell>
+                            <cell>sacs</cell>
+                            <cell>3666</cell>
+                        </row>
+                        <row>
+                            <cell>7,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1900</cell>
+                            <cell>sacs</cell>
+                            <cell>3726</cell>
+                        </row>
+                        <row>
+                            <cell>8,</cell>
+                            <cell>S/B </cell>
+                            <cell>14</cell>
+                            <cell>Ard.</cell>
+                            <cell>1149</cell>
+                            <cell>sacs</cell>
+                            <cell>1251</cell>
+                        </row>
+                        <row>
+                            <cell>9,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>850</cell>
+                            <cell>sacs</cell>
+                            <cell>1595</cell>
+                        </row>
+                        <row>
+                            <cell>10,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1295</cell>
+                            <cell>sacs</cell>
+                            <cell>3582</cell>
+                        </row>
+                        <row>
+                            <cell>11,</cell>
+                            <cell>S/B </cell>
+                            <cell>11</cell>
+                            <cell>Ard.</cell>
+                            <cell>1511</cell>
+                            <cell>sacs</cell>
+                            <cell>5059</cell>
+                        </row>
+                        <row>
+                            <cell>12,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1524</cell>
+                            <cell>sacs</cell>
+                            <cell>1757</cell>
+                        </row>
+                        <row>
+                            <cell>13,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>57</cell>
+                            <cell>sacs</cell>
+                            <cell>3506</cell>
+                        </row>
+                        <row>
+                            <cell>14,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>70</cell>
+                            <cell>sacs</cell>
+                            <cell>8574</cell>
+                        </row>
+                        <row>
+                            <cell>15,</cell>
+                            <cell>S/B </cell>
+                            <cell>38</cell>
+                            <cell>Ard.</cell>
+                            <cell>372</cell>
+                            <cell>sacs</cell>
+                            <cell>3082</cell>
+                        </row>
+                        <row>
+                            <cell>16,</cell>
+                            <cell>S/B </cell>
+                            <cell>24</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>4293</cell>
+                        </row>
+                        <row>
+                            <cell>17,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>1579</cell>
+                        </row>
+                        <row>
+                            <cell>18,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1466</cell>
+                            <cell>sacs</cell>
+                            <cell>1740</cell>
+                        </row>
+                        <row>
+                            <cell>19,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1053</cell>
+                            <cell>sacs</cell>
+                            <cell>3023</cell>
+                        </row>
+                        <row>
+                            <cell>20,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>40</cell>
+                            <cell>sacs</cell>
+                            <cell>1630</cell>
+                        </row>
+                        <row>
+                            <cell>21,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>3611</cell>
+                        </row>
+                        <row>
+                            <cell>22,</cell>
+                            <cell>S/B </cell>
+                            <cell>23</cell>
+                            <cell>Ard.</cell>
+                            <cell>782</cell>
+                            <cell>sacs</cell>
+                            <cell>1816</cell>
+                        </row>
+                        <row>
+                            <cell>23,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>81</cell>
+                            <cell>sacs</cell>
+                            <cell>3888</cell>
+                        </row>
+                        <row>
+                            <cell>24,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>560</cell>
+                            <cell>sacs</cell>
+                            <cell>4075</cell>
+                        </row>
+                        <row>
+                            <cell>25,</cell>
+                            <cell>S/B </cell>
+                            <cell>1 N.R.</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>2016</cell>
+                        </row>
+                        <row>
+                            <cell>26,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1200</cell>
+                            <cell>sacs</cell>
+                            <cell>5638</cell>
+                        </row>
+                        <row>
+                            <cell>27,</cell>
+                            <cell>S/B </cell>
+                            <cell>1 N.R.</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>1901</cell>
+                        </row>
+                        <row>
+                            <cell>28,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>2324</cell>
+                        </row>
+                        <row>
+                            <cell>29,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>—</cell>
+                            <cell>sacs</cell>
+                            <cell>1352</cell>
+                        </row>
+                        <row>
+                            <cell>30,</cell>
+                            <cell>S/B </cell>
+                            <cell>2</cell>
+                            <cell>Ard.</cell>
+                            <cell>453</cell>
+                            <cell>sacs</cell>
+                            <cell>3763</cell>
+                        </row>
+                        <row>
+                            <cell>31,</cell>
+                            <cell>S/B </cell>
+                            <cell>—</cell>
+                            <cell>Ard.</cell>
+                            <cell>1327</cell>
+                            <cell>sacs</cell>
+                            <cell>2396</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>S/B </cell>
+                            <cell>184</cell>
+                            <cell>Ard.</cell>
+                            <cell>22645</cell>
+                            <cell>Sacs</cell>
+                            <cell>92717</cell>
+                        </row>
+                    </table>
+                    <p>N.B.—Cette liste est relevée des Registres de l' "Alexandria General Produce
+                        Association"; nous la publions afin qu'on puisse la comparer avec les
+                        arrivages du mois de juillet de cette année.</p>
+                </div>
+                <div type="template" xml:lang="fr" xml:id="deg-el-extr01">
+                    <head>Exterieur</head>
+                    <p>Dépêches particulières du <date when="1905-07-11">11 juillet 1905</date></p>
+                    <p>PRODUITS EGYPTIENS</p>
+                    <p>LIVERPOOL</p>
+                    <p><hi rend="italic">Coton: Etat du Marché</hi>.—Soutenu</p>
+                    <p><hi rend="italic">Disp</hi>..— F.G.F.: <measure unit="£">7 7/8</measure>
+                        (sans changement)</p>
+                    <p><hi rend="italic">Futurs</hi> Juillet :<measure unit="£">7 52/64</measure>
+                        (6/64 point de hausse)</p>
+                    <p>LIVERPOOL</p>
+                    <p><hi rend="italic">Graines de coton</hi>.—Soutenues</p>
+                    <p><hi rend="italic">Fèves</hi> — Fermes</p>
+                    <p>HULL</p>
+                    <p><hi rend="italic">Graines de coton</hi>.—Calmes, sans changement</p>
+                    <p><hi rend="italic">Fèves</hi>.—Soutenues</p>
+                    <p>LONDRES</p>
+                    <p><hi rend="italic">Graines de coton</hi>.— Sans changement</p>
+                    <p>COTON AMÉRICAIN</p>
+                    <p>LIVERPOOL</p>
+                    <p>Futurs août-sept.: <measure unit="$">5.90</measure> (15 points de baisse)</p>
+                    <p>" oct-nov.: <measure unit="$">5.92</measure> (13 points de baisse)</p>
+                    <p>Disponible : <measure unit="$">6.12</measure> (11 points de hausse)</p>
+                    <p>NEW-YORK</p>
+                    <p>Middling Upland: <measure unit="$">11.00</measure> (30 points de hausse)</p>
+                    <p>Futurs août: <measure unit="$">10.82</measure> (24 points de busse)</p>
+                    <p>" oct. : <measure unit="$">10.96</measure> (24 points de baisse)</p>
+                    <p>Arrivages du jour, balles <measure unit="balles">22,000</measure></p>
+                    <p>Contre même jour, l'année dernière, balles <measure unit="balles"
+                            >1,800</measure></p>
+                    <p>Pointer : bal. —,— contre bal. —,—</p>
+                </div>
+                <div type="template" feature="stocksShares" xml:id="deg-el-lsex01"
+                    status="unverified">
+                    <head>LONDON STOCK EXCHANGE.</head>
+                    <dateline>Prices on <date when="1905-07-07">Friday, July 7,
+                        1905</date>.</dateline>
+                    <table cols="4" xml:id="deg-ta-lsex01">
+                        <row>
+                            <cell>Consols a/c</cell>
+                            <cell><measure>90 1/8</measure></cell>
+                            <cell>@</cell>
+                            <cell><measure>— ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Consols cash</cell>
+                            <cell><measure>90 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— 1/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian 4 % Unified</cell>
+                            <cell><measure>104 ¾</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>105 ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian 4 ½ % State Domain</cell>
+                            <cell><measure>103 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>104 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian 3 ½ % Government Pref.</cell>
+                            <cell><measure>101 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>102 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian 3 ½ % Inscribed </cell>
+                            <cell><measure>98 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>99 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian 4% Daira l980 </cell>
+                            <cell><measure>100 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>101 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Turkish Unified</cell>
+                            <cell><measure>87 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>88 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Austrian Gold 4 %</cell>
+                            <cell><measure>99 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>100 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>French 3% Rentes</cell>
+                            <cell><measure>98 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>99 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>German 3% 1891</cell>
+                            <cell><measure>88 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>89 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Greek 5 % 1881</cell>
+                            <cell><measure>50 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>51 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Italian 5 % 1861</cell>
+                            <cell><measure>103 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>104 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Russian 4 % Con. 1889</cell>
+                            <cell><measure>87 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Japan 5 % 1902</cell>
+                            <cell><measure>99 ¾</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>100 ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>United States 4 % 1925</cell>
+                            <cell><measure>134 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>136 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Daira Sanieh</cell>
+                            <cell><measure>28 1/8</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— 3/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell> Daira Deferred</cell>
+                            <cell><measure>177 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>180 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>National Banks</cell>
+                            <cell><measure>26 ¼</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>National Banks New</cell>
+                            <cell><measure>6 ¼</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ½</measure>pm</cell>
+                        </row>
+                        <row>
+                            <cell>Agricultural Banks</cell>
+                            <cell><measure>13 ¾</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>14 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell> Agricultural Preferred </cell>
+                            <cell><measure>10 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell> Agricultural 3 ½ % Bonds</cell>
+                            <cell><measure>94 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Delta Preference</cell>
+                            <cell><measure>12 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>13 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell> Delta Deferred</cell>
+                            <cell><measure>12 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>14 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Delta Lands</cell>
+                            <cell><measure>1 7/8</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>2 1/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Daira Sugar</cell>
+                            <cell><measure>5 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ¾</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Salt &amp; Soda</cell>
+                            <cell><measure>1 5/8</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>1 7/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Markets</cell>
+                            <cell><measure>1 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Nile Valley</cell>
+                            <cell><measure>1 1/8</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Sudan Mines</cell>
+                            <cell><measure>— 3/8</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Sudan Mines Syndicate</cell>
+                            <cell><measure>1 ½</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— ¾</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Mines Exploration Ltd.</cell>
+                            <cell><measure>12/9 —</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>13/3 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Um Rus fully paid</cell>
+                            <cell><measure>— 15/16</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>1 1/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Corporation of Western Egypt</cell>
+                            <cell><measure>— ¼</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— 3/8</measure>pm</cell>
+                        </row>
+                        <row>
+                            <cell>United Africans</cell>
+                            <cell><measure>1 ¼</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— 3/8</measure>pm</cell>
+                        </row>
+                        <row>
+                            <cell>Egypt. Invest &amp; Agency </cell>
+                            <cell><measure>— 1/8</measure></cell>
+                            <cell>,,</cell>
+                            <cell><measure>— 1/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Estates </cell>
+                            <cell><measure>— 1/8</measure> dis.</cell>
+                            <cell>,,</cell>
+                            <cell><measure>— 3/8</measure>pm</cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="template" feature="stocksShares" xml:id="deg-el-shli01"
+                    status="unverified">
+                    <head>SHARE LIST</head>
+                    <p>Issued by the "Association des Courtiers en Valeurs d'Alexandrie".</p>
+                    <p>Clôture d'aujourd'hui à 12h.45 p.m.</p>
+                    <table rows="39" cols="5" xml:id="deg-ta-shli01">
+                        <row>
+                            <cell>Agric. Bank of Egypt</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£"><!-- uncorrect template --></measure> à 7/8 </cell>
+                            <cell>à</cell>
+                            <cell><measure unit="£">9 7/16</measure> à 1/2</cell>
+                        </row>
+                        <row>
+                            <cell>Nat. Bank of Egypt</cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="£">26 5/16</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="£">— 3/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Ramleh Railway</cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="£">7 1/8</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Delta Railway ex.-c.</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">12 7/8</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 15/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Tram. d'Alexandrie</cell>
+                            <cell>Fcs.</cell>
+                            <cell><measure unit="fcs">165 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">165 ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" " div.</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">340 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Alexandria Water</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£">15 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Eaux du Cairo</cell>
+                            <cell>Fcs.</cell>
+                            <cell><measure unit="fcs">1115 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Daira Sanieh</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£">28 1/16</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 1/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Béhéra</cell>
+                            <cell>L.E.</cell>
+                            <cell><measure unit="LE">— —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="LE">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Bourse Khédiviale</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Markets</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">22 6</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">22/9 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Anglo-Egyptian Spinning</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">—11/16</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£"> — ¾</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Bière d'Alex. Priv.</cell>
+                            <cell>Fcs.</cell>
+                            <cell><measure unit="fcs">200 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">203 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell> " " Div.</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">100 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">105 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" du Cairo Priv.</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">110 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">111 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" " Div.</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">60 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egypt Cotton Mills</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£">5/3 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">5/6 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" Salt &amp; Soda</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">34/9 —</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">35/ —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Pressage</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Presses Libres</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Oblig. Credit Foncier Egyptien 3 %</cell>
+                            <cell>Fcs.</cell>
+                            <cell><measure unit="fcs">316 —</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">316 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Lots Turcs</cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="fcs">— —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Banque Nationale de Grèce</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">— —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Banque Industrielle</cell>
+                            <cell>L.E.</cell>
+                            <cell><measure unit="LE">— 1/16</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="LE">— 1/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Cassa di Sconto</cell>
+                            <cell>Fcs.</cell>
+                            <cell><measure unit="fcs">177 —</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">165 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Anglo-American Nile</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£">5 7/16</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Banque d'Athènes </cell>
+                            <cell>Fcs.</cell>
+                            <cell><measure unit="fcs">122 ¼</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">122 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Deferred Delta</cell>
+                            <cell>Lst.</cell>
+                            <cell><measure unit="£">13 ¾</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 7/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Nungovich Hotels</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">9 7/16</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Delta Land</cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="£">2 15/32</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell> Egyptian Invest. &amp; Agency Ld.</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">1 11/32</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 3/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Land Bank</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">9 5/16</measure>
+                            </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 3/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Trust Investment</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">1 13/32</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 7/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Splendid Hôtels</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">4 ¼</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Estates</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 27/32</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 7/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Cheik Fadl </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">123 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="fcs">124 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Entreprises Urbaines</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">4 5/8</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="£">— 11/16</measure></cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-acms01">
+                    <head>ASSOCIATION DES COURTIERS EN MARCHANDISES</head>
+                    <head type="sub">(Service spécial)</head>
+                    <p>DÉPÊCHE D'OUVERTURE</p>
+                    <p>LIVERPOOL, 10h. a.m.</p>
+                    <p>Américain</p>
+                    <p>Futurs: août-sept. : <measure unit="$">5.85</measure></p>
+                    <p>,, oct.-nov. : <measure unit="$">5.84</measure></p>
+                </div>
+                <div type="template" xml:lang="fr" feature="cottonContracts" xml:id="deg-el-dehe01">
+                    <head>DERNIERE HEURE</head>
+                    <p>(Clôture de la Bourse Khédiviale 1h. p.m.) </p>
+                    <p>Cours de l'Association des Courtiers en Marchandises </p>
+                    <table cols="5" xml:id="deg-ta-dehe01">
+                        <row role="label">
+                            <cell>Coton F.G.F.Br.</cell>
+                        </row>
+                        <row>
+                            <cell>Novembre</cell>
+                            <cell>Tal.</cell>
+                            <cell><measure unit="tal">14 15/16</measure>
+                            </cell>
+                            <cell>à</cell>
+                            <cell><measure unit="tal">— 31/32</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Janvier</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">14 27/32</measure></cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="tal">— 7/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Mars</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">15 1/16</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Juillet</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">15 7/32</measure></cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="tal">— ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Août</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">15 17/32</measure></cell>
+                            <cell>"</cell>
+                            <cell>
+                                <measure unit="tal">— 9/16</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell>Graines de coton</cell>
+                        </row>
+                        <row>
+                            <cell>N.-D.-J. </cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">61 10/40</measure>
+                            </cell>
+                            <cell>à</cell>
+                            <cell><measure unit="tal">— 20/40</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Juillet</cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">59 —</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">– –</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Août</cell>
+                            <cell> "</cell>
+                            <cell><measure unit="tal">59 30/40</measure></cell>
+                            <cell>"</cell>
+                            <cell><measure unit="tal">— 35/40</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell>Fèves-Saïdi</cell>
+                        </row>
+                        <row>
+                            <cell>Sept-Oct.</cell>
+                            <cell>P.T.</cell>
+                            <cell><measure unit="pt">95 —</measure></cell>
+                            <cell>à</cell>
+                            <cell><measure unit="pt">— ½</measure></cell>
+                        </row>
+                    </table>
                 </div>
             </div>
             <pb n="5"/>
-            <div type="page" n="5"> </div>
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-30/page/n4/mode/1up"
+                status="empty"> </div>
             <pb n="6"/>
-            <div type="page" n="6"> </div>
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1905-01-30/page/n5/mode/1up">
+                <cb n="1"/>
+                <!-- reuters -->
+                <div type="item" feature="exportManifests" status="verified">
+                    <head>EXPORT MANIFESTS. </head>
+                    <p>For ENGLAND, by the S.S. "Truma", sailed on the 14th January :</p>
+                    <p>N. E. Tamvaco, 1,852 tons cotton seed</p>
+                    <p>Pour CONSTANTINOPLE, par le bateau ottoman "Costantinos", parti le 14 janvier
+                        :</p>
+                    <p>Divers, 160 sacs riz, 250 colis divers</p>
+                    <p>Pour BRINDISI et VENISE par le bateau italien "Nilo", parti le 15 janvier
+                        :</p>
+                    <p>POUR DESTINATIONS DIVERSES -</p>
+                    <p>Divers, 163 futs vides, 2 colis divers</p>
+                    <p>POUR VENISE</p>
+                    <p>N. G. 1., 1 cais. cigarettes</p>
+                    <p>Furn &amp; Co., 59 colis goinme</p>
+                    <p>Carver Bros. &amp; Coy. Ltd, 9 balles coton</p>
+                    <p>ER. &amp; O. Lindemann, 25 „ „</p>
+                    <p>Mohr &amp; Fenderl, 40 „ „</p>
+                    <p>J. Planta &amp; Co., 153 „ „</p>
+                    <p>227 balles coton</p>
+                    <p>Pour GENES, par le bateat ital. "Annina M.", parti le 15 janvier</p>
+                    <p>Padova Rolin &amp; Co, 464 tonnes vieux fer</p>
+                    <p>Pour BONE et ANVBRS, par le bateau belge "Mil", parti le 15 janvier</p>
+                    <p>G. Frauger &amp; Co. 60 balles coton</p>
+                    <p>F. C. Baines &amp; Co., 192 „ „</p>
+                    <p>Peel &amp; Co., 64 „ „</p>
+                    <p>G. Riecken, 180 „ „</p>
+                    <p>Carver Bros. &amp; Coy. Ltd, 60 „ „</p>
+                    <p>W. Trapp &amp; Co. 31 „ „</p>
+                    <p>Botton Bortolotti, 120 „ „</p>
+                    <p>Choremi, Benachi &amp; Co., 270 „ „</p>
+                    <p>R. &amp; O; Lindemann, 91 „ „</p>
+                    <p>Mohr &amp; Fenderl, 31 „ „</p>
+                    <p>1,099 balles coton</p>
+                    <p>Griva fr., 85 balles gomme</p>
+                    <p>Behrend &amp; co., 400 sacs sucre</p>
+                    <p>G. Brach &amp; Co., 9 colis ivoire, 50 balles cire</p>
+                    <p>N. E. Tamyaco, 39 barils huile lubréfiante</p>
+                    <p>Divers, 10 colis divers en</p>
+                    <p>For SMYRNA, by the S.S. Augustino". sailed on the 15th January :</p>
+                    <p>Divers, 120 colis divers</p>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>
